@@ -52,28 +52,29 @@
 ## Обновить данные
 
 ```bash
-# 1. правим db.py (единая база: GPU, платформы, БП, корпуса, модели)
-python build_site.py     # → site/data.js
-python gen_xlsx.py       # → Excel-калькулятор из ai_calc.py + db.py
+# 1. правим data/db.py (единая база: GPU, платформы, БП, корпуса, модели)
+python data/build_site.py     # → data.js
+python data/gen_xlsx.py       # → Excel-калькулятор из ai_calc.py + db.py
 ```
 
-`site/calc.js` — модель расчёта, работает и в браузере, и в Node:
+`calc.js` — модель расчёта, работает и в браузере, и в Node:
 
 ```bash
-node site/test_calc.js   # сверяет расчёт с числами Excel
+node data/test_calc.js   # сверяет расчёт с числами Excel
 ```
 
 ## Файлы
 
 ```
-site/index.html   — интерфейс
-site/calc.js      — модель расчёта
-site/data.js      — данные (генерируется из db.py)
-site/styles.css   — оформление
-db.py             — единая база данных
-ai_calc.py        — сборка Excel (рендер листов)
-gen_xlsx.py       — подставляет db.py в сборку и запускает её
-build_site.py     — генерирует data.js
+index.html        — интерфейс (корень = GitHub Pages)
+calc.js           — модель расчёта
+data.js           — данные (генерируется из data/db.py)
+styles.css        — оформление
+data/db.py        — единая база данных
+data/ai_calc.py   — сборка Excel (рендер листов)
+data/gen_xlsx.py  — подставляет db.py в сборку и запускает её
+data/build_site.py — генерирует data.js
+data/test_calc.js — тест модели против чисел Excel
 AI_Calculator_Hardware_Avito.xlsx — Excel-версия
 ```
 
