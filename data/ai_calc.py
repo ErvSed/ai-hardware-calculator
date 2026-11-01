@@ -18,6 +18,7 @@ SUB_FILL = PatternFill("solid", fgColor="C8E6C9")
 IN_FILL = PatternFill("solid", fgColor="FFF9C4")
 OUT_FILL = PatternFill("solid", fgColor="E3F2FD")
 NOTE_FILL = PatternFill("solid", fgColor="FFFDE7")
+LINK = Font(color="0563C1", underline="single")
 WRAP = Alignment(wrap_text=True, vertical="top")
 CENTER = Alignment(horizontal="center", vertical="center")
 THIN = Side(style="thin", color="BFBFBF")
@@ -225,7 +226,7 @@ s.sheet_view.showGridLines = False
 
 # ================================================================ GPU
 g = WB.create_sheet("GPU")
-head(g, 1, ["Модель", "VRAM, ГБ", "Полоса, ГБ/с", "TDP, Вт", "Длина, мм", "Слотов", "Compute", "Цена магазин, ₽", "Цена Авито, ₽", "Цена для расчёта, ₽", "Источник / статус", "Вендор"])
+head(g, 1, ["Модель", "VRAM, ГБ", "Полоса, ГБ/с", "TDP, Вт", "Длина, мм", "Слотов", "Compute", "Цена магазин, ₽", "Цена Авито, ₽", "Цена для расчёта, ₽", "Источник / статус", "Вендор", "Авито"])
 r = 2
 for name, vram, bw, tdp, ln, slots, comp, shop, avito, src, vendor in GPU_ROWS:
     g.cell(row=r, column=1, value=name)
@@ -240,6 +241,10 @@ for name, vram, bw, tdp, ln, slots, comp, shop, avito, src, vendor in GPU_ROWS:
     g.cell(row=r, column=10, value=f"=IF(I{r}>0,I{r},H{r})").number_format = MONEY
     g.cell(row=r, column=11, value=src).alignment = WRAP
     g.cell(row=r, column=12, value=vendor).alignment = CENTER
+    lc = g.cell(row=r, column=13, value="Авито")
+    lc.hyperlink = avito_url(name)
+    lc.font = LINK
+    lc.alignment = CENTER
     r += 1
 gpu_last = r - 1
 note(g, r, "Compute — относительная матричная производительность (RTX 3090 = 1,00) для префилла, с учётом анлока FP16/BF16 у RTX 20/30/40. «Цена для расчёта» = Авито, если есть, иначе магазин.", 11)
@@ -248,11 +253,11 @@ g.freeze_panes = "A2"
 
 # ================================================================ CPU / Платы / Память
 c = WB.create_sheet("CPU")
-head(c, 1, ["Модель", "Сокет", "Ядра", "Каналов RAM", "Полоса RAM, ГБ/с", "TDP, Вт", "Цена, ₽", "Источник"])
+head(c, 1, ["Модель", "Сокет", "Ядра", "Каналов RAM", "Полоса RAM, ГБ/с", "TDP, Вт", "Цена, ₽", "Источник", "Авито"])
 m = WB.create_sheet("Платы")
-head(m, 1, ["Модель", "Сокет", "Тип RAM", "Слотов RAM", "Слотов PCIe x16", "Цена, ₽", "Источник"])
+head(m, 1, ["Модель", "Сокет", "Тип RAM", "Слотов RAM", "Слотов PCIe x16", "Цена, ₽", "Источник", "Авито"])
 p = WB.create_sheet("Память")
-head(p, 1, ["Комплект", "Тип", "Модулей", "ГБ/модуль", "Итого ГБ", "Цена, ₽", "Источник"])
+head(p, 1, ["Комплект", "Тип", "Модулей", "ГБ/модуль", "Итого ГБ", "Цена, ₽", "Источник", "Авито"])
 
 ranges = {}
 rc = rm = rp = 2
@@ -274,6 +279,10 @@ for plat in PLATFORMS:
         c.cell(row=rc, column=6, value=tdp)
         c.cell(row=rc, column=7, value=price).number_format = MONEY
         c.cell(row=rc, column=8, value=src).alignment = WRAP
+        lc = c.cell(row=rc, column=9, value="Авито")
+        lc.hyperlink = avito_url(name)
+        lc.font = LINK
+        lc.alignment = CENTER
         rc += 1
     m_start = rm
     for name, ram, rs, ps, price, src in plat["mbs"]:
@@ -284,6 +293,10 @@ for plat in PLATFORMS:
         m.cell(row=rm, column=5, value=ps)
         m.cell(row=rm, column=6, value=price).number_format = MONEY
         m.cell(row=rm, column=7, value=src).alignment = WRAP
+        lc = m.cell(row=rm, column=8, value="Авито")
+        lc.hyperlink = avito_url(name)
+        lc.font = LINK
+        lc.alignment = CENTER
         rm += 1
     p_start = rp
     for name, typ, mods, gb, price, src in plat["rams"]:
@@ -294,6 +307,10 @@ for plat in PLATFORMS:
         p.cell(row=rp, column=5, value=mods * gb)
         p.cell(row=rp, column=6, value=price).number_format = MONEY
         p.cell(row=rp, column=7, value=src).alignment = WRAP
+        lc = p.cell(row=rp, column=8, value="Авито")
+        lc.hyperlink = avito_url(name)
+        lc.font = LINK
+        lc.alignment = CENTER
         rp += 1
     ranges[plat["name"]] = {
         "cpu": f"'CPU'!$A${c_start}:$A${rc-1}",
@@ -311,7 +328,7 @@ widths(p, [32, 8, 9, 12, 10, 14, 30])
 
 # ================================================================ БП и корпус
 b = WB.create_sheet("БП_Корпус")
-head(b, 1, ["Компонент", "Тип", "Мощность, Вт", "Макс. длина GPU, мм", "Слотов GPU", "Цена, ₽", "Источник"])
+head(b, 1, ["Компонент", "Тип", "Мощность, Вт", "Макс. длина GPU, мм", "Слотов GPU", "Цена, ₽", "Источник", "Авито"])
 r = 2
 b.cell(row=r, column=1, value="Блоки питания").font = SUB_FONT
 b.cell(row=r, column=1).fill = SUB_FILL
@@ -324,6 +341,10 @@ for name, w, price, src in PSUS:
     b.cell(row=r, column=3, value=w)
     b.cell(row=r, column=6, value=price).number_format = MONEY
     b.cell(row=r, column=7, value=src).alignment = WRAP
+    lc = b.cell(row=r, column=8, value="Авито")
+    lc.hyperlink = avito_url(name)
+    lc.font = LINK
+    lc.alignment = CENTER
     r += 1
 psu_end = r - 1
 r += 1
@@ -339,6 +360,10 @@ for name, ln, slots, price, src in CASES:
     b.cell(row=r, column=5, value=slots)
     b.cell(row=r, column=6, value=price).number_format = MONEY
     b.cell(row=r, column=7, value=src).alignment = WRAP
+    lc = b.cell(row=r, column=8, value="Авито")
+    lc.hyperlink = avito_url(name)
+    lc.font = LINK
+    lc.alignment = CENTER
     r += 1
 case_end = r - 1
 widths(b, [34, 10, 14, 18, 12, 14, 34])
@@ -474,6 +499,32 @@ for i in range(len(MODELS)):
     k.cell(row=r, column=5, value=f'=IF(B{r}>0.8,"всё в VRAM",IF(B{r}>0.3,"VRAM + RAM-ярус","упирается в RAM/SSD"))')
     r += 1
 note(k, r + 1, "s — доля весов экспертов в VRAM (после вычета плотных весов и 2 ГБ контекста). Декод масштабируется по эффективной полосе со степенью из «Моделей», префилл — по compute и полосе RAM.", 5)
+
+k.cell(row=48, column=1, value="СТОИМОСТЬ ПОЗИЦИЙ И ССЫЛКИ НА АВИТО").font = SUB_FONT
+k.cell(row=48, column=1).fill = SUB_FILL
+k.merge_cells(start_row=48, start_column=1, end_row=48, end_column=4)
+head(k, 49, ["Позиция", "Выбранная модель", "Цена, ₽", "Авито"])
+breakdown = [
+    ("CPU", "=B3", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,7,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B3,CPU!$A:$I,9,0),""),"Авито")'),
+    ("Материнская плата", "=B4", '=IFERROR(VLOOKUP(B4,Платы!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B4,Платы!$A:$H,8,0),""),"Авито")'),
+    ("Память", "=B5", '=IFERROR(VLOOKUP(B5,Память!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B5,Память!$A:$H,8,0),""),"Авито")'),
+    ("Видеокарта", '=B6&" × "&B7', '=IFERROR(VLOOKUP(B6,GPU!$A:$K,10,0)*B7,0)', '=HYPERLINK(IFERROR(VLOOKUP(B6,GPU!$A:$M,13,0),""),"Авито")'),
+    ("Блок питания", "=B8", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B8,БП_Корпус!$A:$H,8,0),""),"Авито")'),
+    ("Корпус", "=B9", '=IFERROR(VLOOKUP(B9,БП_Корпус!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B9,БП_Корпус!$A:$H,8,0),""),"Авито")'),
+]
+rr = 50
+for label, name_f, price_f, link_f in breakdown:
+    k.cell(row=rr, column=1, value=label).font = Font(bold=True)
+    k.cell(row=rr, column=2, value=name_f).alignment = WRAP
+    k.cell(row=rr, column=3, value=price_f).number_format = MONEY
+    lc = k.cell(row=rr, column=4, value=link_f)
+    lc.alignment = CENTER
+    rr += 1
+k.cell(row=rr, column=1, value="ИТОГО по позициям").font = Font(bold=True)
+c = k.cell(row=rr, column=3, value="=SUM(C50:C55)")
+c.number_format = MONEY
+c.font = Font(bold=True)
+k.cell(row=rr, column=4, value='=IF(ROUND(C56-B24,0)=0,"сходится с итогом","расхождение с B24")')
 
 def dv(formula, cell):
     v = DataValidation(type="list", formula1=formula, allow_blank=False)
