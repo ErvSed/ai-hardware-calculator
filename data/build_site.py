@@ -16,6 +16,7 @@ def gpu(g):
         "name": g[0], "vram": g[1], "bw": g[2], "tdp": g[3], "len": g[4], "slots": g[5],
         "comp": g[6], "shop": g[7], "avito": g[8], "note": g[9], "vendor": g[10],
         "price": g[8] if g[8] else g[7],
+        "avitoUrl": db.avito_url(g[0]),
     }
 
 
@@ -26,22 +27,22 @@ data = {
             "name": p["name"],
             "title": p["title"],
             "cpus": [
-                {"name": c[0], "cores": c[1], "ch": c[2], "bw": c[3], "tdp": c[4], "price": c[5], "src": c[6], "platform": p["name"]}
+                {"name": c[0], "cores": c[1], "ch": c[2], "bw": c[3], "tdp": c[4], "price": c[5], "src": c[6], "platform": p["name"], "avitoUrl": db.avito_url(c[0])}
                 for c in p["cpus"]
             ],
             "mbs": [
-                {"name": m[0], "ram": m[1], "ramSlots": m[2], "slots": m[3], "price": m[4], "src": m[5], "platform": p["name"]}
+                {"name": m[0], "ram": m[1], "ramSlots": m[2], "slots": m[3], "price": m[4], "src": m[5], "platform": p["name"], "avitoUrl": db.avito_url(m[0])}
                 for m in p["mbs"]
             ],
             "rams": [
-                {"name": r[0], "type": r[1], "mods": r[2], "gb": r[3], "price": r[4], "src": r[5], "platform": p["name"]}
+                {"name": r[0], "type": r[1], "mods": r[2], "gb": r[3], "price": r[4], "src": r[5], "platform": p["name"], "avitoUrl": db.avito_url(r[0])}
                 for r in p["rams"]
             ],
         }
         for p in db.PLATFORMS
     ],
-    "psus": [{"name": p[0], "w": p[1], "price": p[2], "src": p[3]} for p in db.PSUS],
-    "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": c[3], "src": c[4]} for c in db.CASES],
+    "psus": [{"name": p[0], "w": p[1], "price": p[2], "src": p[3], "avitoUrl": db.avito_url(p[0])} for p in db.PSUS],
+    "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": c[3], "src": c[4], "avitoUrl": db.avito_url(c[0])} for c in db.CASES],
     "models": [
         {
             "name": m[0], "engine": m[1], "size": m[2], "active": m[3], "bpt": m[4], "dense": m[5],
