@@ -14,7 +14,7 @@ src = io.open(src_path, encoding="utf-8").read()
 
 start = src.index("# ================================================================ данные")
 end = src.index("# ================================================================ Инструкция")
-patched = src[:start] + "from db import GPU_ROWS, PLATFORMS, PSUS, CASES, MODELS\n\n" + src[end:]
+patched = src[:start] + "from db import GPU_ROWS, PLATFORMS, PSUS, CASES, MODELS, avito_url\n\n" + src[end:]
 
 patched = patched.replace("6 платформ: SP3, AM5, LGA4677, LGA4189, LGA3647, TR5",
                           "%d платформ: %s" % (len(PLATFORMS), ", ".join(p["name"] for p in PLATFORMS)))
