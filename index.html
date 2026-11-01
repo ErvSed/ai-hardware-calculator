@@ -41,6 +41,8 @@
     </div>
     <table class="tbl" id="checks"></table>
     <p class="verdict" id="verdict"></p>
+    <h3 class="h3">Стоимость по позициям</h3>
+    <table class="tbl" id="breakdown"></table>
   </section>
 
   <section class="panel">
@@ -114,8 +116,8 @@
     sel.cpu = sel.platform.cpus[0];
     sel.mb = sel.platform.mbs[0];
     sel.ram = sel.platform.rams[0];
-    fill($("cpu"), sel.platform.cpus, function(c){ return c.name + " · " + c.cores + " ядер · " + c.bw + " ГБ/с"; }, sel.cpu);
-    fill($("mb"), sel.platform.mbs, function(m){ return m.name + " · " + m.ram + " · " + m.slots + "×x16"; }, sel.mb);
+    fill($("cpu"), sel.platform.cpus, function(c){ return c.name + " · " + c.cores + " ядер · " + c.bw + " ГБ/с · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel.cpu);
+    fill($("mb"), sel.platform.mbs, function(m){ return m.name + " · " + m.ram + " · " + m.slots + "×x16 · " + m.price.toLocaleString("ru-RU") + " ₽"; }, sel.mb);
     fill($("ram"), sel.platform.rams, function(r){ return r.name + " · " + r.price.toLocaleString("ru-RU") + " ₽"; }, sel.ram);
     $("hint").textContent = sel.platform.title;
     render();
@@ -147,6 +149,21 @@
         (m.blocked ? "—" : num(m.prefill, 0)) + "</td><td>" + m.lim + "</td></tr>";
     }).join("");
 
+    var items = [
+      ["CPU", sel.cpu.name, sel.cpu.price, sel.cpu.avitoUrl],
+      ["Материнская плата", sel.mb.name, sel.mb.price, sel.mb.avitoUrl],
+      ["Память", sel.ram.name, sel.ram.price, sel.ram.avitoUrl],
+      ["Видеокарты", sel.gpu.name + " × " + sel.count, sel.gpu.price * sel.count, sel.gpu.avitoUrl],
+      ["Блок питания", sel.psu.name, sel.psu.price, sel.psu.avitoUrl],
+      ["Корпус", sel["case"].name, sel["case"].price, sel["case"].avitoUrl]
+    ];
+    $("breakdown").innerHTML = "<thead><tr><th>Позиция</th><th>Модель</th><th>Цена</th><th>Авито</th></tr></thead><tbody>" +
+      items.map(function(it){
+        return "<tr><td>" + it[0] + "</td><td>" + it[1] + "</td><td>" + money(it[2]) + "</td><td>" +
+          "<a href='" + it[3] + "' target='_blank' rel='noopener'>искать</a></td></tr>";
+      }).join("") +
+      "<tr class='total'><td>ИТОГО</td><td></td><td>" + money(r.price) + "</td><td></td></tr></tbody>";
+
     renderMax();
   }
 
@@ -160,7 +177,9 @@
     });
     var top = rows.slice(0, 30);
     $("max").querySelector("tbody").innerHTML = top.map(function(x, i){
-      return "<tr><td>" + (i + 1) + "</td><td>" + x.gpu + "</td><td>" + x.n + "</td><td>" + x.vram + " ГБ</td><td>" +
+      var g = DB.gpus.find(function(v){ return v.name === x.gpu; });
+      var link = g ? g.avitoUrl : "#";
+      return "<tr><td>" + (i + 1) + "</td><td><a href='" + link + "' target='_blank' rel='noopener'>" + x.gpu + "</a></td><td>" + x.n + "</td><td>" + x.vram + " ГБ</td><td>" +
         x.bwVram.toLocaleString("ru-RU") + "</td><td>" + money(x.price) + "</td><td>" + num(x.glmDec) + "</td><td>" +
         num(x.glmPP, 0) + "</td><td>" + num(x.qwenDec) + "</td><td>" + num(x.qwenPP, 0) + "</td><td>" +
         (x.perGlm ? money(x.perGlm) : "—") + "</td><td>" + (x.fits ? "да" : "нет") + "</td></tr>";
@@ -200,8 +219,8 @@
   fill($("platform"), DB.platforms, function(p){ return p.name; }, sel.platform);
   fill($("gpu"), DB.gpus, function(g){ return g.name + " · " + g.vram + " ГБ · " + (g.price ? g.price.toLocaleString("ru-RU") + " ₽" : "цена н/д") + " · " + g.vendor; }, sel.gpu);
   fill($("count"), [1, 2, 3, 4], function(n){ return n + " шт"; }, 2);
-  fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт"; }, sel.psu);
-  fill($("case"), DB.cases, function(c){ return c.name; }, sel["case"]);
+  fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт · " + p.price.toLocaleString("ru-RU") + " ₽"; }, sel.psu);
+  fill($("case"), DB.cases, function(c){ return c.name + " · до " + c.len + " мм · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel["case"]);
   $("count").value = "1";
   refreshPlatform();
 })();
