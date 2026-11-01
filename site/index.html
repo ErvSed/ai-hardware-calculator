@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Калькулятор LLM-железа: GLM-5.3, Qwen3.8, DeepSeek 4.1</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Калькулятор AI-железа</h1>
+  <p class="sub">Скорость GLM-5.3-Flash, Qwen3.8-Flash-Next и DeepSeek-V4.1-Flash на выбранной сборке.
+     База: <span id="stats"></span>. Цены — Авито и магазины, окт–ноя 2026.</p>
+</header>
+
+<main>
+  <section class="panel">
+    <h2>1. Железо</h2>
+    <div class="grid">
+      <label>Платформа<select id="platform"></select></label>
+      <label>Процессор<select id="cpu"></select></label>
+      <label>Материнская плата<select id="mb"></select></label>
+      <label>Память<select id="ram"></select></label>
+      <label>Видеокарта<select id="gpu"></select></label>
+      <label>Количество GPU<select id="count"></select></label>
+      <label>Блок питания<select id="psu"></select></label>
+      <label>Корпус<select id="case"></select></label>
+    </div>
+    <div id="hint" class="hint"></div>
+  </section>
+
+  <section class="panel">
+    <h2>2. Сборка</h2>
+    <div class="cards">
+      <div class="card"><span class="k">VRAM</span><span class="v" id="vram"></span></div>
+      <div class="card"><span class="k">Полоса VRAM</span><span class="v" id="bwv"></span></div>
+      <div class="card"><span class="k">Полоса RAM</span><span class="v" id="bwr"></span></div>
+      <div class="card"><span class="k">Compute</span><span class="v" id="comp"></span></div>
+      <div class="card"><span class="k">Мощность</span><span class="v" id="power"></span></div>
+      <div class="card wide"><span class="k">Цена сборки</span><span class="v" id="price"></span></div>
+    </div>
+    <table class="tbl" id="checks"></table>
+    <p class="verdict" id="verdict"></p>
+  </section>
+
+  <section class="panel">
+    <h2>3. Скорость по моделям <span class="muted">(оценка ±25 % декод, ±35 % префилл)</span></h2>
+    <table class="tbl" id="models">
+      <thead><tr><th>Модель</th><th>Движок</th><th>Доля в VRAM</th><th>Декод, ток/с</th><th>Префилл, ток/с</th><th>Ограничитель</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>4. Максимум по железу <span class="muted">(все карты × 1–4 на выбранной платформе)</span></h2>
+    <div class="toolbar">
+      <button data-sort="glmDec" class="active">по декоду GLM-L</button>
+      <button data-sort="perGlm">по ₽/ток/с GLM-L</button>
+      <button data-sort="price">по цене</button>
+      <span class="muted" id="rowcount"></span>
+    </div>
+    <div class="scroll">
+      <table class="tbl" id="max">
+        <thead><tr>
+          <th>#</th><th>Карта</th><th>шт</th><th>VRAM</th><th>Полоса</th><th>Цена сборки</th>
+          <th>GLM-L декод</th><th>GLM-L префилл</th><th>Qwen декод</th><th>Qwen префилл</th><th>₽/ток/с GLM-L</th><th>Слоты</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>5. Откуда цифры</h2>
+    <p class="muted">Опорные замеры: Maya #165 (2×3090 + EPYC 7452: 30,2 ток/с, 801 префилл), #157, #43, #149;
+      Strata docs/QUANTS.md (R9700: 63–64 ток/с), PR #2665 (2×2080 Ti: 52,4–57,9), PR #1617 (5090: 109,7);
+      DeepSeek-V4.1-Flash на 1×5090 (24,9 ток/с, 1842 префилл). Расчёт масштабируется по доле экспертов
+      в VRAM и полосе памяти — это оценка, а не замер.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Данные: <a href="https://github.com/Niko1221/Strata">Strata</a> ·
+     <a href="https://github.com/mw00/project-maya">Project Maya</a>. Цены: Авито и магазины РФ.
+     Файл Excel с той же базой — в репозитории.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="calc.js"></script>
+<script>
+(function(){
+  "use strict";
+  var $ = function(id){ return document.getElementById(id); };
+
+  var sel = {
+    platform: DB.platforms[0], cpu: null, mb: null, ram: null,
+    gpu: DB.gpus.filter(function(g){ return g.name.indexOf("RTX 3090 ") === 0; })[0] || DB.gpus[0],
+    count: 2, psu: DB.psus[0], "case": DB.cases[0], models: DB.models
+  };
+
+  function fill(selEl, items, getLabel, current){
+    selEl.innerHTML = "";
+    items.forEach(function(it, i){
+      var o = document.createElement("option");
+      o.value = i; o.textContent = getLabel(it);
+      if (it === current) o.selected = true;
+      selEl.appendChild(o);
+    });
+  }
+
+  function platformData(){ return sel.platform; }
+
+  function refreshPlatform(){
+    sel.cpu = sel.platform.cpus[0];
+    sel.mb = sel.platform.mbs[0];
+    sel.ram = sel.platform.rams[0];
+    fill($("cpu"), sel.platform.cpus, function(c){ return c.name + " · " + c.cores + " ядер · " + c.bw + " ГБ/с"; }, sel.cpu);
+    fill($("mb"), sel.platform.mbs, function(m){ return m.name + " · " + m.ram + " · " + m.slots + "×x16"; }, sel.mb);
+    fill($("ram"), sel.platform.rams, function(r){ return r.name + " · " + r.price.toLocaleString("ru-RU") + " ₽"; }, sel.ram);
+    $("hint").textContent = sel.platform.title;
+    render();
+  }
+
+  function money(v){ return Math.round(v).toLocaleString("ru-RU") + " ₽"; }
+  function num(v, d){ return v == null ? "—" : v.toFixed(d == null ? 1 : d); }
+
+  function render(){
+    var r = Calc.build(sel);
+
+    $("vram").textContent = r.vram + " ГБ";
+    $("bwv").textContent = r.bwVram.toLocaleString("ru-RU") + " ГБ/с";
+    $("bwr").textContent = r.bwRam + " ГБ/с";
+    $("comp").textContent = r.compute.toFixed(2);
+    $("power").textContent = Math.round(r.power) + " Вт (БП ≥ " + r.psuNeed + ")";
+    $("price").textContent = money(r.price);
+
+    $("checks").innerHTML = r.checks.map(function(c){
+      return '<tr class="' + (c.ok ? "ok" : "bad") + '"><td>' + c.name + '</td><td>' + (c.ok ? "OK" : c.msg) + '</td></tr>';
+    }).join("") + '<tr><td>Поддержка моделей</td><td>' + r.vendorOk + '</td></tr>';
+
+    var bad = r.checks.filter(function(c){ return !c.ok; }).length;
+    $("verdict").textContent = bad ? ("Проблем: " + bad + " — см. таблицу выше") : "Всё совместимо";
+
+    $("models").querySelector("tbody").innerHTML = r.models.map(function(m){
+      return "<tr" + (m.blocked ? ' class="bad"' : "") + "><td>" + m.name + "</td><td>" + m.engine + "</td><td>" +
+        (m.s * 100).toFixed(0) + " %</td><td>" + (m.blocked ? "нет NVIDIA" : num(m.decode)) + "</td><td>" +
+        (m.blocked ? "—" : num(m.prefill, 0)) + "</td><td>" + m.lim + "</td></tr>";
+    }).join("");
+
+    renderMax();
+  }
+
+  var sortKey = "glmDec";
+  function renderMax(){
+    var rows = Calc.maxTable(sel).filter(function(x){ return x.fits; });
+    rows.sort(function(a, b){
+      if (sortKey === "price") return a.price - b.price;
+      if (sortKey === "perGlm") return (a.perGlm || 1e12) - (b.perGlm || 1e12);
+      return (b.glmDec || 0) - (a.glmDec || 0);
+    });
+    var top = rows.slice(0, 30);
+    $("max").querySelector("tbody").innerHTML = top.map(function(x, i){
+      return "<tr><td>" + (i + 1) + "</td><td>" + x.gpu + "</td><td>" + x.n + "</td><td>" + x.vram + " ГБ</td><td>" +
+        x.bwVram.toLocaleString("ru-RU") + "</td><td>" + money(x.price) + "</td><td>" + num(x.glmDec) + "</td><td>" +
+        num(x.glmPP, 0) + "</td><td>" + num(x.qwenDec) + "</td><td>" + num(x.qwenPP, 0) + "</td><td>" +
+        (x.perGlm ? money(x.perGlm) : "—") + "</td><td>" + (x.fits ? "да" : "нет") + "</td></tr>";
+    }).join("");
+    $("rowcount").textContent = "показано " + top.length + " из " + rows.length;
+  }
+
+  // события
+  $("platform").addEventListener("change", function(e){
+    sel.platform = DB.platforms[+e.target.value];
+    refreshPlatform();
+  });
+  ["cpu", "mb", "ram", "gpu", "count", "psu", "case"].forEach(function(key){
+    $(key).addEventListener("change", function(e){
+      var v = +e.target.value;
+      if (key === "cpu") sel.cpu = sel.platform.cpus[v];
+      else if (key === "mb") sel.mb = sel.platform.mbs[v];
+      else if (key === "ram") sel.ram = sel.platform.rams[v];
+      else if (key === "gpu") sel.gpu = DB.gpus[v];
+      else if (key === "count") sel.count = v + 1;
+      else if (key === "psu") sel.psu = DB.psus[v];
+      else sel["case"] = DB.cases[v];
+      render();
+    });
+  });
+  document.querySelectorAll(".toolbar button").forEach(function(b){
+    b.addEventListener("click", function(){
+      sortKey = b.dataset.sort;
+      document.querySelectorAll(".toolbar button").forEach(function(x){ x.classList.remove("active"); });
+      b.classList.add("active");
+      renderMax();
+    });
+  });
+
+  // инициализация
+  $("stats").textContent = DB.platforms.length + " платформ, " + DB.gpus.length + " карт, " + DB.models.length + " модели";
+  fill($("platform"), DB.platforms, function(p){ return p.name; }, sel.platform);
+  fill($("gpu"), DB.gpus, function(g){ return g.name + " · " + g.vram + " ГБ · " + (g.price ? g.price.toLocaleString("ru-RU") + " ₽" : "цена н/д") + " · " + g.vendor; }, sel.gpu);
+  fill($("count"), [1, 2, 3, 4], function(n){ return n + " шт"; }, 2);
+  fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт"; }, sel.psu);
+  fill($("case"), DB.cases, function(c){ return c.name; }, sel["case"]);
+  $("count").value = "1";
+  refreshPlatform();
+})();
+</script>
+</body>
+</html>
