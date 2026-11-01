@@ -1,5 +1,16 @@
 # -*- coding: utf-8 -*-
 """Единая база данных железа для калькулятора (Excel + сайт)."""
+import urllib.parse
+
+AVITO_CITY = "sankt-peterburg"
+
+
+def avito_url(name):
+    """Ссылка на поиск Авито (СПб) по конкретной модели."""
+    q = (name.replace(" (мод)", "").replace(" ГБ", "GB")
+         .replace("×", "x").replace("ё", "е").strip())
+    return "https://www.avito.ru/%s?q=%s" % (AVITO_CITY, urllib.parse.quote(q))
+
 
 # имя, VRAM, полоса ГБ/с, TDP, длина мм, слотов, compute, цена магазин, цена Авито, статус, вендор
 GPU_ROWS = [
