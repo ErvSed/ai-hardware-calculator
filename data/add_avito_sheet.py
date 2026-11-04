@@ -9,7 +9,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-XLSX = os.path.join(HERE, "AI_Calculator_Hardware_Avito.xlsx")
+XLSX = os.environ.get("XLSX_OUT") or os.path.join(HERE, "AI_Calculator_Hardware_Avito.xlsx")
 PRICES = os.path.join(HERE, "avito_prices.json")
 sys.path.insert(0, HERE)
 import db  # noqa: E402
