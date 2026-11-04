@@ -262,6 +262,26 @@ const DB = {
    "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%205070%20Ti%2016GB"
   },
   {
+   "name": "RTX 5060 Ti 16 ГБ",
+   "vram": 16,
+   "bw": 448,
+   "tdp": 180,
+   "len": 245,
+   "slots": 2,
+   "comp": 0.42,
+   "shop": 0,
+   "avito": 70000,
+   "note": "Авито 50–60 тыс (ориентир)",
+   "vendor": "NVIDIA",
+   "arch": "Blackwell",
+   "kStrata": 1.15,
+   "price": 70000,
+   "avitoN": 46,
+   "avitoMin": 37000,
+   "avitoMax": 85800,
+   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%205060%20Ti%2016GB"
+  },
+  {
    "name": "RTX 5080 16 ГБ",
    "vram": 16,
    "bw": 960,
