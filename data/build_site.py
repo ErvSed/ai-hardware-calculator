@@ -17,6 +17,7 @@ def gpu(g):
     return {
         "name": g[0], "vram": g[1], "bw": g[2], "tdp": g[3], "len": g[4], "slots": g[5],
         "comp": g[6], "shop": g[7], "avito": av, "note": g[9], "vendor": g[10],
+        "arch": db.gpu_arch(g[0]),
         "price": av if av else g[7],
         "avitoN": st.get("ads_clean") or 0,
         "avitoMin": st.get("min"), "avitoMax": st.get("max"),
