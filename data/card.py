@@ -70,15 +70,16 @@ def make_card(b, out_path):
         ("Видеокарты", "%s × %d" % (b["gpu"]["name"], b["count"]), b["gpu"]["price"] * b["count"]),
         ("Питание", b["psu"]["name"], b["psu"]["price"]),
         ("Корпус", b["case"]["name"], b["case"]["price"]),
+        ("Накопитель", b["ssd"]["name"], b["ssd"]["price"]),
     ]
     y = y0 + 38
     for label, name, price in rows:
         d.text((x0, y), label, font=F["small"], fill=MUTED)
         d.text((x0 + 120, y), name[:44], font=F["body"], fill=TEXT)
         d.text((640, y + 1), money(price), font=F["mono"], fill=TEXT, anchor="ra")
-        y += 34
+        y += 30
         d.line([x0, y + 6, 640, y + 6], fill=LINE, width=1)
-        y += 16
+        y += 14
 
     d.text((x0, y + 6), "ИТОГО", font=F["h2"], fill=TEXT)
     d.text((640, y), money(b["price"]), font=F["big"], fill=ACCENT, anchor="ra")
