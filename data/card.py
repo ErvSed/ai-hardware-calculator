@@ -54,8 +54,8 @@ def make_card(b, out_path):
         size -= 2
         font_title = ImageFont.truetype("C:/Windows/Fonts/segoeuib.ttf", size)
     d.text((60, 74), title, font=font_title, fill=TEXT)
-    d.text((60, 136), "%s · %s ГБ RAM · %d ГБ VRAM · %d Вт" % (
-        b["platform"], b["ram"]["mods"] * b["ram"]["gb"], int(b["vram"]), b["power"]),
+    d.text((60, 136), "%s · %s ГБ RAM · %d ГБ VRAM · контекст %dK · %d Вт" % (
+        b["platform"], b["ram"]["mods"] * b["ram"]["gb"], int(b["vram"]), b["ctx"] // 1024, b["power"]),
         font=F["body"], fill=MUTED)
     d.text((W - 60, 56), "04.11.2026", font=F["small"], fill=MUTED, anchor="ra")
     d.text((W - 60, 78), "цены: Авито СПб", font=F["small"], fill=MUTED, anchor="ra")
