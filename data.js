@@ -1495,7 +1495,13 @@ const DB = {
    "price": 29623,
    "src": "srv-trade",
    "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NegoRack%20NR-M48%20%284U%2C%20650%20%D0%BC%D0%BC%29",
-   "avitoN": 0
+   "avitoN": 0,
+   "dims": [
+    430,
+    176,
+    650,
+    14.0
+   ]
   },
   {
    "name": "Корпус 4U PROCASE (430 мм)",
@@ -1504,7 +1510,13 @@ const DB = {
    "price": 22238,
    "src": "srv-trade",
    "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%204U%20PROCASE%20%28430%20%D0%BC%D0%BC%29",
-   "avitoN": 0
+   "avitoN": 0,
+   "dims": [
+    430,
+    176,
+    430,
+    9.0
+   ]
   },
   {
    "name": "Открытый стенд",
@@ -1513,7 +1525,13 @@ const DB = {
    "price": 2500,
    "src": "Авито (ориентир)",
    "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9%20%D1%81%D1%82%D0%B5%D0%BD%D0%B4",
-   "avitoN": 21
+   "avitoN": 21,
+   "dims": [
+    400,
+    350,
+    420,
+    4.0
+   ]
   },
   {
    "name": "Fractal Define 7 XL",
@@ -1522,7 +1540,13 @@ const DB = {
    "price": 33000,
    "src": "снят с продажи, ориентир",
    "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Fractal%20Define%207%20XL",
-   "avitoN": 0
+   "avitoN": 0,
+   "dims": [
+    240,
+    604,
+    566,
+    16.0
+   ]
   },
   {
    "name": "Lian Li PC-O11 Dynamic",
@@ -1531,7 +1555,13 @@ const DB = {
    "price": 7000,
    "src": "Авито (ориентир)",
    "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Lian%20Li%20PC-O11%20Dynamic",
-   "avitoN": 47
+   "avitoN": 47,
+   "dims": [
+    285,
+    465,
+    459,
+    13.0
+   ]
   },
   {
    "name": "Корпус ATX с 3 слотами (ориентир)",
@@ -1540,7 +1570,13 @@ const DB = {
    "price": 2000,
    "src": "Авито (ориентир)",
    "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%20ATX%20%D1%81%203%20%D1%81%D0%BB%D0%BE%D1%82%D0%B0%D0%BC%D0%B8%20%28%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%29",
-   "avitoN": 34
+   "avitoN": 34,
+   "dims": [
+    210,
+    470,
+    420,
+    8.0
+   ]
   }
  ],
  "models": [
