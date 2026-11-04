@@ -8,7 +8,7 @@ def gpu_by_name(name):
         if g[0] == name:
             return {"name": g[0], "vram": g[1], "bw": g[2], "tdp": g[3], "len": g[4],
                     "slots": g[5], "comp": g[6], "shop": g[7], "avito": g[8], "vendor": g[10],
-                    "arch": db.gpu_arch(g[0]),
+                    "arch": db.gpu_arch(g[0]), "kStrata": db.strata_factor(g[0]),
                     "price": db.avito_price(g[0], g[8]) or g[7]}
     raise KeyError(name)
 
@@ -83,6 +83,8 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
         blocked = ((engine.startswith("Maya") and g["vendor"] != "NVIDIA")
                    or (engine == "Basalt" and g["arch"] != "Blackwell"))
         reason = "нужен Blackwell" if engine == "Basalt" else "нет NVIDIA"
+        if not blocked and engine == "Strata":
+            dec *= g["kStrata"]
         models.append({"name": name, "engine": engine, "s": s,
                        "decode": None if blocked else dec,
                        "prefill": None if blocked else pp,
