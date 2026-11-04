@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 """Калькулятор максимума LLM: 6 платформ, расширенная база железа, зависимые списки."""
+import os
+
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.workbook.defined_name import DefinedName
 from openpyxl.utils import get_column_letter
 
-OUT = r"U:\Documents\deepseek-harness\Trash\AI_Calculator_Hardware_Avito.xlsx"
+OUT = os.environ.get("XLSX_OUT") or r"U:\Documents\deepseek-harness\Trash\AI_Calculator_Hardware_Avito.xlsx"
 MONEY = '#,##0" ₽"'
 NUM1 = '#,##0.0'
 NUM2 = '#,##0.00'
@@ -227,7 +229,7 @@ s.sheet_view.showGridLines = False
 
 # ================================================================ GPU
 g = WB.create_sheet("GPU")
-head(g, 1, ["Модель", "VRAM, ГБ", "Полоса, ГБ/с", "TDP, Вт", "Длина, мм", "Слотов", "Compute", "Цена магазин, ₽", "Цена Авито, ₽", "Цена для расчёта, ₽", "Источник / статус", "Вендор", "Авито", "Арх."])
+head(g, 1, ["Модель", "VRAM, ГБ", "Полоса, ГБ/с", "TDP, Вт", "Длина, мм", "Слотов", "Compute", "Цена магазин, ₽", "Цена Авито, ₽", "Цена для расчёта, ₽", "Источник / статус", "Вендор", "Авито", "Арх.", "k Strata"])
 r = 2
 for name, vram, bw, tdp, ln, slots, comp, shop, avito, src, vendor in GPU_ROWS:
     g.cell(row=r, column=1, value=name)
@@ -245,6 +247,7 @@ for name, vram, bw, tdp, ln, slots, comp, shop, avito, src, vendor in GPU_ROWS:
     g.cell(row=r, column=11, value=(src + (" · " + _note if _note else ""))).alignment = WRAP
     g.cell(row=r, column=12, value=vendor).alignment = CENTER
     g.cell(row=r, column=14, value=gpu_arch(name)).alignment = CENTER
+    g.cell(row=r, column=15, value=strata_factor(name)).number_format = NUM2
     lc = g.cell(row=r, column=13, value="Авито")
     lc.hyperlink = avito_url(name)
     lc.font = LINK
@@ -517,6 +520,8 @@ for i in range(len(MODELS)):
         guard = f'AND(Модели!B{md_row}="Basalt",IFERROR(VLOOKUP($B$6,GPU!$A:$N,14,0),"")<>"Blackwell"),"—",'
         dec_f = "IF(" + guard + dec_f + ")"
         pp_f = "IF(" + guard + pp_f + ")"
+    elif engine == "Strata":
+        dec_f = dec_f + "*IFERROR(VLOOKUP($B$6,GPU!$A:$O,15,0),1)"
     k.cell(row=r, column=1, value=f"=Модели!A{md_row}")
     k.cell(row=r, column=2, value=f"=MIN(1,MAX(0,($B$18-Модели!F{md_row}-2)/(Модели!C{md_row}-Модели!F{md_row})))").number_format = NUM2
     k.cell(row=r, column=3, value="=" + dec_f).number_format = NUM1
