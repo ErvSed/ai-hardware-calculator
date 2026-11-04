@@ -96,7 +96,7 @@
      Файл Excel с той же базой — в репозитории.</p>
 </footer>
 
-<script src="data.js?v=7e6211f7"></script>
+<script src="data.js?v=9c275b0b"></script>
 <script src="calc.js"></script>
 <script>
 (function(){
@@ -107,7 +107,7 @@
     var el = $("err");
     if (!el) return;
     el.style.display = "block";
-    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=7e6211f7.";
+    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=9c275b0b.";
   });
 
   var SSDS = (DB.ssds && DB.ssds.length) ? DB.ssds : [];
@@ -307,7 +307,7 @@
 
     // подвал
     line(60,H-78,W-60,H-78);
-    T("ervsed.github.io/ai-hardware-calculator",60,H-60,15,C.accent);
+    T("ervsed.github.io/ai-calculator-site",60,H-60,15,C.accent);
     T("цены — медианы объявлений Авито (СПб), 04.11.2026",W-60,H-60,15,C.muted,false,"right");
 
     var a = document.createElement("a");
