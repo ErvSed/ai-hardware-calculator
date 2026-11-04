@@ -50,7 +50,8 @@ def s_share(vram, dense, size):
 
 def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
           ram="8×32 ГБ DDR4-3200 ECC RDIMM", gpu="RTX 3090 24 ГБ", count=2,
-          psu="Seasonic PRIME TX-1600 (ATX 3.1)", case="NegoRack NR-M48 (4U, 650 мм)"):
+          psu="Seasonic PRIME TX-1600 (ATX 3.1)", case="NegoRack NR-M48 (4U, 650 мм)",
+          ssd=None):
     p = platform_by_name(platform)
     c = cpu_of(p, cpu)
     m = mb_of(p, mb)
@@ -58,15 +59,18 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
     g = gpu_by_name(gpu)
     ps = next(x for x in db.PSUS if x[0] == psu)
     cs = next(x for x in db.CASES if x[0] == case)
+    ssd = ssd or db.SSD_DEFAULT
+    sd = next(x for x in db.SSDS if x[0] == ssd)
     ps_price = db.avito_price(ps[0], ps[2])
     cs_price = db.avito_price(cs[0], cs[3])
+    sd_price = db.avito_price(sd[0], sd[3])
 
     vram = g["vram"] * count
     bw_vram = g["bw"] * count
     compute = g["comp"] * count
     bw_ram = c["bw"]
-    price = g["price"] * count + c["price"] + m["price"] + r["price"] + ps_price + cs_price
-    power = g["tdp"] * count * 1.1 + c["tdp"] * 1.3 + 100
+    price = g["price"] * count + c["price"] + m["price"] + r["price"] + ps_price + cs_price + sd_price
+    power = g["tdp"] * count * 1.1 + c["tdp"] * 1.3 + 100 + 10
 
     models = []
     for mm in db.MODELS:
@@ -92,6 +96,7 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
         "platform": platform, "cpu": c, "mb": m, "ram": r, "gpu": g, "count": count,
         "psu": {"name": ps[0], "w": ps[1], "price": ps_price},
         "case": {"name": cs[0], "len": cs[1], "slots": cs[2], "price": cs_price, "dims": dims, "volume": volume},
+        "ssd": {"name": sd[0], "gb": sd[1], "gbs": sd[2], "price": sd_price},
         "vram": vram, "bw_vram": bw_vram, "compute": compute, "bw_ram": bw_ram,
         "price": price, "power": round(power), "psu_need": int(-(-power / 0.75 // 50) * 50),
         "models": models,
