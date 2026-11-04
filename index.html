@@ -149,7 +149,7 @@
 
     $("models").querySelector("tbody").innerHTML = r.models.map(function(m){
       return "<tr" + (m.blocked ? ' class="bad"' : "") + "><td>" + m.name + "</td><td>" + m.engine + "</td><td>" +
-        (m.s * 100).toFixed(0) + " %</td><td>" + (m.blocked ? "нет NVIDIA" : num(m.decode)) + "</td><td>" +
+        (m.s * 100).toFixed(0) + " %</td><td>" + (m.blocked ? (m.reason || "недоступно") : num(m.decode)) + "</td><td>" +
         (m.blocked ? "—" : num(m.prefill, 0)) + "</td><td>" + m.lim + "</td></tr>";
     }).join("");
 
@@ -235,7 +235,7 @@
     var yy = y0 + 60;
     b.models.forEach(function(m){
       T(m.name.replace("GLM-5.3-Flash ","GLM ").replace("Qwen3.8-Flash ","Qwen ").replace("DeepSeek-V4.1-Flash ","DS ").slice(0,30), rx, yy, 19, C.text);
-      if (m.decode === null) { T("нет NVIDIA", rx+240, yy, 15, C.warn); }
+      if (m.decode === null) { T(m.reason || "недоступно", rx+240, yy, 15, C.warn); }
       else {
         T(m.decode.toFixed(1), rx+240, yy, 19, C.text);
         T(String(Math.round(m.prefill)), rx+360, yy, 19, C.muted);
