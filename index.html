@@ -25,6 +25,7 @@
       <label>Количество GPU<select id="count"></select></label>
       <label>Блок питания<select id="psu"></select></label>
       <label>Корпус<select id="case"></select></label>
+      <label>Накопитель (SSD)<select id="ssd"></select></label>
     </div>
     <div id="hint" class="hint"></div>
   </section>
@@ -41,6 +42,7 @@
     </div>
     <table class="tbl" id="checks"></table>
     <p class="verdict" id="verdict"></p>
+    <div class="cards" id="dims" style="margin-top:14px"></div>
     <h3 class="h3">Стоимость по позициям</h3>
     <table class="tbl" id="breakdown"></table>
     <div class="toolbar" style="margin-top:12px">
@@ -101,7 +103,9 @@
   var sel = {
     platform: DB.platforms[0], cpu: null, mb: null, ram: null,
     gpu: DB.gpus.filter(function(g){ return g.name.indexOf("RTX 3090 ") === 0; })[0] || DB.gpus[0],
-    count: 2, psu: DB.psus[0], "case": DB.cases[0], models: DB.models
+    count: 2, psu: DB.psus[0], "case": DB.cases[0],
+    ssd: DB.ssds.filter(function(s){ return s.name === DB.ssdDefault; })[0] || DB.ssds[0],
+    models: DB.models
   };
 
   function fill(selEl, items, getLabel, current){
@@ -147,6 +151,14 @@
     var bad = r.checks.filter(function(c){ return !c.ok; }).length;
     $("verdict").textContent = bad ? ("Проблем: " + bad + " — см. таблицу выше") : "Всё совместимо";
 
+    var d = sel["case"].dims || [];
+    $("dims").innerHTML = d.length
+      ? '<div class="card"><span class="k">Корпус Ш×В×Г</span><span class="v">' + d[0] + "×" + d[1] + "×" + d[2] + " мм</span></div>" +
+        '<div class="card"><span class="k">Объём / вес</span><span class="v">' + (d[0] * d[1] * d[2] / 1e6).toFixed(1) + " л · " + d[3] + " кг</span></div>" +
+        '<div class="card"><span class="k">Длина карты</span><span class="v">' + sel.gpu.len + " мм</span></div>" +
+        '<div class="card"><span class="k">Слотов на карту</span><span class="v">' + sel.gpu.slots + "</span></div>"
+      : "";
+
     $("models").querySelector("tbody").innerHTML = r.models.map(function(m){
       return "<tr" + (m.blocked ? ' class="bad"' : "") + "><td>" + m.name + "</td><td>" + m.engine + "</td><td>" +
         (m.s * 100).toFixed(0) + " %</td><td>" + (m.blocked ? (m.reason || "недоступно") : num(m.decode)) + "</td><td>" +
@@ -159,7 +171,8 @@
       ["Память", sel.ram.name, sel.ram.price, sel.ram.avitoUrl, sel.ram.avitoN],
       ["Видеокарты", sel.gpu.name + " × " + sel.count, sel.gpu.price * sel.count, sel.gpu.avitoUrl, sel.gpu.avitoN],
       ["Блок питания", sel.psu.name, sel.psu.price, sel.psu.avitoUrl, sel.psu.avitoN],
-      ["Корпус", sel["case"].name, sel["case"].price, sel["case"].avitoUrl, sel["case"].avitoN]
+      ["Корпус", sel["case"].name, sel["case"].price, sel["case"].avitoUrl, sel["case"].avitoN],
+      ["SSD", sel.ssd.name, sel.ssd.price, sel.ssd.avitoUrl, sel.ssd.avitoN]
     ];
     $("breakdown").innerHTML = "<thead><tr><th>Позиция</th><th>Модель</th><th>Цена (медиана Авито)</th><th>Объявл.</th><th>Авито</th></tr></thead><tbody>" +
       items.map(function(it){
@@ -213,16 +226,17 @@
       ["Процессор", sel.cpu.name, sel.cpu.price],
       ["Плата", sel.mb.name, sel.mb.price],
       ["Память", sel.ram.name, sel.ram.price],
-      ["Видеокарты", sel.gpu.name + " × " + b.count, sel.gpu.price*b.count],
+      ["Видеокарты", sel.gpu.name + " × " + sel.count, sel.gpu.price * sel.count],
       ["Питание", sel.psu.name, sel.psu.price],
-      ["Корпус", sel["case"].name, sel["case"].price]
+      ["Корпус", sel["case"].name, sel["case"].price],
+      ["SSD", sel.ssd.name, sel.ssd.price]
     ];
     var y = y0 + 36;
     rows.forEach(function(r){
       T(r[0],x0,y,15,C.muted);
       T(String(r[1]).slice(0,44),x0+120,y,19,C.text);
       T(money(r[2]),640,y,19,C.text,false,"right");
-      y += 34; line(x0,y+6,640,y+6); y += 16;
+      y += 30; line(x0,y+6,640,y+6); y += 14;
     });
     T("ИТОГО",x0,y+6,20,C.text,true);
     T(money(b.price),640,y+2,34,C.accent,true,"right");
@@ -310,7 +324,7 @@
     sel.platform = DB.platforms[+e.target.value];
     refreshPlatform();
   });
-  ["cpu", "mb", "ram", "gpu", "count", "psu", "case"].forEach(function(key){
+  ["cpu", "mb", "ram", "gpu", "count", "psu", "case", "ssd"].forEach(function(key){
     $(key).addEventListener("change", function(e){
       var v = +e.target.value;
       if (key === "cpu") sel.cpu = sel.platform.cpus[v];
@@ -319,6 +333,7 @@
       else if (key === "gpu") sel.gpu = DB.gpus[v];
       else if (key === "count") sel.count = v + 1;
       else if (key === "psu") sel.psu = DB.psus[v];
+      else if (key === "ssd") sel.ssd = DB.ssds[v];
       else sel["case"] = DB.cases[v];
       render();
     });
@@ -340,6 +355,7 @@
   fill($("count"), [1, 2, 3, 4], function(n){ return n + " шт"; }, 2);
   fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт · " + p.price.toLocaleString("ru-RU") + " ₽"; }, sel.psu);
   fill($("case"), DB.cases, function(c){ return c.name + " · до " + c.len + " мм · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel["case"]);
+  fill($("ssd"), DB.ssds, function(s){ return s.name + " · " + s.gb + " ГБ · " + s.price.toLocaleString("ru-RU") + " ₽"; }, sel.ssd);
   $("count").value = "1";
   refreshPlatform();
 })();
