@@ -43,6 +43,7 @@
       var blk = (maya && gpu.vendor !== "NVIDIA") || (blackwell && gpu.arch !== "Blackwell");
       var dec = blk ? null : decode(m, vram, bwVram, bwRam);
       var pp = blk ? null : prefill(m, compute, bwRam);
+      if (!blk && m.engine === "Strata") dec *= (gpu.kStrata || 1);
       var s = sShare(vram, m.dense, m.size);
       return {
         name: m.name, engine: m.engine, s: s, decode: dec, prefill: pp, blocked: blk,
