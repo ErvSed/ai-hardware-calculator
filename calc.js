@@ -5,17 +5,18 @@
 
   function clamp(x, a, b) { return Math.max(a, Math.min(b, x)); }
 
-  // доля весов экспертов, поместившаяся в VRAM (минус плотные веса и 2 ГБ на контекст)
-  function sShare(vram, dense, size) {
-    return clamp((vram - dense - 2) / (size - dense), 0, 1);
+  // доля весов экспертов, поместившаяся в VRAM (минус плотные веса и KV-кэш контекста)
+  function sShare(vram, dense, kv, size) {
+    return clamp((vram - dense - kv) / (size - dense), 0, 1);
   }
 
   function denom(s, bwVram, bwRam) { return s * bwVram + (1 - s) * bwRam; }
 
-  function anchorDenom(m) { return denom(sShare(m.aVram, m.dense, m.size), m.aBw, m.aRam); }
+  // опорная точка замерена при своём контексте (~2 ГБ KV) — её доля фиксирована
+  function anchorDenom(m) { return denom(sShare(m.aVram, m.dense, 2, m.size), m.aBw, m.aRam); }
 
-  function decode(m, vram, bwVram, bwRam) {
-    var s = sShare(vram, m.dense, m.size);
+  function decode(m, vram, bwVram, bwRam, kv) {
+    var s = sShare(vram, m.dense, kv, m.size);
     var d = denom(s, bwVram, bwRam);
     return m.aDec * Math.pow(d / anchorDenom(m), m.exp);
   }
@@ -30,6 +31,7 @@
   // полный расчёт сборки
   function build(sel) {
     var gpu = sel.gpu, n = sel.count, cpu = sel.cpu, mb = sel.mb, ram = sel.ram;
+    var ctx = sel.ctx || 32768;
     var vram = gpu.vram * n, bwVram = gpu.bw * n, compute = gpu.comp * n;
     var bwRam = cpu.bw;
     var price = gpu.price * n + cpu.price + mb.price + ram.price + sel.psu.price + sel.case.price +
@@ -41,10 +43,11 @@
       var maya = requiresNvidia(m);
       var blackwell = requiresBlackwell(m);
       var blk = (maya && gpu.vendor !== "NVIDIA") || (blackwell && gpu.arch !== "Blackwell");
-      var dec = blk ? null : decode(m, vram, bwVram, bwRam);
+      var kv = (m.kvRate || 0.1) * ctx / 1000;
+      var dec = blk ? null : decode(m, vram, bwVram, bwRam, kv);
       var pp = blk ? null : prefill(m, compute, bwRam);
       if (!blk && m.engine === "Strata") dec *= (gpu.kStrata || 1);
-      var s = sShare(vram, m.dense, m.size);
+      var s = sShare(vram, m.dense, kv, m.size);
       return {
         name: m.name, engine: m.engine, s: s, decode: dec, prefill: pp, blocked: blk,
         reason: blk ? (maya ? "нет NVIDIA" : "нужен Blackwell") : null,
@@ -64,7 +67,7 @@
     return {
       vram: vram, bwVram: bwVram, compute: compute, bwRam: bwRam,
       price: price, power: power, psuNeed: psuNeed,
-      models: models, checks: checks, count: n,
+      models: models, checks: checks, count: n, ctx: ctx,
       vendorOk: gpu.vendor === "NVIDIA" ? "NVIDIA — все модели" : gpu.vendor + " — только Strata (Qwen)",
     };
   }
