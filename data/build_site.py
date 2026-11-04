@@ -52,6 +52,8 @@ data = {
         for p in db.PLATFORMS
     ],
     "psus": [{"name": p[0], "w": p[1], "price": db.avito_price(p[0], p[2]), "src": p[3], "avitoUrl": db.avito_url(p[0]), "avitoN": pstat(p[0])} for p in db.PSUS],
+    "ssds": [{"name": s[0], "gb": s[1], "gbs": s[2], "price": s[3], "src": s[4], "avitoUrl": db.avito_url(s[0]), "avitoN": pstat(s[0])} for s in db.SSDS],
+    "ssdDefault": db.SSD_DEFAULT,
     "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": db.avito_price(c[0], c[3]), "src": c[4], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "dims": list(db.CASE_DIMS.get(c[0]) or [])} for c in db.CASES],
     "models": [
         {
