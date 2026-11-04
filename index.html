@@ -43,6 +43,10 @@
     <p class="verdict" id="verdict"></p>
     <h3 class="h3">Стоимость по позициям</h3>
     <table class="tbl" id="breakdown"></table>
+    <div class="toolbar" style="margin-top:12px">
+      <button id="dl">Скачать карточку сборки (PNG)</button>
+      <span class="muted">картинка с составом, ценами, скоростью и габаритами — 1200×1010</span>
+    </div>
   </section>
 
   <section class="panel">
@@ -168,6 +172,119 @@
     renderMax();
   }
 
+  // ---- карточка сборки в PNG (canvas)
+  function downloadCard(){
+    var b = Calc.build(sel);
+    var W = 1200, H = 1010, cv = document.createElement("canvas");
+    cv.width = W; cv.height = H;
+    var x = cv.getContext("2d");
+    var C = {bg:"#0f1115", panel:"#171a21", line:"#262b36", text:"#e6e8ee", muted:"#8b93a7", accent:"#4ade80", warn:"#f87171"};
+    function rr(X,Y,w,h,r,fill,stroke){
+      x.beginPath(); x.moveTo(X+r,Y);
+      x.arcTo(X+w,Y,X+w,Y+h,r); x.arcTo(X+w,Y+h,X,Y+h,r);
+      x.arcTo(X,Y+h,X,Y,r); x.arcTo(X,Y,X+w,Y,r); x.closePath();
+      if(fill){ x.fillStyle=fill; x.fill(); }
+      if(stroke){ x.strokeStyle=stroke; x.lineWidth=2; x.stroke(); }
+    }
+    function T(s,X,Y,size,color,bold,align){
+      x.font = (bold ? "bold " : "") + size + 'px "Segoe UI", Arial, sans-serif';
+      x.fillStyle = color || C.text; x.textAlign = align || "left"; x.textBaseline = "alphabetic";
+      x.fillText(s, X, Y);
+    }
+    function line(X1,Y1,X2,Y2){ x.strokeStyle = C.line; x.lineWidth = 1; x.beginPath(); x.moveTo(X1,Y1); x.lineTo(X2,Y2); x.stroke(); }
+    function money(v){ return Math.round(v).toLocaleString("ru-RU") + " ₽"; }
+
+    x.fillStyle = C.bg; x.fillRect(0,0,W,H);
+    rr(28,24,W-56,H-48,22,C.panel,C.line);
+    T("AI BUILD CARD",60,68,15,C.accent);
+    var title = b.count + "× " + sel.gpu.name + " · " + sel.cpu.name;
+    var size = 46;
+    x.font = "bold " + size + 'px "Segoe UI", Arial, sans-serif';
+    while (x.measureText(title).width > 1060 && size > 24) { size -= 2; x.font = "bold " + size + 'px "Segoe UI", Arial, sans-serif'; }
+    T(title,60,74+38,size,C.text,true);
+    T(sel.platform.name + " · " + (sel.ram.mods*sel.ram.gb) + " ГБ RAM · " + b.vram + " ГБ VRAM · " + Math.round(b.power) + " Вт", 60,150,19,C.muted);
+    T("04.11.2026",W-60,70,15,C.muted,false,"right");
+    T("цены: Авито СПб",W-60,92,15,C.muted,false,"right");
+
+    // состав
+    var x0 = 60, y0 = 230;
+    T("СОСТАВ И ЦЕНЫ",x0,y0,20,C.accent,true);
+    var rows = [
+      ["Процессор", sel.cpu.name, sel.cpu.price],
+      ["Плата", sel.mb.name, sel.mb.price],
+      ["Память", sel.ram.name, sel.ram.price],
+      ["Видеокарты", sel.gpu.name + " × " + b.count, sel.gpu.price*b.count],
+      ["Питание", sel.psu.name, sel.psu.price],
+      ["Корпус", sel["case"].name, sel["case"].price]
+    ];
+    var y = y0 + 36;
+    rows.forEach(function(r){
+      T(r[0],x0,y,15,C.muted);
+      T(String(r[1]).slice(0,44),x0+120,y,19,C.text);
+      T(money(r[2]),640,y,19,C.text,false,"right");
+      y += 34; line(x0,y+6,640,y+6); y += 16;
+    });
+    T("ИТОГО",x0,y+6,20,C.text,true);
+    T(money(b.price),640,y+2,34,C.accent,true,"right");
+
+    // скорость
+    var rx = 700;
+    T("СКОРОСТЬ (ток/с)",rx,y0,20,C.accent,true);
+    T("декод",rx,y0+30,15,C.muted);
+    T("префилл",rx+240,y0+30,15,C.muted);
+    var yy = y0 + 60;
+    b.models.forEach(function(m){
+      T(m.name.replace("GLM-5.3-Flash ","GLM ").replace("Qwen3.8-Flash ","Qwen ").replace("DeepSeek-V4.1-Flash ","DS ").slice(0,30), rx, yy, 19, C.text);
+      if (m.decode === null) { T("нет NVIDIA", rx+240, yy, 15, C.warn); }
+      else {
+        T(m.decode.toFixed(1), rx+240, yy, 19, C.text);
+        T(String(Math.round(m.prefill)), rx+360, yy, 19, C.muted);
+      }
+      yy += 32;
+    });
+    T("оценка ±25 % декод, ±35 % префилл", rx, yy+4, 14, C.muted);
+
+    // габариты
+    var by = 640;
+    line(60,by-22,W-60,by-22);
+    T("ГАБАРИТЫ СБОРКИ",60,by,20,C.accent,true);
+    var d = sel["case"].dims || [];
+    var cards = d.length
+      ? [["Корпус Ш×В×Г", d[0]+"×"+d[1]+"×"+d[2]+" мм"],
+         ["Объём / вес", (d[0]*d[1]*d[2]/1e6).toFixed(1)+" л · "+d[3]+" кг"],
+         ["Длина карты", sel.gpu.len+" мм"],
+         ["Слотов на карту", String(sel.gpu.slots)]]
+      : [["Длина карты", sel.gpu.len+" мм"]];
+    var cx = 60;
+    cards.forEach(function(cd){
+      rr(cx, by+40, 258, 88, 12, C.bg, C.line);
+      T(cd[0],cx+16,by+68,15,C.muted);
+      T(cd[1],cx+16,by+110,20,C.text,true);
+      cx += 270;
+    });
+
+    // питание
+    var py = by + 150;
+    T("ПИТАНИЕ",60,py,20,C.accent,true);
+    T("Потребление " + Math.round(b.power) + " Вт · рекомендуемый БП " + b.psuNeed + " Вт · установлен " + sel.psu.w + " Вт",60,py+34,19,C.text);
+    var warn = [];
+    if (sel.psu.w < b.psuNeed) warn.push("БП слабее расчётного");
+    if (sel["case"].slots < b.count) warn.push("в корпусе " + sel["case"].slots + " слота под GPU");
+    if (warn.length) T("! " + warn.join(" · "),60,py+62,19,C.warn);
+    T("VRAM " + b.vram + " ГБ · полоса " + b.bwVram.toLocaleString("ru-RU") + " ГБ/с · RAM " + b.bwRam + " ГБ/с · compute " + b.compute.toFixed(2),
+      60,py+(warn.length?92:62),19,C.muted);
+
+    // подвал
+    line(60,H-78,W-60,H-78);
+    T("ervsed.github.io/ai-hardware-calculator",60,H-60,15,C.accent);
+    T("цены — медианы объявлений Авито (СПб), 04.11.2026",W-60,H-60,15,C.muted,false,"right");
+
+    var a = document.createElement("a");
+    a.download = "build-card.png";
+    a.href = cv.toDataURL("image/png");
+    a.click();
+  }
+
   var sortKey = "glmDec";
   function renderMax(){
     var rows = Calc.maxTable(sel).filter(function(x){ return x.fits; });
@@ -208,6 +325,7 @@
   });
   document.querySelectorAll(".toolbar button").forEach(function(b){
     b.addEventListener("click", function(){
+      if (b.id === "dl") { downloadCard(); return; }
       sortKey = b.dataset.sort;
       document.querySelectorAll(".toolbar button").forEach(function(x){ x.classList.remove("active"); });
       b.classList.add("active");
