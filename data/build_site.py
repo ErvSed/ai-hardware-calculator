@@ -17,7 +17,7 @@ def gpu(g):
     return {
         "name": g[0], "vram": g[1], "bw": g[2], "tdp": g[3], "len": g[4], "slots": g[5],
         "comp": g[6], "shop": g[7], "avito": av, "note": g[9], "vendor": g[10],
-        "arch": db.gpu_arch(g[0]),
+        "arch": db.gpu_arch(g[0]), "kStrata": db.strata_factor(g[0]),
         "price": av if av else g[7],
         "avitoN": st.get("ads_clean") or 0,
         "avitoMin": st.get("min"), "avitoMax": st.get("max"),
@@ -72,5 +72,15 @@ with io.open(os.path.join(SITE, "data.js"), "w", encoding="utf-8") as f:
     f.write("if (typeof window !== 'undefined') { window.DB = DB; }\n")
     f.write("if (typeof module !== 'undefined') { module.exports = DB; }\n")
 
-print("data.js written:", len(payload), "bytes;",
+# версия в ссылке на data.js: новый index.html всегда тянет свежие данные, а не старый кэш
+import hashlib  # noqa: E402
+import re  # noqa: E402
+
+ver = hashlib.md5(payload.encode("utf-8")).hexdigest()[:8]
+index_path = os.path.join(SITE, "index.html")
+html = io.open(index_path, encoding="utf-8").read()
+html = re.sub(r'data\.js(\?v=[0-9a-f]+)?', "data.js?v=" + ver, html)
+io.open(index_path, "w", encoding="utf-8").write(html)
+
+print("data.js written:", len(payload), "bytes; версия", ver, ";",
       len(data["gpus"]), "GPU,", len(data["platforms"]), "platforms")
