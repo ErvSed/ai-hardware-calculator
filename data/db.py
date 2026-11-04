@@ -1,15 +1,89 @@
 # -*- coding: utf-8 -*-
 """Единая база данных железа для калькулятора (Excel + сайт)."""
+import json
+import os
 import urllib.parse
 
 AVITO_CITY = "sankt-peterburg"
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+# реальные цены, собранные avito_harvest.js (Opera + CDP)
+_AVITO = {}
+_prices_path = os.path.join(HERE, "avito_prices.json")
+if os.path.exists(_prices_path):
+    try:
+        with open(_prices_path, encoding="utf-8") as f:
+            for _k, _v in json.load(f).items():
+                if isinstance(_v, dict) and _v.get("median"):
+                    _AVITO[_k] = _v
+    except Exception:
+        _AVITO = {}
+
+
+def avito_stats(name):
+    """Данные Авито, если им можно доверять (иначе None).
+
+    Отсекаем: меньше 8 живых объявлений и медиану, которая расходится
+    с прежней оценкой сильнее допустимого (Авито часто ищет «похожее»
+    и подмешивает целые серверы и другие модели).
+    """
+    v = _AVITO.get(name)
+    if not v or not v.get("median"):
+        return None
+    n = v.get("ads_clean") or 0
+    if n < 8:
+        return None
+    est = v.get("estimate") or 0
+    if est:
+        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.2, 3.5)
+        r = float(v["median"]) / est
+        if r < lo or r > hi:
+            return None
+    return v
+
+
+def avito_reject_reason(name):
+    """Почему данные Авито не использованы (для листа «Авито»)."""
+    v = _AVITO.get(name)
+    if not v or not v.get("median"):
+        return "нет данных"
+    n = v.get("ads_clean") or 0
+    if n < 8:
+        return "мало объявлений (%d)" % n
+    est = v.get("estimate") or 0
+    if est:
+        r = float(v["median"]) / est
+        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.2, 3.5)
+        if r < lo or r > hi:
+            return "выброс (%.2f× от оценки)" % r
+    return ""
+
+
+def avito_price(name, estimate):
+    """Медиана реальных объявлений Авито, иначе — прежняя оценка."""
+    v = avito_stats(name)
+    return v["median"] if v else estimate
+
+
+def avito_note(name):
+    v = avito_stats(name)
+    if not v:
+        return ""
+    return "Авито: %d объявл., медиана %s ₽ (%s–%s)" % (
+        v.get("ads_clean") or 0, "{:,}".format(v["median"]).replace(",", " "),
+        "{:,}".format(v["min"]).replace(",", " ") if v.get("min") else "?",
+        "{:,}".format(v["max"]).replace(",", " ") if v.get("max") else "?")
+
+
+def avito_query(name):
+    """Поисковый запрос по конкретной модели (без города)."""
+    return (name.replace(" (мод)", "").replace(" ГБ", "GB")
+            .replace("×", "x").replace("ё", "е").strip())
 
 
 def avito_url(name):
     """Ссылка на поиск Авито (СПб) по конкретной модели."""
-    q = (name.replace(" (мод)", "").replace(" ГБ", "GB")
-         .replace("×", "x").replace("ё", "е").strip())
-    return "https://www.avito.ru/%s?q=%s" % (AVITO_CITY, urllib.parse.quote(q))
+    return "https://www.avito.ru/%s?q=%s" % (AVITO_CITY, urllib.parse.quote(avito_query(name)))
 
 
 # имя, VRAM, полоса ГБ/с, TDP, длина мм, слотов, compute, цена магазин, цена Авито, статус, вендор
