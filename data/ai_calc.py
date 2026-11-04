@@ -397,7 +397,7 @@ widths(sd, [42, 12, 14, 14, 34, 10])
 md = WB.create_sheet("Модели")
 head(md, 1, ["Модель", "Движок", "Размер, ГБ", "Активных, млрд", "Байт/токен, ГБ", "Dense, ГБ",
              "Anchor VRAM", "Anchor полоса VRAM", "Anchor полоса RAM", "Anchor compute",
-             "Anchor декод", "Anchor префилл", "s опорная", "Степень", "Источник опоры"])
+             "Anchor декод", "Anchor префилл", "s опорная", "Степень", "Источник опоры", "KV ГБ/1К"])
 r = 2
 for name, eng, size, act, bt, dense, avram, abwv, abwr, acomp, adec, app, ex, src in MODELS:
     md.cell(row=r, column=1, value=name)
@@ -415,6 +415,7 @@ for name, eng, size, act, bt, dense, avram, abwv, abwr, acomp, adec, app, ex, sr
     md.cell(row=r, column=13, value=f"=MIN(1,MAX(0,(G{r}-F{r}-2)/(C{r}-F{r})))").number_format = NUM2
     md.cell(row=r, column=14, value=ex).number_format = NUM2
     md.cell(row=r, column=15, value=src).alignment = WRAP
+    md.cell(row=r, column=16, value=kv_rate(name)).number_format = NUM2
     r += 1
 md_last = r - 1
 note(md, r, "Байт/токен = активные параметры × (размер кванта ÷ общее число параметров). «Степень» подобрана по второму замеру той же модели. Dense — плотные веса, всегда в VRAM.", 15)
@@ -444,6 +445,15 @@ for name, val, hint in inputs:
     cell.alignment = CENTER
     k.cell(row=r, column=3, value=hint).alignment = WRAP
     r += 1
+
+# контекст: отдельный ввод справа, чтобы не сдвигать блоки ниже
+k.cell(row=2, column=4, value="Контекст, токенов").font = Font(bold=True)
+_ctxi = k.cell(row=2, column=5, value=CTX_DEFAULT)
+_ctxi.fill = IN_FILL
+_ctxi.alignment = CENTER
+_ctxi.number_format = '#,##0'
+k.cell(row=3, column=4, value="KV-кэш (ГБ):").font = Font(bold=True)
+k.cell(row=3, column=5, value='=Модели!P2*$E$2/1000').number_format = NUM1
 
 for row, label, formula, fmt in [
     (10, "Вендор GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$L,12,0),"?")', None),
@@ -523,7 +533,7 @@ for i in range(len(MODELS)):
     elif engine == "Strata":
         dec_f = dec_f + "*IFERROR(VLOOKUP($B$6,GPU!$A:$O,15,0),1)"
     k.cell(row=r, column=1, value=f"=Модели!A{md_row}")
-    k.cell(row=r, column=2, value=f"=MIN(1,MAX(0,($B$18-Модели!F{md_row}-2)/(Модели!C{md_row}-Модели!F{md_row})))").number_format = NUM2
+    k.cell(row=r, column=2, value=f"=MIN(1,MAX(0,($B$18-Модели!F{md_row}-Модели!P{md_row}*$E$2/1000)/(Модели!C{md_row}-Модели!F{md_row})))").number_format = NUM2
     k.cell(row=r, column=3, value="=" + dec_f).number_format = NUM1
     k.cell(row=r, column=4, value="=" + pp_f).number_format = NUM1
     k.cell(row=r, column=5, value=f'=IF(B{r}>0.8,"всё в VRAM",IF(B{r}>0.3,"VRAM + RAM-ярус","упирается в RAM/SSD"))')
@@ -578,6 +588,7 @@ dv('"1,2,3,4"', "B7")
 dv("PSU_ALL", "B8")
 dv("CASE_ALL", "B9")
 dv("SSD_ALL", "B57")
+dv('"8192,32768,65536,131072,262144"', "E2")
 
 # ================================================================ Максимум
 mx = WB.create_sheet("Максимум")
@@ -602,7 +613,7 @@ for gi in range(2, gpu_last + 1):
         mx.cell(row=r, column=7, value=f"=GPU!J{gi}*C{r}").number_format = MONEY
         mx.cell(row=r, column=8, value=f"=G{r}+{plat}").number_format = MONEY
         for col, mrow in ((9, 2), (11, 4), (13, 6)):
-            s_expr = f"MIN(1,MAX(0,(D{r}-Модели!F{mrow}-2)/(Модели!C{mrow}-Модели!F{mrow})))"
+            s_expr = f"MIN(1,MAX(0,(D{r}-Модели!F{mrow}-Модели!P{mrow}*{K}$E$2/1000)/(Модели!C{mrow}-Модели!F{mrow})))"
             mx.cell(row=r, column=col, value=(
                 f"=Модели!K{mrow}*((({s_expr}*E{r}+(1-{s_expr})*{K}$B$14)"
                 f"/(Модели!M{mrow}*Модели!H{mrow}+(1-Модели!M{mrow})*Модели!I{mrow}))^Модели!N{mrow})"
