@@ -11,6 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 AVITO_BLOCK = {
     "2×48 ГБ DDR5-6000": "неоднозначный запрос: в заголовках разная ёмкость комплектов",
     "2×32 ГБ DDR5-6000": "неоднозначный запрос: в заголовках разная ёмкость комплектов",
+    "Gigabyte MZ31-AR0": "поиск находит не плату, а другие товары",
 }
 
 # реальные цены, собранные avito_harvest.js (Opera + CDP)
@@ -29,21 +30,22 @@ if os.path.exists(_prices_path):
 def avito_stats(name):
     """Данные Авито, если им можно доверять (иначе None).
 
-    Отсекаем: меньше 8 живых объявлений и медиану, которая расходится
+    Отсекаем: меньше 5 живых объявлений и медиану, которая расходится
     с прежней оценкой сильнее допустимого (Авито часто ищет «похожее»
-    и подмешивает целые серверы и другие модели).
+    и подмешивает целые серверы и другие модели). Комплекты памяти
+    (в названии «×») не берём: поиск отдаёт отдельные модули.
     """
-    if name in AVITO_BLOCK:
+    if name in AVITO_BLOCK or "×" in name and "ГБ" in name:
         return None
     v = _AVITO.get(name)
     if not v or not v.get("median"):
         return None
     n = v.get("ads_clean") or 0
-    if n < 8:
+    if n < 5:
         return None
     est = v.get("estimate") or 0
     if est:
-        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.2, 3.5)
+        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.1, 4.0)
         r = float(v["median"]) / est
         if r < lo or r > hi:
             return None
@@ -54,16 +56,18 @@ def avito_reject_reason(name):
     """Почему данные Авито не использованы (для листа «Авито»)."""
     if name in AVITO_BLOCK:
         return AVITO_BLOCK[name]
+    if "×" in name and "ГБ" in name:
+        return "поиск отдаёт отдельные модули, а не комплект — берём цену магазина"
     v = _AVITO.get(name)
     if not v or not v.get("median"):
         return "нет данных"
     n = v.get("ads_clean") or 0
-    if n < 8:
+    if n < 5:
         return "мало объявлений (%d)" % n
     est = v.get("estimate") or 0
     if est:
         r = float(v["median"]) / est
-        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.2, 3.5)
+        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.1, 4.0)
         if r < lo or r > hi:
             return "выброс (%.2f× от оценки)" % r
     return ""
