@@ -16,8 +16,8 @@
 | Материнских плат | 24 |
 | Комплектов памяти | 24 |
 | Накопителей (NVMe) | 5 |
-| Видеокарт | 32 (NVIDIA RTX 20/30/40/50, Ada/Quadro, Tesla; AMD RX 7000/9000 и R9700; Intel Arc) |
-| Видеокарт | 32 (NVIDIA RTX 20/30/40/50, Ada/Quadro, Tesla; AMD RX 7000/9000 и R9700; Intel Arc) |
+| Видеокарт | 33 (NVIDIA RTX 20/30/40/50 вкл. 5060 Ti, Ada/Quadro, Tesla; AMD RX 7000/9000 и R9700; Intel Arc) |
+| Видеокарт | 33 (NVIDIA RTX 20/30/40/50 вкл. 5060 Ti, Ada/Quadro, Tesla; AMD RX 7000/9000 и R9700; Intel Arc) |
 | Моделей | 7: GLM-5.3-Flash Maya-L и Maya-M, Qwen3.8-Flash UD-Q4_K_XL и UD-IQ4_XS (Strata), Qwen3.8-Flash Basalt NVFP4-DQ6_K и IQ3_S, DeepSeek-V4.1-Flash Maya-S |
 
 **Движки:** Project Maya (GLM, DeepSeek) · Strata (Qwen, GGUF) · **Basalt** — форк Strata под Qwen3.8-Flash-Next,
