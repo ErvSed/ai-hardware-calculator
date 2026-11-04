@@ -8,6 +8,7 @@ def gpu_by_name(name):
         if g[0] == name:
             return {"name": g[0], "vram": g[1], "bw": g[2], "tdp": g[3], "len": g[4],
                     "slots": g[5], "comp": g[6], "shop": g[7], "avito": g[8], "vendor": g[10],
+                    "arch": db.gpu_arch(g[0]),
                     "price": db.avito_price(g[0], g[8]) or g[7]}
     raise KeyError(name)
 
@@ -75,10 +76,13 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
         da = s_share(a_vram, dense, size) * a_bw + (1 - s_share(a_vram, dense, size)) * a_ram
         dec = a_dec * (d / da) ** exp
         pp = a_pp * (compute / a_comp) ** 0.35 * (bw_ram / a_ram) ** 0.2
-        blocked = (engine.startswith("Maya") and g["vendor"] != "NVIDIA")
+        blocked = ((engine.startswith("Maya") and g["vendor"] != "NVIDIA")
+                   or (engine == "Basalt" and g["arch"] != "Blackwell"))
+        reason = "нужен Blackwell" if engine == "Basalt" else "нет NVIDIA"
         models.append({"name": name, "engine": engine, "s": s,
                        "decode": None if blocked else dec,
                        "prefill": None if blocked else pp,
+                       "reason": reason if blocked else None,
                        "lim": "всё в VRAM" if s > 0.8 else ("VRAM + RAM-ярус" if s > 0.3 else "упирается в RAM/SSD")})
 
     dims = db.CASE_DIMS.get(case)
