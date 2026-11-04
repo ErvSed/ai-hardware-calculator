@@ -14,6 +14,7 @@
 </header>
 
 <main>
+  <div id="err" class="hint" style="display:none;border-color:#f87171;color:#f87171"></div>
   <section class="panel">
     <h2>1. Железо</h2>
     <div class="grid">
@@ -93,18 +94,26 @@
      Файл Excel с той же базой — в репозитории.</p>
 </footer>
 
-<script src="data.js"></script>
+<script src="data.js?v=15445398"></script>
 <script src="calc.js"></script>
 <script>
 (function(){
   "use strict";
   var $ = function(id){ return document.getElementById(id); };
 
+  window.addEventListener("error", function(e){
+    var el = $("err");
+    if (!el) return;
+    el.style.display = "block";
+    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=15445398.";
+  });
+
+  var SSDS = (DB.ssds && DB.ssds.length) ? DB.ssds : [];
   var sel = {
     platform: DB.platforms[0], cpu: null, mb: null, ram: null,
     gpu: DB.gpus.filter(function(g){ return g.name.indexOf("RTX 3090 ") === 0; })[0] || DB.gpus[0],
     count: 2, psu: DB.psus[0], "case": DB.cases[0],
-    ssd: DB.ssds.filter(function(s){ return s.name === DB.ssdDefault; })[0] || DB.ssds[0],
+    ssd: SSDS.filter(function(s){ return s.name === DB.ssdDefault; })[0] || SSDS[0] || null,
     models: DB.models
   };
 
@@ -171,9 +180,9 @@
       ["Память", sel.ram.name, sel.ram.price, sel.ram.avitoUrl, sel.ram.avitoN],
       ["Видеокарты", sel.gpu.name + " × " + sel.count, sel.gpu.price * sel.count, sel.gpu.avitoUrl, sel.gpu.avitoN],
       ["Блок питания", sel.psu.name, sel.psu.price, sel.psu.avitoUrl, sel.psu.avitoN],
-      ["Корпус", sel["case"].name, sel["case"].price, sel["case"].avitoUrl, sel["case"].avitoN],
-      ["SSD", sel.ssd.name, sel.ssd.price, sel.ssd.avitoUrl, sel.ssd.avitoN]
+      ["Корпус", sel["case"].name, sel["case"].price, sel["case"].avitoUrl, sel["case"].avitoN]
     ];
+    if (sel.ssd) items.push(["SSD", sel.ssd.name, sel.ssd.price, sel.ssd.avitoUrl, sel.ssd.avitoN]);
     $("breakdown").innerHTML = "<thead><tr><th>Позиция</th><th>Модель</th><th>Цена (медиана Авито)</th><th>Объявл.</th><th>Авито</th></tr></thead><tbody>" +
       items.map(function(it){
         var approx = it[4] ? "" : "≈ ";
@@ -228,9 +237,9 @@
       ["Память", sel.ram.name, sel.ram.price],
       ["Видеокарты", sel.gpu.name + " × " + sel.count, sel.gpu.price * sel.count],
       ["Питание", sel.psu.name, sel.psu.price],
-      ["Корпус", sel["case"].name, sel["case"].price],
-      ["SSD", sel.ssd.name, sel.ssd.price]
+      ["Корпус", sel["case"].name, sel["case"].price]
     ];
+    if (sel.ssd) rows.push(["SSD", sel.ssd.name, sel.ssd.price]);
     var y = y0 + 36;
     rows.forEach(function(r){
       T(r[0],x0,y,15,C.muted);
@@ -355,7 +364,7 @@
   fill($("count"), [1, 2, 3, 4], function(n){ return n + " шт"; }, 2);
   fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт · " + p.price.toLocaleString("ru-RU") + " ₽"; }, sel.psu);
   fill($("case"), DB.cases, function(c){ return c.name + " · до " + c.len + " мм · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel["case"]);
-  fill($("ssd"), DB.ssds, function(s){ return s.name + " · " + s.gb + " ГБ · " + s.price.toLocaleString("ru-RU") + " ₽"; }, sel.ssd);
+  if (SSDS.length && $("ssd")) fill($("ssd"), SSDS, function(s){ return s.name + " · " + s.gb + " ГБ · " + s.price.toLocaleString("ru-RU") + " ₽"; }, sel.ssd);
   $("count").value = "1";
   refreshPlatform();
 })();
