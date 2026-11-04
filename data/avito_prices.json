@@ -1,0 +1,4976 @@
+{
+ "RTX 2080 Ti 22 ГБ (мод)": {
+  "kind": "gpu",
+  "query": "RTX 2080 Ti 22GB",
+  "status": "ok",
+  "ads_total": 24,
+  "ads_used": 23,
+  "ads_clean": 20,
+  "min": 30000,
+  "p25": 48500,
+  "median": 60100,
+  "p75": 100000,
+  "max": 128600,
+  "estimate": 55000,
+  "samples": [
+   {
+    "price": 49000,
+    "title": "Видеокарта RTX 2080ti 22gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_2080ti_22gb_8409309621"
+   },
+   {
+    "price": 60000,
+    "title": "Видеокарта Nvidia RTX 2080TI 22gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_nvidia_rtx_2080ti_22gb_8235180138"
+   },
+   {
+    "price": 100000,
+    "title": "Комплект RTX 2080Ti Turbo 22G 2 + NVlink мост",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/komplekt_rtx_2080ti_turbo_22g_2_nvlink_most_8516935785"
+   },
+   {
+    "price": 46200,
+    "title": "RTX 2080 Ti 22 гб для ии, под заказ",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_2080_ti_22_gb_dlya_ii_pod_zakaz_8452585156"
+   },
+   {
+    "price": 54999,
+    "title": "Видеокарта nvidia RTX 2080 Ti 22 Гб",
+    "date": "",
+    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/videokarta_nvidia_rtx_2080_ti_22_gb_8241372052"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?localPriority=0&q=RTX+2080+Ti+22GB",
+  "ts": "2026-11-04T16:37:39.898Z"
+ },
+ "RTX 3060 12 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 3060 12GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 48,
+  "min": 23000,
+  "p25": 28875,
+  "median": 30000,
+  "p75": 32821,
+  "max": 41750,
+  "estimate": 24000,
+  "samples": [
+   {
+    "price": 30000,
+    "title": "Видеокарта MSI GeForce RTX 3060 gaming X 12gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_msi_geforce_rtx_3060_gaming_x_12gb_8328785404"
+   },
+   {
+    "price": 33990,
+    "title": "Как Новая - RTX 3060 12GB Msi Ventus(Гарантия)",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/kak_novaya_-_rtx_3060_12gb_msi_ventusgarantiya_8514840044"
+   },
+   {
+    "price": 28000,
+    "title": "Видеокарта colorful RTX3060 12Gb",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_colorful_rtx3060_12gb_8503517732"
+   },
+   {
+    "price": 32500,
+    "title": "Видеокарта Palit GeForce RTX 3060 Dual 12GB",
+    "date": "7 часов назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_palit_geforce_rtx_3060_dual_12gb_8575630693"
+   },
+   {
+    "price": 25000,
+    "title": "Evga rtx 3060 12 gb",
+    "date": "",
+    "url": "https://www.avito.ru/petrozavodsk/tovary_dlya_kompyutera/evga_rtx_3060_12_gb_7847711974"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3060+12GB",
+  "ts": "2026-11-04T16:37:44.249Z"
+ },
+ "RTX 3070 8 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 3070 8GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 47,
+  "min": 17000,
+  "p25": 30000,
+  "median": 33500,
+  "p75": 35500,
+  "max": 45000,
+  "estimate": 30000,
+  "samples": [
+   {
+    "price": 29999,
+    "title": "Gigabyte RTX 3070 8GB eagel",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_rtx_3070_8gb_eagel_8402824164"
+   },
+   {
+    "price": 33990,
+    "title": "Rtx 3070 8gb asus dual",
+    "date": "5 часов назад",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/rtx_3070_8gb_asus_dual_8473089052"
+   },
+   {
+    "price": 38999,
+    "title": "Видеокарта RTX 3070 Ti 8gb Asus Tuf Gaming",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/severodvinsk/tovary_dlya_kompyutera/videokarta_rtx_3070_ti_8gb_asus_tuf_gaming_8503203411"
+   },
+   {
+    "price": 33000,
+    "title": "RTX 3070 8gb gainward chasing wind",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_3070_8gb_gainward_chasing_wind_8423697181"
+   },
+   {
+    "price": 30000,
+    "title": "Видеокарта rtx 3070 jetsteam 8gb",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/velikie_luki/tovary_dlya_kompyutera/videokarta_rtx_3070_jetsteam_8gb_8530839753"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3070+8GB",
+  "ts": "2026-11-04T16:37:48.492Z"
+ },
+ "RTX 3080 10 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 3080 10GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 50,
+  "min": 18000,
+  "p25": 40000,
+  "median": 43450,
+  "p75": 45997,
+  "max": 89990,
+  "estimate": 40000,
+  "samples": [
+   {
+    "price": 35000,
+    "title": "Colorful iGame GeForce RTX 3080 Vulcan OC 10G",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/colorful_igame_geforce_rtx_3080_vulcan_oc_10g_7941924523"
+   },
+   {
+    "price": 43000,
+    "title": "RTX 3080 10gb Gainward phoenix",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_3080_10gb_gainward_phoenix_8511287414"
+   },
+   {
+    "price": 44000,
+    "title": "RTX 3080 10GB Palit gamingpro как новая",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_3080_10gb_palit_gamingpro_kak_novaya_8337516302"
+   },
+   {
+    "price": 37990,
+    "title": "Видеокарты RTX 3080 Turbo 10Gb / RTX 2080 Ti 11Gb",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarty_rtx_3080_turbo_10gb_rtx_2080_ti_11gb_8575414561"
+   },
+   {
+    "price": 40000,
+    "title": "Видеокарта rtx 3080 hp omen 10gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_3080_hp_omen_10gb_8463263925"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3080+10GB",
+  "ts": "2026-11-04T16:37:52.918Z"
+ },
+ "RTX 3080 Ti 12 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 3080 Ti 12GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 48,
+  "min": 24000,
+  "p25": 53974,
+  "median": 55000,
+  "p75": 60000,
+  "max": 78000,
+  "estimate": 50000,
+  "samples": [
+   {
+    "price": 59999,
+    "title": "Видеокарта RTX 3080 Ti 12gb Palit GameRock",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/severodvinsk/tovary_dlya_kompyutera/videokarta_rtx_3080_ti_12gb_palit_gamerock_8422229091"
+   },
+   {
+    "price": 53999,
+    "title": "Gigabyte GeForce RTX 3080 Ti gaming OC 12G",
+    "date": "5 часов назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/gigabyte_geforce_rtx_3080_ti_gaming_oc_12g_8575161083"
+   },
+   {
+    "price": 59990,
+    "title": "Msi RTX 3080Ti 12GB Ventus OC Идеал(Гарантия)",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/msi_rtx_3080ti_12gb_ventus_oc_idealgarantiya_8420569377"
+   },
+   {
+    "price": 53900,
+    "title": "Palit gamingpro RTX 3080 Ti 12GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/palit_gamingpro_rtx_3080_ti_12gb_8543950205"
+   },
+   {
+    "price": 60450,
+    "title": "MSI RTX 3080TI gaming X trio 12GB",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/msi_rtx_3080ti_gaming_x_trio_12gb_8372638727"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3080+Ti+12GB",
+  "ts": "2026-11-04T16:38:05.491Z"
+ },
+ "RTX 3090 24 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 3090 24GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 48,
+  "min": 100000,
+  "p25": 117962,
+  "median": 125000,
+  "p75": 138894,
+  "max": 204000,
+  "estimate": 70000,
+  "samples": [
+   {
+    "price": 135000,
+    "title": "Palit GeForce RTX 3090 Gaming pro 24GB",
+    "date": "",
+    "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/palit_geforce_rtx_3090_gaming_pro_24gb_8347728329"
+   },
+   {
+    "price": 139990,
+    "title": "Как Новая - Msi RTX 3090 24GB Gaming-X(Гарантия)",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/kak_novaya_-_msi_rtx_3090_24gb_gaming-xgarantiya_8414095171"
+   },
+   {
+    "price": 117848,
+    "title": "Видеокарта gigabyte nvidia rtx 3090 turbo 24gb",
+    "date": "3 часа назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_gigabyte_nvidia_rtx_3090_turbo_24gb_8364021234"
+   },
+   {
+    "price": 113000,
+    "title": "Видеокарта gigabyte nvidia rtx 3090 turbo 24gb",
+    "date": "3 часа назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_gigabyte_nvidia_rtx_3090_turbo_24gb_8517302399"
+   },
+   {
+    "price": 100000,
+    "title": "RTX 3090 24GB gddr6X",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_3090_24gb_gddr6x_8557031208"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3090+24GB",
+  "ts": "2026-11-04T16:38:09.782Z"
+ },
+ "RTX 3090 Ti 24 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 3090 Ti 24GB",
+  "status": "ok",
+  "ads_total": 37,
+  "ads_used": 36,
+  "ads_clean": 26,
+  "min": 82799,
+  "p25": 130750,
+  "median": 145000,
+  "p75": 155000,
+  "max": 289990,
+  "estimate": 90000,
+  "samples": [
+   {
+    "price": 100000,
+    "title": "RTX 3090 24GB gddr6X",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_3090_24gb_gddr6x_8557031208"
+   },
+   {
+    "price": 144348,
+    "title": "Gigabyte RTX 3090 TI gaming",
+    "date": "",
+    "url": "https://www.avito.ru/vologda/tovary_dlya_kompyutera/gigabyte_rtx_3090_ti_gaming_8470925577"
+   },
+   {
+    "price": 125000,
+    "title": "Rtx 3090 msi",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_3090_msi_8521176307"
+   },
+   {
+    "price": 135000,
+    "title": "MSI RTX 3090 Ti Gaming X Trio",
+    "date": "13 часов назад",
+    "url": "https://www.avito.ru/komsomolsk-na-amure/tovary_dlya_kompyutera/msi_rtx_3090_ti_gaming_x_trio_8588932745"
+   },
+   {
+    "price": 154380,
+    "title": "Видеокарта rtx 3090 ti",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_3090_ti_8515341910"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+3090+Ti+24GB",
+  "ts": "2026-11-04T16:38:14.151Z"
+ },
+ "RTX 4060 Ti 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 4060 Ti 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 43,
+  "ads_clean": 39,
+  "min": 23999,
+  "p25": 50000,
+  "median": 59790,
+  "p75": 65000,
+  "max": 125000,
+  "estimate": 45000,
+  "samples": [
+   {
+    "price": 53191,
+    "title": "Geforce RTX 4060 ti",
+    "date": "",
+    "url": "https://www.avito.ru/naro-fominsk/tovary_dlya_kompyutera/geforce_rtx_4060_ti_7986836695"
+   },
+   {
+    "price": 56900,
+    "title": "Видеокарта Palit RTX 4060ti 16gb JetStream",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/videokarta_palit_rtx_4060ti_16gb_jetstream_8490082811"
+   },
+   {
+    "price": 23999,
+    "title": "Nvidia Tesla V100 SXM 2 16 Гб / Корпус турбо",
+    "date": "",
+    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/nvidia_tesla_v100_sxm_2_16_gb_korpus_turbo_8145272271"
+   },
+   {
+    "price": 50000,
+    "title": "Видеокарта rtx palit jetstream 4060ti 16gb",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/noginsk/tovary_dlya_kompyutera/videokarta_rtx_palit_jetstream_4060ti_16gb_8401331091"
+   },
+   {
+    "price": 54000,
+    "title": "Видеокарта rtx 4060 ti 16 gb",
+    "date": "",
+    "url": "https://www.avito.ru/bataysk/tovary_dlya_kompyutera/videokarta_rtx_4060_ti_16_gb_7914138666"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+4060+Ti+16GB",
+  "ts": "2026-11-04T16:38:19.859Z"
+ },
+ "RTX 4070 12 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 4070 12GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 48,
+  "min": 36000,
+  "p25": 63500,
+  "median": 70000,
+  "p75": 80000,
+  "max": 100000,
+  "estimate": 65000,
+  "samples": [
+   {
+    "price": 63500,
+    "title": "Gigabyte RTX 4070 12GB",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_rtx_4070_12gb_8423401684"
+   },
+   {
+    "price": 63500,
+    "title": "Msi rtx 4070",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/msi_rtx_4070_8298906572"
+   },
+   {
+    "price": 68000,
+    "title": "Palit GeForce RTX 4070 super Dual OC 12GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/palit_geforce_rtx_4070_super_dual_oc_12gb_8382040251"
+   },
+   {
+    "price": 71000,
+    "title": "Видеокарта RTX 4070 12GB MSI ventus 2X",
+    "date": "1 час назад",
+    "url": "https://www.avito.ru/moskovskaya_oblast_ivanteevka/tovary_dlya_kompyutera/videokarta_rtx_4070_12gb_msi_ventus_2x_8473206867"
+   },
+   {
+    "price": 70000,
+    "title": "Rtx 4070 super palit 12GB",
+    "date": "5 часов назад",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/rtx_4070_super_palit_12gb_8575175356"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+4070+12GB",
+  "ts": "2026-11-04T16:38:25.651Z"
+ },
+ "RTX 4070 Ti Super 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 4070 Ti Super 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 45,
+  "ads_clean": 43,
+  "min": 55000,
+  "p25": 84500,
+  "median": 95000,
+  "p75": 109000,
+  "max": 180000,
+  "estimate": 80000,
+  "samples": [
+   {
+    "price": 95000,
+    "title": "MSI GeForce RTX 4070 Ti super 16G ventus 3X OC",
+    "date": "",
+    "url": "https://www.avito.ru/moskovskaya_oblast_krasnogorsk/tovary_dlya_kompyutera/msi_geforce_rtx_4070_ti_super_16g_ventus_3x_oc_8376667379"
+   },
+   {
+    "price": 109000,
+    "title": "Видеокарта Palit GeForce RTX 4070 Ti super 16gb",
+    "date": "",
+    "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/videokarta_palit_geforce_rtx_4070_ti_super_16gb_8471517625"
+   },
+   {
+    "price": 129000,
+    "title": "Asus RTX 4070 Ti super TUF Gaming White OC Edition",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskovskaya_oblast_krasnogorsk/tovary_dlya_kompyutera/asus_rtx_4070_ti_super_tuf_gaming_white_oc_edition_8517357857"
+   },
+   {
+    "price": 60000,
+    "title": "Видеокарта RTX 4070 ti super 16gb",
+    "date": "",
+    "url": "https://www.avito.ru/novosibirsk/tovary_dlya_kompyutera/videokarta_rtx_4070_ti_super_16gb_8458326105"
+   },
+   {
+    "price": 95000,
+    "title": "Gigabyte GeForce RTX 4070 Ti super aero",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_geforce_rtx_4070_ti_super_aero_8402388171"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+4070+Ti+Super+16GB",
+  "ts": "2026-11-04T16:38:30.020Z"
+ },
+ "RTX 4080 Super 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 4080 Super 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 39,
+  "ads_clean": 33,
+  "min": 54990,
+  "p25": 122000,
+  "median": 135000,
+  "p75": 220000,
+  "max": 319900,
+  "estimate": 100000,
+  "samples": [
+   {
+    "price": 128990,
+    "title": "Игровой пк - RTX 4070 / Ryzen 5 5600 / 16GB DDR4",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/igrovoy_pk_-_rtx_4070_ryzen_5_5600_16gb_ddr4_8296226908"
+   },
+   {
+    "price": 139900,
+    "title": "Игровой пк / RTX 4080 super / Ryzen 7 / 16GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/igrovoy_pk_rtx_4080_super_ryzen_7_16gb_8284647761"
+   },
+   {
+    "price": 220000,
+    "title": "Игровой пк RTX 4080 Super / Core i7 13700k / 32 GB",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/igrovoy_pk_rtx_4080_super_core_i7_13700k_32_gb_8437515755"
+   },
+   {
+    "price": 250000,
+    "title": "Игровой пк RTX 4080 super 16GB/i9-13900K/32GB DDR5",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/igrovoy_pk_rtx_4080_super_16gbi9-13900k32gb_ddr5_8388248354"
+   },
+   {
+    "price": 390000,
+    "title": "Игровой пк",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/igrovoy_pk_4496956222"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?q=RTX%204080%20Super%2016GB",
+  "ts": "2026-11-04T16:38:34.371Z"
+ },
+ "RTX 4090 24 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 4090 24GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 43,
+  "ads_clean": 33,
+  "min": 133000,
+  "p25": 280000,
+  "median": 295000,
+  "p75": 315000,
+  "max": 500000,
+  "estimate": 185000,
+  "samples": [
+   {
+    "price": 150000,
+    "title": "Апгрейд rtx 4090 24gb - rtx 4090 48gb",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/novorossiysk/tovary_dlya_kompyutera/apgreyd_rtx_4090_24gb_-_rtx_4090_48gb_8348834348"
+   },
+   {
+    "price": 275000,
+    "title": "Rtx 4090 24GB, Выкуп/Продажа",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_4090_24gb_vykupprodazha_7760963228"
+   },
+   {
+    "price": 147900,
+    "title": "Видеокарта rtx 4090 24gb",
+    "date": "",
+    "url": "https://www.avito.ru/izhevsk/tovary_dlya_kompyutera/videokarta_rtx_4090_24gb_8128111483"
+   },
+   {
+    "price": 421999,
+    "title": "Видеокарта nvidia RTX 4090 24 GB FE",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_nvidia_rtx_4090_24_gb_fe_8425210728"
+   },
+   {
+    "price": 285000,
+    "title": "MSI GeForce RTX 4090 suprim liquid X 24G",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/msi_geforce_rtx_4090_suprim_liquid_x_24g_8517324350"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?q=RTX+4090+24GB",
+  "ts": "2026-11-04T16:38:38.576Z"
+ },
+ "RTX 5070 Ti 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 5070 Ti 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 50,
+  "min": 57000,
+  "p25": 108000,
+  "median": 127000,
+  "p75": 142743,
+  "max": 154880,
+  "estimate": 110000,
+  "samples": [
+   {
+    "price": 144990,
+    "title": "Видеокарта RTX 5070Ti GamingPro-S 16Gb Palit",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/videokarta_rtx_5070ti_gamingpro-s_16gb_palit_7610220540"
+   },
+   {
+    "price": 144990,
+    "title": "Видеокарта RTX 5070Ti 16Gb Gigabyte Eagle Ice OC",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/videokarta_rtx_5070ti_16gb_gigabyte_eagle_ice_oc_8406320763"
+   },
+   {
+    "price": 145500,
+    "title": "RTX 5070 TI 16Gb gigabyte aero OC белая новые гара",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_5070_ti_16gb_gigabyte_aero_oc_belaya_novye_gara_8544103744"
+   },
+   {
+    "price": 107990,
+    "title": "Gigabyte RTX 5070 Ti aero OC 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_rtx_5070_ti_aero_oc_16_gb_8111172904"
+   },
+   {
+    "price": 110000,
+    "title": "Видеокарта Asus GeForce RTX 5070ti 16gb TUF Gaming",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_asus_geforce_rtx_5070ti_16gb_tuf_gaming_8354369534"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie-ASgBAgICAUTGB~pm?localPriority=0&q=RTX+5070+Ti+16GB",
+  "ts": "2026-11-04T16:38:44.360Z"
+ },
+ "RTX 5080 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 5080 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 42,
+  "min": 72000,
+  "p25": 135493,
+  "median": 201495,
+  "p75": 297338,
+  "max": 384990,
+  "estimate": 140000,
+  "samples": [
+   {
+    "price": 140000,
+    "title": "Видеокарта TUF Gaming RTX 5080 16GB OC",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_tuf_gaming_rtx_5080_16gb_oc_8354618567"
+   },
+   {
+    "price": 147800,
+    "title": "Gigabyte RTX 5080 windforce OC SFF 16 GB",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_rtx_5080_windforce_oc_sff_16_gb_8498944159"
+   },
+   {
+    "price": 169990,
+    "title": "Видеокарта Zotac RTX 5080 Solid Core OC 16gb",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_zotac_rtx_5080_solid_core_oc_16gb_8370128913"
+   },
+   {
+    "price": 133990,
+    "title": "Palit RTX 5080 GamingPro 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/palit_rtx_5080_gamingpro_16_gb_8239800138"
+   },
+   {
+    "price": 173980,
+    "title": "Видеокарта Palit RTX 5080 Infinity 3 OC 16GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_palit_rtx_5080_infinity_3_oc_16gb_8484932155"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?q=RTX%205080%2016GB",
+  "ts": "2026-11-04T16:38:48.754Z"
+ },
+ "RTX 5090 32 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 5090 32GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 46,
+  "ads_clean": 42,
+  "min": 268563,
+  "p25": 605875,
+  "median": 649990,
+  "p75": 695000,
+  "max": 880000,
+  "estimate": 780000,
+  "samples": [
+   {
+    "price": 450000,
+    "title": "Видеокарта Gigabyte GeForce RTX 5090",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_gigabyte_geforce_rtx_5090_8354384000"
+   },
+   {
+    "price": 699990,
+    "title": "RTX 5090 32GB Palit Gamerock",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_5090_32gb_palit_gamerock_8209932961"
+   },
+   {
+    "price": 599999,
+    "title": "Nvidia GeForce RTX 5090 32GB gddr7 Blackwell",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/nvidia_geforce_rtx_5090_32gb_gddr7_blackwell_8512077697"
+   },
+   {
+    "price": 682000,
+    "title": "Gigabyte aorus master ICE RTX 5090 32GB",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_aorus_master_ice_rtx_5090_32gb_8470554756"
+   },
+   {
+    "price": 654990,
+    "title": "MSI GeForce RTX 5090 32GB Gaming Trio OC",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/msi_geforce_rtx_5090_32gb_gaming_trio_oc_8370503078"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+5090+32GB",
+  "ts": "2026-11-04T16:38:52.960Z"
+ },
+ "RTX A4000 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX A4000 16GB",
+  "status": "ok",
+  "ads_total": 20,
+  "ads_used": 18,
+  "ads_clean": 17,
+  "min": 50000,
+  "p25": 95000,
+  "median": 100000,
+  "p75": 109999,
+  "max": 239444,
+  "estimate": 90000,
+  "samples": [
+   {
+    "price": 100000,
+    "title": "Видеокарты nvidia AMD GTX RTX Quadro FirePro",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarty_nvidia_amd_gtx_rtx_quadro_firepro_8326962986"
+   },
+   {
+    "price": 85000,
+    "title": "PNY nvidia RTX A4000 16GB",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/lyubertsy/tovary_dlya_kompyutera/pny_nvidia_rtx_a4000_16gb_8420333832"
+   },
+   {
+    "price": 89000,
+    "title": "Nvidia PNY RTX A4000 16GB",
+    "date": "",
+    "url": "https://www.avito.ru/sevastopol/tovary_dlya_kompyutera/nvidia_pny_rtx_a4000_16gb_8368967965"
+   },
+   {
+    "price": 84000,
+    "title": "Выкуп/Продажа Rtx A4000/A2000/A5000",
+    "date": "",
+    "url": "https://www.avito.ru/moskovskaya_oblast_moskovskiy/tovary_dlya_kompyutera/vykupprodazha_rtx_a4000a2000a5000_7728985633"
+   },
+   {
+    "price": 100000,
+    "title": "Видеокарта rtx a4000",
+    "date": "",
+    "url": "https://www.avito.ru/vologda/tovary_dlya_kompyutera/videokarta_rtx_a4000_2670770570"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=RTX+A4000+16GB",
+  "ts": "2026-11-04T16:38:57.240Z"
+ },
+ "RTX A4500 20 ГБ": {
+  "kind": "gpu",
+  "query": "RTX A4500 20GB",
+  "status": "ok",
+  "ads_total": 3,
+  "ads_used": 3,
+  "ads_clean": 2,
+  "min": 173200,
+  "p25": 173650,
+  "median": 174100,
+  "p75": 174549,
+  "max": 174999,
+  "estimate": 120000,
+  "samples": [
+   {
+    "price": 174999,
+    "title": "Видеокарта nvidia RTX A4500 20GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_nvidia_rtx_a4500_20gb_8302027077"
+   },
+   {
+    "price": 173200,
+    "title": "Видеокарта nvidia RTX A4500 20GB",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_nvidia_rtx_a4500_20gb_8341107569"
+   },
+   {
+    "price": 2000,
+    "title": "Компьютер для ии",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/predlozheniya_uslug/kompyuter_dlya_ii_8388580217"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?q=RTX+A4500+20GB",
+  "ts": "2026-11-04T16:39:01.655Z"
+ },
+ "RTX A5000 24 ГБ": {
+  "kind": "gpu",
+  "query": "RTX A5000 24GB",
+  "status": "ok",
+  "ads_total": 35,
+  "ads_used": 34,
+  "ads_clean": 32,
+  "min": 284500,
+  "p25": 285500,
+  "median": 289250,
+  "p75": 293000,
+  "max": 293000,
+  "estimate": 165000,
+  "samples": [
+   {
+    "price": 19000,
+    "title": "Материнская плата Supermicro X10DRG-Q (5pci x16)",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x10drg-q_5pci_x16_8517302219"
+   },
+   {
+    "price": 75000,
+    "title": "Видеокарта nvidia Tesla V100 32GB PCI E В наличии",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_nvidia_tesla_v100_32gb_pci_e_v_nalichii_8420203638"
+   },
+   {
+    "price": 284500,
+    "title": "Nvidia RTX A5000",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/nvidia_rtx_a5000_7260058764"
+   },
+   {
+    "price": 293000,
+    "title": "Видеокарта RTX A5000 24Gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_a5000_24gb_7651774288"
+   },
+   {
+    "price": 293000,
+    "title": "Видеокарта RTX A5000 24Gb",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/videokarta_rtx_a5000_24gb_8323076565"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+A5000+24GB",
+  "ts": "2026-11-04T16:39:05.882Z"
+ },
+ "RTX A6000 48 ГБ": {
+  "kind": "gpu",
+  "query": "RTX A6000 48GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 47,
+  "min": 395000,
+  "p25": 524500,
+  "median": 532000,
+  "p75": 544000,
+  "max": 999999,
+  "estimate": 400000,
+  "samples": [
+   {
+    "price": 395000,
+    "title": "Nvidia RTX A6000 48gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/nvidia_rtx_a6000_48gb_8545790554"
+   },
+   {
+    "price": 400000,
+    "title": "Nvidia А6000 48gb",
+    "date": "",
+    "url": "https://www.avito.ru/lesnoy_gorodok/tovary_dlya_kompyutera/nvidia_a6000_48gb_8521718004"
+   },
+   {
+    "price": 460000,
+    "title": "Видеокарта nvidia RTX A6000 48Gb (PNY)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_nvidia_rtx_a6000_48gb_pny_8252038775"
+   },
+   {
+    "price": 425000,
+    "title": "Nvidia RTX A6000 48GB",
+    "date": "",
+    "url": "https://www.avito.ru/kaliningrad/tovary_dlya_kompyutera/nvidia_rtx_a6000_48gb_8438876350"
+   },
+   {
+    "price": 507500,
+    "title": "Nvidia RTX A6000 48GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/nvidia_rtx_a6000_48gb_7261002867"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+A6000+48GB",
+  "ts": "2026-11-04T16:39:10.148Z"
+ },
+ "RTX 6000 Ada 48 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 6000 Ada 48GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 44,
+  "min": 217500,
+  "p25": 482000,
+  "median": 541000,
+  "p75": 904500,
+  "max": 1277351,
+  "estimate": 600000,
+  "samples": [
+   {
+    "price": 750000,
+    "title": "Nvidia RTX 6000 Ada 48GB — видеокарта для ии и 3D",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/nvidia_rtx_6000_ada_48gb_videokarta_dlya_ii_i_3d_8378905624"
+   },
+   {
+    "price": 1150000,
+    "title": "Наличие Видеокарта blackwell 6000 pro",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/nalichie_videokarta_blackwell_6000_pro_8125399248"
+   },
+   {
+    "price": 1049999,
+    "title": "Профессиональная видеокарта nvidia RTX6000 ADA48gb",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/professionalnaya_videokarta_nvidia_rtx6000_ada48gb_7701214566"
+   },
+   {
+    "price": 1999920,
+    "title": "Рабочая станция на RTX 6000 ada 48gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rabochaya_stantsiya_na_rtx_6000_ada_48gb_7893864093"
+   },
+   {
+    "price": 317000,
+    "title": "RTX 5000 Ada 32gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_5000_ada_32gb_7427592108"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+6000+Ada+48GB",
+  "ts": "2026-11-04T16:39:14.541Z"
+ },
+ "RTX 5880 Ada 45 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 5880 Ada 45GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 41,
+  "min": 44999,
+  "p25": 72990,
+  "median": 95200,
+  "p75": 165000,
+  "max": 230000,
+  "estimate": 450000,
+  "samples": [
+   {
+    "price": 90000,
+    "title": "Видеокарта asus rtx 5070 dual",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_asus_rtx_5070_dual_8364297727"
+   },
+   {
+    "price": 165000,
+    "title": "Rtx 5080 gigabyte gaming 16g",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_5080_gigabyte_gaming_16g_8400116479"
+   },
+   {
+    "price": 925000,
+    "title": "Видеокарта RTX 6000 Ada 48GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_6000_ada_48gb_7651528449"
+   },
+   {
+    "price": 352000,
+    "title": "Видеокарта nvidia A16 64GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_nvidia_a16_64gb_7651144352"
+   },
+   {
+    "price": 90000,
+    "title": "Rtx 5070 aero oc",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_5070_aero_oc_8327968203"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+5880+Ada+45GB",
+  "ts": "2026-11-04T16:39:19.005Z"
+ },
+ "RTX PRO 6000 Blackwell 96 ГБ": {
+  "kind": "gpu",
+  "query": "RTX PRO 6000 Blackwell 96GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 48,
+  "min": 971190,
+  "p25": 1562750,
+  "median": 1795000,
+  "p75": 2252500,
+  "max": 2999000,
+  "estimate": 0,
+  "samples": [
+   {
+    "price": 1680000,
+    "title": "Nvidia RTX PRO 6000 Blackwell Max-Q W/E 96GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/nvidia_rtx_pro_6000_blackwell_max-q_we_96gb_8406200903"
+   },
+   {
+    "price": 2480000,
+    "title": "Nvidia RTX PRO 6000 Blackwell Server Edition 96GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/nvidia_rtx_pro_6000_blackwell_server_edition_96gb_8359655954"
+   },
+   {
+    "price": 1570000,
+    "title": "Nvidia RTX PRO 6000 Blackwell Max-Q W/E 96GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/nvidia_rtx_pro_6000_blackwell_max-q_we_96gb_8399727592"
+   },
+   {
+    "price": 1977500,
+    "title": "Видеокарта nvidia RTX PRO 6000 Blackwell 96GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_nvidia_rtx_pro_6000_blackwell_96gb_8105926241"
+   },
+   {
+    "price": 1003860,
+    "title": "RTX PRO 6000D Blackwell Server 84GB Наличие",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_pro_6000d_blackwell_server_84gb_nalichie_8439523830"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+PRO+6000+Blackwell+96GB",
+  "ts": "2026-11-04T16:39:23.261Z"
+ },
+ "Radeon AI PRO R9700 32 ГБ": {
+  "kind": "gpu",
+  "query": "Radeon AI PRO R9700 32GB",
+  "status": "ok",
+  "ads_total": 16,
+  "ads_used": 16,
+  "ads_clean": 16,
+  "min": 199990,
+  "p25": 222490,
+  "median": 297495,
+  "p75": 428022,
+  "max": 476135,
+  "estimate": 0,
+  "samples": [
+   {
+    "price": 250000,
+    "title": "Видеокарта asus Radeon R9700 turbo AI PRO",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_asus_radeon_r9700_turbo_ai_pro_8347651208"
+   },
+   {
+    "price": 199990,
+    "title": "Vastarmor Radeon AI Pro R9700 anunciado con 32 GB",
+    "date": "",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/vastarmor_radeon_ai_pro_r9700_anunciado_con_32_gb_8176494858"
+   },
+   {
+    "price": 199990,
+    "title": "Sapphire Radeon AI PRO R9700 32gb (под заказ)",
+    "date": "",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/sapphire_radeon_ai_pro_r9700_32gb_pod_zakaz_8176504268"
+   },
+   {
+    "price": 199990,
+    "title": "Asus Radeon AI PRO R9700 Turbo 32GB",
+    "date": "",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/asus_radeon_ai_pro_r9700_turbo_32gb_8359679411"
+   },
+   {
+    "price": 199990,
+    "title": "Yeston Radeon AI PRO R9700 32gb",
+    "date": "",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/yeston_radeon_ai_pro_r9700_32gb_8413338429"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?localPriority=0&q=Radeon+AI+PRO+R9700+32GB",
+  "ts": "2026-11-04T16:39:27.475Z"
+ },
+ "Radeon RX 7900 XTX 24 ГБ": {
+  "kind": "gpu",
+  "query": "Radeon RX 7900 XTX 24GB",
+  "status": "ok",
+  "ads_total": 25,
+  "ads_used": 24,
+  "ads_clean": 21,
+  "min": 46000,
+  "p25": 100000,
+  "median": 105000,
+  "p75": 115500,
+  "max": 264990,
+  "estimate": 90000,
+  "samples": [
+   {
+    "price": 90000,
+    "title": "Видеокарта rx 7900 xtx 24gb",
+    "date": "11 часов назад",
+    "url": "https://www.avito.ru/novosibirsk/tovary_dlya_kompyutera/videokarta_rx_7900_xtx_24gb_8442626530"
+   },
+   {
+    "price": 115500,
+    "title": "Видеокарта rx 7900xtx 24gb идеал чек гарантия",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/taganrog/tovary_dlya_kompyutera/videokarta_rx_7900xtx_24gb_ideal_chek_garantiya_8400653505"
+   },
+   {
+    "price": 105000,
+    "title": "AMD Radeon RX 7900 XTX Sapphire Nitro+",
+    "date": "",
+    "url": "https://www.avito.ru/nizhniy_novgorod/tovary_dlya_kompyutera/amd_radeon_rx_7900_xtx_sapphire_nitro_8378551547"
+   },
+   {
+    "price": 105000,
+    "title": "Gigabyte rx 7900 xtx",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/gigabyte_rx_7900_xtx_8543343608"
+   },
+   {
+    "price": 105000,
+    "title": "Видеокарта Asrock phantom rx7900 xtx gaming oc",
+    "date": "",
+    "url": "https://www.avito.ru/kukmor/tovary_dlya_kompyutera/videokarta_asrock_phantom_rx7900_xtx_gaming_oc_4691112276"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Radeon+RX+7900+XTX+24GB",
+  "ts": "2026-11-04T16:39:31.716Z"
+ },
+ "Radeon RX 7900 XT 20 ГБ": {
+  "kind": "gpu",
+  "query": "Radeon RX 7900 XT 20GB",
+  "status": "ok",
+  "ads_total": 25,
+  "ads_used": 22,
+  "ads_clean": 18,
+  "min": 50000,
+  "p25": 65125,
+  "median": 83745,
+  "p75": 86750,
+  "max": 110000,
+  "estimate": 70000,
+  "samples": [
+   {
+    "price": 62000,
+    "title": "Radeon RX 7800 XT Hellhound",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/radeon_rx_7800_xt_hellhound_8440451248"
+   },
+   {
+    "price": 82500,
+    "title": "Видеокарта amd 7900 xt",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/surgut/tovary_dlya_kompyutera/videokarta_amd_7900_xt_8514507551"
+   },
+   {
+    "price": 84990,
+    "title": "MSI AMD Radeon RX 7900 XT gaming trio classic 20Gb",
+    "date": "",
+    "url": "https://www.avito.ru/dagestan_kizlyar/tovary_dlya_kompyutera/msi_amd_radeon_rx_7900_xt_gaming_trio_classic_20gb_7878705121"
+   },
+   {
+    "price": 110000,
+    "title": "Видеокарта Sapphire AMD Radeon RX 7900 XT nitro+",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_sapphire_amd_radeon_rx_7900_xt_nitro_8340251389"
+   },
+   {
+    "price": 15000,
+    "title": "Видеокарта amd redeon rx 7900 xt",
+    "date": "",
+    "url": "https://www.avito.ru/kazan/tovary_dlya_kompyutera/videokarta_amd_redeon_rx_7900_xt_8188970889"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Radeon+RX+7900+XT+20GB",
+  "ts": "2026-11-04T16:39:35.907Z"
+ },
+ "Radeon RX 9070 XT 16 ГБ": {
+  "kind": "gpu",
+  "query": "Radeon RX 9070 XT 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 50,
+  "min": 49000,
+  "p25": 79240,
+  "median": 88250,
+  "p75": 94618,
+  "max": 118570,
+  "estimate": 85000,
+  "samples": [
+   {
+    "price": 89900,
+    "title": "Игровая видеокарта Gigabyte Radeon RX 9070XT 16GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg_kolpino/tovary_dlya_kompyutera/igrovaya_videokarta_gigabyte_radeon_rx_9070xt_16gb_8186328843"
+   },
+   {
+    "price": 84990,
+    "title": "Amd radeon rx 9070 xt 16gb, ASRock Challenger",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_radeon_rx_9070_xt_16gb_asrock_challenger_8381907556"
+   },
+   {
+    "price": 94990,
+    "title": "Gigabyte AMD radeon RX 9070XT Gaming OC 16GB",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_amd_radeon_rx_9070xt_gaming_oc_16gb_8409966498"
+   },
+   {
+    "price": 79990,
+    "title": "Yeston RX 9070 XT 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/yeston_rx_9070_xt_16_gb_8358095848"
+   },
+   {
+    "price": 78000,
+    "title": "Gigabyte Видеокарта RX 9070 XT 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/gigabyte_videokarta_rx_9070_xt_16_gb_8450582366"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Radeon+RX+9070+XT+16GB",
+  "ts": "2026-11-04T16:39:40.174Z"
+ },
+ "Arc A770 16 ГБ": {
+  "kind": "gpu",
+  "query": "Arc A770 16GB",
+  "status": "ok",
+  "ads_total": 13,
+  "ads_used": 13,
+  "ads_clean": 13,
+  "min": 17900,
+  "p25": 30000,
+  "median": 40000,
+  "p75": 44500,
+  "max": 55000,
+  "estimate": 30000,
+  "samples": [
+   {
+    "price": 40000,
+    "title": "Intel Arc A770 16gb Limited Edition",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_arc_a770_16gb_limited_edition_8381958111"
+   },
+   {
+    "price": 28889,
+    "title": "Обслуженная Intel Arc A770 16GB (RTX 3060-3070)",
+    "date": "",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/obsluzhennaya_intel_arc_a770_16gb_rtx_3060-3070_7910958426"
+   },
+   {
+    "price": 17900,
+    "title": "Видеокарта intel arc a770 16gb",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/videokarta_intel_arc_a770_16gb_8344509034"
+   },
+   {
+    "price": 45000,
+    "title": "Видеокарта Intel arc A770 16gb photon edition",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/saratov/tovary_dlya_kompyutera/videokarta_intel_arc_a770_16gb_photon_edition_8521616737"
+   },
+   {
+    "price": 55000,
+    "title": "Видеокарта Intel Arc A770 16gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_intel_arc_a770_16gb_3437977823"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Arc+A770+16GB",
+  "ts": "2026-11-04T16:39:47.298Z"
+ },
+ "Arc B580 12 ГБ": {
+  "kind": "gpu",
+  "query": "Arc B580 12GB",
+  "status": "ok",
+  "ads_total": 20,
+  "ads_used": 18,
+  "ads_clean": 18,
+  "min": 25000,
+  "p25": 32000,
+  "median": 35000,
+  "p75": 37975,
+  "max": 60920,
+  "estimate": 35000,
+  "samples": [
+   {
+    "price": 32000,
+    "title": "Видеокарта,Intel B580/12GB.ARC",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/almetevsk/tovary_dlya_kompyutera/videokartaintel_b58012gb.arc_8473595725"
+   },
+   {
+    "price": 25000,
+    "title": "Intel arc b580 12gb",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/yurga/tovary_dlya_kompyutera/intel_arc_b580_12gb_8489919177"
+   },
+   {
+    "price": 36990,
+    "title": "Intel arc b580 12gb asrock",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/chelyabinsk/tovary_dlya_kompyutera/intel_arc_b580_12gb_asrock_8577347679"
+   },
+   {
+    "price": 34999,
+    "title": "Видеокарта maxsun Intel arc b580",
+    "date": "6 часов назад",
+    "url": "https://www.avito.ru/rostov-na-donu/tovary_dlya_kompyutera/videokarta_maxsun_intel_arc_b580_8436965324"
+   },
+   {
+    "price": 34000,
+    "title": "Видеокарта sparkle Intel Arc B580 Titan OC",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_sparkle_intel_arc_b580_titan_oc_8178090575"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Arc+B580+12GB",
+  "ts": "2026-11-04T16:39:51.623Z"
+ },
+ "Tesla V100 32 ГБ": {
+  "kind": "gpu",
+  "query": "Tesla V100 32GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 47,
+  "ads_clean": 42,
+  "min": 33000,
+  "p25": 65999,
+  "median": 75000,
+  "p75": 84500,
+  "max": 125000,
+  "estimate": 48000,
+  "samples": [
+   {
+    "price": 65000,
+    "title": "Видеокарта Tesla v100 32gb/Наличие",
+    "date": "",
+    "url": "https://www.avito.ru/novosibirsk/tovary_dlya_kompyutera/videokarta_tesla_v100_32gbnalichie_8290638496"
+   },
+   {
+    "price": 67999,
+    "title": "Nvidia Tesla V100 32 Гб Pcie",
+    "date": "",
+    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/nvidia_tesla_v100_32_gb_pcie_8081118558"
+   },
+   {
+    "price": 65990,
+    "title": "Nvidia Tesla V100 32GB PCIe / cuda / гарантия",
+    "date": "",
+    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/nvidia_tesla_v100_32gb_pcie_cuda_garantiya_8102278783"
+   },
+   {
+    "price": 75000,
+    "title": "Видеокарта nvidia Tesla V100 32GB PCI E В наличии",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_nvidia_tesla_v100_32gb_pci_e_v_nalichii_8420203638"
+   },
+   {
+    "price": 74999,
+    "title": "Nvidia Tesla V100 32 Гб pcie корпус турбо",
+    "date": "",
+    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/nvidia_tesla_v100_32_gb_pcie_korpus_turbo_8209605267"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=Tesla+V100+32GB",
+  "ts": "2026-11-04T16:39:57.367Z"
+ },
+ "Tesla P100 16 ГБ": {
+  "kind": "gpu",
+  "query": "Tesla P100 16GB",
+  "status": "ok",
+  "ads_total": 38,
+  "ads_used": 35,
+  "ads_clean": 24,
+  "min": 10000,
+  "p25": 11375,
+  "median": 12221,
+  "p75": 13611,
+  "max": 32000,
+  "estimate": 25000,
+  "samples": [
+   {
+    "price": 11500,
+    "title": "Tesla p100 16gb/Наличие",
+    "date": "",
+    "url": "https://www.avito.ru/novosibirsk/tovary_dlya_kompyutera/tesla_p100_16gbnalichie_8353961625"
+   },
+   {
+    "price": 11500,
+    "title": "Nvidia Tesla P100 pcie 16GB",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/nvidia_tesla_p100_pcie_16gb_8423595915"
+   },
+   {
+    "price": 11000,
+    "title": "Nvidia tesla p100 16gb с адаптером охлаждения",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/dolgoprudnyy/tovary_dlya_kompyutera/nvidia_tesla_p100_16gb_s_adapterom_ohlazhdeniya_8491757480"
+   },
+   {
+    "price": 10890,
+    "title": "Nvidia tesla p100 в наличии",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/nvidia_tesla_p100_v_nalichii_8414250991"
+   },
+   {
+    "price": 10988,
+    "title": "Nvidia Tesla P100 16 Gb",
+    "date": "",
+    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/nvidia_tesla_p100_16_gb_8235621959"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Tesla+P100+16GB",
+  "ts": "2026-11-04T16:40:01.543Z"
+ },
+ "Tesla P40 24 ГБ": {
+  "kind": "gpu",
+  "query": "Tesla P40 24GB",
+  "status": "ok",
+  "ads_total": 23,
+  "ads_used": 18,
+  "ads_clean": 11,
+  "min": 19000,
+  "p25": 23500,
+  "median": 25000,
+  "p75": 28800,
+  "max": 50000,
+  "estimate": 30000,
+  "samples": [
+   {
+    "price": 21000,
+    "title": "Видеокарта Tesla P40",
+    "date": "",
+    "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/videokarta_tesla_p40_7980489572"
+   },
+   {
+    "price": 25000,
+    "title": "Tesla P40 24GB (inno3d)",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/tesla_p40_24gb_inno3d_8503477182"
+   },
+   {
+    "price": 24000,
+    "title": "Nvidia Tesla p40 24gb",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/kommunarka/tovary_dlya_kompyutera/nvidia_tesla_p40_24gb_8445639178"
+   },
+   {
+    "price": 26000,
+    "title": "Nvidia tesla p40",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/nvidia_tesla_p40_8135849264"
+   },
+   {
+    "price": 50000,
+    "title": "Внешняя Nvidia tesla p40 24gb с сжо",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/dolgoprudnyy/tovary_dlya_kompyutera/vneshnyaya_nvidia_tesla_p40_24gb_s_szho_8398189771"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Tesla+P40+24GB",
+  "ts": "2026-11-04T16:40:05.944Z"
+ },
+ "Tesla T4 16 ГБ": {
+  "kind": "gpu",
+  "query": "Tesla T4 16GB",
+  "status": "ok",
+  "ads_total": 18,
+  "ads_used": 18,
+  "ads_clean": 17,
+  "min": 40000,
+  "p25": 62000,
+  "median": 75000,
+  "p75": 80000,
+  "max": 150000,
+  "estimate": 40000,
+  "samples": [
+   {
+    "price": 79950,
+    "title": "Nvidia Tesla T4 16GB HPE P09230-001 / P09571-001",
+    "date": "",
+    "url": "https://www.avito.ru/balashiha/tovary_dlya_kompyutera/nvidia_tesla_t4_16gb_hpe_p09230-001_p09571-001_8346524959"
+   },
+   {
+    "price": 40000,
+    "title": "Tesla t4",
+    "date": "",
+    "url": "https://www.avito.ru/volgograd/tovary_dlya_kompyutera/tesla_t4_8304472794"
+   },
+   {
+    "price": 62000,
+    "title": "Серверная видеокарта Nvidia Tesla T4 16Gb",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/servernaya_videokarta_nvidia_tesla_t4_16gb_7479667471"
+   },
+   {
+    "price": 60000,
+    "title": "Cерверная видеокарта nvidia Tesla T4 16G GPU",
+    "date": "",
+    "url": "https://www.avito.ru/himki/tovary_dlya_kompyutera/cervernaya_videokarta_nvidia_tesla_t4_16g_gpu_8232005380"
+   },
+   {
+    "price": 63000,
+    "title": "Видеокарта Nvidia Tesla T4 с 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_nvidia_tesla_t4_s_16_gb_8299375215"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Tesla+T4+16GB",
+  "ts": "2026-11-04T16:40:10.196Z"
+ },
+ "AMD EPYC 7402": {
+  "kind": "cpu",
+  "query": "AMD EPYC 7402",
+  "status": "ok",
+  "ads_total": 38,
+  "ads_used": 37,
+  "ads_clean": 23,
+  "min": 9900,
+  "p25": 10070,
+  "median": 17500,
+  "p75": 22275,
+  "max": 60000,
+  "estimate": 30000,
+  "samples": [
+   {
+    "price": 9962,
+    "title": "Epyc 7402",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/epyc_7402_8499092350"
+   },
+   {
+    "price": 9962,
+    "title": "Epyc 7402",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/epyc_7402_8437103616"
+   },
+   {
+    "price": 9962,
+    "title": "Epyc 7402",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/epyc_7402_8410235901"
+   },
+   {
+    "price": 17500,
+    "title": "Серверный процессор AMD epyc 7402",
+    "date": "",
+    "url": "https://www.avito.ru/saratov/tovary_dlya_kompyutera/servernyy_protsessor_amd_epyc_7402_8327570239"
+   },
+   {
+    "price": 10700,
+    "title": "Процессор epyc 7402",
+    "date": "",
+    "url": "https://www.avito.ru/kursk/tovary_dlya_kompyutera/protsessor_epyc_7402_8326241945"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=AMD+EPYC+7402",
+  "ts": "2026-11-04T16:40:14.461Z"
+ },
+ "AMD EPYC 7443": {
+  "kind": "cpu",
+  "query": "AMD EPYC 7443",
+  "status": "ok",
+  "ads_total": 37,
+  "ads_used": 36,
+  "ads_clean": 19,
+  "min": 175500,
+  "p25": 357392,
+  "median": 500137,
+  "p75": 600759,
+  "max": 845178,
+  "estimate": 98937,
+  "samples": [
+   {
+    "price": 20000,
+    "title": "Процессоры AMD epyc",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_amd_epyc_7573769678"
+   },
+   {
+    "price": 64000,
+    "title": "Процессор AMD epyc 7443",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_epyc_7443_7509311992"
+   },
+   {
+    "price": 62000,
+    "title": "Процессор AMD epyc 7443P",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_epyc_7443p_7509076340"
+   },
+   {
+    "price": 19000,
+    "title": "Процессоры AMD epyc",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_amd_epyc_3358189896"
+   },
+   {
+    "price": 93000,
+    "title": "AMD epyc 7742 (64C/128T, 2.25/3.4GHz, 225W)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_epyc_7742_64c128t_2.253.4ghz_225w_8199139973"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?localPriority=0&q=AMD+EPYC+7443",
+  "ts": "2026-11-04T16:40:18.823Z"
+ },
+ "AMD EPYC 7502P": {
+  "kind": "cpu",
+  "query": "AMD EPYC 7502P",
+  "status": "ok",
+  "ads_total": 3,
+  "ads_used": 2,
+  "ads_clean": 1,
+  "min": 464382,
+  "p25": 464382,
+  "median": 464382,
+  "p75": 464382,
+  "max": 464382,
+  "estimate": 46238,
+  "samples": [
+   {
+    "price": 85000,
+    "title": "Процессор AMD epyc 4584PX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_epyc_4584px_7509582085"
+   },
+   {
+    "price": 464382,
+    "title": "Сервер Gigabyte WIT WG-C1.R1H.H210.A2-252004646",
+    "date": "",
+    "url": "https://www.avito.ru/ekaterinburg/tovary_dlya_kompyutera/server_gigabyte_wit_wg-c1.r1h.h210.a2-252004646_3303241122"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=AMD+EPYC+7502P",
+  "ts": "2026-11-04T16:40:23.066Z"
+ },
+ "AMD EPYC 7543": {
+  "kind": "cpu",
+  "query": "AMD EPYC 7543",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 24,
+  "min": 333900,
+  "p25": 517161,
+  "median": 680000,
+  "p75": 917400,
+  "max": 1329900,
+  "estimate": 86853,
+  "samples": [
+   {
+    "price": 20000,
+    "title": "Процессоры AMD epyc",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_amd_epyc_7573769678"
+   },
+   {
+    "price": 70000,
+    "title": "Процессор AMD epyc 7543P",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_epyc_7543p_7509499547"
+   },
+   {
+    "price": 65000,
+    "title": "Процессор AMD epyc 7543",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_epyc_7543_7509335874"
+   },
+   {
+    "price": 87000,
+    "title": "AMD epyc 7543 (32C/64T, 2.8/3.7GHz, 240W)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_epyc_7543_32c64t_2.83.7ghz_240w_8199764061"
+   },
+   {
+    "price": 71500,
+    "title": "AMD epyc 7502 (32C/64T, 2.5/3.35GHz, 180W)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_epyc_7502_32c64t_2.53.35ghz_180w_8167772454"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?localPriority=0&q=AMD+EPYC+7543",
+  "ts": "2026-11-04T16:40:27.596Z"
+ },
+ "AMD EPYC 7702P": {
+  "kind": "cpu",
+  "query": "AMD EPYC 7702P",
+  "status": "ok",
+  "ads_total": 7,
+  "ads_used": 6,
+  "ads_clean": 1,
+  "min": 102923,
+  "p25": 102923,
+  "median": 102923,
+  "p75": 102923,
+  "max": 102923,
+  "estimate": 45000,
+  "samples": [
+   {
+    "price": 19000,
+    "title": "Процессоры AMD epyc",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_amd_epyc_3358189896"
+   },
+   {
+    "price": 20000,
+    "title": "Процессоры AMD epyc",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_amd_epyc_7573769678"
+   },
+   {
+    "price": 20000,
+    "title": "Процессоры AMD epyc",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessory_amd_epyc_7541571060"
+   },
+   {
+    "price": 102923,
+    "title": "Процессор AMD epyc 7702P",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_amd_epyc_7702p_4477789685"
+   },
+   {
+    "price": 777777,
+    "title": "Процессоры AMD epyc / Threadripper",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessory_amd_epyc_threadripper_7854322153"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=AMD+EPYC+7702P",
+  "ts": "2026-11-04T16:40:31.828Z"
+ },
+ "Supermicro H12SSL-I-B": {
+  "kind": "mb",
+  "query": "Supermicro H12SSL-I-B",
+  "status": "ok",
+  "ads_total": 3,
+  "ads_used": 3,
+  "ads_clean": 2,
+  "min": 2497186,
+  "p25": 2592861,
+  "median": 2688536,
+  "p75": 2784210,
+  "max": 2879885,
+  "estimate": 108100,
+  "samples": [
+   {
+    "price": 12000,
+    "title": "Новый AMD epyc 7402 / 7F32 8 ядер 3.7 ггц",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/novyy_amd_epyc_7402_7f32_8_yader_3.7_ggts_7947211800"
+   },
+   {
+    "price": 2497186,
+    "title": "Сервер SuperMicro AS -1114CS-TNR с НДС",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_supermicro_as_-1114cs-tnr_s_nds_8129829884"
+   },
+   {
+    "price": 2879885,
+    "title": "Сервер Supermicro AS -2014CS-TR с НДС",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_supermicro_as_-2014cs-tr_s_nds_8129631660"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Supermicro+H12SSL-I-B",
+  "ts": "2026-11-04T16:40:36.075Z"
+ },
+ "Supermicro H12SSL-NT": {
+  "kind": "mb",
+  "query": "Supermicro H12SSL-NT",
+  "status": "ok",
+  "ads_total": 7,
+  "ads_used": 7,
+  "ads_clean": 6,
+  "min": 89281,
+  "p25": 90000,
+  "median": 93000,
+  "p75": 96000,
+  "max": 110000,
+  "estimate": 135188,
+  "samples": [
+   {
+    "price": 110000,
+    "title": "Supermicro H14SSL-NT SP5",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/supermicro_h14ssl-nt_sp5_8013817432"
+   },
+   {
+    "price": 90000,
+    "title": "Материнская плата Supermicro H12SSW-iNR",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_h12ssw-inr_8043064019"
+   },
+   {
+    "price": 89281,
+    "title": "Материнская плата SuperMicro MBD-H13SSL-NT-B",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_mbd-h13ssl-nt-b_7736419379"
+   },
+   {
+    "price": 96000,
+    "title": "Материнская плата Supermicro H13SSL-NT",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_supermicro_h13ssl-nt_7843657922"
+   },
+   {
+    "price": 12000,
+    "title": "Новый AMD epyc 7402 / 7F32 8 ядер 3.7 ггц",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/novyy_amd_epyc_7402_7f32_8_yader_3.7_ggts_7947211800"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=supermicro+h+12+ssl-nt",
+  "ts": "2026-11-04T16:40:40.416Z"
+ },
+ "Gigabyte MZ31-AR0": {
+  "kind": "mb",
+  "query": "Gigabyte MZ31-AR0",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 46,
+  "ads_clean": 35,
+  "min": 3000,
+  "p25": 4422,
+  "median": 5450,
+  "p75": 8210,
+  "max": 16670,
+  "estimate": 51273,
+  "samples": [
+   {
+    "price": 150000,
+    "title": "Сервер AMD Epyc 7K62, 32Gb (48/96 ядер/потоков)",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/server_amd_epyc_7k62_32gb_4896_yaderpotokov_7589435033"
+   },
+   {
+    "price": 56000,
+    "title": "Комплект MZ31-AR0, 7d12, ddr4 32gb (4x8gb)",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/komplekt_mz31-ar0_7d12_ddr4_32gb_4x8gb_4993664583"
+   },
+   {
+    "price": 3600,
+    "title": "Комплект mini-ITX Gigabyte J1800N-D2N + 8 Гб DDR3",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplekt_mini-itx_gigabyte_j1800n-d2n_8_gb_ddr3_8332170629"
+   },
+   {
+    "price": 6900,
+    "title": "Материнская плата ASRock H510M-HVS + i3-10100f",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_asrock_h510m-hvs_i3-10100f_8372159480"
+   },
+   {
+    "price": 7000,
+    "title": "Плата asus c60m1-I mini itx",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/plata_asus_c60m1-i_mini_itx_7928903729"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?q=Gigabyte+MZ31-AR0",
+  "ts": "2026-11-04T16:40:44.631Z"
+ },
+ "8×32 ГБ DDR4-3200 ECC RDIMM": {
+  "kind": "ram",
+  "query": "8x32GB DDR4-3200 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 45,
+  "ads_clean": 18,
+  "min": 33000,
+  "p25": 46673,
+  "median": 60000,
+  "p75": 80000,
+  "max": 195000,
+  "estimate": 184616,
+  "samples": [
+   {
+    "price": 384000,
+    "title": "Сервер Gen 10+ xFusion (4NVMe + 6SAS/sata) 2 х Gold 6330 32 Gb",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/server_gen_10_xfusion_4nvme_6sassata_2_h_gold_6330_32_gb_8314922099"
+   },
+   {
+    "price": 469600,
+    "title": "Сервер Gen 10+ xFusion 12LFF 2 х Gold 6330 32 Gb",
+    "date": "",
+    "url": "https://www.avito.ru/yaroslavl/tovary_dlya_kompyutera/server_gen_10_xfusion_12lff_2_h_gold_6330_32_gb_8453360099"
+   },
+   {
+    "price": 29000,
+    "title": "32 Gb 3200 2Rx8 ECC udimm Transcend, склад 38 шт",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/32_gb_3200_2rx8_ecc_udimm_transcend_sklad_38_sht_7733326764"
+   },
+   {
+    "price": 15000,
+    "title": "Озу сервер x99 DDR4 32gb 2133Mhz ECC 4Rx4 lrdimm",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/ozu_server_x99_ddr4_32gb_2133mhz_ecc_4rx4_lrdimm_4914163410"
+   },
+   {
+    "price": 19000,
+    "title": "Память Нyniх DDR4 32gb ECC (2x16GB) 3200 мгц",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/pamyat_nynih_ddr4_32gb_ecc_2x16gb_3200_mgts_8341801309"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=8+x+32+gb+ddr+4-3200+ecc+rdimm",
+  "ts": "2026-11-04T16:43:51.492Z"
+ },
+ "8×32 ГБ DDR4-2666 ECC RDIMM": {
+  "kind": "ram",
+  "query": "8x32GB DDR4-2666 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 32,
+  "min": 50000,
+  "p25": 115900,
+  "median": 145500,
+  "p75": 171500,
+  "max": 248000,
+  "estimate": 255200,
+  "samples": [
+   {
+    "price": 235000,
+    "title": "Сервер HPE DL380 SAS/sata/NVMe 2Gold 6240 128 Гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_hpe_dl380_sassatanvme_2gold_6240_128_gb_8481474258"
+   },
+   {
+    "price": 10950,
+    "title": "Комплект X99 Dual+26**v*(2шт) +Водянка+DDR4 (0-64)",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplekt_x99_dual26v2sht_vodyankaddr4_0-64_7299357375"
+   },
+   {
+    "price": 13500,
+    "title": "Серверная память SK Hynix 2x16 32GB 2666 ECC REG",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/servernaya_pamyat_sk_hynix_2x16_32gb_2666_ecc_reg_8362215880"
+   },
+   {
+    "price": 35000,
+    "title": "Серверная память DDR4 64Gb lrdimm ECC Reg",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernaya_pamyat_ddr4_64gb_lrdimm_ecc_reg_3252771710"
+   },
+   {
+    "price": 158000,
+    "title": "Сервер Huawei 1288H V5 (2xGold 6238 / 2х32Gb DDR4) — 22 ядра + 64гб для VDI на 50-60 пользователей",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_huawei_1288h_v5_2xgold_6238_2h32gb_ddr4_22_yadra_64gb_dlya_vdi_na_50-60_polzovateley_8543572260"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=8+x+32+gb+ddr+4-2666+ecc+rdimm",
+  "ts": "2026-11-04T16:40:56.247Z"
+ },
+ "8×16 ГБ DDR4-3200 ECC RDIMM": {
+  "kind": "ram",
+  "query": "8x16GB DDR4-3200 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 46,
+  "ads_clean": 17,
+  "min": 30400,
+  "p25": 50000,
+  "median": 70000,
+  "p75": 80000,
+  "max": 160000,
+  "estimate": 95000,
+  "samples": [
+   {
+    "price": 508000,
+    "title": "Сервер Gen 10+ xFusion (4NVMe + 6SAS/sata) 2 х Gold 6334 32 Gb",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_gen_10_xfusion_4nvme_6sassata_2_h_gold_6334_32_gb_8272880365"
+   },
+   {
+    "price": 19000,
+    "title": "Память Нyniх DDR4 32gb ECC (2x16GB) 3200 мгц",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/pamyat_nynih_ddr4_32gb_ecc_2x16gb_3200_mgts_8341801309"
+   },
+   {
+    "price": 16000,
+    "title": "Серверная память DDR4 16Gb 3200 ecc reg",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernaya_pamyat_ddr4_16gb_3200_ecc_reg_8525354630"
+   },
+   {
+    "price": 6975,
+    "title": "Atermiter ddr4 16gb (2x8) 3200 REG-ECC",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/rostov-na-donu/tovary_dlya_kompyutera/atermiter_ddr4_16gb_2x8_3200_reg-ecc_8370827015"
+   },
+   {
+    "price": 195000,
+    "title": "Сервер новый 5180M6 10SFF/8NVMe 48 ядер / 96 потоков 128 Гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_novyy_5180m6_10sff8nvme_48_yader_96_potokov_128_gb_8386581021"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=8+x+16+gb+ddr+4-3200+ecc+rdimm",
+  "ts": "2026-11-04T16:43:55.826Z"
+ },
+ "AMD Ryzen 9 9950X3D": {
+  "kind": "cpu",
+  "query": "AMD Ryzen 9 9950X3D",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 47,
+  "min": 25999,
+  "p25": 45000,
+  "median": 50247,
+  "p75": 62070,
+  "max": 124999,
+  "estimate": 78860,
+  "samples": [
+   {
+    "price": 48750,
+    "title": "AMD Ryzen 9 9950X3D 16 ядер 32 потока 144MB BOX",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_9950x3d_16_yader_32_potoka_144mb_box_8470361608"
+   },
+   {
+    "price": 49000,
+    "title": "AMD Ryzen 9 9950X3D BOX",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_ryzen_9_9950x3d_box_7968176059"
+   },
+   {
+    "price": 59990,
+    "title": "AMD Ryzen 9 9950X3D2 Dual Edition BOX",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_ryzen_9_9950x3d2_dual_edition_box_8047826884"
+   },
+   {
+    "price": 48500,
+    "title": "AMD Ryzen 9 9950X3D 16 ядер 5.7 ггц 144MB AM5 BOX",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_9950x3d_16_yader_5.7_ggts_144mb_am5_box_8521441682"
+   },
+   {
+    "price": 35100,
+    "title": "Процессор ryzen 9 9950x3d",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_ryzen_9_9950x3d_8451260536"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/protsessory/amd-ASgBAgICA0TGB~pm7gniZ~LNE4q85hE?localPriority=0&q=AMD+Ryzen+9+9950X3D",
+  "ts": "2026-11-04T16:41:06.512Z"
+ },
+ "AMD Ryzen 9 9950X": {
+  "kind": "cpu",
+  "query": "AMD Ryzen 9 9950X",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 45,
+  "min": 26910,
+  "p25": 37300,
+  "median": 42000,
+  "p75": 50990,
+  "max": 79999,
+  "estimate": 65070,
+  "samples": [
+   {
+    "price": 48750,
+    "title": "AMD Ryzen 9 9950X3D 16 ядер 32 потока 144MB BOX",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_9950x3d_16_yader_32_potoka_144mb_box_8470361608"
+   },
+   {
+    "price": 36400,
+    "title": "Процессор AMD Ryzen 9 9950X (OEM)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_9950x_oem_7858133840"
+   },
+   {
+    "price": 37800,
+    "title": "Процессор AMD Ryzen 9 9950X",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_9950x_8187716134"
+   },
+   {
+    "price": 37300,
+    "title": "Процессор AMD Ryzen 9 9950X",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_9950x_8248798545"
+   },
+   {
+    "price": 38900,
+    "title": "AMD Ryzen 9 9950X BOX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_9950x_box_8286787568"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=AMD+Ryzen+9+9950X",
+  "ts": "2026-11-04T16:41:10.714Z"
+ },
+ "AMD Ryzen 9 7950X": {
+  "kind": "cpu",
+  "query": "AMD Ryzen 9 7950X",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 46,
+  "ads_clean": 45,
+  "min": 16149,
+  "p25": 26000,
+  "median": 30000,
+  "p75": 39000,
+  "max": 64290,
+  "estimate": 42000,
+  "samples": [
+   {
+    "price": 23000,
+    "title": "Процессор ryzen 9 7950x",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_ryzen_9_7950x_8347031298"
+   },
+   {
+    "price": 26000,
+    "title": "Процессор amd ryzen 9 7950x",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_7950x_8491363844"
+   },
+   {
+    "price": 19990,
+    "title": "Процессор AMD Ryzen 9 7950x",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_7950x_8346692596"
+   },
+   {
+    "price": 26990,
+    "title": "Процессор AMD Ryzen 9 7950X BOX",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_7950x_box_8544107269"
+   },
+   {
+    "price": 23250,
+    "title": "Amd Ryzen 9 7950x",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_7950x_7985623300"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=AMD+Ryzen+9+7950X",
+  "ts": "2026-11-04T16:41:14.922Z"
+ },
+ "AMD Ryzen 9 7900X": {
+  "kind": "cpu",
+  "query": "AMD Ryzen 9 7900X",
+  "status": "ok",
+  "ads_total": 7,
+  "ads_used": 6,
+  "ads_clean": 6,
+  "min": 16500,
+  "p25": 18248,
+  "median": 21995,
+  "p75": 26500,
+  "max": 30000,
+  "estimate": 32000,
+  "samples": [
+   {
+    "price": 22000,
+    "title": "AMD Ryzen 9 7900X",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_7900x_8450608141"
+   },
+   {
+    "price": 28000,
+    "title": "AMD Ryzen 9 7900X3D, AM5",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_ryzen_9_7900x3d_am5_8401134153"
+   },
+   {
+    "price": 30000,
+    "title": "AMD Ryzen 9 7900X3D AM5",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_7900x3d_am5_8291475276"
+   },
+   {
+    "price": 17000,
+    "title": "Amd Ryzen 9 7900x",
+    "date": "",
+    "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/amd_ryzen_9_7900x_8438594891"
+   },
+   {
+    "price": 16500,
+    "title": "Процессор AMD Ryzen 9 7900x",
+    "date": "",
+    "url": "https://www.avito.ru/bryansk/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_7900x_8459002356"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=AMD+Ryzen+9+7900X",
+  "ts": "2026-11-04T16:41:19.314Z"
+ },
+ "ASUS ProArt X870E-Creator": {
+  "kind": "mb",
+  "query": "ASUS ProArt X870E-Creator",
+  "status": "ok",
+  "ads_total": 19,
+  "ads_used": 19,
+  "ads_clean": 18,
+  "min": 40000,
+  "p25": 45073,
+  "median": 46710,
+  "p75": 51274,
+  "max": 98900,
+  "estimate": 65390,
+  "samples": [
+   {
+    "price": 45000,
+    "title": "Материнская плата Asus Proart X870E Creator WiFi",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_asus_proart_x870e_creator_wifi_8360402779"
+   },
+   {
+    "price": 46000,
+    "title": "Материнская плата asus ProArt X870E-creator wifi",
+    "date": "4 часа назад",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/materinskaya_plata_asus_proart_x870e-creator_wifi_8589504689"
+   },
+   {
+    "price": 44900,
+    "title": "Asus proart X870E-creator wifi",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_proart_x870e-creator_wifi_7714715597"
+   },
+   {
+    "price": 45290,
+    "title": "Материнская плата asus ProArt X870E-creator wifi",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_asus_proart_x870e-creator_wifi_8447616728"
+   },
+   {
+    "price": 45000,
+    "title": "Asus ProArt X870E-creator wifi",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sochi/tovary_dlya_kompyutera/asus_proart_x870e-creator_wifi_8515011074"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=ASUS+ProArt+X870E-Creator",
+  "ts": "2026-11-04T16:41:23.583Z"
+ },
+ "Gigabyte X870E Aorus Master": {
+  "kind": "mb",
+  "query": "Gigabyte X870E Aorus Master",
+  "status": "ok",
+  "ads_total": 31,
+  "ads_used": 27,
+  "ads_clean": 15,
+  "min": 260000,
+  "p25": 320000,
+  "median": 399000,
+  "p75": 459995,
+  "max": 529990,
+  "estimate": 62140,
+  "samples": [
+   {
+    "price": 275400,
+    "title": "Игровой пк наличие Ryzen 7 9850X3D RTX 4080",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/igrovoy_pk_nalichie_ryzen_7_9850x3d_rtx_4080_8318234815"
+   },
+   {
+    "price": 470000,
+    "title": "Игровой топ на Ryzen 9 9950X3D & RTX 5080 Aorus",
+    "date": "",
+    "url": "https://www.avito.ru/leninogorsk/nastolnye_kompyutery/igrovoy_top_na_ryzen_9_9950x3d_rtx_5080_aorus_7951035869"
+   },
+   {
+    "price": 45907,
+    "title": "X870E aorus master X3D Материнская плата Gigabyte",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/x870e_aorus_master_x3d_materinskaya_plata_gigabyte_8290000903"
+   },
+   {
+    "price": 62990,
+    "title": "Gigabyte x870e aorus master x3d ice",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_x870e_aorus_master_x3d_ice_8320193941"
+   },
+   {
+    "price": 46490,
+    "title": "Материнская плата AM5 gigabyte X870E aorus master X3D",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_am5_gigabyte_x870e_aorus_master_x3d_8133040698"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?q=Gigabyte+X870E+Aorus+Master",
+  "ts": "2026-11-04T16:41:27.792Z"
+ },
+ "ASUS TUF B650-PLUS": {
+  "kind": "mb",
+  "query": "ASUS TUF B650-PLUS",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 43,
+  "min": 6000,
+  "p25": 11000,
+  "median": 14000,
+  "p75": 17890,
+  "max": 31000,
+  "estimate": 20000,
+  "samples": [
+   {
+    "price": 14500,
+    "title": "Плата AM5 asus TUF gaming B650-plus wifi",
+    "date": "",
+    "url": "https://www.avito.ru/irkutsk/tovary_dlya_kompyutera/plata_am5_asus_tuf_gaming_b650-plus_wifi_3627527907"
+   },
+   {
+    "price": 11000,
+    "title": "Asus TUF Gaming B650-Plus WiFi",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_tuf_gaming_b650-plus_wifi_8315308504"
+   },
+   {
+    "price": 10960,
+    "title": "Asus tuf gaming b650m plus wifi",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/kazan/tovary_dlya_kompyutera/asus_tuf_gaming_b650m_plus_wifi_8422065053"
+   },
+   {
+    "price": 10999,
+    "title": "Материнская плата asus TUF gaming B650 plus",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_asus_tuf_gaming_b650_plus_8296746850"
+   },
+   {
+    "price": 10500,
+    "title": "Asus TUF Gaming B650-Plus",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_tuf_gaming_b650-plus_4668532284"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=ASUS+TUF+B650-PLUS",
+  "ts": "2026-11-04T16:41:33.819Z"
+ },
+ "2×48 ГБ DDR5-6000": {
+  "kind": "ram",
+  "query": "2x48GB DDR5-6000",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 44,
+  "min": 35000,
+  "p25": 48330,
+  "median": 59940,
+  "p75": 81248,
+  "max": 119990,
+  "estimate": 255100,
+  "samples": [
+   {
+    "price": 42000,
+    "title": "XPG DDR5 32GB 2x16GB 6000MHz",
+    "date": "",
+    "url": "https://www.avito.ru/bugulma/tovary_dlya_kompyutera/xpg_ddr5_32gb_2x16gb_6000mhz_8217831081"
+   },
+   {
+    "price": 46230,
+    "title": "DDR5 32gb 6000mhz Orion Gail kit 16gb*2шт",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/ddr5_32gb_6000mhz_orion_gail_kit_16gb2sht_8440290278"
+   },
+   {
+    "price": 42000,
+    "title": "Оперативная память ddr5 2x16gb 6000",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/operativnaya_pamyat_ddr5_2x16gb_6000_8426400527"
+   },
+   {
+    "price": 24000,
+    "title": "Kingston Fury DDR5 16GB 2x8GB 6000MHz CL36",
+    "date": "",
+    "url": "https://www.avito.ru/bugulma/tovary_dlya_kompyutera/kingston_fury_ddr5_16gb_2x8gb_6000mhz_cl36_8153474027"
+   },
+   {
+    "price": 35000,
+    "title": "Оперативная память juhor DDR5 16GB 6000MHz",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/essentukskaya/tovary_dlya_kompyutera/operativnaya_pamyat_juhor_ddr5_16gb_6000mhz_8516952308"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=2+x+48+gb+ddr+5-6000",
+  "ts": "2026-11-04T16:42:49.596Z"
+ },
+ "2×32 ГБ DDR5-6000": {
+  "kind": "ram",
+  "query": "2x32GB DDR5-6000",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 50,
+  "min": 50000,
+  "p25": 84250,
+  "median": 95000,
+  "p75": 117860,
+  "max": 217140,
+  "estimate": 156900,
+  "samples": [
+   {
+    "price": 62950,
+    "title": "Corsair Vengeance RGB RS DDR5 64 гб (2x32 гб) 6000",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/corsair_vengeance_rgb_rs_ddr5_64_gb_2x32_gb_6000_8485063335"
+   },
+   {
+    "price": 80000,
+    "title": "Adata 64GB DDR5 6000 MHz CL36",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg_lomonosov/tovary_dlya_kompyutera/adata_64gb_ddr5_6000_mhz_cl36_8437366029"
+   },
+   {
+    "price": 87000,
+    "title": "Crucial Pro DDR5 64GB (2x32GB) 6400MHz CL40 (OEM)",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/crucial_pro_ddr5_64gb_2x32gb_6400mhz_cl40_oem_8414263630"
+   },
+   {
+    "price": 70000,
+    "title": "Kingston fury beast ddr5 6000 cl40, 64gb",
+    "date": "",
+    "url": "https://www.avito.ru/ekaterinburg/tovary_dlya_kompyutera/kingston_fury_beast_ddr5_6000_cl40_64gb_8357084473"
+   },
+   {
+    "price": 84000,
+    "title": "RTX 5070 MSI / Gigabyte",
+    "date": "6 часов назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_5070_msi_gigabyte_8402517604"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=2x32GB+DDR5-6000",
+  "ts": "2026-11-04T16:42:19.087Z"
+ },
+ "Intel Core Ultra 9 285K": {
+  "kind": "cpu",
+  "query": "Intel Core Ultra 9 285K",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 41,
+  "min": 17450,
+  "p25": 36500,
+  "median": 40990,
+  "p75": 44999,
+  "max": 104999,
+  "estimate": 70000,
+  "samples": [
+   {
+    "price": 37500,
+    "title": "Intel Core Ultra 9 285K BOX LGA1851 24 ядра 5.7GHz",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_9_285k_box_lga1851_24_yadra_5.7ghz_8355487149"
+   },
+   {
+    "price": 387000,
+    "title": "Игровой пк RTX 5080 Ultra 9 285K DDR5 64GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/igrovoy_pk_rtx_5080_ultra_9_285k_ddr5_64gb_7198903662"
+   },
+   {
+    "price": 36500,
+    "title": "Intel Core Ultra 9 285K 24 ядр 5.7 ггц LGA1851 BOX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_9_285k_24_yadr_5.7_ggts_lga1851_box_8383746141"
+   },
+   {
+    "price": 37599,
+    "title": "Intel Core Ultra 9 285K 36MB LGA1851 BOX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_9_285k_36mb_lga1851_box_8180920869"
+   },
+   {
+    "price": 36499,
+    "title": "Процессор Intel Core Ultra 9 285K 36MB LGA1851 BOX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_core_ultra_9_285k_36mb_lga1851_box_8204626766"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?localPriority=0&q=Intel+Core+Ultra+9+285K",
+  "ts": "2026-11-04T16:41:47.221Z"
+ },
+ "Intel Core Ultra 7 265K": {
+  "kind": "cpu",
+  "query": "Intel Core Ultra 7 265K",
+  "status": "ok",
+  "ads_total": 38,
+  "ads_used": 37,
+  "ads_clean": 37,
+  "min": 17450,
+  "p25": 20000,
+  "median": 23000,
+  "p75": 25990,
+  "max": 38950,
+  "estimate": 45000,
+  "samples": [
+   {
+    "price": 27000,
+    "title": "Intel Core Ultra 7 270K Plus 24 ядра 5.5 ггц 36MB",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_7_270k_plus_24_yadra_5.5_ggts_36mb_8400753286"
+   },
+   {
+    "price": 24499,
+    "title": "Процессор Intel Core Ultra 7 265K 30MB LGA1851 BOX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_core_ultra_7_265k_30mb_lga1851_box_8369163409"
+   },
+   {
+    "price": 23990,
+    "title": "Intel core ultra 7 265k (36 MB) NEW",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/intel_core_ultra_7_265k_36_mb_new_4487059095"
+   },
+   {
+    "price": 26500,
+    "title": "Intel Core Ultra 7 270K Plus 24 ядра 5.5 ггц 36MB",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_7_270k_plus_24_yadra_5.5_ggts_36mb_8473550151"
+   },
+   {
+    "price": 25890,
+    "title": "Intel Core Ultra 7 265K OEM",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/intel_core_ultra_7_265k_oem_4514884187"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/protsessory/intel-ASgBAgICA0TGB~pm7gniZ~LNE4a85hE?localPriority=0&q=Intel+Core+Ultra+7+265K",
+  "ts": "2026-11-04T16:41:51.531Z"
+ },
+ "Intel Core Ultra 5 245K": {
+  "kind": "cpu",
+  "query": "Intel Core Ultra 5 245K",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 46,
+  "min": 9300,
+  "p25": 15125,
+  "median": 16718,
+  "p75": 18868,
+  "max": 36900,
+  "estimate": 30000,
+  "samples": [
+   {
+    "price": 15000,
+    "title": "Intel Core Ultra 5 245K",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_5_245k_8447693331"
+   },
+   {
+    "price": 14499,
+    "title": "Intel Core Ultra 5, 245K, 24MB LGA1851",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_5_245k_24mb_lga1851_8282527669"
+   },
+   {
+    "price": 14999,
+    "title": "Intel Core Ultra 5 245K 24MB LGA1851 BOX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_5_245k_24mb_lga1851_box_8181524097"
+   },
+   {
+    "price": 12150,
+    "title": "Процессор Intel Core Ultra 5 245kf BOX",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_core_ultra_5_245kf_box_8490795763"
+   },
+   {
+    "price": 15000,
+    "title": "Intel core ultra 5 245k",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_ultra_5_245k_8418293551"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Core+Ultra+5+245K",
+  "ts": "2026-11-04T16:41:55.750Z"
+ },
+ "ASUS ProArt Z890-Creator": {
+  "kind": "mb",
+  "query": "ASUS ProArt Z890-Creator",
+  "status": "ok",
+  "ads_total": 8,
+  "ads_used": 8,
+  "ads_clean": 7,
+  "min": 49900,
+  "p25": 51362,
+  "median": 52489,
+  "p75": 53645,
+  "max": 61090,
+  "estimate": 60000,
+  "samples": [
+   {
+    "price": 49900,
+    "title": "Asus proart Z890-creator wifi",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_proart_z890-creator_wifi_7330559536"
+   },
+   {
+    "price": 52130,
+    "title": "Материнская плата asus proart Z890-creator wifi 90MB1JD0-M0EAY0",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_asus_proart_z890-creator_wifi_90mb1jd0-m0eay0_8260319575"
+   },
+   {
+    "price": 54800,
+    "title": "Asus proart Z890-creator wifi, Socket-1851, Intel",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_proart_z890-creator_wifi_socket-1851_intel_8447687775"
+   },
+   {
+    "price": 50593,
+    "title": "Материнская плата asus 90MB1JD0-M0EAY0",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_asus_90mb1jd0-m0eay0_7288462112"
+   },
+   {
+    "price": 52489,
+    "title": "Материнская плата asus ProArt Z890-creator wifi (LGA1851/Z890/4xDDR5/3xPCI-Ex16/5xM.2/SB7.1/Wi-Fi/BT",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_asus_proart_z890-creator_wifi_lga1851z8904xddr53xpci-ex165xm.2sb7.1wi-fibt_7720756136"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=ASUS+ProArt+Z890-Creator",
+  "ts": "2026-11-04T16:42:00.029Z"
+ },
+ "Gigabyte Z890 Aorus Master": {
+  "kind": "mb",
+  "query": "Gigabyte Z890 Aorus Master",
+  "status": "ok",
+  "ads_total": 23,
+  "ads_used": 21,
+  "ads_clean": 15,
+  "min": 135130,
+  "p25": 207000,
+  "median": 260000,
+  "p75": 306000,
+  "max": 550000,
+  "estimate": 55000,
+  "samples": [
+   {
+    "price": 318000,
+    "title": "Rtx 5080 gigabyte gaming",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/nastolnye_kompyutery/rtx_5080_gigabyte_gaming_8344941109"
+   },
+   {
+    "price": 92524,
+    "title": "Материнская плата Gigabyte Z890 aorus maste 725199",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_z890_aorus_maste_725199_7538198054"
+   },
+   {
+    "price": 135130,
+    "title": "Материнская плата Gigabyte Z890 aorus maste 752560",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_z890_aorus_maste_752560_7794081207"
+   },
+   {
+    "price": 914000,
+    "title": "Игровой пк - RTX 5090 / Core Ultra 7 265K",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/nastolnye_kompyutery/igrovoy_pk_-_rtx_5090_core_ultra_7_265k_8408065568"
+   },
+   {
+    "price": 236000,
+    "title": "Игровой пк - RX 9070 XT / Core Ultra 7 265KF",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/nastolnye_kompyutery/igrovoy_pk_-_rx_9070_xt_core_ultra_7_265kf_8348638416"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?q=Gigabyte+Z890+Aorus+Master",
+  "ts": "2026-11-04T16:42:04.290Z"
+ },
+ "ASUS TUF Z890-PLUS": {
+  "kind": "mb",
+  "query": "ASUS TUF Z890-PLUS",
+  "status": "ok",
+  "ads_total": 19,
+  "ads_used": 19,
+  "ads_clean": 18,
+  "min": 10190,
+  "p25": 22250,
+  "median": 25100,
+  "p75": 27003,
+  "max": 38800,
+  "estimate": 30000,
+  "samples": [
+   {
+    "price": 22000,
+    "title": "Asus TUF gaming Z890-plus wifi",
+    "date": "",
+    "url": "https://www.avito.ru/kemerovo/tovary_dlya_kompyutera/asus_tuf_gaming_z890-plus_wifi_8193929044"
+   },
+   {
+    "price": 29990,
+    "title": "Материнская плата asus TUF gaming Z890-plus wifi",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_asus_tuf_gaming_z890-plus_wifi_7203519278"
+   },
+   {
+    "price": 26500,
+    "title": "Asus TUF gaming Z890-plus wifi",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_tuf_gaming_z890-plus_wifi_7330759183"
+   },
+   {
+    "price": 24600,
+    "title": "Материнская плата asus TUF gaming Z890-plus wifi",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_asus_tuf_gaming_z890-plus_wifi_8386198144"
+   },
+   {
+    "price": 25200,
+    "title": "Asus TUF gaming Z890-plus wifi ATX, Ret",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_tuf_gaming_z890-plus_wifi_atx_ret_8316462672"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=ASUS+TUF+Z890-PLUS",
+  "ts": "2026-11-04T16:42:08.673Z"
+ },
+ "Intel Core i9-14900K": {
+  "kind": "cpu",
+  "query": "Intel Core i9-14900K",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 45,
+  "min": 22000,
+  "p25": 30690,
+  "median": 35999,
+  "p75": 39500,
+  "max": 67000,
+  "estimate": 45000,
+  "samples": [
+   {
+    "price": 39500,
+    "title": "Intel core i9 14900k",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_i9_14900k_8447591759"
+   },
+   {
+    "price": 32900,
+    "title": "Процессор CPU Intel Core i9-14900K 3.2 GHz/24 core",
+    "date": "",
+    "url": "https://www.avito.ru/orel/tovary_dlya_kompyutera/protsessor_cpu_intel_core_i9-14900k_3.2_ghz24_core_7874553005"
+   },
+   {
+    "price": 39450,
+    "title": "I9 14900k процессор",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/i9_14900k_protsessor_8405839857"
+   },
+   {
+    "price": 27000,
+    "title": "Intel core i9 14900kf",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_core_i9_14900kf_8199916731"
+   },
+   {
+    "price": 30000,
+    "title": "Процессор intel core i9-14900K",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_core_i9-14900k_8380420366"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Core+i9-14900K",
+  "ts": "2026-11-04T16:42:23.416Z"
+ },
+ "Intel Core i7-14700K": {
+  "kind": "cpu",
+  "query": "Intel Core i7-14700K",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 47,
+  "ads_clean": 40,
+  "min": 14500,
+  "p25": 27250,
+  "median": 31490,
+  "p75": 33525,
+  "max": 50000,
+  "estimate": 32000,
+  "samples": [
+   {
+    "price": 31800,
+    "title": "Процессор Intel Core i7-14700K",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_core_i7-14700k_8251278571"
+   },
+   {
+    "price": 31300,
+    "title": "Процессор Intel Core i7-14700K",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_core_i7-14700k_8341304799"
+   },
+   {
+    "price": 25000,
+    "title": "Intel core i7 14700k",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/intel_core_i7_14700k_8076025801"
+   },
+   {
+    "price": 33240,
+    "title": "Процессор Intel Core i7-14700K OEM",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_core_i7-14700k_oem_8323933906"
+   },
+   {
+    "price": 28999,
+    "title": "Процессор Intel Core i7-14700K (LGA1700) — Новый",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/nizhniy_novgorod/tovary_dlya_kompyutera/protsessor_intel_core_i7-14700k_lga1700_novyy_8462833012"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Intel+Core+i7-14700K",
+  "ts": "2026-11-04T16:42:29.203Z"
+ },
+ "Intel Core i5-14600K": {
+  "kind": "cpu",
+  "query": "Intel Core i5-14600K",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 44,
+  "min": 11000,
+  "p25": 19875,
+  "median": 21760,
+  "p75": 24000,
+  "max": 45000,
+  "estimate": 22000,
+  "samples": [
+   {
+    "price": 19500,
+    "title": "Intel Core i5-14600K NEW",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/intel_core_i5-14600k_new_3558812642"
+   },
+   {
+    "price": 20550,
+    "title": "2026 intel i5 14600kf oem Гарантия Новые",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/2026_intel_i5_14600kf_oem_garantiya_novye_8420211610"
+   },
+   {
+    "price": 18000,
+    "title": "Intel core i5 14600k",
+    "date": "",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/intel_core_i5_14600k_8346864925"
+   },
+   {
+    "price": 18000,
+    "title": "Процессор intel core i5 14600k",
+    "date": "8 часов назад",
+    "url": "https://www.avito.ru/ryazan/tovary_dlya_kompyutera/protsessor_intel_core_i5_14600k_8503347997"
+   },
+   {
+    "price": 18000,
+    "title": "Процессор Intel Core i5 14600K OEM",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_core_i5_14600k_oem_8439955674"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Intel+Core+i5-14600K",
+  "ts": "2026-11-04T16:42:34.916Z"
+ },
+ "ASUS ProArt Z790-Creator": {
+  "kind": "mb",
+  "query": "ASUS ProArt Z790-Creator",
+  "status": "ok",
+  "ads_total": 4,
+  "ads_used": 4,
+  "ads_clean": 1,
+  "min": 270000,
+  "p25": 270000,
+  "median": 270000,
+  "p75": 270000,
+  "max": 270000,
+  "estimate": 40000,
+  "samples": [
+   {
+    "price": 3700,
+    "title": "Be quiet straight power 12 1500W BN340 черный",
+    "date": "",
+    "url": "https://www.avito.ru/kazan/nastolnye_kompyutery/be_quiet_straight_power_12_1500w_bn340_chernyy_7908461918"
+   },
+   {
+    "price": 550000,
+    "title": "Кастомный пк в сборке",
+    "date": "",
+    "url": "https://www.avito.ru/sochi/nastolnye_kompyutery/kastomnyy_pk_v_sborke_8492991044"
+   },
+   {
+    "price": 270000,
+    "title": "Мощный игровой компьютер / Рабочая станция для 3D",
+    "date": "",
+    "url": "https://www.avito.ru/abakan/nastolnye_kompyutery/moschnyy_igrovoy_kompyuter_rabochaya_stantsiya_dlya_3d_7883949283"
+   },
+   {
+    "price": 10190,
+    "title": "Материнские платы asus Gigabyte MSI ASRock Maxun",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskie_platy_asus_gigabyte_msi_asrock_maxun_7237163991"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?localPriority=0&q=ASUS+ProArt+Z790-Creator",
+  "ts": "2026-11-04T16:42:39.193Z"
+ },
+ "MSI MAG Z790 Tomahawk DDR4": {
+  "kind": "mb",
+  "query": "MSI MAG Z790 Tomahawk DDR4",
+  "status": "ok",
+  "ads_total": 9,
+  "ads_used": 7,
+  "ads_clean": 5,
+  "min": 5000,
+  "p25": 9000,
+  "median": 9500,
+  "p75": 10190,
+  "max": 17000,
+  "estimate": 25000,
+  "samples": [
+   {
+    "price": 9000,
+    "title": "Материнская плата",
+    "date": "",
+    "url": "https://www.avito.ru/habarovsk/tovary_dlya_kompyutera/materinskaya_plata_7941172978"
+   },
+   {
+    "price": 17000,
+    "title": "Материнская плата MSI MAG Z690 tomahawk wifi DDR4",
+    "date": "",
+    "url": "https://www.avito.ru/irkutsk/tovary_dlya_kompyutera/materinskaya_plata_msi_mag_z690_tomahawk_wifi_ddr4_8489878417"
+   },
+   {
+    "price": 9500,
+    "title": "Материнские платы / разные описание /сервис",
+    "date": "",
+    "url": "https://www.avito.ru/ussuriysk/tovary_dlya_kompyutera/materinskie_platy_raznye_opisanie_servis_7956625837"
+   },
+   {
+    "price": 37000,
+    "title": "Процессор Intel Core i7-14700KF LGA1700 + сжо",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/novokuznetsk/tovary_dlya_kompyutera/protsessor_intel_core_i7-14700kf_lga1700_szho_8348462531"
+   },
+   {
+    "price": 10190,
+    "title": "Материнские платы asus Gigabyte MSI ASRock Maxun",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskie_platy_asus_gigabyte_msi_asrock_maxun_7237163991"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=MSI+MAG+Z790+Tomahawk+DDR4",
+  "ts": "2026-11-04T16:42:43.827Z"
+ },
+ "4×32 ГБ DDR4-3200": {
+  "kind": "ram",
+  "query": "4x32GB DDR4-3200",
+  "status": "ok",
+  "ads_total": 40,
+  "ads_used": 40,
+  "ads_clean": 27,
+  "min": 192450,
+  "p25": 432186,
+  "median": 625000,
+  "p75": 815000,
+  "max": 1040000,
+  "estimate": 140000,
+  "samples": [
+   {
+    "price": 110000,
+    "title": "Оперативная память Kingston Fury 128гб DDR4",
+    "date": "",
+    "url": "https://www.avito.ru/ivanovo/tovary_dlya_kompyutera/operativnaya_pamyat_kingston_fury_128gb_ddr4_8023800894"
+   },
+   {
+    "price": 34000,
+    "title": "Оперативная память ddr4 4x32gb 3200",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/operativnaya_pamyat_ddr4_4x32gb_3200_8372685308"
+   },
+   {
+    "price": 99000,
+    "title": "Оперативная память DDR4 KingstonKF432C16BBK4/128",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/operativnaya_pamyat_ddr4_kingstonkf432c16bbk4128_8422014020"
+   },
+   {
+    "price": 120000,
+    "title": "G.Skill Trident Z RGB 128GB 3200Mhz DDR4 (4x32GB)",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/kazan/tovary_dlya_kompyutera/g.skill_trident_z_rgb_128gb_3200mhz_ddr4_4x32gb_8516851989"
+   },
+   {
+    "price": 84000,
+    "title": "Patriot Signature PSD432G32002 4 штк x 32 Гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/patriot_signature_psd432g32002_4_shtk_x_32_gb_4653536727"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=4x32GB+DDR4-3200",
+  "ts": "2026-11-04T16:42:55.355Z"
+ },
+ "Intel Xeon Gold 6430": {
+  "kind": "cpu",
+  "query": "Intel Xeon Gold 6430",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 22,
+  "min": 356258,
+  "p25": 1128064,
+  "median": 1128064,
+  "p75": 1128064,
+  "max": 1514749,
+  "estimate": 180000,
+  "samples": [
+   {
+    "price": 11000,
+    "title": "Процессоры Xeon gold",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_xeon_gold_4566369989"
+   },
+   {
+    "price": 186000,
+    "title": "Процессор Intel Xeon Gold 6430 (новый с НДС)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6430_novyy_s_nds_8263234281"
+   },
+   {
+    "price": 1128064,
+    "title": "Сервер IRU Rock g2212ig4 2Xeon Gold 6430 2U",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_iru_rock_g2212ig4_2xeon_gold_6430_2u_8543152800"
+   },
+   {
+    "price": 11000,
+    "title": "Процессоры Xeon gold",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessory_xeon_gold_7541356292"
+   },
+   {
+    "price": 103500,
+    "title": "Процессор Intel Xeon Gold 6430",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6430_4136251976"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Xeon+Gold+6430",
+  "ts": "2026-11-04T16:42:59.614Z"
+ },
+ "Intel Xeon Gold 5418Y": {
+  "kind": "cpu",
+  "query": "Intel Xeon Gold 5418Y",
+  "status": "ok",
+  "ads_total": 25,
+  "ads_used": 25,
+  "ads_clean": 19,
+  "min": 124000,
+  "p25": 128000,
+  "median": 128000,
+  "p75": 128000,
+  "max": 135000,
+  "estimate": 140000,
+  "samples": [
+   {
+    "price": 11000,
+    "title": "Процессоры Xeon gold",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_xeon_gold_4566369989"
+   },
+   {
+    "price": 28500,
+    "title": "Процессор intel xeon 5418y",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_5418y_8382619419"
+   },
+   {
+    "price": 126500,
+    "title": "Процессор Intel Xeon Gold 5418Y",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_5418y_4136118416"
+   },
+   {
+    "price": 124000,
+    "title": "Intel Xeon Gold 5418Y",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_xeon_gold_5418y_7740522581"
+   },
+   {
+    "price": 127000,
+    "title": "Процессор Intel Xeon Gold 5418Y",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_5418y_7651881566"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Xeon+Gold+5418Y",
+  "ts": "2026-11-04T16:43:04.371Z"
+ },
+ "Intel Xeon Silver 4510": {
+  "kind": "cpu",
+  "query": "Intel Xeon Silver 4510",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 24,
+  "min": 484679,
+  "p25": 944308,
+  "median": 944308,
+  "p75": 1170686,
+  "max": 1398014,
+  "estimate": 90000,
+  "samples": [
+   {
+    "price": 90000,
+    "title": "Процессор Intel Xeon Silver 4510",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_silver_4510_8451314730"
+   },
+   {
+    "price": 48000,
+    "title": "Процессор Intel Xeon Silver 4510T",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_silver_4510t_7980328646"
+   },
+   {
+    "price": 944308,
+    "title": "Сервер HP ProLiant DL380 Gen11 Xeon Silver 4510 2U",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_hp_proliant_dl380_gen11_xeon_silver_4510_2u_8483772173"
+   },
+   {
+    "price": 160000,
+    "title": "Процессор intel xeon silver 4510",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_silver_4510_8438867903"
+   },
+   {
+    "price": 86500,
+    "title": "Intel Xeon Silver 4510",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_xeon_silver_4510_7740601557"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Xeon+Silver+4510",
+  "ts": "2026-11-04T16:43:08.846Z"
+ },
+ "Supermicro X13SEI-F": {
+  "kind": "mb",
+  "query": "Supermicro X13SEI-F",
+  "status": "ok",
+  "ads_total": 12,
+  "ads_used": 12,
+  "ads_clean": 5,
+  "min": 270000,
+  "p25": 345000,
+  "median": 738467,
+  "p75": 852322,
+  "max": 932210,
+  "estimate": 120000,
+  "samples": [
+   {
+    "price": 72155,
+    "title": "MBD-X13SEI-F-B Материнская плата Supermicro",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/mbd-x13sei-f-b_materinskaya_plata_supermicro_8258277037"
+   },
+   {
+    "price": 79000,
+    "title": "Материнская плата Supermicro X13SEI-F Soc-4677 (Socket E) 8xdimm,10xsata3 raid, 2xGbE, M.2, VGA (OEM",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x13sei-f_soc-4677_socket_e_8xdimm10xsata3_raid_2xgbe_m.2_vga_oem_8348975038"
+   },
+   {
+    "price": 73000,
+    "title": "Материнская плата Supermicro X13SEI-F",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x13sei-f_7591133428"
+   },
+   {
+    "price": 345000,
+    "title": "Компьютер",
+    "date": "",
+    "url": "https://www.avito.ru/irkutsk/nastolnye_kompyutery/kompyuter_8328188922"
+   },
+   {
+    "price": 270000,
+    "title": "Supermicro x13sei-f+xeon gold 6418h",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/supermicro_x13sei-fxeon_gold_6418h_8342680355"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?q=Supermicro+X13SEI-F",
+  "ts": "2026-11-04T16:43:13.050Z"
+ },
+ "Supermicro X13SRA-TF": {
+  "kind": "mb",
+  "query": "Supermicro X13SRA-TF",
+  "status": "ok",
+  "ads_total": 2,
+  "ads_used": 2,
+  "ads_clean": 2,
+  "min": 79430,
+  "p25": 87653,
+  "median": 95875,
+  "p75": 104098,
+  "max": 112320,
+  "estimate": 140000,
+  "samples": [
+   {
+    "price": 79430,
+    "title": "Материнская плата Supermicro X13SRA-TF",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x13sra-tf_7886122648"
+   },
+   {
+    "price": 112320,
+    "title": "Серверная материнская плата Supermicro MBD- 674500",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/servernaya_materinskaya_plata_supermicro_mbd-_674500_7682870373"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Supermicro+X13SRA-TF",
+  "ts": "2026-11-04T16:43:17.261Z"
+ },
+ "8×32 ГБ DDR5-4800 ECC RDIMM": {
+  "kind": "ram",
+  "query": "8x32GB DDR5-4800 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 35,
+  "ads_used": 35,
+  "ads_clean": 35,
+  "min": 2730000,
+  "p25": 3618920,
+  "median": 3618920,
+  "p75": 4412488,
+  "max": 4412488,
+  "estimate": 420000,
+  "samples": [
+   {
+    "price": 3618920,
+    "title": "Сервер Crusader 2250R219723",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_crusader_2250r219723_8332836981"
+   },
+   {
+    "price": 4412488,
+    "title": "Сервер Crusader 2250R219720",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_crusader_2250r219720_8482225290"
+   },
+   {
+    "price": 3618920,
+    "title": "Сервер Crusader 2250R219723",
+    "date": "",
+    "url": "https://www.avito.ru/vologda/tovary_dlya_kompyutera/server_crusader_2250r219723_8413024746"
+   },
+   {
+    "price": 3618920,
+    "title": "Сервер Crusader 2250R219723",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_crusader_2250r219723_8408356420"
+   },
+   {
+    "price": 3618920,
+    "title": "Сервер Crusader 2250R219723",
+    "date": "",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/server_crusader_2250r219723_8371850880"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=8x32GB+DDR5-4800+ECC+RDIMM",
+  "ts": "2026-11-04T16:43:22.988Z"
+ },
+ "8×16 ГБ DDR5-4800 ECC RDIMM": {
+  "kind": "ram",
+  "query": "8x16GB DDR5-4800 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 43,
+  "ads_clean": 26,
+  "min": 308522,
+  "p25": 711529,
+  "median": 795402,
+  "p75": 1070330,
+  "max": 1549122,
+  "estimate": 220000,
+  "samples": [
+   {
+    "price": 40000,
+    "title": "Hynix DDR5 16GB rdimm 4800Mbps ECC Registered x8",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/hynix_ddr5_16gb_rdimm_4800mbps_ecc_registered_x8_8248277276"
+   },
+   {
+    "price": 45000,
+    "title": "P43322-B21 HPE 16GB DDR5 4800 ECC REG",
+    "date": "",
+    "url": "https://www.avito.ru/yaroslavl/tovary_dlya_kompyutera/p43322-b21_hpe_16gb_ddr5_4800_ecc_reg_8375290606"
+   },
+   {
+    "price": 195000,
+    "title": "Lenovo 64GB DDR5-5600 ECC rdimm 2Rx4 — 4X71Q65278",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/lenovo_64gb_ddr5-5600_ecc_rdimm_2rx4_4x71q65278_8514247087"
+   },
+   {
+    "price": 72100,
+    "title": "Оперативная память Hynix DDR5 16GB rdimm 4800Mbps",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/operativnaya_pamyat_hynix_ddr5_16gb_rdimm_4800mbps_8286489291"
+   },
+   {
+    "price": 100000,
+    "title": "Asus Z13PE-D16 (новая серверная плата)",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_z13pe-d16_novaya_servernaya_plata_8444865950"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=8+x+16+gb+ddr+5-4800+ecc+rdimm",
+  "ts": "2026-11-04T16:43:28.756Z"
+ },
+ "Intel Xeon Gold 6338": {
+  "kind": "cpu",
+  "query": "Intel Xeon Gold 6338",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 31,
+  "min": 80000,
+  "p25": 109000,
+  "median": 109000,
+  "p75": 116000,
+  "max": 240000,
+  "estimate": 70000,
+  "samples": [
+   {
+    "price": 89000,
+    "title": "Процессор Intel Xeon Gold 6338N",
+    "date": "",
+    "url": "https://www.avito.ru/saratov/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6338n_8405828863"
+   },
+   {
+    "price": 80000,
+    "title": "Процессор Intel Xeon gold 6338",
+    "date": "",
+    "url": "https://www.avito.ru/podolsk/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6338_8120041016"
+   },
+   {
+    "price": 89000,
+    "title": "Серверный процессор Intel Xeon Gold 6338N",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/saratov/tovary_dlya_kompyutera/servernyy_protsessor_intel_xeon_gold_6338n_8413864623"
+   },
+   {
+    "price": 11000,
+    "title": "Серверный процессор Intel xeon gold 5220R",
+    "date": "",
+    "url": "https://www.avito.ru/vidnoe/tovary_dlya_kompyutera/servernyy_protsessor_intel_xeon_gold_5220r_8317234932"
+   },
+   {
+    "price": 150000,
+    "title": "Intel Xeon Gold / Platinum Разные Заказ",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_xeon_gold_platinum_raznye_zakaz_3749635700"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Xeon+Gold+6338",
+  "ts": "2026-11-04T16:43:32.942Z"
+ },
+ "Intel Xeon Silver 4314": {
+  "kind": "cpu",
+  "query": "Intel Xeon Silver 4314",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 12,
+  "min": 205850,
+  "p25": 295041,
+  "median": 373383,
+  "p75": 535000,
+  "max": 702039,
+  "estimate": 35000,
+  "samples": [
+   {
+    "price": 66500,
+    "title": "Intel Xeon Silver 4314",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_xeon_silver_4314_7740243044"
+   },
+   {
+    "price": 18500,
+    "title": "Процессор intel xeon silver 4314",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_silver_4314_8437767183"
+   },
+   {
+    "price": 63360,
+    "title": "Серверный процессор Intel Xeon Silver 4314",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/servernyy_protsessor_intel_xeon_silver_4314_8042688510"
+   },
+   {
+    "price": 69000,
+    "title": "Процессор Intel Xeon Silver 4314",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_xeon_silver_4314_7651581591"
+   },
+   {
+    "price": 70000,
+    "title": "CPU Xeon 4314 Silver (16 Core, 2.4/3.4 GHz) 135W",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/cpu_xeon_4314_silver_16_core_2.43.4_ghz_135w_8244582367"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Xeon+Silver+4314",
+  "ts": "2026-11-04T16:43:37.236Z"
+ },
+ "Supermicro X12SPI-TF": {
+  "kind": "mb",
+  "query": "Supermicro X12SPI-TF",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 36,
+  "min": 31050,
+  "p25": 71783,
+  "median": 86500,
+  "p75": 110000,
+  "max": 179500,
+  "estimate": 80000,
+  "samples": [
+   {
+    "price": 110000,
+    "title": "Сервер Supermicro Xeon E-2274G/64 гб ECC/raid",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_supermicro_xeon_e-2274g64_gb_eccraid_8241730376"
+   },
+   {
+    "price": 104000,
+    "title": "Сервер Supermicro Xeon E-2274G / 64 гб ECC / raid",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_supermicro_xeon_e-2274g_64_gb_ecc_raid_8241103770"
+   },
+   {
+    "price": 77000,
+    "title": "Материнская плата Supermicro X11DPL-I",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11dpl-i_7747009549"
+   },
+   {
+    "price": 81000,
+    "title": "Материнская плата Supermicro X11DPI-NT",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11dpi-nt_7747342937"
+   },
+   {
+    "price": 123000,
+    "title": "Материнская плата Supermicro X14DBI",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x14dbi_7747671499"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Supermicro+X12SPI-TF",
+  "ts": "2026-11-04T16:43:41.495Z"
+ },
+ "Supermicro X12SPL-F": {
+  "kind": "mb",
+  "query": "Supermicro X12SPL-F",
+  "status": "ok",
+  "ads_total": 22,
+  "ads_used": 22,
+  "ads_clean": 16,
+  "min": 563098,
+  "p25": 1037573,
+  "median": 1037573,
+  "p75": 1037573,
+  "max": 1037573,
+  "estimate": 60000,
+  "samples": [
+   {
+    "price": 65000,
+    "title": "Supermicro MBD-X12SPL-F",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/supermicro_mbd-x12spl-f_8378227592"
+   },
+   {
+    "price": 79050,
+    "title": "MBD-X12SPL-F-B Материнская плата Supermicro",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/mbd-x12spl-f-b_materinskaya_plata_supermicro_8258541492"
+   },
+   {
+    "price": 89000,
+    "title": "Серверная материнская плата",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/syktyvkar/tovary_dlya_kompyutera/servernaya_materinskaya_plata_8574879287"
+   },
+   {
+    "price": 85000,
+    "title": "Материнская плата Supermicro X12SPL-F ATX, LGA4189, iC621A, 8xDDR4, 10xsata, 2x1GbE, ipmi, VGA (OEM)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x12spl-f_atx_lga4189_ic621a_8xddr4_10xsata_2x1gbe_ipmi_vga_oem_7444033769"
+   },
+   {
+    "price": 63664,
+    "title": "Материнская плата Supermicro X12SPZ-LN4F",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x12spz-ln4f_7911109253"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Supermicro+X12SPL-F",
+  "ts": "2026-11-04T16:43:45.762Z"
+ },
+ "Intel Xeon Gold 6252": {
+  "kind": "cpu",
+  "query": "Intel Xeon Gold 6252",
+  "status": "ok",
+  "ads_total": 44,
+  "ads_used": 43,
+  "ads_clean": 14,
+  "min": 11000,
+  "p25": 12700,
+  "median": 20700,
+  "p75": 26075,
+  "max": 52990,
+  "estimate": 26900,
+  "samples": [
+   {
+    "price": 3910,
+    "title": "Процессор Intel Xeon Gold 6252",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6252_8295261085"
+   },
+   {
+    "price": 6000,
+    "title": "Процессор Intel Xeon Gold 6252",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6252_8301513398"
+   },
+   {
+    "price": 3903,
+    "title": "Xeon Gold 6252",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/xeon_gold_6252_8437925710"
+   },
+   {
+    "price": 3903,
+    "title": "Xeon Gold 6252",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/xeon_gold_6252_8400275244"
+   },
+   {
+    "price": 3900,
+    "title": "Процессор Intel Xeon Gold 6252 2.10GHz",
+    "date": "",
+    "url": "https://www.avito.ru/saratov/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6252_2.10ghz_8108243941"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Xeon+Gold+6252",
+  "ts": "2026-11-04T16:44:00.175Z"
+ },
+ "Intel Xeon Platinum 8163": {
+  "kind": "cpu",
+  "query": "Intel Xeon Platinum 8163",
+  "status": "ok",
+  "ads_total": 4,
+  "ads_used": 3,
+  "ads_clean": 2,
+  "min": 20000,
+  "p25": 20000,
+  "median": 20000,
+  "p75": 20000,
+  "max": 20000,
+  "estimate": 20000,
+  "samples": [
+   {
+    "price": 20000,
+    "title": "Процессоры Xeon platinum",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_xeon_platinum_4565864348"
+   },
+   {
+    "price": 3500,
+    "title": "Процессор Intel Xeon Gold 8163 (LGA 3647)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_8163_lga_3647_7937720835"
+   },
+   {
+    "price": 20000,
+    "title": "Процессоры Xeon platinum",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessory_xeon_platinum_7541509244"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Intel+Xeon+Platinum+8163",
+  "ts": "2026-11-04T16:44:04.463Z"
+ },
+ "Intel Xeon Gold 6230": {
+  "kind": "cpu",
+  "query": "Intel Xeon Gold 6230",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 22,
+  "min": 4800,
+  "p25": 5300,
+  "median": 9000,
+  "p75": 13438,
+  "max": 25000,
+  "estimate": 12500,
+  "samples": [
+   {
+    "price": 3000,
+    "title": "Intel Xeon Gold 6230",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/intel_xeon_gold_6230_8102266890"
+   },
+   {
+    "price": 21000,
+    "title": "Intel Xeon Gold 6230r",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/intel_xeon_gold_6230r_7686385007"
+   },
+   {
+    "price": 2362,
+    "title": "Xeon Gold 6230N",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/xeon_gold_6230n_8577033100"
+   },
+   {
+    "price": 2362,
+    "title": "Xeon Gold 6230N",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/xeon_gold_6230n_8327895387"
+   },
+   {
+    "price": 5300,
+    "title": "Xeon gold 6230 + гарантия",
+    "date": "",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/xeon_gold_6230_garantiya_8069966441"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Intel+Xeon+Gold+6230",
+  "ts": "2026-11-04T16:44:10.193Z"
+ },
+ "Supermicro X11SPI-TF": {
+  "kind": "mb",
+  "query": "Supermicro X11SPI-TF",
+  "status": "ok",
+  "ads_total": 6,
+  "ads_used": 6,
+  "ads_clean": 5,
+  "min": 59700,
+  "p25": 74000,
+  "median": 74000,
+  "p75": 84000,
+  "max": 160000,
+  "estimate": 45000,
+  "samples": [
+   {
+    "price": 74000,
+    "title": "Материнская плата Supermicro X11SPI-TF",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11spi-tf_7747241405"
+   },
+   {
+    "price": 160000,
+    "title": "Сервер supermicro 2U под хранилице на 24 диска",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_supermicro_2u_pod_hranilitse_na_24_diska_3843566135"
+   },
+   {
+    "price": 59700,
+    "title": "Материнская плата Supermicro X11SPI-TF",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11spi-tf_8077510535"
+   },
+   {
+    "price": 84000,
+    "title": "Материнская плата Supermicro X11SPI-TF LGA3647 iC622 ATX 8xDDR4 10xsata3 SATA raid iX722/X557 2х10Gg",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11spi-tf_lga3647_ic622_atx_8xddr4_10xsata3_sata_raid_ix722x557_2h10gg_4373337176"
+   },
+   {
+    "price": 3000,
+    "title": "Радиатор Suрermiсrо SNK-P0067PS / SNK-Р0082P",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/radiator_surermisro_snk-p0067ps_snk-r0082p_7467270512"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Supermicro+X11SPI-TF",
+  "ts": "2026-11-04T16:44:14.399Z"
+ },
+ "Supermicro X11DPi-NT": {
+  "kind": "mb",
+  "query": "Supermicro X11DPi-NT",
+  "status": "ok",
+  "ads_total": 4,
+  "ads_used": 4,
+  "ads_clean": 4,
+  "min": 52000,
+  "p25": 72925,
+  "median": 80450,
+  "p75": 81000,
+  "max": 81000,
+  "estimate": 55000,
+  "samples": [
+   {
+    "price": 79900,
+    "title": "Материнская плата Supermicro X11DPI-NT",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11dpi-nt_3758229444"
+   },
+   {
+    "price": 81000,
+    "title": "Материнская плата Supermicro X11DPI-NT",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11dpi-nt_7747342937"
+   },
+   {
+    "price": 52000,
+    "title": "SK hynix DDR4 64GB 2933 ECC REG hmaa8GR7AJR4N-WM",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/sk_hynix_ddr4_64gb_2933_ecc_reg_hmaa8gr7ajr4n-wm_8358121917"
+   },
+   {
+    "price": 81000,
+    "title": "Материнская плата Supermicro X11DPI-NT",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_supermicro_x11dpi-nt_7747225818"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Supermicro+X11DPi-NT",
+  "ts": "2026-11-04T16:44:18.802Z"
+ },
+ "6×32 ГБ DDR4-2666 ECC RDIMM": {
+  "kind": "ram",
+  "query": "6x32GB DDR4-2666 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 26,
+  "min": 45000,
+  "p25": 107150,
+  "median": 140535,
+  "p75": 168250,
+  "max": 235000,
+  "estimate": 150000,
+  "samples": [
+   {
+    "price": 23000,
+    "title": "Оперативная память 32GB DDR4 2666V-R rdimm HPE",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/operativnaya_pamyat_32gb_ddr4_2666v-r_rdimm_hpe_8463468201"
+   },
+   {
+    "price": 19500,
+    "title": "32GB DDR4 2666 MHz ECC rdimm PC4-2666V-RB2-12-MA0",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/32gb_ddr4_2666_mhz_ecc_rdimm_pc4-2666v-rb2-12-ma0_8117560699"
+   },
+   {
+    "price": 22000,
+    "title": "32GB DDR4 2666 2Rx4 rdimm (HMA84GR7DJR4NVK)",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/32gb_ddr4_2666_2rx4_rdimm_hma84gr7djr4nvk_8092571774"
+   },
+   {
+    "price": 22000,
+    "title": "Серверная память DDR4 32Gb 2666 ECC Reg",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernaya_pamyat_ddr4_32gb_2666_ecc_reg_7700406936"
+   },
+   {
+    "price": 27000,
+    "title": "HPE SmartMemory rdimm DDR4 2Rx4 32GB 2666MHz ECC",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/hpe_smartmemory_rdimm_ddr4_2rx4_32gb_2666mhz_ecc_7996749271"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=6+x+32+gb+ddr+4-2666+ecc+rdimm",
+  "ts": "2026-11-04T16:44:24.582Z"
+ },
+ "6×16 ГБ DDR4-2666 ECC RDIMM": {
+  "kind": "ram",
+  "query": "6x16GB DDR4-2666 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 45,
+  "ads_clean": 13,
+  "min": 24500,
+  "p25": 50000,
+  "median": 70000,
+  "p75": 110600,
+  "max": 134000,
+  "estimate": 78000,
+  "samples": [
+   {
+    "price": 15600,
+    "title": "16GB 2Rx4 2666 rdimm HPE 880154-681",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/16gb_2rx4_2666_rdimm_hpe_880154-681_8092220152"
+   },
+   {
+    "price": 134000,
+    "title": "Сервер HP DL360 Gen10 8SFF 2x Gold 6240 32GB",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_hp_dl360_gen10_8sff_2x_gold_6240_32gb_7615521489"
+   },
+   {
+    "price": 11000,
+    "title": "Серверная память DDR4 16Gb 2666 ECC Reg",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernaya_pamyat_ddr4_16gb_2666_ecc_reg_7796473965"
+   },
+   {
+    "price": 16500,
+    "title": "Озу Samsung M393A2K40DB3-cweco 16GB PC4-25600",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/ozu_samsung_m393a2k40db3-cweco_16gb_pc4-25600_8374963408"
+   },
+   {
+    "price": 18400,
+    "title": "Оперативная память CT16G4RFD8266 Crucial 16GB",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/operativnaya_pamyat_ct16g4rfd8266_crucial_16gb_4348471700"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=6+x+16+gb+ddr+4-2666+ecc+rdimm",
+  "ts": "2026-11-04T16:44:29.001Z"
+ },
+ "12×32 ГБ DDR4-2666 ECC RDIMM": {
+  "kind": "ram",
+  "query": "12x32GB DDR4-2666 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 38,
+  "min": 60000,
+  "p25": 113000,
+  "median": 158000,
+  "p75": 175500,
+  "max": 248000,
+  "estimate": 300000,
+  "samples": [
+   {
+    "price": 248000,
+    "title": "Сервер Dell R740xd 12LFF 2x Gold 6244 32GB",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_dell_r740xd_12lff_2x_gold_6244_32gb_7614979655"
+   },
+   {
+    "price": 197000,
+    "title": "Сервер Huawei 2288H V5 12LFF 2x Gold 6248 32GB",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/server_huawei_2288h_v5_12lff_2x_gold_6248_32gb_7647265187"
+   },
+   {
+    "price": 19500,
+    "title": "32GB DDR4 2666 MHz ECC rdimm PC4-2666V-RB2-12-MA0",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/32gb_ddr4_2666_mhz_ecc_rdimm_pc4-2666v-rb2-12-ma0_8117560699"
+   },
+   {
+    "price": 22000,
+    "title": "Серверная память DDR4 32Gb 2666 ECC Reg",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernaya_pamyat_ddr4_32gb_2666_ecc_reg_7700406936"
+   },
+   {
+    "price": 11000,
+    "title": "Серверная память 32GB DDR4 ECC REG 2666MHz",
+    "date": "",
+    "url": "https://www.avito.ru/ulyanovsk/tovary_dlya_kompyutera/servernaya_pamyat_32gb_ddr4_ecc_reg_2666mhz_8544883333"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=12+x+32+gb+ddr+4-2666+ecc+rdimm",
+  "ts": "2026-11-04T16:44:33.273Z"
+ },
+ "AMD Threadripper 7960X": {
+  "kind": "cpu",
+  "query": "AMD Threadripper 7960X",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 44,
+  "min": 90000,
+  "p25": 152000,
+  "median": 153000,
+  "p75": 222000,
+  "max": 459000,
+  "estimate": 150000,
+  "samples": [
+   {
+    "price": 153000,
+    "title": "Процессоры Threadripper 7960X-9995WX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_threadripper_7960x-9995wx_8457596112"
+   },
+   {
+    "price": 90000,
+    "title": "Центральный Процессор AMD ryzen Threadripper 7960X",
+    "date": "",
+    "url": "https://www.avito.ru/krasnoyarsk/tovary_dlya_kompyutera/tsentralnyy_protsessor_amd_ryzen_threadripper_7960x_7348140283"
+   },
+   {
+    "price": 115000,
+    "title": "Центральный процессор AMD Ryzen Threadripper 7960X",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/tsentralnyy_protsessor_amd_ryzen_threadripper_7960x_8171218302"
+   },
+   {
+    "price": 149000,
+    "title": "AMD Ryzen Threadripper 7960X",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_threadripper_7960x_7740178035"
+   },
+   {
+    "price": 95000,
+    "title": "Процессор AMD Ryzen Threadripper 7960X OEM",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_ryzen_threadripper_7960x_oem_7335528252"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=AMD+Threadripper+7960X",
+  "ts": "2026-11-04T16:44:37.493Z"
+ },
+ "AMD Threadripper 7970X": {
+  "kind": "cpu",
+  "query": "AMD Threadripper 7970X",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 46,
+  "min": 117518,
+  "p25": 193000,
+  "median": 204000,
+  "p75": 262000,
+  "max": 492000,
+  "estimate": 220000,
+  "samples": [
+   {
+    "price": 153000,
+    "title": "Процессоры Threadripper 7960X-9995WX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_threadripper_7960x-9995wx_8457596112"
+   },
+   {
+    "price": 141708,
+    "title": "AMD Threadripper 7970x процессор",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_threadripper_7970x_protsessor_4645022475"
+   },
+   {
+    "price": 194300,
+    "title": "Процессор AMD Ryzen Threadripper 7970X OEM",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_ryzen_threadripper_7970x_oem_8369319965"
+   },
+   {
+    "price": 188000,
+    "title": "AMD Ryzen Threadripper 7970X Наличие",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_threadripper_7970x_nalichie_7932130148"
+   },
+   {
+    "price": 203900,
+    "title": "Процессор AMD Ryzen Threadripper 7970X BOX",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_ryzen_threadripper_7970x_box_7335580139"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=AMD+Threadripper+7970X",
+  "ts": "2026-11-04T16:44:41.709Z"
+ },
+ "ASUS Pro WS TRX50-SAGE": {
+  "kind": "mb",
+  "query": "ASUS Pro WS TRX50-SAGE",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 34,
+  "min": 59990,
+  "p25": 78500,
+  "median": 78500,
+  "p75": 108547,
+  "max": 235000,
+  "estimate": 110000,
+  "samples": [
+   {
+    "price": 59990,
+    "title": "STR5 asus PRO WS TRX50-sage wifi A + коробка",
+    "date": "",
+    "url": "https://www.avito.ru/irkutsk/tovary_dlya_kompyutera/str5_asus_pro_ws_trx50-sage_wifi_a_korobka_8042414230"
+   },
+   {
+    "price": 136800,
+    "title": "Материнская плата asus PRO WS TRX50-sage wifi",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_asus_pro_ws_trx50-sage_wifi_8149239208"
+   },
+   {
+    "price": 62775,
+    "title": "Комплект ии AMD epyc 7302P + Asus krpa-U16",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/komplekt_ii_amd_epyc_7302p_asus_krpa-u16_8438383091"
+   },
+   {
+    "price": 153000,
+    "title": "Процессоры Threadripper 7960X-9995WX",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessory_threadripper_7960x-9995wx_8457596112"
+   },
+   {
+    "price": 205000,
+    "title": "Asus pro ws trx50 sage wifi + treadriper 7960x",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/asus_pro_ws_trx50_sage_wifi_treadriper_7960x_8492925436"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=ASUS+Pro+WS+TRX50-SAGE",
+  "ts": "2026-11-04T16:44:46.009Z"
+ },
+ "Gigabyte TRX50 AERO D": {
+  "kind": "mb",
+  "query": "Gigabyte TRX50 AERO D",
+  "status": "ok",
+  "ads_total": 4,
+  "ads_used": 4,
+  "ads_clean": 4,
+  "min": 79990,
+  "p25": 79990,
+  "median": 82470,
+  "p75": 88975,
+  "max": 101049,
+  "estimate": 95000,
+  "samples": [
+   {
+    "price": 79990,
+    "title": "Материнская плата gigabyte TRX50 aero D (sTR5/AMD TRX50/4xDDR5/3xPCI-Ex16/4xM.2/SB7.1/glan/Wi-Fi/BT",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_trx50_aero_d_str5amd_trx504xddr53xpci-ex164xm.2sb7.1glanwi-fibt_8332592612"
+   },
+   {
+    "price": 84950,
+    "title": "Материнская плата Gigabyte TRX50 aero D",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_trx50_aero_d_7943095034"
+   },
+   {
+    "price": 79990,
+    "title": "Материнская плата gigabyte TRX50 aero D (sTR5/AMD TRX50/4xDDR5/3xPCI-Ex16/4xM.2/SB7.1/glan/Wi-Fi/BT",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_trx50_aero_d_str5amd_trx504xddr53xpci-ex164xm.2sb7.1glanwi-fibt_8485531999"
+   },
+   {
+    "price": 101049,
+    "title": "Материнская плата Gigabyte TRX50 aero D 627986",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_trx50_aero_d_627986_4626800304"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Gigabyte+TRX50+AERO+D",
+  "ts": "2026-11-04T16:44:50.256Z"
+ },
+ "4×32 ГБ DDR5-5600 ECC RDIMM": {
+  "kind": "ram",
+  "query": "4x32GB DDR5-5600 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 16,
+  "ads_used": 16,
+  "ads_clean": 16,
+  "min": 137500,
+  "p25": 137500,
+  "median": 137500,
+  "p75": 137500,
+  "max": 137500,
+  "estimate": 180000,
+  "samples": [
+   {
+    "price": 137500,
+    "title": "128gb (4x32gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/128gb_4x32gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8318617976"
+   },
+   {
+    "price": 137500,
+    "title": "128gb (4x32gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/nizhniy_novgorod/tovary_dlya_kompyutera/128gb_4x32gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8349346704"
+   },
+   {
+    "price": 137500,
+    "title": "128gb (4x32gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/chelyabinsk/tovary_dlya_kompyutera/128gb_4x32gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8341696031"
+   },
+   {
+    "price": 137500,
+    "title": "128gb (4x32gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/128gb_4x32gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8302225890"
+   },
+   {
+    "price": 137500,
+    "title": "128gb (4x32gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/128gb_4x32gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8318738579"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=4x32GB+DDR5-5600+ECC+RDIMM",
+  "ts": "2026-11-04T16:44:54.477Z"
+ },
+ "4×64 ГБ DDR5-5600 ECC RDIMM": {
+  "kind": "ram",
+  "query": "4x64GB DDR5-5600 ECC RDIMM",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 34,
+  "min": 2903277,
+  "p25": 2903277,
+  "median": 3728050,
+  "p75": 4663606,
+  "max": 4975458,
+  "estimate": 360000,
+  "samples": [
+   {
+    "price": 239000,
+    "title": "256gb (4x64gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/256gb_4x64gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8305934774"
+   },
+   {
+    "price": 3728050,
+    "title": "Сервер Crusader 2260R243355",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/server_crusader_2260r243355_8340643737"
+   },
+   {
+    "price": 239000,
+    "title": "256gb (4x64gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/256gb_4x64gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8304331396"
+   },
+   {
+    "price": 239000,
+    "title": "256gb (4x64gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/krasnoyarsk/tovary_dlya_kompyutera/256gb_4x64gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8317883779"
+   },
+   {
+    "price": 239000,
+    "title": "256gb (4x64gb) DDR5 rdimm ECC 5600mhz в наличие",
+    "date": "",
+    "url": "https://www.avito.ru/nizhniy_novgorod/tovary_dlya_kompyutera/256gb_4x64gb_ddr5_rdimm_ecc_5600mhz_v_nalichie_8326270023"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=4x64GB+DDR5-5600+ECC+RDIMM",
+  "ts": "2026-11-04T16:44:58.732Z"
+ },
+ "AMD Ryzen 9 5950X": {
+  "kind": "cpu",
+  "query": "AMD Ryzen 9 5950X",
+  "status": "ok",
+  "ads_total": 33,
+  "ads_used": 30,
+  "ads_clean": 24,
+  "min": 13000,
+  "p25": 28500,
+  "median": 32555,
+  "p75": 45500,
+  "max": 69000,
+  "estimate": 22000,
+  "samples": [
+   {
+    "price": 28500,
+    "title": "Процессор",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/syktyvkar/tovary_dlya_kompyutera/protsessor_8557120455"
+   },
+   {
+    "price": 30000,
+    "title": "Процессор amd ryzen 9 5950x",
+    "date": "7 часов назад",
+    "url": "https://www.avito.ru/salavat/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_5950x_8490063143"
+   },
+   {
+    "price": 28500,
+    "title": "Процессор razen 9 5950x OEM",
+    "date": "",
+    "url": "https://www.avito.ru/norilsk/tovary_dlya_kompyutera/protsessor_razen_9_5950x_oem_8512076469"
+   },
+   {
+    "price": 30000,
+    "title": "AMD Ryzen 9 5950X",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/novotitarovskaya/tovary_dlya_kompyutera/amd_ryzen_9_5950x_8364102606"
+   },
+   {
+    "price": 16000,
+    "title": "Amd Ryzen 9 3950x",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_ryzen_9_3950x_8489109724"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/protsessory/amd-ASgBAgICA0TGB~pm7gniZ~LNE4q85hE?localPriority=0&q=AMD+Ryzen+9+5950X",
+  "ts": "2026-11-04T16:45:02.991Z"
+ },
+ "AMD Ryzen 9 5900X": {
+  "kind": "cpu",
+  "query": "AMD Ryzen 9 5900X",
+  "status": "ok",
+  "ads_total": 47,
+  "ads_used": 43,
+  "ads_clean": 35,
+  "min": 8000,
+  "p25": 18358,
+  "median": 20000,
+  "p75": 24982,
+  "max": 39900,
+  "estimate": 15000,
+  "samples": [
+   {
+    "price": 24750,
+    "title": "Процессор CPU AMD Ryzen 9 5900X Socket AM4",
+    "date": "",
+    "url": "https://www.avito.ru/orel/tovary_dlya_kompyutera/protsessor_cpu_amd_ryzen_9_5900x_socket_am4_8386554458"
+   },
+   {
+    "price": 19300,
+    "title": "Процессор amd ryzen 9 5900x рабочий",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_amd_ryzen_9_5900x_rabochiy_8452611731"
+   },
+   {
+    "price": 24964,
+    "title": "Процессор ryzen 9 5900x",
+    "date": "5 часов назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_ryzen_9_5900x_8544004370"
+   },
+   {
+    "price": 19300,
+    "title": "Процессор ryzen 9 5900x рабочий",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_ryzen_9_5900x_rabochiy_8413612959"
+   },
+   {
+    "price": 19000,
+    "title": "Amd AM4 Ryzen 9 5900X",
+    "date": "1 час назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_am4_ryzen_9_5900x_8477139385"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/protsessory/amd-ASgBAgICA0TGB~pm7gniZ~LNE4q85hE?localPriority=0&q=AMD+Ryzen+9+5900X",
+  "ts": "2026-11-04T16:45:07.246Z"
+ },
+ "Gigabyte B550 Aorus Pro": {
+  "kind": "mb",
+  "query": "Gigabyte B550 Aorus Pro",
+  "status": "ok",
+  "ads_total": 49,
+  "ads_used": 44,
+  "ads_clean": 29,
+  "min": 6500,
+  "p25": 10000,
+  "median": 13000,
+  "p75": 18000,
+  "max": 26250,
+  "estimate": 12000,
+  "samples": [
+   {
+    "price": 9500,
+    "title": "Материнская плата gigabyte B550M aorus PRO-P",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_b550m_aorus_pro-p_8205657071"
+   },
+   {
+    "price": 11999,
+    "title": "Gigabyte B550 Aorus Pro Ac",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/gigabyte_b550_aorus_pro_ac_8082470374"
+   },
+   {
+    "price": 10000,
+    "title": "Материнская плата gigabyte B550 aorus PRO AC",
+    "date": "",
+    "url": "https://www.avito.ru/saransk/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_b550_aorus_pro_ac_8447475331"
+   },
+   {
+    "price": 10000,
+    "title": "Материнская плата Gigabyte b550 aorus pro v2",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/novorossiysk/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_b550_aorus_pro_v2_8473126686"
+   },
+   {
+    "price": 16800,
+    "title": "Комплект R5 5600x / R7 5700x + b550m Новые разные",
+    "date": "",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/komplekt_r5_5600x_r7_5700x_b550m_novye_raznye_8148605537"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Gigabyte+B550+Aorus+Pro",
+  "ts": "2026-11-04T16:45:11.468Z"
+ },
+ "Gigabyte X570 Aorus Elite": {
+  "kind": "mb",
+  "query": "Gigabyte X570 Aorus Elite",
+  "status": "ok",
+  "ads_total": 17,
+  "ads_used": 17,
+  "ads_clean": 12,
+  "min": 5000,
+  "p25": 8218,
+  "median": 10950,
+  "p75": 12625,
+  "max": 28000,
+  "estimate": 15000,
+  "samples": [
+   {
+    "price": 12000,
+    "title": "X570 aorus elite (Rev. 1.0)",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/x570_aorus_elite_rev._1.0_8420744981"
+   },
+   {
+    "price": 9900,
+    "title": "Материнская плата Aorus X570 elite AM4",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_aorus_x570_elite_am4_8348662102"
+   },
+   {
+    "price": 12500,
+    "title": "Материнская плата aorus elite x570",
+    "date": "",
+    "url": "https://www.avito.ru/orenburg/tovary_dlya_kompyutera/materinskaya_plata_aorus_elite_x570_8327867382"
+   },
+   {
+    "price": 5000,
+    "title": "X570 aorus elite",
+    "date": "",
+    "url": "https://www.avito.ru/saratov/tovary_dlya_kompyutera/x570_aorus_elite_8439187337"
+   },
+   {
+    "price": 28000,
+    "title": "Комплект aorus elite x570 + 16 гб ддр4",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/novosibirsk/tovary_dlya_kompyutera/komplekt_aorus_elite_x570_16_gb_ddr4_8445006719"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Gigabyte+X570+Aorus+Elite",
+  "ts": "2026-11-04T16:45:15.674Z"
+ },
+ "2×32 ГБ DDR4-3200": {
+  "kind": "ram",
+  "query": "2x32GB DDR4-3200",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 44,
+  "min": 24999,
+  "p25": 35000,
+  "median": 44420,
+  "p75": 52318,
+  "max": 106260,
+  "estimate": 70000,
+  "samples": [
+   {
+    "price": 24999,
+    "title": "64GB (2x32GB) DDR4 3200 sodimm",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/kaluga/tovary_dlya_kompyutera/64gb_2x32gb_ddr4_3200_sodimm_8463630330"
+   },
+   {
+    "price": 30000,
+    "title": "Sk Hynix DDR4 64GB 2x32 3200MHz SO-dimm RAM",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/sk_hynix_ddr4_64gb_2x32_3200mhz_so-dimm_ram_8148453065"
+   },
+   {
+    "price": 29000,
+    "title": "DDR4 64 гб (2x32 гб) adata 3200MHz",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/belgorod/tovary_dlya_kompyutera/ddr4_64_gb_2x32_gb_adata_3200mhz_8463126623"
+   },
+   {
+    "price": 35000,
+    "title": "DDR4 64gb Viper steel 3600mhz оперативная память",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/balashiha/tovary_dlya_kompyutera/ddr4_64gb_viper_steel_3600mhz_operativnaya_pamyat_8437132534"
+   },
+   {
+    "price": 51000,
+    "title": "Оперативная память Kingston DDR4 - 2x 32гб 3200мгц",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/operativnaya_pamyat_kingston_ddr4_-_2x_32gb_3200mgts_8348012092"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=2x32GB+DDR4-3200",
+  "ts": "2026-11-04T16:45:19.893Z"
+ },
+ "2×16 ГБ DDR4-3200": {
+  "kind": "ram",
+  "query": "2x16GB DDR4-3200",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 50,
+  "ads_clean": 46,
+  "min": 11990,
+  "p25": 15000,
+  "median": 18500,
+  "p75": 20750,
+  "max": 36200,
+  "estimate": 35000,
+  "samples": [
+   {
+    "price": 22490,
+    "title": "DDR4 Kingston Fury Beast 2x16GB (32GB) White",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/ddr4_kingston_fury_beast_2x16gb_32gb_white_8401429415"
+   },
+   {
+    "price": 19000,
+    "title": "G.Skill Aegis DDR4 2x16Gb 3200 мгц",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/g.skill_aegis_ddr4_2x16gb_3200_mgts_8379102371"
+   },
+   {
+    "price": 22200,
+    "title": "Комплект Ryzen 7 5700X + B550M aorus elite",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplekt_ryzen_7_5700x_b550m_aorus_elite_8147813747"
+   },
+   {
+    "price": 14900,
+    "title": "Qopp Оперативная память DDR4 SO-dimm 2 x 16 гб",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/qopp_operativnaya_pamyat_ddr4_so-dimm_2_x_16_gb_8589416253"
+   },
+   {
+    "price": 19800,
+    "title": "Комплект Ryzen 5 5600 + gigabyte B550M aorus elite",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplekt_ryzen_5_5600_gigabyte_b550m_aorus_elite_8115803172"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=2x16GB+DDR4-3200",
+  "ts": "2026-11-04T16:45:25.624Z"
+ },
+ "Seasonic PRIME TX-1600 (ATX 3.1)": {
+  "kind": "psu",
+  "query": "Seasonic PRIME TX-1600 (ATX 3.1)",
+  "status": "ok",
+  "ads_total": 15,
+  "ads_used": 15,
+  "ads_clean": 14,
+  "min": 33990,
+  "p25": 42250,
+  "median": 46675,
+  "p75": 53742,
+  "max": 96600,
+  "estimate": 57550,
+  "samples": [
+   {
+    "price": 43000,
+    "title": "Блок питания Seasonic Prime TX-1600 ATX3.1 Titan",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/blok_pitaniya_seasonic_prime_tx-1600_atx3.1_titan_8145328201"
+   },
+   {
+    "price": 45360,
+    "title": "Seasonic Prime TX-1600 1600W Titanium ATX3.1 евро",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/seasonic_prime_tx-1600_1600w_titanium_atx3.1_evro_7733672425"
+   },
+   {
+    "price": 57000,
+    "title": "Топ блоки питания Seasonic prime TX1600 ATX 3.1",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/top_bloki_pitaniya_seasonic_prime_tx1600_atx_3.1_8030242669"
+   },
+   {
+    "price": 42000,
+    "title": "Блок питания Seasonic Prime TX1300 atx 3.1",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/blok_pitaniya_seasonic_prime_tx1300_atx_3.1_8017403543"
+   },
+   {
+    "price": 48600,
+    "title": "Блок питания Seasonic Prime TX-1600w atx3.1",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/blok_pitaniya_seasonic_prime_tx-1600w_atx3.1_8017279549"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Seasonic+PRIME+TX-1600+%28ATX+3.1%29",
+  "ts": "2026-11-04T16:45:29.914Z"
+ },
+ "БП 2000 Вт (серверный, в корпусе YCC)": {
+  "kind": "psu",
+  "query": "БП 2000 Вт (серверный, в корпусе YCC)",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 48,
+  "ads_clean": 24,
+  "min": 4000,
+  "p25": 5000,
+  "median": 8525,
+  "p75": 12250,
+  "max": 25000,
+  "estimate": 52407,
+  "samples": [
+   {
+    "price": 10000,
+    "title": "Серверный корпус рабочий SuperMicro CSE-813M",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernyy_korpus_rabochiy_supermicro_cse-813m_3977916505"
+   },
+   {
+    "price": 3000,
+    "title": "Серверный блок питания Supermicro PWS-1K41P-1R",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/sankt-peterburg_pavlovsk/tovary_dlya_kompyutera/servernyy_blok_pitaniya_supermicro_pws-1k41p-1r_8422222460"
+   },
+   {
+    "price": 7000,
+    "title": "Серверный корпус 4u",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernyy_korpus_4u_3991645492"
+   },
+   {
+    "price": 31050,
+    "title": "Корпус supermicro CSE213-12",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_supermicro_cse213-12_7940200811"
+   },
+   {
+    "price": 14500,
+    "title": "Блок питания Supermicro PWS-561-1H20",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/blok_pitaniya_supermicro_pws-561-1h20_8517169744"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?localPriority=0&q=%D0%91%D0%9F+2000+%D0%92%D1%82+%28%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%2C+%D0%B2+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%B5+YCC%29",
+  "ts": "2026-11-04T16:45:34.112Z"
+ },
+ "БП 1200 Вт (SuperFlower)": {
+  "kind": "psu",
+  "query": "БП 1200 Вт (SuperFlower)",
+  "status": "ok",
+  "ads_total": 8,
+  "ads_used": 8,
+  "ads_clean": 2,
+  "min": 140000,
+  "p25": 170000,
+  "median": 200000,
+  "p75": 230000,
+  "max": 260000,
+  "estimate": 25000,
+  "samples": [
+   {
+    "price": 11250,
+    "title": "Блок питания Super Flower Leadex SE Platinum 1200W",
+    "date": "",
+    "url": "https://www.avito.ru/zelenodolsk/tovary_dlya_kompyutera/blok_pitaniya_super_flower_leadex_se_platinum_1200w_8300506878"
+   },
+   {
+    "price": 18400,
+    "title": "Блок питания evga supernova 1200 P2 платина",
+    "date": "",
+    "url": "https://www.avito.ru/lyubertsy/tovary_dlya_kompyutera/blok_pitaniya_evga_supernova_1200_p2_platina_3562204177"
+   },
+   {
+    "price": 260000,
+    "title": "Игровой, рабочий пк",
+    "date": "",
+    "url": "https://www.avito.ru/stavropol/nastolnye_kompyutery/igrovoy_rabochiy_pk_8017469990"
+   },
+   {
+    "price": 140000,
+    "title": "7500f/48gb/2Tb/500gb/256gb/бп 1200w",
+    "date": "",
+    "url": "https://www.avito.ru/petrozavodsk/nastolnye_kompyutery/7500f48gb2tb500gb256gbbp_1200w_7235462020"
+   },
+   {
+    "price": 32000,
+    "title": "Новый корпус asus ROG Helios GX601 + IKEA Uppspel",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/novyy_korpus_asus_rog_helios_gx601_ikea_uppspel_4558973103"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg?cd=1&context=H4sIAAAAAAAA_4yR0ZKaMBiF38UX6I-MdWCv3FhjMLCGtpDkbhN2ERrQkUjQTt-9E9dOb_cy-fOfL-ec1ziIfw9xAPFMH8_nN22bYz97GuLFch7PSG816TZthc2ojGtejGt0VziFN60sXEM3rpH84M8XwfOTmi80aU-aWFQBbfNDhAKgezY2azZWKODbny7F3xzQkA0ZJkBHNlr8DMLVQL-w0UxBun4-pBkKga7ZGOEV0GVeV3hN0t0Zki3rr6spbVeOZOg7CFLvNlmgcXHNu2ms5sV1p3dLaiatLHoHumQXixzQdzZkKAIx1CDWzFYoBLFnlwinIKj_C7rP6A9_t7-z6JaN_1lXz9Jh4SQntXyw3Hm4cEQGjhKfQSvLwKg-_8igS4zCUfiY_5I8O8n5opQ8ub2Wkd_7ylFyUWFiRemsKCej_W4zadJNJ9XZm39ThlaTPjGaF0aHd-0lR8lUlcX1rfjo5FO5PPpSOGofXSX5xjUvrQjSG4F0C94HSH4Az-WIst5iBPTm84p8n7XF6cOPlTw_qvk_r8FJh5mT5eQ1Is6hmT39-TsAnWqUnl0CAAA&q=%D0%B1%D0%BF+1200+%D0%B2%D1%82+super+flower",
+  "ts": "2026-11-04T16:45:38.376Z"
+ },
+ "БП 1000 Вт (Corsair RM1000x)": {
+  "kind": "psu",
+  "query": "БП 1000 Вт (Corsair RM1000x)",
+  "status": "ok",
+  "ads_total": 49,
+  "ads_used": 44,
+  "ads_clean": 32,
+  "min": 4600,
+  "p25": 6375,
+  "median": 8000,
+  "p75": 10198,
+  "max": 18450,
+  "estimate": 18000,
+  "samples": [
+   {
+    "price": 5494,
+    "title": "Corsair rm1000x",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/novokuznetsk/tovary_dlya_kompyutera/corsair_rm1000x_8440354809"
+   },
+   {
+    "price": 8000,
+    "title": "Блок питания Corsair RM1000x",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/blok_pitaniya_corsair_rm1000x_7982061940"
+   },
+   {
+    "price": 7000,
+    "title": "Блок питания Corsair RM1000x",
+    "date": "",
+    "url": "https://www.avito.ru/pyatigorsk/tovary_dlya_kompyutera/blok_pitaniya_corsair_rm1000x_8032898101"
+   },
+   {
+    "price": 6000,
+    "title": "Блок питания corsair rm1000x",
+    "date": "",
+    "url": "https://www.avito.ru/kemerovo/tovary_dlya_kompyutera/blok_pitaniya_corsair_rm1000x_8058701267"
+   },
+   {
+    "price": 4600,
+    "title": "Corsair rm1000x",
+    "date": "",
+    "url": "https://www.avito.ru/magnitogorsk/tovary_dlya_kompyutera/corsair_rm1000x_7944470244"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=%D0%91%D0%9F+1000+%D0%92%D1%82+%28Corsair+RM1000x%29",
+  "ts": "2026-11-04T16:45:42.720Z"
+ },
+ "БП 850 Вт (be quiet! Straight Power)": {
+  "kind": "psu",
+  "query": "БП 850 Вт (be quiet! Straight Power)",
+  "status": "ok",
+  "ads_total": 9,
+  "ads_used": 9,
+  "ads_clean": 9,
+  "min": 6400,
+  "p25": 7000,
+  "median": 8000,
+  "p75": 8500,
+  "max": 12000,
+  "estimate": 12000,
+  "samples": [
+   {
+    "price": 8500,
+    "title": "Be quiet Straight Power 11 850W 80+ Gold",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/be_quiet_straight_power_11_850w_80_gold_8449539658"
+   },
+   {
+    "price": 8490,
+    "title": "Бп be quiet Straight Power 11 Platinum 850W",
+    "date": "",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/bp_be_quiet_straight_power_11_platinum_850w_8437402374"
+   },
+   {
+    "price": 6400,
+    "title": "Bequiet Straight Power 11 850W platinum",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg_kolpino/tovary_dlya_kompyutera/bequiet_straight_power_11_850w_platinum_8445748650"
+   },
+   {
+    "price": 7000,
+    "title": "Блок питания для пк be quiet Straight Power 11 850",
+    "date": "",
+    "url": "https://www.avito.ru/murmansk/tovary_dlya_kompyutera/blok_pitaniya_dlya_pk_be_quiet_straight_power_11_850_4462409791"
+   },
+   {
+    "price": 10400,
+    "title": "Блок питания Be Quiet Straight Power 11 Gold 850W",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/blok_pitaniya_be_quiet_straight_power_11_gold_850w_8295726889"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=%D0%91%D0%9F+850+%D0%92%D1%82+%28be+quiet%21+Straight+Power%29",
+  "ts": "2026-11-04T16:45:47.000Z"
+ },
+ "NegoRack NR-M48 (4U, 650 мм)": {
+  "kind": "case",
+  "query": "NegoRack NR-M48 (4U, 650 мм)",
+  "status": "ok",
+  "ads_total": 1,
+  "ads_used": 1,
+  "ads_clean": 1,
+  "min": 9000,
+  "p25": 9000,
+  "median": 9000,
+  "p75": 9000,
+  "max": 9000,
+  "estimate": 29623,
+  "samples": [
+   {
+    "price": 9000,
+    "title": "Корпус NegoRack NR-M48B для GPU / LLM сервера",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/korpus_negorack_nr-m48b_dlya_gpu_llm_servera_8393983209"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=NegoRack+NR-M48+%284U%2C+650+%D0%BC%D0%BC%29",
+  "ts": "2026-11-04T16:45:51.189Z"
+ },
+ "Корпус 4U PROCASE (430 мм)": {
+  "kind": "case",
+  "query": "Корпус 4U PROCASE (430 мм)",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 10,
+  "ads_clean": 7,
+  "min": 1000,
+  "p25": 1050,
+  "median": 1500,
+  "p75": 1500,
+  "max": 1500,
+  "estimate": 22238,
+  "samples": [
+   {
+    "price": 1500,
+    "title": "Серверный корпус 1u с бп 350W",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernyy_korpus_1u_s_bp_350w_8300441944"
+   },
+   {
+    "price": 31050,
+    "title": "Корпус supermicro CSE213-12",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_supermicro_cse213-12_7940200811"
+   },
+   {
+    "price": 10000,
+    "title": "Серверный корпус рабочий SuperMicro CSE-813M",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernyy_korpus_rabochiy_supermicro_cse-813m_3977916505"
+   },
+   {
+    "price": 7000,
+    "title": "Серверный корпус 4u",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/servernyy_korpus_4u_3991645492"
+   },
+   {
+    "price": 1000,
+    "title": "Корпус nintendo 64, оригинал",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_nintendo_64_original_8295048801"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81+4U+PROCASE+%28430+%D0%BC%D0%BC%29",
+  "ts": "2026-11-04T16:45:56.934Z"
+ },
+ "Открытый стенд": {
+  "kind": "case",
+  "query": "Открытый стенд",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 40,
+  "ads_clean": 21,
+  "min": 1390,
+  "p25": 1800,
+  "median": 2500,
+  "p75": 3500,
+  "max": 7000,
+  "estimate": 8000,
+  "samples": [
+   {
+    "price": 25000,
+    "title": "Открытый стенд Streacom BC1 V2 Titanium",
+    "date": "",
+    "url": "https://www.avito.ru/lipetsk/tovary_dlya_kompyutera/otkrytyy_stend_streacom_bc1_v2_titanium_8368248556"
+   },
+   {
+    "price": 1500,
+    "title": "Корпус открытый стенд ColdCase",
+    "date": "",
+    "url": "https://www.avito.ru/kemerovo/tovary_dlya_kompyutera/korpus_otkrytyy_stend_coldcase_8259964056"
+   },
+   {
+    "price": 7000,
+    "title": "Открытый корпус пк (стенд) (NAS)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/otkrytyy_korpus_pk_stend_nas_8220521226"
+   },
+   {
+    "price": 11960,
+    "title": "Процессор intel core i5 13400f +куллер deep cool",
+    "date": "",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/protsessor_intel_core_i5_13400f_kuller_deep_cool_8404993163"
+   },
+   {
+    "price": 1050,
+    "title": "Открытый корпус для компьютера, стенд",
+    "date": "",
+    "url": "https://www.avito.ru/dmitrov/tovary_dlya_kompyutera/otkrytyy_korpus_dlya_kompyutera_stend_4489164391"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie-ASgBAgICAUTGB~pm?localPriority=0&q=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9+%D1%81%D1%82%D0%B5%D0%BD%D0%B4",
+  "ts": "2026-11-04T16:46:01.185Z"
+ },
+ "Fractal Define 7 XL": {
+  "kind": "case",
+  "query": "Fractal Define 7 XL",
+  "status": "ok",
+  "ads_total": 9,
+  "ads_used": 8,
+  "ads_clean": 2,
+  "min": 28490,
+  "p25": 30118,
+  "median": 31745,
+  "p75": 33373,
+  "max": 35000,
+  "estimate": 33000,
+  "samples": [
+   {
+    "price": 3000,
+    "title": "Комплект для корпуса Fractal Design Define 7 XL",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/komplekt_dlya_korpusa_fractal_design_define_7_xl_8035207190"
+   },
+   {
+    "price": 28490,
+    "title": "Корпус Fractal Design Define 7 XL Light Tempered Glass черный (FD-C-DEF7X-02)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/korpus_fractal_design_define_7_xl_light_tempered_glass_chernyy_fd-c-def7x-02_8480984470"
+   },
+   {
+    "price": 35000,
+    "title": "EK-Quantum Reflection² Fractal XL D5 PWM D-RGB",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/ek-quantum_reflection_fractal_xl_d5_pwm_d-rgb_8398037922"
+   },
+   {
+    "price": 75000,
+    "title": "Корпус Fractal Design Define 7 XL Dark TG",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/korpus_fractal_design_define_7_xl_dark_tg_7884646948"
+   },
+   {
+    "price": 4099,
+    "title": "Лотки для жестких дисков HDD Tray kit Type-B Black",
+    "date": "",
+    "url": "https://www.avito.ru/moskovskaya_oblast_krasnogorsk/tovary_dlya_kompyutera/lotki_dlya_zhestkih_diskov_hdd_tray_kit_type-b_black_4749581886"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Fractal+Define+7+XL",
+  "ts": "2026-11-04T16:46:05.533Z"
+ },
+ "Lian Li PC-O11 Dynamic": {
+  "kind": "case",
+  "query": "Lian Li PC-O11 Dynamic",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 47,
+  "min": 3000,
+  "p25": 5495,
+  "median": 7000,
+  "p75": 9695,
+  "max": 16990,
+  "estimate": 18000,
+  "samples": [
+   {
+    "price": 6000,
+    "title": "Компьютерный корпус Lian Li O11 Dynamic White",
+    "date": "9 часов назад",
+    "url": "https://www.avito.ru/naberezhnye_chelny/tovary_dlya_kompyutera/kompyuternyy_korpus_lian_li_o11_dynamic_white_8463603795"
+   },
+   {
+    "price": 5235,
+    "title": "Корпус lian li o11 dynamic evo",
+    "date": "",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/korpus_lian_li_o11_dynamic_evo_8378796691"
+   },
+   {
+    "price": 6000,
+    "title": "Корпус lian li o11 dynamic mini v2 Flow",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/obninsk/tovary_dlya_kompyutera/korpus_lian_li_o11_dynamic_mini_v2_flow_8531512746"
+   },
+   {
+    "price": 6666,
+    "title": "Lian LI O11 Dynamic mini V2",
+    "date": "7 часов назад",
+    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/lian_li_o11_dynamic_mini_v2_8501836031"
+   },
+   {
+    "price": 4200,
+    "title": "Lian LI PC-O11 Dynamic Mini Snow White новый",
+    "date": "",
+    "url": "https://www.avito.ru/cheboksary/tovary_dlya_kompyutera/lian_li_pc-o11_dynamic_mini_snow_white_novyy_8257274293"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=Lian+Li+PC-O11+Dynamic",
+  "ts": "2026-11-04T16:46:11.574Z"
+ },
+ "Корпус ATX с 3 слотами (ориентир)": {
+  "kind": "case",
+  "query": "Корпус ATX с 3 слотами (ориентир)",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 34,
+  "ads_clean": 34,
+  "min": 1000,
+  "p25": 1500,
+  "median": 2000,
+  "p75": 2863,
+  "max": 4990,
+  "estimate": 6000,
+  "samples": [
+   {
+    "price": 2500,
+    "title": "Корпус для пк 36-36 см",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_dlya_pk_36-36_sm_8470326189"
+   },
+   {
+    "price": 3000,
+    "title": "Корпус для пк Zalman Black S5",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_dlya_pk_zalman_black_s5_8423202473"
+   },
+   {
+    "price": 2750,
+    "title": "Корпус для пк atx",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_dlya_pk_atx_8473059607"
+   },
+   {
+    "price": 1062,
+    "title": "Корпус пк cooler master",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_pk_cooler_master_8347220974"
+   },
+   {
+    "price": 2000,
+    "title": "Корпус пк стоечный",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/korpus_pk_stoechnyy_8044721817"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81+ATX+%D1%81+3+%D1%81%D0%BB%D0%BE%D1%82%D0%B0%D0%BC%D0%B8+%28%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%29",
+  "ts": "2026-11-04T16:46:15.992Z"
+ }
+}
