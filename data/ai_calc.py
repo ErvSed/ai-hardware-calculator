@@ -372,6 +372,24 @@ for name, ln, slots, price, src in CASES:
 case_end = r - 1
 widths(b, [34, 10, 14, 18, 12, 14, 34])
 
+# ================================================================ SSD
+sd = WB.create_sheet("SSD")
+head(sd, 1, ["Модель", "Объём, ГБ", "Чтение, ГБ/с", "Цена, ₽", "Источник", "Авито"])
+r = 2
+for name, gb, gbs, price, src in SSDS:
+    sd.cell(row=r, column=1, value=name)
+    sd.cell(row=r, column=2, value=gb)
+    sd.cell(row=r, column=3, value=gbs).number_format = NUM1
+    sd.cell(row=r, column=4, value=avito_price(name, price)).number_format = MONEY
+    sd.cell(row=r, column=5, value=(src + (" · " + avito_note(name) if avito_note(name) else ""))).alignment = WRAP
+    lc = sd.cell(row=r, column=6, value="Авито")
+    lc.hyperlink = avito_url(name)
+    lc.font = LINK
+    lc.alignment = CENTER
+    r += 1
+ssd_end = r - 1
+widths(sd, [42, 12, 14, 14, 34, 10])
+
 # ================================================================ Модели
 md = WB.create_sheet("Модели")
 head(md, 1, ["Модель", "Движок", "Размер, ГБ", "Активных, млрд", "Байт/токен, ГБ", "Dense, ГБ",
@@ -449,7 +467,7 @@ res = [
     ("Цена GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,10,0)*B7,0)', MONEY),
     ("Цена CPU + плата + память", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,7,0),0)+IFERROR(VLOOKUP(B4,Платы!$A:$G,6,0),0)+IFERROR(VLOOKUP(B5,Память!$A:$G,6,0),0)', MONEY),
     ("Цена БП + корпус", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,6,0),0)+IFERROR(VLOOKUP(B9,БП_Корпус!$A:$G,6,0),0)', MONEY),
-    ("ИТОГО цена сборки, ₽", "=SUM(B21:B23)", MONEY),
+    ("ИТОГО цена сборки, ₽", "=SUM(B21:B23)+IFERROR(VLOOKUP(B57,SSD!$A:$D,4,0),0)", MONEY),
     ("Требуемая мощность, Вт", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,4,0)*B7*1.1 + VLOOKUP(B3,CPU!$A:$H,6,0)*1.3 + 100,0)', NUM1),
     ("Рекомендуемый БП, Вт", "=ROUNDUP(B25/0.75/50,0)*50", NUM1),
     ("Мощность выбранного БП, Вт", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,3,0),0)', NUM1),
@@ -527,11 +545,19 @@ for label, name_f, price_f, link_f in breakdown:
     lc = k.cell(row=rr, column=4, value=link_f)
     lc.alignment = CENTER
     rr += 1
-k.cell(row=rr, column=1, value="ИТОГО по позициям").font = Font(bold=True)
-c = k.cell(row=rr, column=3, value="=SUM(C51:C56)")
+# накопитель — выбирается тут же
+k.cell(row=57, column=1, value="Накопитель (SSD)").font = Font(bold=True)
+ssd_cell = k.cell(row=57, column=2, value=SSD_DEFAULT)
+ssd_cell.fill = IN_FILL
+ssd_cell.alignment = CENTER
+k.cell(row=57, column=3, value='=IFERROR(VLOOKUP(B57,SSD!$A:$D,4,0),0)').number_format = MONEY
+lc = k.cell(row=57, column=4, value='=HYPERLINK(IFERROR(VLOOKUP(B57,SSD!$A:$F,6,0),""),"Авито")')
+lc.alignment = CENTER
+k.cell(row=58, column=1, value="ИТОГО по позициям").font = Font(bold=True)
+c = k.cell(row=58, column=3, value="=SUM(C51:C57)")
 c.number_format = MONEY
 c.font = Font(bold=True)
-k.cell(row=rr, column=4, value='=IF(ROUND(C57-B24,0)=0,"сходится с итогом","расхождение с B24")')
+k.cell(row=58, column=4, value='=IF(ROUND(C58-B24,0)=0,"сходится с итогом","расхождение с B24")')
 
 def dv(formula, cell):
     v = DataValidation(type="list", formula1=formula, allow_blank=False)
@@ -546,6 +572,7 @@ dv("GPU_ALL", "B6")
 dv('"1,2,3,4"', "B7")
 dv("PSU_ALL", "B8")
 dv("CASE_ALL", "B9")
+dv("SSD_ALL", "B57")
 
 # ================================================================ Максимум
 mx = WB.create_sheet("Максимум")
@@ -646,6 +673,7 @@ for plat in PLATFORMS:
 WB.defined_names["GPU_ALL"] = DefinedName("GPU_ALL", attr_text=f"'GPU'!$A$2:$A${gpu_last}")
 WB.defined_names["PSU_ALL"] = DefinedName("PSU_ALL", attr_text=f"'БП_Корпус'!$A${psu_start}:$A${psu_end}")
 WB.defined_names["CASE_ALL"] = DefinedName("CASE_ALL", attr_text=f"'БП_Корпус'!$A${case_start}:$A${case_end}")
+WB.defined_names["SSD_ALL"] = DefinedName("SSD_ALL", attr_text=f"'SSD'!$A$2:$A${ssd_end}")
 
 # рамки
 for nm in ("GPU", "CPU", "Платы", "Память", "БП_Корпус", "Модели", "Замеры", "Максимум"):
