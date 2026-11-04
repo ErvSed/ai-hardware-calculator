@@ -7,6 +7,12 @@ import urllib.parse
 AVITO_CITY = "sankt-peterburg"
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+# запросы, где Авито смешивает комплекты разной ёмкости — доверять нельзя
+AVITO_BLOCK = {
+    "2×48 ГБ DDR5-6000": "неоднозначный запрос: в заголовках разная ёмкость комплектов",
+    "2×32 ГБ DDR5-6000": "неоднозначный запрос: в заголовках разная ёмкость комплектов",
+}
+
 # реальные цены, собранные avito_harvest.js (Opera + CDP)
 _AVITO = {}
 _prices_path = os.path.join(HERE, "avito_prices.json")
@@ -27,6 +33,8 @@ def avito_stats(name):
     с прежней оценкой сильнее допустимого (Авито часто ищет «похожее»
     и подмешивает целые серверы и другие модели).
     """
+    if name in AVITO_BLOCK:
+        return None
     v = _AVITO.get(name)
     if not v or not v.get("median"):
         return None
@@ -44,6 +52,8 @@ def avito_stats(name):
 
 def avito_reject_reason(name):
     """Почему данные Авито не использованы (для листа «Авито»)."""
+    if name in AVITO_BLOCK:
+        return AVITO_BLOCK[name]
     v = _AVITO.get(name)
     if not v or not v.get("median"):
         return "нет данных"
