@@ -16,7 +16,12 @@
 | Материнских плат | 24 |
 | Комплектов памяти | 24 |
 | Видеокарт | 32 (NVIDIA RTX 20/30/40/50, Ada/Quadro, Tesla; AMD RX 7000/9000 и R9700; Intel Arc) |
-| Моделей | 5: GLM-5.3-Flash Maya-L и Maya-M, Qwen3.8-Flash UD-Q4_K_XL и UD-IQ4_XS, DeepSeek-V4.1-Flash Maya-S |
+| Моделей | 7: GLM-5.3-Flash Maya-L и Maya-M, Qwen3.8-Flash UD-Q4_K_XL и UD-IQ4_XS (Strata), Qwen3.8-Flash Basalt NVFP4-DQ6_K и IQ3_S, DeepSeek-V4.1-Flash Maya-S |
+
+**Движки:** Project Maya (GLM, DeepSeek) · Strata (Qwen, GGUF) · **Basalt** — форк Strata под Qwen3.8-Flash-Next,
+работает **только на NVIDIA Blackwell (sm_120)**: RTX 50-серия и RTX PRO 6000. Паки `.basalt`:
+NVFP4-DQ6_K 131,7 ГБ, UD-Q4_K_XL 115,3, GSQ-RCO-IQ3_S 87,6, Q2_0 70,4 ГБ. Расчёт Basalt — от замера
+3× Blackwell (406 ток/с декод, 7957 ток/с префилл), экстраполяция линейна по эффективной полосе.
 
 ## Как считается
 
