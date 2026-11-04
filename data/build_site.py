@@ -51,7 +51,7 @@ data = {
         for p in db.PLATFORMS
     ],
     "psus": [{"name": p[0], "w": p[1], "price": db.avito_price(p[0], p[2]), "src": p[3], "avitoUrl": db.avito_url(p[0]), "avitoN": pstat(p[0])} for p in db.PSUS],
-    "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": db.avito_price(c[0], c[3]), "src": c[4], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0])} for c in db.CASES],
+    "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": db.avito_price(c[0], c[3]), "src": c[4], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "dims": list(db.CASE_DIMS.get(c[0]) or [])} for c in db.CASES],
     "models": [
         {
             "name": m[0], "engine": m[1], "size": m[2], "active": m[3], "bpt": m[4], "dense": m[5],
