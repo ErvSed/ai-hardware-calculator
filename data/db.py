@@ -96,6 +96,27 @@ def avito_url(name):
     return "https://www.avito.ru/%s?q=%s" % (AVITO_CITY, urllib.parse.quote(avito_query(name)))
 
 
+# архитектура GPU: нужна для Basalt (только Blackwell, sm_120)
+GPU_ARCH = {
+    "RTX 2080 Ti 22 ГБ (мод)": "Turing", "RTX 3060 12 ГБ": "Ampere", "RTX 3070 8 ГБ": "Ampere",
+    "RTX 3080 10 ГБ": "Ampere", "RTX 3080 Ti 12 ГБ": "Ampere", "RTX 3090 24 ГБ": "Ampere",
+    "RTX 3090 Ti 24 ГБ": "Ampere", "RTX 4060 Ti 16 ГБ": "Ada", "RTX 4070 12 ГБ": "Ada",
+    "RTX 4070 Ti Super 16 ГБ": "Ada", "RTX 4080 Super 16 ГБ": "Ada", "RTX 4090 24 ГБ": "Ada",
+    "RTX 5070 Ti 16 ГБ": "Blackwell", "RTX 5080 16 ГБ": "Blackwell", "RTX 5090 32 ГБ": "Blackwell",
+    "RTX A4000 16 ГБ": "Ampere", "RTX A4500 20 ГБ": "Ampere", "RTX A5000 24 ГБ": "Ampere",
+    "RTX A6000 48 ГБ": "Ampere", "RTX 6000 Ada 48 ГБ": "Ada", "RTX 5880 Ada 45 ГБ": "Ada",
+    "RTX PRO 6000 Blackwell 96 ГБ": "Blackwell", "Radeon AI PRO R9700 32 ГБ": "RDNA4",
+    "Radeon RX 7900 XTX 24 ГБ": "RDNA3", "Radeon RX 7900 XT 20 ГБ": "RDNA3",
+    "Radeon RX 9070 XT 16 ГБ": "RDNA4", "Arc A770 16 ГБ": "Alchemist", "Arc B580 12 ГБ": "Battlemage",
+    "Tesla V100 32 ГБ": "Volta", "Tesla P100 16 ГБ": "Pascal", "Tesla P40 24 ГБ": "Pascal",
+    "Tesla T4 16 ГБ": "Turing",
+}
+
+
+def gpu_arch(name):
+    return GPU_ARCH.get(name, "?")
+
+
 # имя, VRAM, полоса ГБ/с, TDP, длина мм, слотов, compute, цена магазин, цена Авито, статус, вендор
 GPU_ROWS = [
     ("RTX 2080 Ti 22 ГБ (мод)", 22, 616, 260, 267, 2, 0.72, 0, 55000, "Авито 45–65 тыс (ориентир); карта модифицированная", "NVIDIA"),
@@ -328,4 +349,6 @@ MODELS = [
     ("Qwen3.8-Flash UD-Q4_K_XL", "Strata", 111.3, 6, 3.77, 4.8, 32, 644, 106, 1.25, 63.5, 1110, 0.12, "1×R9700 + EPYC 7452, Strata QUANTS.md"),
     ("Qwen3.8-Flash UD-IQ4_XS", "Strata", 93.7, 6, 3.12, 4.8, 44, 1232, 150, 1.44, 55.0, 869, 0.12, "2×2080 Ti 22 ГБ, Strata PR #2665"),
     ("DeepSeek-V4.1-Flash Maya-S", "Maya-ds4", 340.0, 40, 3.0, 20.0, 32, 1792, 90, 2.2, 24.9, 1842, 0.30, "1×RTX 5090 + 128 ГБ, dev.to 10.2026"),
+    ("Qwen3.8-Flash Basalt NVFP4-DQ6_K", "Basalt", 131.7, 6, 4.39, 4.8, 96, 5376, 139, 6.6, 406, 7957, 1.0, "3× Blackwell: 406 ток/с и pp 7957 (замер); экстраполяция линейна по полосе"),
+    ("Qwen3.8-Flash Basalt IQ3_S", "Basalt", 87.6, 6, 2.92, 4.8, 96, 5376, 139, 6.6, 540, 8500, 1.0, "оценка от замера NVFP4: меньше байт на токен"),
 ]
