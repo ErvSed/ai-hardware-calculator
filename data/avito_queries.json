@@ -1,0 +1,668 @@
+[
+ {
+  "kind": "gpu",
+  "name": "RTX 2080 Ti 22 ГБ (мод)",
+  "query": "RTX 2080 Ti 22GB",
+  "estimate": 55000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 3060 12 ГБ",
+  "query": "RTX 3060 12GB",
+  "estimate": 24000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 3070 8 ГБ",
+  "query": "RTX 3070 8GB",
+  "estimate": 30000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 3080 10 ГБ",
+  "query": "RTX 3080 10GB",
+  "estimate": 40000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 3080 Ti 12 ГБ",
+  "query": "RTX 3080 Ti 12GB",
+  "estimate": 50000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 3090 24 ГБ",
+  "query": "RTX 3090 24GB",
+  "estimate": 70000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 3090 Ti 24 ГБ",
+  "query": "RTX 3090 Ti 24GB",
+  "estimate": 90000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 4060 Ti 16 ГБ",
+  "query": "RTX 4060 Ti 16GB",
+  "estimate": 45000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 4070 12 ГБ",
+  "query": "RTX 4070 12GB",
+  "estimate": 65000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 4070 Ti Super 16 ГБ",
+  "query": "RTX 4070 Ti Super 16GB",
+  "estimate": 80000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 4080 Super 16 ГБ",
+  "query": "RTX 4080 Super 16GB",
+  "estimate": 100000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 4090 24 ГБ",
+  "query": "RTX 4090 24GB",
+  "estimate": 185000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 5070 Ti 16 ГБ",
+  "query": "RTX 5070 Ti 16GB",
+  "estimate": 110000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 5080 16 ГБ",
+  "query": "RTX 5080 16GB",
+  "estimate": 140000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 5090 32 ГБ",
+  "query": "RTX 5090 32GB",
+  "estimate": 780000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX A4000 16 ГБ",
+  "query": "RTX A4000 16GB",
+  "estimate": 90000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX A4500 20 ГБ",
+  "query": "RTX A4500 20GB",
+  "estimate": 120000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX A5000 24 ГБ",
+  "query": "RTX A5000 24GB",
+  "estimate": 165000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX A6000 48 ГБ",
+  "query": "RTX A6000 48GB",
+  "estimate": 400000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 6000 Ada 48 ГБ",
+  "query": "RTX 6000 Ada 48GB",
+  "estimate": 600000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX 5880 Ada 45 ГБ",
+  "query": "RTX 5880 Ada 45GB",
+  "estimate": 450000
+ },
+ {
+  "kind": "gpu",
+  "name": "RTX PRO 6000 Blackwell 96 ГБ",
+  "query": "RTX PRO 6000 Blackwell 96GB",
+  "estimate": 0
+ },
+ {
+  "kind": "gpu",
+  "name": "Radeon AI PRO R9700 32 ГБ",
+  "query": "Radeon AI PRO R9700 32GB",
+  "estimate": 0
+ },
+ {
+  "kind": "gpu",
+  "name": "Radeon RX 7900 XTX 24 ГБ",
+  "query": "Radeon RX 7900 XTX 24GB",
+  "estimate": 90000
+ },
+ {
+  "kind": "gpu",
+  "name": "Radeon RX 7900 XT 20 ГБ",
+  "query": "Radeon RX 7900 XT 20GB",
+  "estimate": 70000
+ },
+ {
+  "kind": "gpu",
+  "name": "Radeon RX 9070 XT 16 ГБ",
+  "query": "Radeon RX 9070 XT 16GB",
+  "estimate": 85000
+ },
+ {
+  "kind": "gpu",
+  "name": "Arc A770 16 ГБ",
+  "query": "Arc A770 16GB",
+  "estimate": 30000
+ },
+ {
+  "kind": "gpu",
+  "name": "Arc B580 12 ГБ",
+  "query": "Arc B580 12GB",
+  "estimate": 35000
+ },
+ {
+  "kind": "gpu",
+  "name": "Tesla V100 32 ГБ",
+  "query": "Tesla V100 32GB",
+  "estimate": 48000
+ },
+ {
+  "kind": "gpu",
+  "name": "Tesla P100 16 ГБ",
+  "query": "Tesla P100 16GB",
+  "estimate": 25000
+ },
+ {
+  "kind": "gpu",
+  "name": "Tesla P40 24 ГБ",
+  "query": "Tesla P40 24GB",
+  "estimate": 30000
+ },
+ {
+  "kind": "gpu",
+  "name": "Tesla T4 16 ГБ",
+  "query": "Tesla T4 16GB",
+  "estimate": 40000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 7402",
+  "query": "AMD EPYC 7402",
+  "estimate": 30000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 7443",
+  "query": "AMD EPYC 7443",
+  "estimate": 98937
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 7502P",
+  "query": "AMD EPYC 7502P",
+  "estimate": 46238
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 7543",
+  "query": "AMD EPYC 7543",
+  "estimate": 86853
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 7702P",
+  "query": "AMD EPYC 7702P",
+  "estimate": 45000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro H12SSL-I-B",
+  "query": "Supermicro H12SSL-I-B",
+  "estimate": 108100
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro H12SSL-NT",
+  "query": "Supermicro H12SSL-NT",
+  "estimate": 135188
+ },
+ {
+  "kind": "mb",
+  "name": "Gigabyte MZ31-AR0",
+  "query": "Gigabyte MZ31-AR0",
+  "estimate": 51273
+ },
+ {
+  "kind": "ram",
+  "name": "8×32 ГБ DDR4-3200 ECC RDIMM",
+  "query": "8x32GB DDR4-3200 ECC RDIMM",
+  "estimate": 184616
+ },
+ {
+  "kind": "ram",
+  "name": "8×32 ГБ DDR4-2666 ECC RDIMM",
+  "query": "8x32GB DDR4-2666 ECC RDIMM",
+  "estimate": 255200
+ },
+ {
+  "kind": "ram",
+  "name": "8×16 ГБ DDR4-3200 ECC RDIMM",
+  "query": "8x16GB DDR4-3200 ECC RDIMM",
+  "estimate": 95000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Ryzen 9 9950X3D",
+  "query": "AMD Ryzen 9 9950X3D",
+  "estimate": 78860
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Ryzen 9 9950X",
+  "query": "AMD Ryzen 9 9950X",
+  "estimate": 65070
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Ryzen 9 7950X",
+  "query": "AMD Ryzen 9 7950X",
+  "estimate": 42000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Ryzen 9 7900X",
+  "query": "AMD Ryzen 9 7900X",
+  "estimate": 32000
+ },
+ {
+  "kind": "mb",
+  "name": "ASUS ProArt X870E-Creator",
+  "query": "ASUS ProArt X870E-Creator",
+  "estimate": 65390
+ },
+ {
+  "kind": "mb",
+  "name": "Gigabyte X870E Aorus Master",
+  "query": "Gigabyte X870E Aorus Master",
+  "estimate": 62140
+ },
+ {
+  "kind": "mb",
+  "name": "ASUS TUF B650-PLUS",
+  "query": "ASUS TUF B650-PLUS",
+  "estimate": 20000
+ },
+ {
+  "kind": "ram",
+  "name": "2×48 ГБ DDR5-6000",
+  "query": "2x48GB DDR5-6000",
+  "estimate": 255100
+ },
+ {
+  "kind": "ram",
+  "name": "2×32 ГБ DDR5-6000",
+  "query": "2x32GB DDR5-6000",
+  "estimate": 156900
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Core Ultra 9 285K",
+  "query": "Intel Core Ultra 9 285K",
+  "estimate": 70000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Core Ultra 7 265K",
+  "query": "Intel Core Ultra 7 265K",
+  "estimate": 45000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Core Ultra 5 245K",
+  "query": "Intel Core Ultra 5 245K",
+  "estimate": 30000
+ },
+ {
+  "kind": "mb",
+  "name": "ASUS ProArt Z890-Creator",
+  "query": "ASUS ProArt Z890-Creator",
+  "estimate": 60000
+ },
+ {
+  "kind": "mb",
+  "name": "Gigabyte Z890 Aorus Master",
+  "query": "Gigabyte Z890 Aorus Master",
+  "estimate": 55000
+ },
+ {
+  "kind": "mb",
+  "name": "ASUS TUF Z890-PLUS",
+  "query": "ASUS TUF Z890-PLUS",
+  "estimate": 30000
+ },
+ {
+  "kind": "ram",
+  "name": "2×48 ГБ DDR5-6000",
+  "query": "2x48GB DDR5-6000",
+  "estimate": 255100
+ },
+ {
+  "kind": "ram",
+  "name": "2×32 ГБ DDR5-6000",
+  "query": "2x32GB DDR5-6000",
+  "estimate": 156900
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Core i9-14900K",
+  "query": "Intel Core i9-14900K",
+  "estimate": 45000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Core i7-14700K",
+  "query": "Intel Core i7-14700K",
+  "estimate": 32000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Core i5-14600K",
+  "query": "Intel Core i5-14600K",
+  "estimate": 22000
+ },
+ {
+  "kind": "mb",
+  "name": "ASUS ProArt Z790-Creator",
+  "query": "ASUS ProArt Z790-Creator",
+  "estimate": 40000
+ },
+ {
+  "kind": "mb",
+  "name": "MSI MAG Z790 Tomahawk DDR4",
+  "query": "MSI MAG Z790 Tomahawk DDR4",
+  "estimate": 25000
+ },
+ {
+  "kind": "ram",
+  "name": "2×48 ГБ DDR5-6000",
+  "query": "2x48GB DDR5-6000",
+  "estimate": 255100
+ },
+ {
+  "kind": "ram",
+  "name": "4×32 ГБ DDR4-3200",
+  "query": "4x32GB DDR4-3200",
+  "estimate": 140000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Gold 6430",
+  "query": "Intel Xeon Gold 6430",
+  "estimate": 180000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Gold 5418Y",
+  "query": "Intel Xeon Gold 5418Y",
+  "estimate": 140000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Silver 4510",
+  "query": "Intel Xeon Silver 4510",
+  "estimate": 90000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro X13SEI-F",
+  "query": "Supermicro X13SEI-F",
+  "estimate": 120000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro X13SRA-TF",
+  "query": "Supermicro X13SRA-TF",
+  "estimate": 140000
+ },
+ {
+  "kind": "ram",
+  "name": "8×32 ГБ DDR5-4800 ECC RDIMM",
+  "query": "8x32GB DDR5-4800 ECC RDIMM",
+  "estimate": 420000
+ },
+ {
+  "kind": "ram",
+  "name": "8×16 ГБ DDR5-4800 ECC RDIMM",
+  "query": "8x16GB DDR5-4800 ECC RDIMM",
+  "estimate": 220000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Gold 6338",
+  "query": "Intel Xeon Gold 6338",
+  "estimate": 70000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Silver 4314",
+  "query": "Intel Xeon Silver 4314",
+  "estimate": 35000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro X12SPI-TF",
+  "query": "Supermicro X12SPI-TF",
+  "estimate": 80000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro X12SPL-F",
+  "query": "Supermicro X12SPL-F",
+  "estimate": 60000
+ },
+ {
+  "kind": "ram",
+  "name": "8×32 ГБ DDR4-3200 ECC RDIMM",
+  "query": "8x32GB DDR4-3200 ECC RDIMM",
+  "estimate": 184616
+ },
+ {
+  "kind": "ram",
+  "name": "8×16 ГБ DDR4-3200 ECC RDIMM",
+  "query": "8x16GB DDR4-3200 ECC RDIMM",
+  "estimate": 95000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Gold 6252",
+  "query": "Intel Xeon Gold 6252",
+  "estimate": 26900
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Platinum 8163",
+  "query": "Intel Xeon Platinum 8163",
+  "estimate": 20000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon Gold 6230",
+  "query": "Intel Xeon Gold 6230",
+  "estimate": 12500
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro X11SPI-TF",
+  "query": "Supermicro X11SPI-TF",
+  "estimate": 45000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro X11DPi-NT",
+  "query": "Supermicro X11DPi-NT",
+  "estimate": 55000
+ },
+ {
+  "kind": "ram",
+  "name": "6×32 ГБ DDR4-2666 ECC RDIMM",
+  "query": "6x32GB DDR4-2666 ECC RDIMM",
+  "estimate": 150000
+ },
+ {
+  "kind": "ram",
+  "name": "6×16 ГБ DDR4-2666 ECC RDIMM",
+  "query": "6x16GB DDR4-2666 ECC RDIMM",
+  "estimate": 78000
+ },
+ {
+  "kind": "ram",
+  "name": "12×32 ГБ DDR4-2666 ECC RDIMM",
+  "query": "12x32GB DDR4-2666 ECC RDIMM",
+  "estimate": 300000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Threadripper 7960X",
+  "query": "AMD Threadripper 7960X",
+  "estimate": 150000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Threadripper 7970X",
+  "query": "AMD Threadripper 7970X",
+  "estimate": 220000
+ },
+ {
+  "kind": "mb",
+  "name": "ASUS Pro WS TRX50-SAGE",
+  "query": "ASUS Pro WS TRX50-SAGE",
+  "estimate": 110000
+ },
+ {
+  "kind": "mb",
+  "name": "Gigabyte TRX50 AERO D",
+  "query": "Gigabyte TRX50 AERO D",
+  "estimate": 95000
+ },
+ {
+  "kind": "ram",
+  "name": "4×32 ГБ DDR5-5600 ECC RDIMM",
+  "query": "4x32GB DDR5-5600 ECC RDIMM",
+  "estimate": 180000
+ },
+ {
+  "kind": "ram",
+  "name": "4×64 ГБ DDR5-5600 ECC RDIMM",
+  "query": "4x64GB DDR5-5600 ECC RDIMM",
+  "estimate": 360000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Ryzen 9 5950X",
+  "query": "AMD Ryzen 9 5950X",
+  "estimate": 22000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD Ryzen 9 5900X",
+  "query": "AMD Ryzen 9 5900X",
+  "estimate": 15000
+ },
+ {
+  "kind": "mb",
+  "name": "Gigabyte B550 Aorus Pro",
+  "query": "Gigabyte B550 Aorus Pro",
+  "estimate": 12000
+ },
+ {
+  "kind": "mb",
+  "name": "Gigabyte X570 Aorus Elite",
+  "query": "Gigabyte X570 Aorus Elite",
+  "estimate": 15000
+ },
+ {
+  "kind": "ram",
+  "name": "2×32 ГБ DDR4-3200",
+  "query": "2x32GB DDR4-3200",
+  "estimate": 70000
+ },
+ {
+  "kind": "ram",
+  "name": "2×16 ГБ DDR4-3200",
+  "query": "2x16GB DDR4-3200",
+  "estimate": 35000
+ },
+ {
+  "kind": "psu",
+  "name": "Seasonic PRIME TX-1600 (ATX 3.1)",
+  "query": "Seasonic PRIME TX-1600 (ATX 3.1)",
+  "estimate": 57550
+ },
+ {
+  "kind": "psu",
+  "name": "БП 2000 Вт (серверный, в корпусе YCC)",
+  "query": "БП 2000 Вт (серверный, в корпусе YCC)",
+  "estimate": 52407
+ },
+ {
+  "kind": "psu",
+  "name": "БП 1200 Вт (SuperFlower)",
+  "query": "БП 1200 Вт (SuperFlower)",
+  "estimate": 25000
+ },
+ {
+  "kind": "psu",
+  "name": "БП 1000 Вт (Corsair RM1000x)",
+  "query": "БП 1000 Вт (Corsair RM1000x)",
+  "estimate": 18000
+ },
+ {
+  "kind": "psu",
+  "name": "БП 850 Вт (be quiet! Straight Power)",
+  "query": "БП 850 Вт (be quiet! Straight Power)",
+  "estimate": 12000
+ },
+ {
+  "kind": "case",
+  "name": "NegoRack NR-M48 (4U, 650 мм)",
+  "query": "NegoRack NR-M48 (4U, 650 мм)",
+  "estimate": 29623
+ },
+ {
+  "kind": "case",
+  "name": "Корпус 4U PROCASE (430 мм)",
+  "query": "Корпус 4U PROCASE (430 мм)",
+  "estimate": 22238
+ },
+ {
+  "kind": "case",
+  "name": "Открытый стенд",
+  "query": "Открытый стенд",
+  "estimate": 8000
+ },
+ {
+  "kind": "case",
+  "name": "Fractal Define 7 XL",
+  "query": "Fractal Define 7 XL",
+  "estimate": 33000
+ },
+ {
+  "kind": "case",
+  "name": "Lian Li PC-O11 Dynamic",
+  "query": "Lian Li PC-O11 Dynamic",
+  "estimate": 18000
+ },
+ {
+  "kind": "case",
+  "name": "Корпус ATX с 3 слотами (ориентир)",
+  "query": "Корпус ATX с 3 слотами (ориентир)",
+  "estimate": 6000
+ }
+]
