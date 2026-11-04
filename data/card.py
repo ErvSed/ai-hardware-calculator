@@ -141,7 +141,7 @@ def make_card(b, out_path):
 
     # подвал
     d.line([60, H - 78, W - 60, H - 78], fill=LINE, width=1)
-    d.text((60, H - 60), "ervsed.github.io/ai-hardware-calculator", font=F["small"], fill=ACCENT)
+    d.text((60, H - 60), "ervsed.github.io/ai-calculator-site", font=F["small"], fill=ACCENT)
     d.text((W - 60, H - 60), "цены — медианы объявлений Авито (СПб), 04.11.2026", font=F["small"], fill=MUTED, anchor="ra")
 
     img.save(out_path, "PNG")
