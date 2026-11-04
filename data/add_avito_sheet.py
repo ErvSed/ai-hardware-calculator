@@ -84,3 +84,26 @@ ws.freeze_panes = "A2"
 
 wb.save(XLSX)
 print("лист «Авито» добавлен:", len(rows), "позиций")
+
+# ---- карточка сборки картинкой
+try:
+    import card as card_mod
+    import model as model_mod
+    from openpyxl.drawing.image import Image as XLImage
+
+    png = os.path.join(HERE, "card.png")
+    b = model_mod.build()
+    card_mod.make_card(b, png)
+    if "Карточка" in wb.sheetnames:
+        del wb["Карточка"]
+    ws2 = wb.create_sheet("Карточка", 1)
+    ws2.cell(row=1, column=1, value="Карточка сборки (по умолчанию): %d× %s, %s" % (
+        b["count"], b["gpu"]["name"], b["cpu"]["name"])).font = Font(bold=True, size=12)
+    ws2.cell(row=2, column=1, value="На сайте карточка генерируется под выбранную конфигурацию кнопкой «Скачать карточку PNG».").alignment = WRAP
+    img = XLImage(png)
+    ws2.add_image(img, "A4")
+    ws2.column_dimensions["A"].width = 12
+    wb.save(XLSX)
+    print("лист «Карточка» добавлен:", png)
+except Exception as e:
+    print("карточка не добавлена:", e)
