@@ -32,7 +32,8 @@
     var gpu = sel.gpu, n = sel.count, cpu = sel.cpu, mb = sel.mb, ram = sel.ram;
     var vram = gpu.vram * n, bwVram = gpu.bw * n, compute = gpu.comp * n;
     var bwRam = cpu.bw;
-    var price = gpu.price * n + cpu.price + mb.price + ram.price + sel.psu.price + sel.case.price;
+    var price = gpu.price * n + cpu.price + mb.price + ram.price + sel.psu.price + sel.case.price +
+      ((sel.ssd && sel.ssd.price) || 0);
     var power = gpu.tdp * n * 1.1 + cpu.tdp * 1.3 + 100;
     var psuNeed = Math.ceil(power / 0.75 / 50) * 50;
 
@@ -62,7 +63,7 @@
     return {
       vram: vram, bwVram: bwVram, compute: compute, bwRam: bwRam,
       price: price, power: power, psuNeed: psuNeed,
-      models: models, checks: checks,
+      models: models, checks: checks, count: n,
       vendorOk: gpu.vendor === "NVIDIA" ? "NVIDIA — все модели" : gpu.vendor + " — только Strata (Qwen)",
     };
   }
