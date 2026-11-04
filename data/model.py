@@ -44,14 +44,15 @@ def ram_of(p, name):
     raise KeyError(name)
 
 
-def s_share(vram, dense, size):
-    return max(0.0, min(1.0, (vram - dense - 2) / (size - dense)))
+def s_share(vram, dense, kv, size):
+    return max(0.0, min(1.0, (vram - dense - kv) / (size - dense)))
 
 
 def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
           ram="8×32 ГБ DDR4-3200 ECC RDIMM", gpu="RTX 3090 24 ГБ", count=2,
           psu="Seasonic PRIME TX-1600 (ATX 3.1)", case="NegoRack NR-M48 (4U, 650 мм)",
-          ssd=None):
+          ssd=None, ctx=None):
+    ctx = ctx or db.CTX_DEFAULT
     p = platform_by_name(platform)
     c = cpu_of(p, cpu)
     m = mb_of(p, mb)
@@ -75,9 +76,11 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
     models = []
     for mm in db.MODELS:
         name, engine, size, active, bpt, dense, a_vram, a_bw, a_ram, a_comp, a_dec, a_pp, exp, src = mm
-        s = s_share(vram, dense, size)
+        kv = db.kv_gb(name, ctx)
+        s = s_share(vram, dense, kv, size)
         d = s * bw_vram + (1 - s) * bw_ram
-        da = s_share(a_vram, dense, size) * a_bw + (1 - s_share(a_vram, dense, size)) * a_ram
+        sa = s_share(a_vram, dense, 2, size)
+        da = sa * a_bw + (1 - sa) * a_ram
         dec = a_dec * (d / da) ** exp
         pp = a_pp * (compute / a_comp) ** 0.35 * (bw_ram / a_ram) ** 0.2
         blocked = ((engine.startswith("Maya") and g["vendor"] != "NVIDIA")
@@ -96,6 +99,7 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
 
     return {
         "platform": platform, "cpu": c, "mb": m, "ram": r, "gpu": g, "count": count,
+        "ctx": ctx, "kv": db.kv_gb("GLM-5.3-Flash Maya-L", ctx),
         "psu": {"name": ps[0], "w": ps[1], "price": ps_price},
         "case": {"name": cs[0], "len": cs[1], "slots": cs[2], "price": cs_price, "dims": dims, "volume": volume},
         "ssd": {"name": sd[0], "gb": sd[1], "gbs": sd[2], "price": sd_price},
