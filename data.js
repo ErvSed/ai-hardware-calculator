@@ -809,22 +809,22 @@ const DB = {
      "type": "DDR5",
      "mods": 2,
      "gb": 48,
-     "price": 59940,
+     "price": 255100,
      "src": "chipdip, комплект",
      "platform": "AM5",
      "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x48GB%20DDR5-6000",
-     "avitoN": 44
+     "avitoN": 0
     },
     {
      "name": "2×32 ГБ DDR5-6000",
      "type": "DDR5",
      "mods": 2,
      "gb": 32,
-     "price": 95000,
+     "price": 156900,
      "src": "chipdip, комплект",
      "platform": "AM5",
      "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x32GB%20DDR5-6000",
-     "avitoN": 50
+     "avitoN": 0
     }
    ]
   },
@@ -910,22 +910,22 @@ const DB = {
      "type": "DDR5",
      "mods": 2,
      "gb": 48,
-     "price": 59940,
+     "price": 255100,
      "src": "chipdip, комплект",
      "platform": "LGA1851",
      "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x48GB%20DDR5-6000",
-     "avitoN": 44
+     "avitoN": 0
     },
     {
      "name": "2×32 ГБ DDR5-6000",
      "type": "DDR5",
      "mods": 2,
      "gb": 32,
-     "price": 95000,
+     "price": 156900,
      "src": "chipdip, комплект",
      "platform": "LGA1851",
      "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x32GB%20DDR5-6000",
-     "avitoN": 50
+     "avitoN": 0
     }
    ]
   },
@@ -1000,11 +1000,11 @@ const DB = {
      "type": "DDR5",
      "mods": 2,
      "gb": 48,
-     "price": 59940,
+     "price": 255100,
      "src": "chipdip, комплект",
      "platform": "LGA1700",
      "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x48GB%20DDR5-6000",
-     "avitoN": 44
+     "avitoN": 0
     },
     {
      "name": "4×32 ГБ DDR4-3200",
