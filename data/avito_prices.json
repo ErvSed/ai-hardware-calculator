@@ -4972,5 +4972,53 @@
   ],
   "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81+ATX+%D1%81+3+%D1%81%D0%BB%D0%BE%D1%82%D0%B0%D0%BC%D0%B8+%28%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%29",
   "ts": "2026-11-04T16:46:15.992Z"
+ },
+ "RTX 5060 Ti 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 5060 Ti 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 46,
+  "ads_clean": 46,
+  "min": 37000,
+  "p25": 65495,
+  "median": 70000,
+  "p75": 75000,
+  "max": 85800,
+  "estimate": 55000,
+  "samples": [
+   {
+    "price": 74990,
+    "title": "Видеокарта RTX 5060Ti 16Gb White Palit OC",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/videokarta_rtx_5060ti_16gb_white_palit_oc_7770596949"
+   },
+   {
+    "price": 60000,
+    "title": "Видеокарта Gigabyte GeForce RTX 5060 Ti 16GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_gigabyte_geforce_rtx_5060_ti_16gb_8354410444"
+   },
+   {
+    "price": 68990,
+    "title": "Rtx 5060ti 16 gb palit",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/rtx_5060ti_16_gb_palit_8491131938"
+   },
+   {
+    "price": 72000,
+    "title": "Видеокарта RTX 5060 Ti Infinity 3 OC 16GB",
+    "date": "",
+    "url": "https://www.avito.ru/murino/tovary_dlya_kompyutera/videokarta_rtx_5060_ti_infinity_3_oc_16gb_8150846935"
+   },
+   {
+    "price": 37000,
+    "title": "Rtx 5060 ti 16гб gigabyte",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_5060_ti_16gb_gigabyte_8161497705"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+5060+Ti+16GB",
+  "ts": "2026-11-04T18:00:29.118Z"
  }
 }
