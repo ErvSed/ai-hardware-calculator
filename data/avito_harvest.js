@@ -14,7 +14,10 @@ const KIND = getArg("--kind");
 const ONLY = getArg("--only");
 const LIMIT = parseInt(getArg("--limit") || "0", 10);
 
-const JUNK = /скупк|обмен|нерабоч|не\s*работ|битая|битый|битую|на\s*запчаст|донор|ремонт|только\s*корпус|без\s*чипа|не\s*включается|неисправ|неработоспособ|под\s*восстановлен|восстановлен|запчаст/i;
+const JUNK = /скупк|обмен|нерабоч|не\s*работ|битая|битый|битую|на\s*запчаст|донор|ремонт|только\s*корпус|без\s*чипа|не\s*включается|неисправ|неработоспособ|под\s*восстановлен|восстановлен|запчаст|аренда|прокат|в\s*рассрочку|только\s*плата|выкуп/i;
+
+// целые машины вместо запчасти — только для комплектующих, не для БП/корпусов
+const WHOLE = /рабочая\s*станция|системный\s*блок|моноблок|ноутбук|компьютер\s*в\s*сборе|сервер\b/i;
 
 // модель, которую ищем: число модели + значимые слова (Ada, Blackwell, Ti, Super, XT...)
 function modelFilter(query) {
@@ -145,6 +148,7 @@ function quantile(arr, q) {
       const p = parsePrice(it.priceRaw);
       if (!p) return;
       if (JUNK.test(it.title)) return;
+      if (item.kind !== "psu" && item.kind !== "case" && WHOLE.test(it.title)) return;
       if (!matchesModel(it.title, mf)) return;
       if (p < 1000 || p > 6000000) return;
       prices.push(p);
