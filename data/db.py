@@ -345,6 +345,30 @@ CASES = [
     ("Корпус ATX с 3 слотами (ориентир)", 340, 3, 6000, "Авито (ориентир)"),
 ]
 
+# контекст: метка и токены. KV-кэш считается по модели (int8 K/V).
+CONTEXTS = [(8192, "8K"), (32768, "32K"), (65536, "64K"), (131072, "128K"), (262144, "256K")]
+CTX_DEFAULT = 32768
+
+# ГБ KV-кэша на 1000 токенов (int8). Оценка по архитектуре: ~48 слоёв, GQA 8 голов × 128.
+KV_RATE = {
+    "GLM-5.3-Flash Maya-L": 0.10,
+    "GLM-5.3-Flash Maya-M": 0.10,
+    "Qwen3.8-Flash UD-Q4_K_XL": 0.098,
+    "Qwen3.8-Flash UD-IQ4_XS": 0.098,
+    "DeepSeek-V4.1-Flash Maya-S": 0.12,
+    "Qwen3.8-Flash Basalt NVFP4-DQ6_K": 0.098,
+    "Qwen3.8-Flash Basalt IQ3_S": 0.098,
+}
+
+
+def kv_rate(name):
+    return KV_RATE.get(name, 0.10)
+
+
+def kv_gb(name, tokens):
+    return kv_rate(name) * tokens / 1000.0
+
+
 # имя, объём ГБ, чтение ГБ/с, цена, источник
 SSDS = [
     ("NVMe 4 ТБ Gen5 Crucial T705", 4000, 13.6, 85370, "chipdip"),
