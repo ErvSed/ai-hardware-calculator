@@ -210,6 +210,7 @@ tex = [
     ("Калькулятор максимума LLM на выбранном железе", None),
     ("Что считает", "Декод (ток/с) и префилл (ток/с) для GLM-5.3-Flash (2 кванта), Qwen3.8-Flash-Next (2 кванта, Strata) и DeepSeek-V4.1-Flash-1017 (Maya-ds4), плюс цену сборки, требуемый БП и проверки совместимости"),
     ("Как пользоваться", "Лист «Калькулятор», сверху вниз: платформа → CPU → плата → память → GPU → количество → БП → корпус. Списки CPU, плат и памяти фильтруются сами: показываются только варианты под выбранную платформу"),
+    ("Движки и модели", "Project Maya (GLM-5.3-Flash Maya-L и Maya-M, DeepSeek-V4.1-Flash) · Strata (Qwen3.8-Flash UD-Q4_K_XL и UD-IQ4_XS) · Basalt (Qwen3.8-Flash NVFP4-DQ6_K и GSQ-RCO-IQ3_S — форк Strata под Blackwell, работает только на sm_120: RTX 50 и RTX PRO 6000)"),
     ("Платформы", "SP3 (EPYC, 8×DDR4, 128 линий PCIe) · AM5 (Ryzen, 2×DDR5, 24 линии, максимум 2 GPU) · LGA4677 (Xeon SPR, 8×DDR5, до 240 ГБ/с) · LGA4189 (Xeon Ice Lake, 8×DDR4) · LGA3647 (Xeon Scalable, 6×DDR4 на сокет, AVX-512) · sTR5 (Threadripper 7000, 4×DDR5, до 80 линий PCIe)"),
     ("После смены платформы", "Перевыберите CPU, плату и память: старые значения останутся в ячейках и подсветятся в проверках как несовместимые"),
     ("Модель расчёта", "От измеренных опорных точек (лист «Модели»): декод масштабируется по доле экспертов в VRAM и полосе памяти, префилл — по compute и полосе RAM. Погрешность ±25 % по декоду и ±35 % по префиллу"),
@@ -226,7 +227,7 @@ s.sheet_view.showGridLines = False
 
 # ================================================================ GPU
 g = WB.create_sheet("GPU")
-head(g, 1, ["Модель", "VRAM, ГБ", "Полоса, ГБ/с", "TDP, Вт", "Длина, мм", "Слотов", "Compute", "Цена магазин, ₽", "Цена Авито, ₽", "Цена для расчёта, ₽", "Источник / статус", "Вендор", "Авито"])
+head(g, 1, ["Модель", "VRAM, ГБ", "Полоса, ГБ/с", "TDP, Вт", "Длина, мм", "Слотов", "Compute", "Цена магазин, ₽", "Цена Авито, ₽", "Цена для расчёта, ₽", "Источник / статус", "Вендор", "Авито", "Арх."])
 r = 2
 for name, vram, bw, tdp, ln, slots, comp, shop, avito, src, vendor in GPU_ROWS:
     g.cell(row=r, column=1, value=name)
@@ -243,6 +244,7 @@ for name, vram, bw, tdp, ln, slots, comp, shop, avito, src, vendor in GPU_ROWS:
     g.cell(row=r, column=10, value=f"=IF(I{r}>0,I{r},H{r})").number_format = MONEY
     g.cell(row=r, column=11, value=(src + (" · " + _note if _note else ""))).alignment = WRAP
     g.cell(row=r, column=12, value=vendor).alignment = CENTER
+    g.cell(row=r, column=14, value=gpu_arch(name)).alignment = CENTER
     lc = g.cell(row=r, column=13, value="Авито")
     lc.hyperlink = avito_url(name)
     lc.font = LINK
@@ -479,8 +481,8 @@ for name, formula in checks:
     r += 1
 k.cell(row=36, column=1, value="ИТОГ ПРОВЕРОК").font = Font(bold=True)
 k.cell(row=36, column=2, value='=IF(COUNTIF(B29:B34,"OK")=6,"ВСЁ СОВМЕСТИМО","ЕСТЬ ПРОБЛЕМЫ")').font = Font(bold=True)
-k.cell(row=37, column=1, value="Поддержка моделей по вендору").font = Font(bold=True)
-k.cell(row=37, column=2, value='=IF(B10="NVIDIA","NVIDIA — все 5 моделей: Maya и Strata","Вендор "&B10&": только Strata (Qwen); Maya требует NVIDIA")').font = Font(bold=True)
+k.cell(row=37, column=1, value="Поддержка моделей (вендор и Basalt)").font = Font(bold=True)
+k.cell(row=37, column=2, value='=IF(B10="NVIDIA","NVIDIA: Maya + Strata","Вендор "&B10&": только Strata")&" · Basalt: "&IF(IFERROR(VLOOKUP(B6,GPU!$A:$N,14,0),"")="Blackwell","доступен","нужен Blackwell (sm_120)")').font = Font(bold=True)
 
 k.cell(row=38, column=1, value="СКОРОСТЬ ПО МОДЕЛЯМ (оценка ±25 %)").font = SUB_FONT
 k.cell(row=38, column=1).fill = SUB_FILL
@@ -489,23 +491,26 @@ head(k, 39, ["Модель", "s (доля в VRAM)", "Декод, ток/с", "�
 r = 40
 for i in range(len(MODELS)):
     md_row = 2 + i
+    engine = MODELS[i][1]
+    dec_f = (f"Модели!K{md_row}*(((B{r}*$B$19+(1-B{r})*$B$14)"
+             f"/(Модели!M{md_row}*Модели!H{md_row}+(1-Модели!M{md_row})*Модели!I{md_row}))^Модели!N{md_row})")
+    pp_f = f"Модели!L{md_row}*(($B$20/Модели!J{md_row})^0.35)*(($B$14/Модели!I{md_row})^0.2)"
+    if engine == "Basalt":
+        guard = f'AND(Модели!B{md_row}="Basalt",IFERROR(VLOOKUP($B$6,GPU!$A:$N,14,0),"")<>"Blackwell"),"—",'
+        dec_f = "IF(" + guard + dec_f + ")"
+        pp_f = "IF(" + guard + pp_f + ")"
     k.cell(row=r, column=1, value=f"=Модели!A{md_row}")
     k.cell(row=r, column=2, value=f"=MIN(1,MAX(0,($B$18-Модели!F{md_row}-2)/(Модели!C{md_row}-Модели!F{md_row})))").number_format = NUM2
-    k.cell(row=r, column=3, value=(
-        f"=Модели!K{md_row}*(((B{r}*$B$19+(1-B{r})*$B$14)"
-        f"/(Модели!M{md_row}*Модели!H{md_row}+(1-Модели!M{md_row})*Модели!I{md_row}))^Модели!N{md_row})"
-    )).number_format = NUM1
-    k.cell(row=r, column=4, value=(
-        f"=Модели!L{md_row}*(($B$20/Модели!J{md_row})^0.35)*(($B$14/Модели!I{md_row})^0.2)"
-    )).number_format = NUM1
+    k.cell(row=r, column=3, value="=" + dec_f).number_format = NUM1
+    k.cell(row=r, column=4, value="=" + pp_f).number_format = NUM1
     k.cell(row=r, column=5, value=f'=IF(B{r}>0.8,"всё в VRAM",IF(B{r}>0.3,"VRAM + RAM-ярус","упирается в RAM/SSD"))')
     r += 1
 note(k, r + 1, "s — доля весов экспертов в VRAM (после вычета плотных весов и 2 ГБ контекста). Декод масштабируется по эффективной полосе со степенью из «Моделей», префилл — по compute и полосе RAM.", 5)
 
-k.cell(row=48, column=1, value="СТОИМОСТЬ ПОЗИЦИЙ И ССЫЛКИ НА АВИТО").font = SUB_FONT
-k.cell(row=48, column=1).fill = SUB_FILL
-k.merge_cells(start_row=48, start_column=1, end_row=48, end_column=4)
-head(k, 49, ["Позиция", "Выбранная модель", "Цена, ₽", "Авито"])
+k.cell(row=49, column=1, value="СТОИМОСТЬ ПОЗИЦИЙ И ССЫЛКИ НА АВИТО").font = SUB_FONT
+k.cell(row=49, column=1).fill = SUB_FILL
+k.merge_cells(start_row=49, start_column=1, end_row=49, end_column=4)
+head(k, 50, ["Позиция", "Выбранная модель", "Цена, ₽", "Авито"])
 breakdown = [
     ("CPU", "=B3", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,7,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B3,CPU!$A:$I,9,0),""),"Авито")'),
     ("Материнская плата", "=B4", '=IFERROR(VLOOKUP(B4,Платы!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B4,Платы!$A:$H,8,0),""),"Авито")'),
@@ -514,7 +519,7 @@ breakdown = [
     ("Блок питания", "=B8", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B8,БП_Корпус!$A:$H,8,0),""),"Авито")'),
     ("Корпус", "=B9", '=IFERROR(VLOOKUP(B9,БП_Корпус!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B9,БП_Корпус!$A:$H,8,0),""),"Авито")'),
 ]
-rr = 50
+rr = 51
 for label, name_f, price_f, link_f in breakdown:
     k.cell(row=rr, column=1, value=label).font = Font(bold=True)
     k.cell(row=rr, column=2, value=name_f).alignment = WRAP
@@ -523,10 +528,10 @@ for label, name_f, price_f, link_f in breakdown:
     lc.alignment = CENTER
     rr += 1
 k.cell(row=rr, column=1, value="ИТОГО по позициям").font = Font(bold=True)
-c = k.cell(row=rr, column=3, value="=SUM(C50:C55)")
+c = k.cell(row=rr, column=3, value="=SUM(C51:C56)")
 c.number_format = MONEY
 c.font = Font(bold=True)
-k.cell(row=rr, column=4, value='=IF(ROUND(C56-B24,0)=0,"сходится с итогом","расхождение с B24")')
+k.cell(row=rr, column=4, value='=IF(ROUND(C57-B24,0)=0,"сходится с итогом","расхождение с B24")')
 
 def dv(formula, cell):
     v = DataValidation(type="list", formula1=formula, allow_blank=False)
