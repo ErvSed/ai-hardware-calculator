@@ -150,19 +150,20 @@
     }).join("");
 
     var items = [
-      ["CPU", sel.cpu.name, sel.cpu.price, sel.cpu.avitoUrl],
-      ["Материнская плата", sel.mb.name, sel.mb.price, sel.mb.avitoUrl],
-      ["Память", sel.ram.name, sel.ram.price, sel.ram.avitoUrl],
-      ["Видеокарты", sel.gpu.name + " × " + sel.count, sel.gpu.price * sel.count, sel.gpu.avitoUrl],
-      ["Блок питания", sel.psu.name, sel.psu.price, sel.psu.avitoUrl],
-      ["Корпус", sel["case"].name, sel["case"].price, sel["case"].avitoUrl]
+      ["CPU", sel.cpu.name, sel.cpu.price, sel.cpu.avitoUrl, sel.cpu.avitoN],
+      ["Материнская плата", sel.mb.name, sel.mb.price, sel.mb.avitoUrl, sel.mb.avitoN],
+      ["Память", sel.ram.name, sel.ram.price, sel.ram.avitoUrl, sel.ram.avitoN],
+      ["Видеокарты", sel.gpu.name + " × " + sel.count, sel.gpu.price * sel.count, sel.gpu.avitoUrl, sel.gpu.avitoN],
+      ["Блок питания", sel.psu.name, sel.psu.price, sel.psu.avitoUrl, sel.psu.avitoN],
+      ["Корпус", sel["case"].name, sel["case"].price, sel["case"].avitoUrl, sel["case"].avitoN]
     ];
-    $("breakdown").innerHTML = "<thead><tr><th>Позиция</th><th>Модель</th><th>Цена</th><th>Авито</th></tr></thead><tbody>" +
+    $("breakdown").innerHTML = "<thead><tr><th>Позиция</th><th>Модель</th><th>Цена (медиана Авито)</th><th>Объявл.</th><th>Авито</th></tr></thead><tbody>" +
       items.map(function(it){
-        return "<tr><td>" + it[0] + "</td><td>" + it[1] + "</td><td>" + money(it[2]) + "</td><td>" +
+        var approx = it[4] ? "" : "≈ ";
+        return "<tr><td>" + it[0] + "</td><td>" + it[1] + "</td><td>" + approx + money(it[2]) + "</td><td>" + (it[4] || "—") + "</td><td>" +
           "<a href='" + it[3] + "' target='_blank' rel='noopener'>искать</a></td></tr>";
       }).join("") +
-      "<tr class='total'><td>ИТОГО</td><td></td><td>" + money(r.price) + "</td><td></td></tr></tbody>";
+      "<tr class='total'><td>ИТОГО</td><td></td><td>" + money(r.price) + "</td><td></td><td></td></tr></tbody>";
 
     renderMax();
   }
