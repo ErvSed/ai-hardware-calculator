@@ -1519,6 +1519,54 @@ const DB = {
    "avitoN": 9
   }
  ],
+ "ssds": [
+  {
+   "name": "NVMe 4 ТБ Gen5 Crucial T705",
+   "gb": 4000,
+   "gbs": 13.6,
+   "price": 85370,
+   "src": "chipdip",
+   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%204%20%D0%A2%D0%91%20Gen5%20Crucial%20T705",
+   "avitoN": 0
+  },
+  {
+   "name": "NVMe 4 ТБ Gen4 WD Black SN850X",
+   "gb": 4000,
+   "gbs": 7.3,
+   "price": 88360,
+   "src": "chipdip",
+   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%204%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
+   "avitoN": 0
+  },
+  {
+   "name": "NVMe 4 ТБ Gen4 Kingston KC3000",
+   "gb": 4000,
+   "gbs": 7.0,
+   "price": 89520,
+   "src": "chipdip",
+   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%204%20%D0%A2%D0%91%20Gen4%20Kingston%20KC3000",
+   "avitoN": 0
+  },
+  {
+   "name": "NVMe 2 ТБ Gen4 WD Black SN850X",
+   "gb": 2000,
+   "gbs": 7.3,
+   "price": 43500,
+   "src": "Авито (ориентир)",
+   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%202%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
+   "avitoN": 0
+  },
+  {
+   "name": "NVMe 8 ТБ Gen4 WD Black SN850X",
+   "gb": 8000,
+   "gbs": 7.3,
+   "price": 168000,
+   "src": "Авито (ориентир)",
+   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%208%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
+   "avitoN": 0
+  }
+ ],
+ "ssdDefault": "NVMe 4 ТБ Gen4 WD Black SN850X",
  "cases": [
   {
    "name": "NegoRack NR-M48 (4U, 650 мм)",
