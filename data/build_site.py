@@ -55,11 +55,13 @@ data = {
     "ssds": [{"name": s[0], "gb": s[1], "gbs": s[2], "price": s[3], "src": s[4], "avitoUrl": db.avito_url(s[0]), "avitoN": pstat(s[0])} for s in db.SSDS],
     "ssdDefault": db.SSD_DEFAULT,
     "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": db.avito_price(c[0], c[3]), "src": c[4], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "dims": list(db.CASE_DIMS.get(c[0]) or [])} for c in db.CASES],
+    "ctxOptions": [{"tokens": t, "label": l} for t, l in db.CONTEXTS],
+    "ctxDefault": db.CTX_DEFAULT,
     "models": [
         {
             "name": m[0], "engine": m[1], "size": m[2], "active": m[3], "bpt": m[4], "dense": m[5],
             "aVram": m[6], "aBw": m[7], "aRam": m[8], "aComp": m[9], "aDec": m[10], "aPP": m[11],
-            "exp": m[12], "src": m[13],
+            "exp": m[12], "src": m[13], "kvRate": db.kv_rate(m[0]),
         }
         for m in db.MODELS
     ],
