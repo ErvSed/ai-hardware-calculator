@@ -1691,6 +1691,29 @@ const DB = {
    ]
   }
  ],
+ "ctxOptions": [
+  {
+   "tokens": 8192,
+   "label": "8K"
+  },
+  {
+   "tokens": 32768,
+   "label": "32K"
+  },
+  {
+   "tokens": 65536,
+   "label": "64K"
+  },
+  {
+   "tokens": 131072,
+   "label": "128K"
+  },
+  {
+   "tokens": 262144,
+   "label": "256K"
+  }
+ ],
+ "ctxDefault": 32768,
  "models": [
   {
    "name": "GLM-5.3-Flash Maya-L",
@@ -1706,7 +1729,8 @@ const DB = {
    "aDec": 30.2,
    "aPP": 801,
    "exp": 0.3,
-   "src": "2×3090 + EPYC 7452, Maya #165"
+   "src": "2×3090 + EPYC 7452, Maya #165",
+   "kvRate": 0.1
   },
   {
    "name": "GLM-5.3-Flash Maya-M",
@@ -1722,7 +1746,8 @@ const DB = {
    "aDec": 27.0,
    "aPP": 1069,
    "exp": 0.3,
-   "src": "1×3090 + EPYC 7702P, Maya #157"
+   "src": "1×3090 + EPYC 7702P, Maya #157",
+   "kvRate": 0.1
   },
   {
    "name": "Qwen3.8-Flash UD-Q4_K_XL",
@@ -1738,7 +1763,8 @@ const DB = {
    "aDec": 63.5,
    "aPP": 1200,
    "exp": 0.5,
-   "src": "1×R9700 + EPYC 7452, QUANTS.md: 63–64 tok/s, pp 1110–1320"
+   "src": "1×R9700 + EPYC 7452, QUANTS.md: 63–64 tok/s, pp 1110–1320",
+   "kvRate": 0.098
   },
   {
    "name": "Qwen3.8-Flash UD-IQ4_XS",
@@ -1754,7 +1780,8 @@ const DB = {
    "aDec": 68.0,
    "aPP": 1400,
    "exp": 0.5,
-   "src": "оценка по таблице QUANTS: между IQ3_S (75) и Q4 (63,5)"
+   "src": "оценка по таблице QUANTS: между IQ3_S (75) и Q4 (63,5)",
+   "kvRate": 0.098
   },
   {
    "name": "DeepSeek-V4.1-Flash Maya-S",
@@ -1770,7 +1797,8 @@ const DB = {
    "aDec": 24.9,
    "aPP": 1842,
    "exp": 0.3,
-   "src": "1×RTX 5090 + 128 ГБ, dev.to 10.2026"
+   "src": "1×RTX 5090 + 128 ГБ, dev.to 10.2026",
+   "kvRate": 0.12
   },
   {
    "name": "Qwen3.8-Flash Basalt NVFP4-DQ6_K",
@@ -1786,7 +1814,8 @@ const DB = {
    "aDec": 274,
    "aPP": 5850,
    "exp": 0.26,
-   "src": "замер HF-карточки: 5090 + 5060 Ti peer, 274 tok/s prose"
+   "src": "замер HF-карточки: 5090 + 5060 Ti peer, 274 tok/s prose",
+   "kvRate": 0.098
   },
   {
    "name": "Qwen3.8-Flash Basalt IQ3_S",
@@ -1802,7 +1831,8 @@ const DB = {
    "aDec": 341,
    "aPP": 6000,
    "exp": 0.26,
-   "src": "замер HF-карточки: 341 tok/s prose (IQ3_S)"
+   "src": "замер HF-карточки: 341 tok/s prose (IQ3_S)",
+   "kvRate": 0.098
   }
  ]
 };
