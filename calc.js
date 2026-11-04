@@ -25,6 +25,7 @@
   }
 
   function requiresNvidia(m) { return m.engine === "Maya" || m.engine === "Maya-ds4"; }
+  function requiresBlackwell(m) { return m.engine === "Basalt"; }
 
   // полный расчёт сборки
   function build(sel) {
@@ -37,12 +38,14 @@
 
     var models = sel.models.map(function (m) {
       var maya = requiresNvidia(m);
-      var blk = maya && gpu.vendor !== "NVIDIA";
+      var blackwell = requiresBlackwell(m);
+      var blk = (maya && gpu.vendor !== "NVIDIA") || (blackwell && gpu.arch !== "Blackwell");
       var dec = blk ? null : decode(m, vram, bwVram, bwRam);
       var pp = blk ? null : prefill(m, compute, bwRam);
       var s = sShare(vram, m.dense, m.size);
       return {
         name: m.name, engine: m.engine, s: s, decode: dec, prefill: pp, blocked: blk,
+        reason: blk ? (maya ? "нет NVIDIA" : "нужен Blackwell") : null,
         lim: s > 0.8 ? "всё в VRAM" : (s > 0.3 ? "VRAM + RAM-ярус" : "упирается в RAM/SSD"),
       };
     });
@@ -86,7 +89,7 @@
     return rows;
   }
 
-  var api = { build: build, maxTable: maxTable, sShare: sShare, decode: decode, prefill: prefill, requiresNvidia: requiresNvidia };
+  var api = { build: build, maxTable: maxTable, sShare: sShare, decode: decode, prefill: prefill, requiresNvidia: requiresNvidia, requiresBlackwell: requiresBlackwell };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.Calc = api;
 })(typeof window !== "undefined" ? window : globalThis);
