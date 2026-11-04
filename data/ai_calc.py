@@ -236,10 +236,12 @@ for name, vram, bw, tdp, ln, slots, comp, shop, avito, src, vendor in GPU_ROWS:
     g.cell(row=r, column=5, value=ln)
     g.cell(row=r, column=6, value=slots)
     g.cell(row=r, column=7, value=comp).number_format = NUM2
+    _av = avito_price(name, avito)
+    _note = avito_note(name)
     g.cell(row=r, column=8, value=shop if shop else None).number_format = MONEY
-    g.cell(row=r, column=9, value=avito if avito else None).number_format = MONEY
+    g.cell(row=r, column=9, value=_av if _av else None).number_format = MONEY
     g.cell(row=r, column=10, value=f"=IF(I{r}>0,I{r},H{r})").number_format = MONEY
-    g.cell(row=r, column=11, value=src).alignment = WRAP
+    g.cell(row=r, column=11, value=(src + (" · " + _note if _note else ""))).alignment = WRAP
     g.cell(row=r, column=12, value=vendor).alignment = CENTER
     lc = g.cell(row=r, column=13, value="Авито")
     lc.hyperlink = avito_url(name)
@@ -277,8 +279,8 @@ for plat in PLATFORMS:
         c.cell(row=rc, column=4, value=ch)
         c.cell(row=rc, column=5, value=bw)
         c.cell(row=rc, column=6, value=tdp)
-        c.cell(row=rc, column=7, value=price).number_format = MONEY
-        c.cell(row=rc, column=8, value=src).alignment = WRAP
+        c.cell(row=rc, column=7, value=avito_price(name, price)).number_format = MONEY
+        c.cell(row=rc, column=8, value=(src + (" · " + avito_note(name) if avito_note(name) else ""))).alignment = WRAP
         lc = c.cell(row=rc, column=9, value="Авито")
         lc.hyperlink = avito_url(name)
         lc.font = LINK
@@ -291,8 +293,8 @@ for plat in PLATFORMS:
         m.cell(row=rm, column=3, value=ram)
         m.cell(row=rm, column=4, value=rs)
         m.cell(row=rm, column=5, value=ps)
-        m.cell(row=rm, column=6, value=price).number_format = MONEY
-        m.cell(row=rm, column=7, value=src).alignment = WRAP
+        m.cell(row=rm, column=6, value=avito_price(name, price)).number_format = MONEY
+        m.cell(row=rm, column=7, value=(src + (" · " + avito_note(name) if avito_note(name) else ""))).alignment = WRAP
         lc = m.cell(row=rm, column=8, value="Авито")
         lc.hyperlink = avito_url(name)
         lc.font = LINK
@@ -305,8 +307,8 @@ for plat in PLATFORMS:
         p.cell(row=rp, column=3, value=mods)
         p.cell(row=rp, column=4, value=gb)
         p.cell(row=rp, column=5, value=mods * gb)
-        p.cell(row=rp, column=6, value=price).number_format = MONEY
-        p.cell(row=rp, column=7, value=src).alignment = WRAP
+        p.cell(row=rp, column=6, value=avito_price(name, price)).number_format = MONEY
+        p.cell(row=rp, column=7, value=(src + (" · " + avito_note(name) if avito_note(name) else ""))).alignment = WRAP
         lc = p.cell(row=rp, column=8, value="Авито")
         lc.hyperlink = avito_url(name)
         lc.font = LINK
@@ -339,8 +341,8 @@ for name, w, price, src in PSUS:
     b.cell(row=r, column=1, value=name)
     b.cell(row=r, column=2, value="БП")
     b.cell(row=r, column=3, value=w)
-    b.cell(row=r, column=6, value=price).number_format = MONEY
-    b.cell(row=r, column=7, value=src).alignment = WRAP
+    b.cell(row=r, column=6, value=avito_price(name, price)).number_format = MONEY
+    b.cell(row=r, column=7, value=(src + (" · " + avito_note(name) if avito_note(name) else ""))).alignment = WRAP
     lc = b.cell(row=r, column=8, value="Авито")
     lc.hyperlink = avito_url(name)
     lc.font = LINK
@@ -358,8 +360,8 @@ for name, ln, slots, price, src in CASES:
     b.cell(row=r, column=2, value="Корпус")
     b.cell(row=r, column=4, value=ln)
     b.cell(row=r, column=5, value=slots)
-    b.cell(row=r, column=6, value=price).number_format = MONEY
-    b.cell(row=r, column=7, value=src).alignment = WRAP
+    b.cell(row=r, column=6, value=avito_price(name, price)).number_format = MONEY
+    b.cell(row=r, column=7, value=(src + (" · " + avito_note(name) if avito_note(name) else ""))).alignment = WRAP
     lc = b.cell(row=r, column=8, value="Авито")
     lc.hyperlink = avito_url(name)
     lc.font = LINK
