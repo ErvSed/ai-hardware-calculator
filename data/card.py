@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Карточка сборки в PNG: состав, цены, скорость, габариты и питание."""
+import datetime
 import os
 import sys
 
@@ -57,7 +58,7 @@ def make_card(b, out_path):
     d.text((60, 136), "%s · %s ГБ RAM · %d ГБ VRAM · контекст %dK · %d Вт" % (
         b["platform"], b["ram"]["mods"] * b["ram"]["gb"], int(b["vram"]), b["ctx"] // 1024, b["power"]),
         font=F["body"], fill=MUTED)
-    d.text((W - 60, 56), "04.11.2026", font=F["small"], fill=MUTED, anchor="ra")
+    d.text((W - 60, 56), datetime.date.today().strftime("%d.%m.%Y"), font=F["small"], fill=MUTED, anchor="ra")
     d.text((W - 60, 78), "цены: Авито СПб", font=F["small"], fill=MUTED, anchor="ra")
 
     # ---- состав и цены (слева)
@@ -94,7 +95,7 @@ def make_card(b, out_path):
         name = m["name"].replace("GLM-5.3-Flash ", "GLM ").replace("Qwen3.8-Flash ", "Qwen ").replace("DeepSeek-V4.1-Flash ", "DS ")
         d.text((rx, yy), name[:30], font=F["body"], fill=TEXT)
         if m["decode"] is None:
-            d.text((rx + 240, yy), "нет NVIDIA", font=F["small"], fill=WARN)
+            d.text((rx + 240, yy), m.get("reason") or "недоступно", font=F["small"], fill=WARN)
         else:
             d.text((rx + 240, yy), "%.1f" % m["decode"], font=F["mono"], fill=TEXT)
             d.text((rx + 360, yy), "%d" % round(m["prefill"]), font=F["mono"], fill=MUTED)
