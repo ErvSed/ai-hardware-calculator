@@ -4684,5 +4684,341 @@
   ],
   "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Tesla+T4+16GB",
   "ts": "2026-11-04T18:31:36.391Z"
+ },
+ "Intel Xeon Gold 6438N": {
+  "kind": "cpu",
+  "query": "Intel Xeon Gold 6438N",
+  "status": "ok",
+  "ads_total": 24,
+  "ads_used": 22,
+  "ads_clean": 22,
+  "min": 127000,
+  "p25": 259000,
+  "median": 259000,
+  "p75": 259000,
+  "max": 272400,
+  "estimate": 220000,
+  "samples": [
+   {
+    "price": 148500,
+    "title": "Процессор Intel Xeon Gold 6438N",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6438n_4136063177"
+   },
+   {
+    "price": 253500,
+    "title": "Intel Xeon Gold 6438N",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_xeon_gold_6438n_7868885125"
+   },
+   {
+    "price": 127000,
+    "title": "Процессор Intel Xeon Gold 6438N",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6438n_7637617443"
+   },
+   {
+    "price": 272400,
+    "title": "Intel Xeon Gold 6438N",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/intel_xeon_gold_6438n_7890868402"
+   },
+   {
+    "price": 259000,
+    "title": "Процессор Intel Xeon Gold 6438N",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_intel_xeon_gold_6438n_7939287753"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Intel+Xeon+Gold+6438N",
+  "ts": "2026-11-06T19:43:19.111Z"
+ },
+ "AMD EPYC 9354": {
+  "kind": "cpu",
+  "query": "AMD EPYC 9354",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 40,
+  "ads_clean": 27,
+  "min": 118000,
+  "p25": 132000,
+  "median": 135000,
+  "p75": 148500,
+  "max": 320000,
+  "estimate": 120000,
+  "samples": [
+   {
+    "price": 150000,
+    "title": "Процессор AMD epyc 9354, SP5",
+    "date": "",
+    "url": "https://www.avito.ru/himki/tovary_dlya_kompyutera/protsessor_amd_epyc_9354_sp5_8420065467"
+   },
+   {
+    "price": 118000,
+    "title": "Процессор AMD epyc 9354",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9354_7303740491"
+   },
+   {
+    "price": 138300,
+    "title": "AMD epyc 9354",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_epyc_9354_7890193180"
+   },
+   {
+    "price": 120000,
+    "title": "Процессор AMD epyc 9354Р",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/protsessor_amd_epyc_9354r_7573745729"
+   },
+   {
+    "price": 118320,
+    "title": "Процессор AMD epyc 9354P",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9354p_7335066608"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?q=AMD+EPYC+9354",
+  "ts": "2026-11-06T19:43:55.172Z"
+ },
+ "AMD EPYC 9554": {
+  "kind": "cpu",
+  "query": "AMD EPYC 9554",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 25,
+  "ads_clean": 23,
+  "min": 94500,
+  "p25": 196000,
+  "median": 206000,
+  "p75": 301750,
+  "max": 418000,
+  "estimate": 250000,
+  "samples": [
+   {
+    "price": 168990,
+    "title": "Процессор AMD epyc 9554",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9554_7303180591"
+   },
+   {
+    "price": 94500,
+    "title": "Процессор AMD epyc 9554 QS",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9554_qs_7463727330"
+   },
+   {
+    "price": 230000,
+    "title": "Процессор AMD epyc 9554",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/protsessor_amd_epyc_9554_7573765547"
+   },
+   {
+    "price": 1369000,
+    "title": "Материнская плата H13SSL-N + epyc 9554 + 728GB+кул",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_h13ssl-n_epyc_9554_728gbkul_4598323668"
+   },
+   {
+    "price": 270000,
+    "title": "AMD epyc 9554 64 ядра 3.1-4.1Ghz 256mb 360w",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/amd_epyc_9554_64_yadra_3.1-4.1ghz_256mb_360w_4571534531"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=AMD+EPYC+9554",
+  "ts": "2026-11-06T19:44:00.999Z"
+ },
+ "AMD EPYC 9654": {
+  "kind": "cpu",
+  "query": "AMD EPYC 9654",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 24,
+  "ads_clean": 20,
+  "min": 117300,
+  "p25": 199969,
+  "median": 225000,
+  "p75": 241025,
+  "max": 458000,
+  "estimate": 330000,
+  "samples": [
+   {
+    "price": 52000,
+    "title": "Процессор AMD epyc 9654P ES б/у",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9654p_es_bu_7783880829"
+   },
+   {
+    "price": 999585,
+    "title": "Материнская плата Gigabyte MZ73 + epyc 9654 + 1024",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_gigabyte_mz73_epyc_9654_1024_4598365790"
+   },
+   {
+    "price": 199999,
+    "title": "Амd Ерyс 9654+ материнская плата",
+    "date": "",
+    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/amd_erys_9654_materinskaya_plata_8257620216"
+   },
+   {
+    "price": 168950,
+    "title": "Процессор AMD epyc 9B14 (9654)",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9b14_9654_8231614698"
+   },
+   {
+    "price": 240200,
+    "title": "AMD epyc 9654",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_epyc_9654_7890148926"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=AMD+EPYC+9654",
+  "ts": "2026-11-06T19:44:07.007Z"
+ },
+ "AMD EPYC 9965": {
+  "kind": "cpu",
+  "query": "AMD EPYC 9965",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 42,
+  "ads_clean": 41,
+  "min": 227700,
+  "p25": 301000,
+  "median": 434000,
+  "p75": 434000,
+  "max": 975788,
+  "estimate": 1100000,
+  "samples": [
+   {
+    "price": 227700,
+    "title": "Процессор AMD epyc 9965 ES",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9965_es_7879825262"
+   },
+   {
+    "price": 470800,
+    "title": "AMD epyc 9965",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_epyc_9965_7890708743"
+   },
+   {
+    "price": 655000,
+    "title": "AMD epyc 9965 + Gigabyte MZ73-LM0 + Кулер",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_epyc_9965_gigabyte_mz73-lm0_kuler_7900482938"
+   },
+   {
+    "price": 453282,
+    "title": "Процессор AMD epyc 9965",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/protsessor_amd_epyc_9965_7303517658"
+   },
+   {
+    "price": 423000,
+    "title": "AMD epyc 9965",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/amd_epyc_9965_7740066846"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?q=AMD+EPYC+9965",
+  "ts": "2026-11-06T19:44:12.844Z"
+ },
+ "Supermicro H13SSL-N": {
+  "kind": "mb",
+  "query": "Supermicro H13SSL-N",
+  "status": "ok",
+  "ads_total": 22,
+  "ads_used": 22,
+  "ads_clean": 18,
+  "min": 52000,
+  "p25": 74496,
+  "median": 83400,
+  "p75": 89474,
+  "max": 199880,
+  "estimate": 90000,
+  "samples": [
+   {
+    "price": 52000,
+    "title": "SuperMicro H13SSL-N",
+    "date": "",
+    "url": "https://www.avito.ru/moskovskaya_oblast_ivanteevka/tovary_dlya_kompyutera/supermicro_h13ssl-n_7581606826"
+   },
+   {
+    "price": 85938,
+    "title": "Материнская плата Supermicro H13SSL-N",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/materinskaya_plata_supermicro_h13ssl-n_8456876840"
+   },
+   {
+    "price": 70000,
+    "title": "Материнская плата H13SSL-N Rev.2.0",
+    "date": "",
+    "url": "https://www.avito.ru/podolsk/tovary_dlya_kompyutera/materinskaya_plata_h13ssl-n_rev.2.0_8317467931"
+   },
+   {
+    "price": 67980,
+    "title": "Материнская плата Supermicro H13SSL-N Rev.2",
+    "date": "",
+    "url": "https://www.avito.ru/klin/tovary_dlya_kompyutera/materinskaya_plata_supermicro_h13ssl-n_rev.2_7495005519"
+   },
+   {
+    "price": 90000,
+    "title": "Материнская плата Новая Supermicro H13SSL-N (rev2)",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/materinskaya_plata_novaya_supermicro_h13ssl-n_rev2_3644478898"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=Supermicro+H13SSL-N",
+  "ts": "2026-11-06T19:44:18.633Z"
+ },
+ "ASUS K14PA-U12": {
+  "kind": "mb",
+  "query": "ASUS K14PA-U12",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 20,
+  "ads_clean": 15,
+  "min": 1000,
+  "p25": 1500,
+  "median": 2200,
+  "p75": 2650,
+  "max": 4500,
+  "estimate": 85000,
+  "samples": [
+   {
+    "price": 60000,
+    "title": "Серверная материнская плата asus K14PA-U12 (SP-5)",
+    "date": "",
+    "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/servernaya_materinskaya_plata_asus_k14pa-u12_sp-5_7803021454"
+   },
+   {
+    "price": 2300,
+    "title": "Зарядка asus 65W 19V 3.42A (4.0x1.35 мм) оригинал",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/zaryadka_asus_65w_19v_3.42a_4.0x1.35_mm_original_3116002793"
+   },
+   {
+    "price": 65681,
+    "title": "Серверная материнская плата Asus K14PA-U12 671844",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/servernaya_materinskaya_plata_asus_k14pa-u12_671844_8388716615"
+   },
+   {
+    "price": 3720,
+    "title": "A17-120P2A зарядка asus 120W. 20V. 6А оригинал",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/a17-120p2a_zaryadka_asus_120w._20v._6a_original_3116431695"
+   },
+   {
+    "price": 2800,
+    "title": "Блок питания Asus 19V 3.42A (65W) 4.0x1.35 adp-65d",
+    "date": "",
+    "url": "https://www.avito.ru/novosibirsk/tovary_dlya_kompyutera/blok_pitaniya_asus_19v_3.42a_65w_4.0x1.35_adp-65d_3744534653"
+   }
+  ],
+  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?q=asus+k+14+pa-u+12",
+  "ts": "2026-11-06T19:44:24.705Z"
  }
 }
