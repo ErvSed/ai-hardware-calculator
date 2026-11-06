@@ -1142,6 +1142,18 @@ const DB = {
      "platform": "LGA4677",
      "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Silver%204510",
      "avitoN": 24
+    },
+    {
+     "name": "Intel Xeon Gold 6438N",
+     "cores": 32,
+     "ch": 8,
+     "bw": 358,
+     "tdp": 205,
+     "price": 259000,
+     "src": "оценка: 8 каналов DDR5-5600",
+     "platform": "LGA4677",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Gold%206438N",
+     "avitoN": 22
     }
    ],
    "mbs": [
@@ -1189,6 +1201,141 @@ const DB = {
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
      "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x16GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoN": 0
+    },
+    {
+     "name": "8×32 ГБ DDR5-5600 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 8,
+     "gb": 32,
+     "price": 260000,
+     "src": "оценка: модуль × 8",
+     "platform": "LGA4677",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x32GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoN": 0
+    },
+    {
+     "name": "8×64 ГБ DDR5-5600 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 8,
+     "gb": 64,
+     "price": 520000,
+     "src": "оценка: модуль × 8",
+     "platform": "LGA4677",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x64GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoN": 0
+    }
+   ]
+  },
+  {
+   "name": "SP5",
+   "title": "SP5 — EPYC 9004/9005: 12 каналов DDR5, до 576 ГБ/с, 128 линий PCIe 5.0",
+   "cpus": [
+    {
+     "name": "AMD EPYC 9354",
+     "cores": 32,
+     "ch": 12,
+     "bw": 460,
+     "tdp": 280,
+     "price": 135000,
+     "src": "оценка: 12 каналов DDR5-4800",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209354",
+     "avitoN": 27
+    },
+    {
+     "name": "AMD EPYC 9554",
+     "cores": 64,
+     "ch": 12,
+     "bw": 460,
+     "tdp": 360,
+     "price": 206000,
+     "src": "оценка: 12 каналов DDR5-4800",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209554",
+     "avitoN": 23
+    },
+    {
+     "name": "AMD EPYC 9654",
+     "cores": 96,
+     "ch": 12,
+     "bw": 460,
+     "tdp": 360,
+     "price": 225000,
+     "src": "оценка: 12 каналов DDR5-4800",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209654",
+     "avitoN": 20
+    },
+    {
+     "name": "AMD EPYC 9965",
+     "cores": 192,
+     "ch": 12,
+     "bw": 576,
+     "tdp": 500,
+     "price": 434000,
+     "src": "оценка: 12 каналов DDR5-6000",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209965",
+     "avitoN": 41
+    }
+   ],
+   "mbs": [
+    {
+     "name": "Supermicro H13SSL-N",
+     "ram": "DDR5",
+     "ramSlots": 12,
+     "slots": 5,
+     "price": 83400,
+     "src": "оценка, 1 сокет",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20H13SSL-N",
+     "avitoN": 18
+    },
+    {
+     "name": "ASUS K14PA-U12",
+     "ram": "DDR5",
+     "ramSlots": 12,
+     "slots": 5,
+     "price": 85000,
+     "src": "оценка, 1 сокет",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20K14PA-U12",
+     "avitoN": 0
+    }
+   ],
+   "rams": [
+    {
+     "name": "12×32 ГБ DDR5-4800 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 12,
+     "gb": 32,
+     "price": 276000,
+     "src": "оценка: модуль × 12",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=12x32GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoN": 0
+    },
+    {
+     "name": "12×64 ГБ DDR5-4800 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 12,
+     "gb": 64,
+     "price": 552000,
+     "src": "оценка: модуль × 12",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=12x64GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoN": 0
+    },
+    {
+     "name": "12×32 ГБ DDR5-5600 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 12,
+     "gb": 32,
+     "price": 300000,
+     "src": "оценка: модуль × 12",
+     "platform": "SP5",
+     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=12x32GB%20DDR5-5600%20ECC%20RDIMM",
      "avitoN": 0
     }
    ]
