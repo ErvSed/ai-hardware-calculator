@@ -426,6 +426,12 @@
   "estimate": 90000
  },
  {
+  "kind": "cpu",
+  "name": "Intel Xeon Gold 6438N",
+  "query": "Intel Xeon Gold 6438N",
+  "estimate": 220000
+ },
+ {
   "kind": "mb",
   "name": "Supermicro X13SEI-F",
   "query": "Supermicro X13SEI-F",
@@ -448,6 +454,72 @@
   "name": "8×16 ГБ DDR5-4800 ECC RDIMM",
   "query": "8x16GB DDR5-4800 ECC RDIMM",
   "estimate": 220000
+ },
+ {
+  "kind": "ram",
+  "name": "8×32 ГБ DDR5-5600 ECC RDIMM",
+  "query": "8x32GB DDR5-5600 ECC RDIMM",
+  "estimate": 260000
+ },
+ {
+  "kind": "ram",
+  "name": "8×64 ГБ DDR5-5600 ECC RDIMM",
+  "query": "8x64GB DDR5-5600 ECC RDIMM",
+  "estimate": 520000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 9354",
+  "query": "AMD EPYC 9354",
+  "estimate": 120000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 9554",
+  "query": "AMD EPYC 9554",
+  "estimate": 250000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 9654",
+  "query": "AMD EPYC 9654",
+  "estimate": 330000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 9965",
+  "query": "AMD EPYC 9965",
+  "estimate": 1100000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro H13SSL-N",
+  "query": "Supermicro H13SSL-N",
+  "estimate": 90000
+ },
+ {
+  "kind": "mb",
+  "name": "ASUS K14PA-U12",
+  "query": "ASUS K14PA-U12",
+  "estimate": 85000
+ },
+ {
+  "kind": "ram",
+  "name": "12×32 ГБ DDR5-4800 ECC RDIMM",
+  "query": "12x32GB DDR5-4800 ECC RDIMM",
+  "estimate": 276000
+ },
+ {
+  "kind": "ram",
+  "name": "12×64 ГБ DDR5-4800 ECC RDIMM",
+  "query": "12x64GB DDR5-4800 ECC RDIMM",
+  "estimate": 552000
+ },
+ {
+  "kind": "ram",
+  "name": "12×32 ГБ DDR5-5600 ECC RDIMM",
+  "query": "12x32GB DDR5-5600 ECC RDIMM",
+  "estimate": 300000
  },
  {
   "kind": "cpu",
