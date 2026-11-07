@@ -47,11 +47,18 @@
       var dec = blk ? null : decode(m, vram, bwVram, bwRam, kv);
       var pp = blk ? null : prefill(m, compute, bwRam);
       if (!blk && m.engine === "Strata") dec *= (gpu.kStrata || 1);
+      if (!blk && m.engine === "Basalt") {
+        var bk = (sel.platform.basaltK == null) ? 1 : sel.platform.basaltK;
+        dec *= bk;
+        pp *= Math.sqrt(bk);
+      }
       var s = sShare(vram, m.dense, kv, m.size);
+      var lim = s > 0.8 ? "всё в VRAM" : (s > 0.3 ? "VRAM + RAM-ярус" : "упирается в RAM/SSD");
+      if (!blk && m.engine === "Basalt" && (sel.platform.basaltK || 1) < 1) lim = "упирается в CPU (AVX2)";
       return {
         name: m.name, engine: m.engine, s: s, decode: dec, prefill: pp, blocked: blk,
         reason: blk ? (maya ? "нет NVIDIA" : "нужен Blackwell") : null,
-        lim: s > 0.8 ? "всё в VRAM" : (s > 0.3 ? "VRAM + RAM-ярус" : "упирается в RAM/SSD"),
+        lim: lim,
       };
     });
 
