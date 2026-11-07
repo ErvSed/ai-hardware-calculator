@@ -454,6 +454,9 @@ _ctxi.alignment = CENTER
 _ctxi.number_format = '#,##0'
 k.cell(row=3, column=4, value="KV-кэш (ГБ):").font = Font(bold=True)
 k.cell(row=3, column=5, value='=Модели!P2*$E$2/1000').number_format = NUM1
+k.cell(row=4, column=4, value="Множитель Basalt (CPU):").font = Font(bold=True)
+k.cell(row=4, column=5, value='=IF($B$2="SP3",0.5,IF($B$2="AM4",0.62,IF($B$2="LGA3647",0.38,1)))').number_format = NUM2
+note(k, 5, "Basalt считает экспертов на CPU: без AVX-512/VBMI2 и AVX-VNNI (SP3, AM4, LGA3647) движок падает на AVX2 и упирается в процессор. Множитель в E4 — из замера Xeon 6252 + RTX 5070 Ti (73 tok/s прозы).", 5)
 
 for row, label, formula, fmt in [
     (10, "Вендор GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$L,12,0),"?")', None),
@@ -528,8 +531,8 @@ for i in range(len(MODELS)):
     pp_f = f"Модели!L{md_row}*(($B$20/Модели!J{md_row})^0.35)*(($B$14/Модели!I{md_row})^0.2)"
     if engine == "Basalt":
         guard = f'AND(Модели!B{md_row}="Basalt",IFERROR(VLOOKUP($B$6,GPU!$A:$N,14,0),"")<>"Blackwell"),"—",'
-        dec_f = "IF(" + guard + dec_f + ")"
-        pp_f = "IF(" + guard + pp_f + ")"
+        dec_f = "IF(" + guard + dec_f + "*$E$4)"
+        pp_f = "IF(" + guard + pp_f + "*SQRT($E$4))"
     elif engine == "Strata":
         dec_f = dec_f + "*IFERROR(VLOOKUP($B$6,GPU!$A:$O,15,0),1)"
     k.cell(row=r, column=1, value=f"=Модели!A{md_row}")
