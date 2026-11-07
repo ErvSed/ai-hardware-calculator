@@ -79,9 +79,12 @@ import hashlib  # noqa: E402
 import re  # noqa: E402
 
 ver = hashlib.md5(payload.encode("utf-8")).hexdigest()[:8]
+export_path = os.path.join(SITE, "export.js")
+export_ver = hashlib.md5(io.open(export_path, encoding="utf-8").read().encode("utf-8")).hexdigest()[:8] if os.path.exists(export_path) else ver
 index_path = os.path.join(SITE, "index.html")
 html = io.open(index_path, encoding="utf-8").read()
 html = re.sub(r'data\.js(\?v=[0-9a-f]+)?', "data.js?v=" + ver, html)
+html = re.sub(r'export\.js(\?v=[0-9a-f]+)?', "export.js?v=" + export_ver, html)
 io.open(index_path, "w", encoding="utf-8").write(html)
 
 print("data.js written:", len(payload), "bytes; версия", ver, ";",
