@@ -88,6 +88,10 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
         reason = "нужен Blackwell" if engine == "Basalt" else "нет NVIDIA"
         if not blocked and engine == "Strata":
             dec *= g["kStrata"]
+        if not blocked and engine == "Basalt":
+            bk = db.basalt_cpu_factor(platform)
+            dec *= bk
+            pp *= bk ** 0.5
         models.append({"name": name, "engine": engine, "s": s,
                        "decode": None if blocked else dec,
                        "prefill": None if blocked else pp,
