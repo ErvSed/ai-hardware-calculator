@@ -27,6 +27,23 @@ if os.path.exists(_prices_path):
         _AVITO = {}
 
 
+# Basalt считает экспертов на CPU. Быстрый путь — AVX-512 c VBMI2 или AVX-VNNI
+# (Ice Lake+, Sapphire Rapids+, Zen4+, Intel 12-е поколение и новее). Без них
+# движок падает на AVX2 и упирается в CPU, а не в память: замер на Xeon Gold 6252
+# (AVX2, 2,1 ГГц, PCIe 3.0) + RTX 5070 Ti дал 73 tok/s прозы и 148 структурой
+# против 1960/58 у Strata (lcz.me/topic/2892). Отсюда поправка по платформам.
+BASALT_CPU_FACTOR = {
+    "SP3": 0.50,      # Zen2/Zen3: AVX2 без VNNI, 2,0-3,0 ГГц
+    "AM4": 0.62,      # Zen3: AVX2 без VNNI, но 4,5-4,9 ГГц
+    "LGA3647": 0.38,  # Skylake-SP: AVX-512 без VBMI2, 2,1-2,5 ГГц
+}
+
+
+def basalt_cpu_factor(platform_name):
+    """Поправка на CPU-ядро Basalt (1.0 — быстрый путь AVX-512/VNNI)."""
+    return BASALT_CPU_FACTOR.get(platform_name, 1.0)
+
+
 def avito_stats(name):
     """Данные Авито, если им можно доверять (иначе None).
 
