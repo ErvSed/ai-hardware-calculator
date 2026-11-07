@@ -86,8 +86,12 @@
     <h2>5. Откуда цифры</h2>
     <p class="muted">Опорные замеры: Maya #165 (2×3090 + EPYC 7452: 30,2 ток/с, 801 префилл), #157, #43, #149;
       Strata docs/QUANTS.md (R9700: 63–64 ток/с), PR #2665 (2×2080 Ti: 52,4–57,9), PR #1617 (5090: 109,7);
+      Basalt — карточка модели (5090 + 5060 Ti: 274 ток/с прозы) и community-лидерборд (5090: 564, IQ3_XXS);
       DeepSeek-V4.1-Flash на 1×5090 (24,9 ток/с, 1842 префилл). Расчёт масштабируется по доле экспертов
       в VRAM и полосе памяти — это оценка, а не замер.</p>
+    <p class="muted">Basalt дополнительно упирается в CPU: на платформах без AVX-512/VBMI2 и AVX-VNNI
+      (SP3, AM4, LGA3647) движок считает экспертов на AVX2. Поправка взята из замера на Xeon Gold 6252
+      (73 tok/s прозы на RTX 5070 Ti) — поэтому для SP3, AM4 и LGA3647 строки Basalt ниже.</p>
   </section>
 </main>
 
@@ -97,7 +101,7 @@
      Файл Excel с той же базой — в репозитории.</p>
 </footer>
 
-<script src="data.js?v=0e79f3a4"></script>
+<script src="data.js?v=de5e1483"></script>
 <script src="calc.js"></script>
 <script>
 (function(){
@@ -108,7 +112,7 @@
     var el = $("err");
     if (!el) return;
     el.style.display = "block";
-    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=0e79f3a4.";
+    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=de5e1483.";
   });
 
   var SSDS = (DB.ssds && DB.ssds.length) ? DB.ssds : [];
