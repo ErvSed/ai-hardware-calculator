@@ -666,6 +666,7 @@ const DB = {
   {
    "name": "SP3",
    "title": "SP3 — EPYC 7002/7003: 8 каналов DDR4, 128 линий PCIe 4.0, до 7 GPU",
+   "basaltK": 0.5,
    "cpus": [
     {
      "name": "AMD EPYC 7402",
@@ -802,6 +803,7 @@ const DB = {
   {
    "name": "AM5",
    "title": "AM5 — Ryzen 7000/9000: 2 канала DDR5, 24 линии PCIe 5.0, максимум 2 GPU",
+   "basaltK": 1.0,
    "cpus": [
     {
      "name": "AMD Ryzen 9 9950X3D",
@@ -915,6 +917,7 @@ const DB = {
   {
    "name": "LGA1851",
    "title": "LGA1851 — Intel Core Ultra 200S (Arrow Lake): 2 канала DDR5, 24 линии PCIe 5.0",
+   "basaltK": 1.0,
    "cpus": [
     {
      "name": "Intel Core Ultra 9 285K",
@@ -1016,6 +1019,7 @@ const DB = {
   {
    "name": "LGA1700",
    "title": "LGA1700 — Intel 12/13/14-е поколение: 2 канала DDR4/DDR5, 20 линий PCIe",
+   "basaltK": 1.0,
    "cpus": [
     {
      "name": "Intel Core i9-14900K",
@@ -1106,6 +1110,7 @@ const DB = {
   {
    "name": "LGA4677",
    "title": "LGA4677 — Xeon Sapphire/Emerald Rapids: 8 каналов DDR5, до 240 ГБ/с",
+   "basaltK": 1.0,
    "cpus": [
     {
      "name": "Intel Xeon Gold 6430",
@@ -1230,6 +1235,7 @@ const DB = {
   {
    "name": "SP5",
    "title": "SP5 — EPYC 9004/9005: 12 каналов DDR5, до 576 ГБ/с, 128 линий PCIe 5.0",
+   "basaltK": 1.0,
    "cpus": [
     {
      "name": "AMD EPYC 9354",
@@ -1343,6 +1349,7 @@ const DB = {
   {
    "name": "LGA4189",
    "title": "LGA4189 — Xeon Ice Lake: 8 каналов DDR4, до 150 ГБ/с",
+   "basaltK": 1.0,
    "cpus": [
     {
      "name": "Intel Xeon Gold 6338",
@@ -1421,6 +1428,7 @@ const DB = {
   {
    "name": "LGA3647",
    "title": "LGA3647 — Xeon Scalable 1/2-го поколения: 6 каналов DDR4 на сокет, AVX-512",
+   "basaltK": 0.38,
    "cpus": [
     {
      "name": "Intel Xeon Gold 6252",
@@ -1522,6 +1530,7 @@ const DB = {
   {
    "name": "TR5",
    "title": "sTR5 — Threadripper 7000: 4 канала DDR5, 48–80 линий PCIe 5.0",
+   "basaltK": 1.0,
    "cpus": [
     {
      "name": "AMD Threadripper 7960X",
@@ -1600,6 +1609,7 @@ const DB = {
   {
    "name": "AM4",
    "title": "AM4 — Ryzen 5000: 2 канала DDR4, 20 линий PCIe 4.0, самый дешёвый вход",
+   "basaltK": 0.62,
    "cpus": [
     {
      "name": "AMD Ryzen 9 5950X",
