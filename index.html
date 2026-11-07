@@ -50,7 +50,8 @@
     <table class="tbl" id="breakdown"></table>
     <div class="toolbar" style="margin-top:12px">
       <button id="dl">Скачать карточку сборки (PNG)</button>
-      <span class="muted">картинка с составом, ценами, скоростью и габаритами — 1200×1010</span>
+      <button id="xl">Экспорт расчёта в Excel (.xlsx)</button>
+      <span class="muted">картинка 1200×1010 и книга с листами «Смета» и «Скорость»</span>
     </div>
   </section>
 
@@ -359,6 +360,7 @@
   document.querySelectorAll(".toolbar button").forEach(function(b){
     b.addEventListener("click", function(){
       if (b.id === "dl") { downloadCard(); return; }
+      if (b.id === "xl") { if (window.Xlsx) window.Xlsx.download(sel, Calc.build(sel)); return; }
       sortKey = b.dataset.sort;
       document.querySelectorAll(".toolbar button").forEach(function(x){ x.classList.remove("active"); });
       b.classList.add("active");
@@ -378,5 +380,6 @@
   refreshPlatform();
 })();
 </script>
+<script src="export.js?v=b152e8be"></script>
 </body>
 </html>
