@@ -4,7 +4,7 @@ import json
 import os
 import urllib.parse
 
-AVITO_CITY = "sankt-peterburg"
+AVITO_CITY = "rossiya"
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # запросы, где Авито смешивает комплекты разной ёмкости — доверять нельзя
@@ -306,6 +306,38 @@ PLATFORMS = [
         ],
     },
     {
+        "name": "LGA4710",
+        "title": "LGA4710 — Xeon 6 6700P: 8 каналов DDR5-6400 (410 ГБ/с), PCIe 5.0, плата µATX",
+        "cpus": [
+            ("Intel Xeon 6730P", 32, 8, 410, 250, 180000, "оценка: 8 каналов DDR5-6400"),
+            ("Intel Xeon 6767P", 64, 8, 410, 350, 450000, "оценка: 8 каналов DDR5-6400"),
+        ],
+        "mbs": [
+            ("Supermicro X14SBM-TP4F (LGA4710)", "DDR5", 8, 5, 85000, "оценка, µATX, 2×PCIe 5.0 x16"),
+        ],
+        "rams": [
+            ("8×32 ГБ DDR5-6400 ECC RDIMM", "DDR5", 8, 32, 300000, "оценка: модуль × 8"),
+            ("8×64 ГБ DDR5-6400 ECC RDIMM", "DDR5", 8, 64, 600000, "оценка: модуль × 8"),
+            ("8×32 ГБ DDR5-5600 ECC RDIMM", "DDR5", 8, 32, 260000, "оценка: модуль × 8"),
+        ],
+    },
+    {
+        "name": "SP6",
+        "title": "SP6 — EPYC 8004 Siena: 6 каналов DDR5-4800 (230 ГБ/с), PCIe 5.0, до 64 ядер, 225 Вт",
+        "cpus": [
+            ("AMD EPYC 8124P", 16, 6, 230, 125, 85000, "оценка: 6 каналов DDR5-4800"),
+            ("AMD EPYC 8224P", 24, 6, 230, 160, 120000, "оценка: 6 каналов DDR5-4800"),
+            ("AMD EPYC 8324P", 32, 6, 230, 180, 170000, "оценка: 6 каналов DDR5-4800"),
+        ],
+        "mbs": [
+            ("Supermicro H13SVW-N (SP6, WIO)", "DDR5", 6, 4, 75000, "оценка, WIO — нужен корпус Supermicro"),
+        ],
+        "rams": [
+            ("6×32 ГБ DDR5-4800 ECC RDIMM", "DDR5", 6, 32, 180000, "оценка: модуль × 6"),
+            ("6×64 ГБ DDR5-4800 ECC RDIMM", "DDR5", 6, 64, 360000, "оценка: модуль × 6"),
+        ],
+    },
+    {
         "name": "LGA4189",
         "title": "LGA4189 — Xeon Ice Lake: 8 каналов DDR4, до 150 ГБ/с",
         "cpus": [
@@ -379,7 +411,63 @@ PSUS = [
     ("БП 1200 Вт (SuperFlower)", 1200, 25000, "Авито (ориентир)"),
     ("БП 1000 Вт (Corsair RM1000x)", 1000, 18000, "Авито (ориентир)"),
     ("БП 850 Вт (be quiet! Straight Power)", 850, 12000, "Авито (ориентир)"),
+    ("Corsair HX1500i (1500 Вт, ATX 3.0)", 1500, 62000, "ориентир, магазин"),
+    ("Seasonic PRIME PX-1300 (1300 Вт)", 1300, 42000, "ориентир, магазин"),
+    ("DeepCool PX1200G (1200 Вт, ATX 3.0)", 1200, 26000, "ориентир, магазин"),
+    ("Chieftec Polaris 1250W (1250 Вт)", 1250, 21000, "ориентир, магазин"),
+    ("MSI MPG A1000G (1000 Вт)", 1000, 16000, "ориентир, магазин"),
+    ("Cougar GEX X2 1000 (1000 Вт)", 1000, 14000, "ориентир, магазин"),
+    ("Серверный БП 1600 Вт + плата-развязка", 1600, 14000, "Авито, серверный HP/Dell"),
+    ("Aerocool VX-800 (800 Вт, бюджет)", 800, 4500, "ориентир, магазин"),
 ]
+
+# охлаждение: имя, тип (cpu|case), сокеты, TDP Вт, высота мм, цена, источник
+COOLERS = [
+    ("Noctua NH-U14S TR4-SP3", "cpu", "SP3", 280, 165, 14500, "ориентир, магазин"),
+    ("Arctic Freezer 4U-SP5", "cpu", "SP5", 400, 148, 12500, "ориентир, магазин"),
+    ("Dynatron J12 (SP5, 4U)", "cpu", "SP5", 400, 150, 21000, "ориентир, магазин"),
+    ("Noctua NH-U14S TR5-SP6", "cpu", "SP6,TR5", 280, 165, 16500, "ориентир, магазин"),
+    ("Noctua NH-D9 TR5-SP6 4U", "cpu", "SP6,TR5", 250, 134, 17500, "ориентир, магазин"),
+    ("Dynatron A54 (SP6, 4U)", "cpu", "SP6", 225, 120, 12000, "ориентир, магазин"),
+    ("Noctua NH-U14S DX-4677", "cpu", "LGA4677", 300, 165, 17000, "ориентир, магазин"),
+    ("Noctua NH-D9 DX-4677 4U", "cpu", "LGA4677", 300, 134, 18500, "ориентир, магазин"),
+    ("Arctic Freezer 4U-M (LGA4677)", "cpu", "LGA4677", 350, 145, 11500, "ориентир, магазин"),
+    ("Noctua NH-U14S DX-4710", "cpu", "LGA4710", 350, 165, 18000, "ориентир, магазин"),
+    ("Thermalright Peerless Assassin 120 SE", "cpu", "AM4,AM5,LGA1700,LGA1851", 245, 155, 4500, "ориентир, магазин"),
+    ("DeepCool AK620", "cpu", "AM4,AM5,LGA1700,LGA1851", 260, 160, 7500, "ориентир, магазин"),
+    ("Arctic P14 PWM PST (140 мм)", "case", "", 0, 27, 1200, "ориентир, магазин"),
+    ("Arctic P12 PWM PST (120 мм)", "case", "", 0, 25, 900, "ориентир, магазин"),
+    ("Noctua NF-A12x25 PWM (120 мм)", "case", "", 0, 25, 3900, "ориентир, магазин"),
+    ("be quiet! Silent Wings 4 140 мм", "case", "", 0, 25, 3100, "ориентир, магазин"),
+    ("Thermalright TL-C12C (120 мм)", "case", "", 0, 25, 700, "ориентир, магазин"),
+    ("Без кулера (боксовый/свой)", "cpu", "", 0, 0, 0, "—"),
+]
+COOLER_DEFAULT = "Noctua NH-U14S TR4-SP3"
+FAN_DEFAULT = "Arctic P14 PWM PST (140 мм)"
+
+
+def coolers_by_kind(kind):
+    return [c for c in COOLERS if c[1] == kind]
+
+
+def cooler_by_name(name):
+    for c in COOLERS:
+        if c[0] == name:
+            return c
+    return None
+
+
+def cooler_fits(cooler, platform_name, case_name):
+    """Совместимость: сокет и высота относительно корпуса."""
+    if not cooler:
+        return False, "нет кулера"
+    sockets = [s.strip() for s in (cooler[2] or "").split(",") if s.strip()]
+    if sockets and platform_name not in sockets:
+        return False, "не подходит под сокет %s" % platform_name
+    dims = CASE_DIMS.get(case_name)
+    if dims and cooler[1] == "cpu" and cooler[4] and cooler[4] > dims[1] - 15:
+        return False, "высокий: %d мм при корпусе %d мм" % (cooler[4], dims[1])
+    return True, "ок"
 
 CASES = [
     ("NegoRack NR-M48 (4U, 650 мм)", 350, 8, 29623, "srv-trade"),
