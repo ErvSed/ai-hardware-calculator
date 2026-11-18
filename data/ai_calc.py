@@ -414,6 +414,37 @@ for name, kind, sockets, tdp, height, price, src in COOLERS:
 cool_end = r - 1
 widths(cl, [44, 13, 24, 10, 13, 14, 34, 10])
 
+# ================================================================ Пресеты под бюджет
+ps = WB.create_sheet("Пресеты")
+head(ps, 1, ["Бюджет, ₽", "Платформа", "CPU", "Плата", "Память", "Планок", "GPU", "шт", "SSD",
+             "Цена сборки, ₽", "Модель под бюджет", "Декод, ток/с", "VRAM, ГБ", "RAM, ГБ"])
+_presets_path = os.path.join(os.path.dirname(OUT), "presets.json")
+if os.path.exists(_presets_path):
+    import json as _json
+    _pre = _json.load(open(_presets_path, encoding="utf-8"))
+    r = 2
+    for _p in _pre:
+        _b = _p.get("build")
+        if not _b:
+            continue
+        ps.cell(row=r, column=1, value=_p["budget"]).number_format = MONEY
+        ps.cell(row=r, column=2, value=_b["platform"])
+        ps.cell(row=r, column=3, value=_b["cpu"]).alignment = WRAP
+        ps.cell(row=r, column=4, value=_b["mb"]).alignment = WRAP
+        ps.cell(row=r, column=5, value=_b["ram"]).alignment = WRAP
+        ps.cell(row=r, column=6, value=_b["sticks"]).alignment = CENTER
+        ps.cell(row=r, column=7, value=_b["gpu"]).alignment = WRAP
+        ps.cell(row=r, column=8, value=_b["count"]).alignment = CENTER
+        ps.cell(row=r, column=9, value=_b["ssd"]).alignment = WRAP
+        ps.cell(row=r, column=10, value=_b["price"]).number_format = MONEY
+        ps.cell(row=r, column=11, value=_b["target"]).alignment = WRAP
+        ps.cell(row=r, column=12, value=round(_b["target_decode"], 1)).number_format = NUM1
+        ps.cell(row=r, column=13, value=_b["vram"]).alignment = CENTER
+        ps.cell(row=r, column=14, value=_b["ram_gb"]).alignment = CENTER
+        r += 1
+    widths(ps, [14, 12, 30, 30, 30, 8, 26, 6, 30, 16, 26, 12, 10, 10])
+note(ps, r + 1, "Пресеты считает presets.py: перебирает карту × количество × связки платформ и берёт лучшую сборку по скорости на GLM-5.3-Flash Maya-L (если она не помещается в VRAM+RAM — по Qwen3.8). Цены — медианы Авито по России.", 14)
+
 # ================================================================ Модели
 md = WB.create_sheet("Модели")
 head(md, 1, ["Модель", "Движок", "Размер, ГБ", "Активных, млрд", "Байт/токен, ГБ", "Dense, ГБ",
@@ -479,12 +510,21 @@ k.cell(row=4, column=4, value="Множитель Basalt (CPU):").font = Font(bo
 k.cell(row=4, column=5, value='=IF($B$2="SP3",0.5,IF($B$2="AM4",0.62,IF($B$2="LGA3647",0.38,1)))').number_format = NUM2
 note(k, 65, "Basalt считает экспертов на CPU: без AVX-512/VBMI2 и AVX-VNNI (SP3, AM4, LGA3647) движок падает на AVX2 и упирается в процессор. Множитель в E4 — из замера Xeon 6252 + RTX 5070 Ti (73 tok/s прозы).", 5)
 
+# количество планок RAM: цена и полоса пересчитываются от него
+k.cell(row=6, column=4, value="Планок RAM:").font = Font(bold=True)
+_stk = k.cell(row=6, column=5, value=8)
+_stk.fill = IN_FILL
+_stk.alignment = CENTER
+k.cell(row=6, column=5).number_format = '0'
+k.cell(row=7, column=4, value="Объём RAM, ГБ:").font = Font(bold=True)
+k.cell(row=7, column=5, value='=IFERROR($E$6*VLOOKUP(B5,Память!$A:$G,4,0),0)').number_format = '0'
+
 for row, label, formula, fmt in [
     (10, "Вендор GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$L,12,0),"?")', None),
     (11, "Тип памяти платы", '=IFERROR(VLOOKUP(B4,Платы!$A:$G,3,0),"?")', None),
     (12, "Слотов PCIe x16 у платы", '=IFERROR(VLOOKUP(B4,Платы!$A:$G,5,0),0)', None),
     (13, "Тип памяти комплекта", '=IFERROR(VLOOKUP(B5,Память!$A:$G,2,0),"?")', None),
-    (14, "Полоса RAM, ГБ/с", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,5,0),0)', NUM1),
+    (14, "Полоса RAM, ГБ/с", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,5,0),0)*IFERROR(MIN(1,$E$6/VLOOKUP(B3,CPU!$A:$H,4,0)),1)', NUM1),
     (15, "Сокет CPU", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,2,0),"?")', None),
     (16, "Сокет платы", '=IFERROR(VLOOKUP(B4,Платы!$A:$G,2,0),"?")', None),
 ]:
@@ -502,7 +542,7 @@ res = [
     ("Суммарная полоса VRAM, ГБ/с", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,3,0)*B7,0)', NUM1),
     ("Суммарный compute", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,7,0)*B7,0)', NUM2),
     ("Цена GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,10,0)*B7,0)', MONEY),
-    ("Цена CPU + плата + память", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,7,0),0)+IFERROR(VLOOKUP(B4,Платы!$A:$G,6,0),0)+IFERROR(VLOOKUP(B5,Память!$A:$G,6,0),0)', MONEY),
+    ("Цена CPU + плата + память", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,7,0),0)+IFERROR(VLOOKUP(B4,Платы!$A:$G,6,0),0)+IFERROR(VLOOKUP(B5,Память!$A:$G,6,0)/VLOOKUP(B5,Память!$A:$G,3,0)*$E$6,0)', MONEY),
     ("Цена БП + корпус", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,6,0),0)+IFERROR(VLOOKUP(B9,БП_Корпус!$A:$G,6,0),0)', MONEY),
     ("ИТОГО цена сборки, ₽", "=SUM(B21:B23)+IFERROR(VLOOKUP(B57,SSD!$A:$D,4,0),0)+IFERROR(VLOOKUP(B59,'Охлаждение'!$A:$F,6,0),0)+IFERROR(VLOOKUP(B60,'Охлаждение'!$A:$F,6,0),0)", MONEY),
     ("Требуемая мощность, Вт", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,4,0)*B7*1.1 + VLOOKUP(B3,CPU!$A:$H,6,0)*1.3 + 100,0)', NUM1),
@@ -571,7 +611,7 @@ head(k, 50, ["Позиция", "Выбранная модель", "Цена, ₽
 breakdown = [
     ("CPU", "=B3", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,7,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B3,CPU!$A:$I,9,0),""),"Авито")'),
     ("Материнская плата", "=B4", '=IFERROR(VLOOKUP(B4,Платы!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B4,Платы!$A:$H,8,0),""),"Авито")'),
-    ("Память", "=B5", '=IFERROR(VLOOKUP(B5,Память!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B5,Память!$A:$H,8,0),""),"Авито")'),
+    ("Память", "=B5", '=IFERROR(VLOOKUP(B5,Память!$A:$G,6,0)/VLOOKUP(B5,Память!$A:$G,3,0)*$E$6,0)', '=HYPERLINK(IFERROR(VLOOKUP(B5,Память!$A:$H,8,0),""),"Авито")'),
     ("Видеокарта", '=B6&" × "&B7', '=IFERROR(VLOOKUP(B6,GPU!$A:$K,10,0)*B7,0)', '=HYPERLINK(IFERROR(VLOOKUP(B6,GPU!$A:$M,13,0),""),"Авито")'),
     ("Блок питания", "=B8", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B8,БП_Корпус!$A:$H,8,0),""),"Авито")'),
     ("Корпус", "=B9", '=IFERROR(VLOOKUP(B9,БП_Корпус!$A:$G,6,0),0)', '=HYPERLINK(IFERROR(VLOOKUP(B9,БП_Корпус!$A:$H,8,0),""),"Авито")'),
