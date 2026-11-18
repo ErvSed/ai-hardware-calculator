@@ -10,16 +10,16 @@ const DB = {
    "slots": 2,
    "comp": 0.72,
    "shop": 0,
-   "avito": 60200,
+   "avito": 57000,
    "note": "Авито 45–65 тыс (ориентир); карта модифицированная",
    "vendor": "NVIDIA",
    "arch": "Turing",
    "kStrata": 0.58,
-   "price": 60200,
-   "avitoN": 15,
-   "avitoMin": 47000,
-   "avitoMax": 128600,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%202080%20Ti%2022GB"
+   "price": 57000,
+   "avitoN": 25,
+   "avitoMin": 45000,
+   "avitoMax": 125000,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%202080%20Ti%2022GB"
   },
   {
    "name": "RTX 3060 12 ГБ",
@@ -30,16 +30,16 @@ const DB = {
    "slots": 2,
    "comp": 0.45,
    "shop": 0,
-   "avito": 30000,
+   "avito": 31990,
    "note": "Авито 20–28 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Ampere",
    "kStrata": 0.88,
-   "price": 30000,
-   "avitoN": 48,
-   "avitoMin": 19000,
-   "avitoMax": 41750,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%203060%2012GB"
+   "price": 31990,
+   "avitoN": 46,
+   "avitoMin": 28500,
+   "avitoMax": 38465,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%203060%2012GB"
   },
   {
    "name": "RTX 3070 8 ГБ",
@@ -50,16 +50,16 @@ const DB = {
    "slots": 2,
    "comp": 0.7,
    "shop": 0,
-   "avito": 33999,
+   "avito": 34990,
    "note": "Авито 28–35 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Ampere",
    "kStrata": 0.88,
-   "price": 33999,
-   "avitoN": 47,
-   "avitoMin": 18000,
+   "price": 34990,
+   "avitoN": 46,
+   "avitoMin": 22000,
    "avitoMax": 45000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%203070%208GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%203070%208GB"
   },
   {
    "name": "RTX 3080 10 ГБ",
@@ -70,16 +70,16 @@ const DB = {
    "slots": 2,
    "comp": 0.95,
    "shop": 0,
-   "avito": 44999,
+   "avito": 44945,
    "note": "Авито 35–45 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Ampere",
    "kStrata": 0.88,
-   "price": 44999,
-   "avitoN": 47,
-   "avitoMin": 35000,
-   "avitoMax": 89990,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%203080%2010GB"
+   "price": 44945,
+   "avitoN": 48,
+   "avitoMin": 34000,
+   "avitoMax": 79999,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%203080%2010GB"
   },
   {
    "name": "RTX 3080 Ti 12 ГБ",
@@ -90,16 +90,16 @@ const DB = {
    "slots": 2,
    "comp": 1.05,
    "shop": 0,
-   "avito": 56000,
+   "avito": 59990,
    "note": "Авито 45–55 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Ampere",
    "kStrata": 0.88,
-   "price": 56000,
-   "avitoN": 49,
-   "avitoMin": 24000,
+   "price": 59990,
+   "avitoN": 47,
+   "avitoMin": 47500,
    "avitoMax": 78000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%203080%20Ti%2012GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%203080%20Ti%2012GB"
   },
   {
    "name": "RTX 3090 24 ГБ",
@@ -110,16 +110,16 @@ const DB = {
    "slots": 2,
    "comp": 1.0,
    "shop": 146793,
-   "avito": 127495,
+   "avito": 134990,
    "note": "g-race 146 793 ₽ (нал.); Авито 55–90 тыс",
    "vendor": "NVIDIA",
    "arch": "Ampere",
    "kStrata": 0.88,
-   "price": 127495,
-   "avitoN": 48,
-   "avitoMin": 100000,
-   "avitoMax": 170000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%203090%2024GB"
+   "price": 134990,
+   "avitoN": 47,
+   "avitoMin": 55000,
+   "avitoMax": 159999,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%203090%2024GB"
   },
   {
    "name": "RTX 3090 Ti 24 ГБ",
@@ -130,16 +130,16 @@ const DB = {
    "slots": 3,
    "comp": 1.15,
    "shop": 0,
-   "avito": 147500,
+   "avito": 149500,
    "note": "Авито 80–100 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Ampere",
    "kStrata": 0.88,
-   "price": 147500,
-   "avitoN": 22,
+   "price": 149500,
+   "avitoN": 23,
    "avitoMin": 100000,
-   "avitoMax": 200000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%203090%20Ti%2024GB"
+   "avitoMax": 250000,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%203090%20Ti%2024GB"
   },
   {
    "name": "RTX 4060 Ti 16 ГБ",
@@ -150,16 +150,16 @@ const DB = {
    "slots": 2,
    "comp": 0.55,
    "shop": 0,
-   "avito": 55450,
+   "avito": 60000,
    "note": "Авито 40–50 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Ada",
    "kStrata": 1.0,
-   "price": 55450,
-   "avitoN": 26,
-   "avitoMin": 38900,
-   "avitoMax": 75000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%204060%20Ti%2016GB"
+   "price": 60000,
+   "avitoN": 37,
+   "avitoMin": 41000,
+   "avitoMax": 117848,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%204060%20Ti%2016GB"
   },
   {
    "name": "RTX 4070 12 ГБ",
@@ -170,16 +170,16 @@ const DB = {
    "slots": 2,
    "comp": 0.95,
    "shop": 0,
-   "avito": 70000,
+   "avito": 71000,
    "note": "Авито 60–70 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Ada",
    "kStrata": 1.0,
-   "price": 70000,
+   "price": 71000,
    "avitoN": 46,
-   "avitoMin": 36000,
-   "avitoMax": 95900,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%204070%2012GB"
+   "avitoMin": 42000,
+   "avitoMax": 100000,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%204070%2012GB"
   },
   {
    "name": "RTX 4070 Ti Super 16 ГБ",
@@ -199,7 +199,7 @@ const DB = {
    "avitoN": 29,
    "avitoMin": 60000,
    "avitoMax": 180000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%204070%20Ti%20Super%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%204070%20Ti%20Super%2016GB"
   },
   {
    "name": "RTX 4080 Super 16 ГБ",
@@ -219,7 +219,7 @@ const DB = {
    "avitoN": 28,
    "avitoMin": 105000,
    "avitoMax": 230000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%204080%20Super%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%204080%20Super%2016GB"
   },
   {
    "name": "RTX 4090 24 ГБ",
@@ -239,7 +239,7 @@ const DB = {
    "avitoN": 33,
    "avitoMin": 128440,
    "avitoMax": 524700,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%204090%2024GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%204090%2024GB"
   },
   {
    "name": "RTX 5070 Ti 16 ГБ",
@@ -259,7 +259,7 @@ const DB = {
    "avitoN": 44,
    "avitoMin": 96400,
    "avitoMax": 170000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%205070%20Ti%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%205070%20Ti%2016GB"
   },
   {
    "name": "RTX 5060 Ti 16 ГБ",
@@ -279,7 +279,7 @@ const DB = {
    "avitoN": 47,
    "avitoMin": 37000,
    "avitoMax": 85800,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%205060%20Ti%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%205060%20Ti%2016GB"
   },
   {
    "name": "RTX 5080 16 ГБ",
@@ -290,16 +290,16 @@ const DB = {
    "slots": 3,
    "comp": 1.65,
    "shop": 0,
-   "avito": 159389,
+   "avito": 174990,
    "note": "Авито 130–150 тыс (ориентир)",
    "vendor": "NVIDIA",
    "arch": "Blackwell",
    "kStrata": 1.15,
-   "price": 159389,
-   "avitoN": 46,
-   "avitoMin": 107900,
-   "avitoMax": 275000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%205080%2016GB"
+   "price": 174990,
+   "avitoN": 49,
+   "avitoMin": 76500,
+   "avitoMax": 250000,
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%205080%2016GB"
   },
   {
    "name": "RTX 5090 32 ГБ",
@@ -319,7 +319,7 @@ const DB = {
    "avitoN": 43,
    "avitoMin": 268563,
    "avitoMax": 880000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%205090%2032GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%205090%2032GB"
   },
   {
    "name": "RTX A4000 16 ГБ",
@@ -339,7 +339,7 @@ const DB = {
    "avitoN": 14,
    "avitoMin": 85000,
    "avitoMax": 239444,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%20A4000%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%20A4000%2016GB"
   },
   {
    "name": "RTX A4500 20 ГБ",
@@ -359,7 +359,7 @@ const DB = {
    "avitoN": 0,
    "avitoMin": null,
    "avitoMax": null,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%20A4500%2020GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%20A4500%2020GB"
   },
   {
    "name": "RTX A5000 24 ГБ",
@@ -379,7 +379,7 @@ const DB = {
    "avitoN": 32,
    "avitoMin": 284500,
    "avitoMax": 293000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%20A5000%2024GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%20A5000%2024GB"
   },
   {
    "name": "RTX A6000 48 ГБ",
@@ -399,7 +399,7 @@ const DB = {
    "avitoN": 31,
    "avitoMin": 395000,
    "avitoMax": 955300,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%20A6000%2048GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%20A6000%2048GB"
   },
   {
    "name": "RTX 6000 Ada 48 ГБ",
@@ -419,7 +419,7 @@ const DB = {
    "avitoN": 18,
    "avitoMin": 666500,
    "avitoMax": 1320560,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%206000%20Ada%2048GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%206000%20Ada%2048GB"
   },
   {
    "name": "RTX 5880 Ada 45 ГБ",
@@ -439,7 +439,7 @@ const DB = {
    "avitoN": 0,
    "avitoMin": null,
    "avitoMax": null,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%205880%20Ada%2045GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%205880%20Ada%2045GB"
   },
   {
    "name": "RTX PRO 6000 Blackwell 96 ГБ",
@@ -459,7 +459,7 @@ const DB = {
    "avitoN": 40,
    "avitoMin": 1003860,
    "avitoMax": 2999000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=RTX%20PRO%206000%20Blackwell%2096GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=RTX%20PRO%206000%20Blackwell%2096GB"
   },
   {
    "name": "Radeon AI PRO R9700 32 ГБ",
@@ -479,7 +479,7 @@ const DB = {
    "avitoN": 16,
    "avitoMin": 199990,
    "avitoMax": 476135,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Radeon%20AI%20PRO%20R9700%2032GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Radeon%20AI%20PRO%20R9700%2032GB"
   },
   {
    "name": "Radeon RX 7900 XTX 24 ГБ",
@@ -499,7 +499,7 @@ const DB = {
    "avitoN": 14,
    "avitoMin": 90000,
    "avitoMax": 135000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Radeon%20RX%207900%20XTX%2024GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Radeon%20RX%207900%20XTX%2024GB"
   },
   {
    "name": "Radeon RX 7900 XT 20 ГБ",
@@ -519,7 +519,7 @@ const DB = {
    "avitoN": 11,
    "avitoMin": 77000,
    "avitoMax": 110000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Radeon%20RX%207900%20XT%2020GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Radeon%20RX%207900%20XT%2020GB"
   },
   {
    "name": "Radeon RX 9070 XT 16 ГБ",
@@ -539,7 +539,7 @@ const DB = {
    "avitoN": 36,
    "avitoMin": 60000,
    "avitoMax": 118570,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Radeon%20RX%209070%20XT%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Radeon%20RX%209070%20XT%2016GB"
   },
   {
    "name": "Arc A770 16 ГБ",
@@ -559,7 +559,7 @@ const DB = {
    "avitoN": 13,
    "avitoMin": 17900,
    "avitoMax": 55000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Arc%20A770%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Arc%20A770%2016GB"
   },
   {
    "name": "Arc B580 12 ГБ",
@@ -579,7 +579,7 @@ const DB = {
    "avitoN": 16,
    "avitoMin": 25000,
    "avitoMax": 60920,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Arc%20B580%2012GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Arc%20B580%2012GB"
   },
   {
    "name": "Tesla V100 32 ГБ",
@@ -599,7 +599,7 @@ const DB = {
    "avitoN": 39,
    "avitoMin": 33000,
    "avitoMax": 125000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Tesla%20V100%2032GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Tesla%20V100%2032GB"
   },
   {
    "name": "Tesla P100 16 ГБ",
@@ -619,7 +619,7 @@ const DB = {
    "avitoN": 24,
    "avitoMin": 10000,
    "avitoMax": 30000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Tesla%20P100%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Tesla%20P100%2016GB"
   },
   {
    "name": "Tesla P40 24 ГБ",
@@ -639,7 +639,7 @@ const DB = {
    "avitoN": 10,
    "avitoMin": 21000,
    "avitoMax": 50000,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Tesla%20P40%2024GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Tesla%20P40%2024GB"
   },
   {
    "name": "Tesla T4 16 ГБ",
@@ -659,7 +659,7 @@ const DB = {
    "avitoN": 15,
    "avitoMin": 40000,
    "avitoMax": 178400,
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Tesla%20T4%2016GB"
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Tesla%20T4%2016GB"
   }
  ],
  "platforms": [
@@ -677,7 +677,7 @@ const DB = {
      "price": 17500,
      "src": "sale-server, б/у",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%207402",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%207402",
      "avitoN": 23
     },
     {
@@ -689,7 +689,7 @@ const DB = {
      "price": 67486,
      "src": "srv-trade",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%207443",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%207443",
      "avitoN": 8
     },
     {
@@ -701,7 +701,7 @@ const DB = {
      "price": 46238,
      "src": "srv-trade",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%207502P",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%207502P",
      "avitoN": 0
     },
     {
@@ -713,7 +713,7 @@ const DB = {
      "price": 69500,
      "src": "srv-trade",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%207543",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%207543",
      "avitoN": 10
     },
     {
@@ -725,7 +725,7 @@ const DB = {
      "price": 45000,
      "src": "Авито (ориентир)",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%207702P",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%207702P",
      "avitoN": 0
     }
    ],
@@ -738,7 +738,7 @@ const DB = {
      "price": 108100,
      "src": "chipdip; 5×x16 + 2×x8",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20H12SSL-I-B",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20H12SSL-I-B",
      "avitoN": 0
     },
     {
@@ -749,7 +749,7 @@ const DB = {
      "price": 96000,
      "src": "srv-trade; 2×10GbE",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20H12SSL-NT",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20H12SSL-NT",
      "avitoN": 8
     },
     {
@@ -760,7 +760,7 @@ const DB = {
      "price": 51273,
      "src": "srv-trade",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Gigabyte%20MZ31-AR0",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Gigabyte%20MZ31-AR0",
      "avitoN": 0
     }
    ],
@@ -773,7 +773,7 @@ const DB = {
      "price": 184616,
      "src": "srv-trade, 23 077 ₽/шт",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x32GB%20DDR4-3200%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x32GB%20DDR4-3200%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -784,7 +784,7 @@ const DB = {
      "price": 255200,
      "src": "sale-server, 31 900 ₽/шт",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x32GB%20DDR4-2666%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x32GB%20DDR4-2666%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -795,7 +795,7 @@ const DB = {
      "price": 95000,
      "src": "Авито (ориентир)",
      "platform": "SP3",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x16GB%20DDR4-3200%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x16GB%20DDR4-3200%20ECC%20RDIMM",
      "avitoN": 0
     }
    ]
@@ -814,7 +814,7 @@ const DB = {
      "price": 50247,
      "src": "chipdip",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Ryzen%209%209950X3D",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Ryzen%209%209950X3D",
      "avitoN": 43
     },
     {
@@ -826,7 +826,7 @@ const DB = {
      "price": 45000,
      "src": "chipdip",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Ryzen%209%209950X",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Ryzen%209%209950X",
      "avitoN": 47
     },
     {
@@ -838,7 +838,7 @@ const DB = {
      "price": 28500,
      "src": "Авито (ориентир)",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Ryzen%209%207950X",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Ryzen%209%207950X",
      "avitoN": 43
     },
     {
@@ -850,7 +850,7 @@ const DB = {
      "price": 22250,
      "src": "Авито (ориентир)",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Ryzen%209%207900X",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Ryzen%209%207900X",
      "avitoN": 38
     }
    ],
@@ -863,7 +863,7 @@ const DB = {
      "price": 47239,
      "src": "chipdip; 2 GPU в x8/x8",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20ProArt%20X870E-Creator",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=ASUS%20ProArt%20X870E-Creator",
      "avitoN": 15
     },
     {
@@ -874,7 +874,7 @@ const DB = {
      "price": 48289,
      "src": "chipdip",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Gigabyte%20X870E%20Aorus%20Master",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Gigabyte%20X870E%20Aorus%20Master",
      "avitoN": 9
     },
     {
@@ -885,7 +885,7 @@ const DB = {
      "price": 13660,
      "src": "Авито (ориентир)",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20TUF%20B650-PLUS",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=ASUS%20TUF%20B650-PLUS",
      "avitoN": 37
     }
    ],
@@ -898,7 +898,7 @@ const DB = {
      "price": 255100,
      "src": "chipdip, комплект",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x48GB%20DDR5-6000",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=2x48GB%20DDR5-6000",
      "avitoN": 0
     },
     {
@@ -909,7 +909,7 @@ const DB = {
      "price": 156900,
      "src": "chipdip, комплект",
      "platform": "AM5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x32GB%20DDR5-6000",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=2x32GB%20DDR5-6000",
      "avitoN": 0
     }
    ]
@@ -928,7 +928,7 @@ const DB = {
      "price": 40990,
      "src": "Авито (ориентир)",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Core%20Ultra%209%20285K",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Core%20Ultra%209%20285K",
      "avitoN": 33
     },
     {
@@ -940,7 +940,7 @@ const DB = {
      "price": 23000,
      "src": "Авито (ориентир)",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Core%20Ultra%207%20265K",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Core%20Ultra%207%20265K",
      "avitoN": 33
     },
     {
@@ -952,7 +952,7 @@ const DB = {
      "price": 16800,
      "src": "Авито (ориентир)",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Core%20Ultra%205%20245K",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Core%20Ultra%205%20245K",
      "avitoN": 39
     }
    ],
@@ -965,7 +965,7 @@ const DB = {
      "price": 52489,
      "src": "Авито (ориентир)",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20ProArt%20Z890-Creator",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=ASUS%20ProArt%20Z890-Creator",
      "avitoN": 6
     },
     {
@@ -976,7 +976,7 @@ const DB = {
      "price": 55000,
      "src": "Авито (ориентир)",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Gigabyte%20Z890%20Aorus%20Master",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Gigabyte%20Z890%20Aorus%20Master",
      "avitoN": 0
     },
     {
@@ -987,7 +987,7 @@ const DB = {
      "price": 25200,
      "src": "Авито (ориентир)",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20TUF%20Z890-PLUS",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=ASUS%20TUF%20Z890-PLUS",
      "avitoN": 13
     }
    ],
@@ -1000,7 +1000,7 @@ const DB = {
      "price": 255100,
      "src": "chipdip, комплект",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x48GB%20DDR5-6000",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=2x48GB%20DDR5-6000",
      "avitoN": 0
     },
     {
@@ -1011,7 +1011,7 @@ const DB = {
      "price": 156900,
      "src": "chipdip, комплект",
      "platform": "LGA1851",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x32GB%20DDR5-6000",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=2x32GB%20DDR5-6000",
      "avitoN": 0
     }
    ]
@@ -1030,7 +1030,7 @@ const DB = {
      "price": 36995,
      "src": "Авито (ориентир)",
      "platform": "LGA1700",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Core%20i9-14900K",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Core%20i9-14900K",
      "avitoN": 44
     },
     {
@@ -1042,7 +1042,7 @@ const DB = {
      "price": 32521,
      "src": "Авито (ориентир)",
      "platform": "LGA1700",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Core%20i7-14700K",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Core%20i7-14700K",
      "avitoN": 31
     },
     {
@@ -1054,7 +1054,7 @@ const DB = {
      "price": 22490,
      "src": "Авито (ориентир)",
      "platform": "LGA1700",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Core%20i5-14600K",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Core%20i5-14600K",
      "avitoN": 34
     }
    ],
@@ -1067,7 +1067,7 @@ const DB = {
      "price": 40000,
      "src": "Авито (ориентир)",
      "platform": "LGA1700",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20ProArt%20Z790-Creator",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=ASUS%20ProArt%20Z790-Creator",
      "avitoN": 0
     },
     {
@@ -1078,7 +1078,7 @@ const DB = {
      "price": 25000,
      "src": "Авито (ориентир)",
      "platform": "LGA1700",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=MSI%20MAG%20Z790%20Tomahawk%20DDR4",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=MSI%20MAG%20Z790%20Tomahawk%20DDR4",
      "avitoN": 0
     }
    ],
@@ -1091,7 +1091,7 @@ const DB = {
      "price": 255100,
      "src": "chipdip, комплект",
      "platform": "LGA1700",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x48GB%20DDR5-6000",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=2x48GB%20DDR5-6000",
      "avitoN": 0
     },
     {
@@ -1102,7 +1102,7 @@ const DB = {
      "price": 140000,
      "src": "Авито (ориентир)",
      "platform": "LGA1700",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=4x32GB%20DDR4-3200",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=4x32GB%20DDR4-3200",
      "avitoN": 0
     }
    ]
@@ -1121,7 +1121,7 @@ const DB = {
      "price": 142000,
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Gold%206430",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Gold%206430",
      "avitoN": 22
     },
     {
@@ -1133,7 +1133,7 @@ const DB = {
      "price": 128000,
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Gold%205418Y",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Gold%205418Y",
      "avitoN": 21
     },
     {
@@ -1145,7 +1145,7 @@ const DB = {
      "price": 89000,
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Silver%204510",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Silver%204510",
      "avitoN": 24
     },
     {
@@ -1157,7 +1157,7 @@ const DB = {
      "price": 259000,
      "src": "оценка: 8 каналов DDR5-5600",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Gold%206438N",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Gold%206438N",
      "avitoN": 22
     }
    ],
@@ -1170,7 +1170,7 @@ const DB = {
      "price": 120000,
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20X13SEI-F",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20X13SEI-F",
      "avitoN": 0
     },
     {
@@ -1181,7 +1181,7 @@ const DB = {
      "price": 140000,
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20X13SRA-TF",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20X13SRA-TF",
      "avitoN": 0
     }
    ],
@@ -1194,7 +1194,7 @@ const DB = {
      "price": 420000,
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x32GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x32GB%20DDR5-4800%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1205,7 +1205,7 @@ const DB = {
      "price": 220000,
      "src": "Авито (ориентир)",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x16GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x16GB%20DDR5-4800%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1216,7 +1216,7 @@ const DB = {
      "price": 260000,
      "src": "оценка: модуль × 8",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x32GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x32GB%20DDR5-5600%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1227,7 +1227,7 @@ const DB = {
      "price": 520000,
      "src": "оценка: модуль × 8",
      "platform": "LGA4677",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x64GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x64GB%20DDR5-5600%20ECC%20RDIMM",
      "avitoN": 0
     }
    ]
@@ -1246,7 +1246,7 @@ const DB = {
      "price": 135000,
      "src": "оценка: 12 каналов DDR5-4800",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209354",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%209354",
      "avitoN": 27
     },
     {
@@ -1258,7 +1258,7 @@ const DB = {
      "price": 206000,
      "src": "оценка: 12 каналов DDR5-4800",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209554",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%209554",
      "avitoN": 23
     },
     {
@@ -1270,7 +1270,7 @@ const DB = {
      "price": 225000,
      "src": "оценка: 12 каналов DDR5-4800",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209654",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%209654",
      "avitoN": 20
     },
     {
@@ -1282,7 +1282,7 @@ const DB = {
      "price": 434000,
      "src": "оценка: 12 каналов DDR5-6000",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20EPYC%209965",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%209965",
      "avitoN": 41
     }
    ],
@@ -1295,7 +1295,7 @@ const DB = {
      "price": 83400,
      "src": "оценка, 1 сокет",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20H13SSL-N",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20H13SSL-N",
      "avitoN": 18
     },
     {
@@ -1306,7 +1306,7 @@ const DB = {
      "price": 85000,
      "src": "оценка, 1 сокет",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20K14PA-U12",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=ASUS%20K14PA-U12",
      "avitoN": 0
     }
    ],
@@ -1319,7 +1319,7 @@ const DB = {
      "price": 276000,
      "src": "оценка: модуль × 12",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=12x32GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=12x32GB%20DDR5-4800%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1330,7 +1330,7 @@ const DB = {
      "price": 552000,
      "src": "оценка: модуль × 12",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=12x64GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=12x64GB%20DDR5-4800%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1341,7 +1341,166 @@ const DB = {
      "price": 300000,
      "src": "оценка: модуль × 12",
      "platform": "SP5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=12x32GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=12x32GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoN": 0
+    }
+   ]
+  },
+  {
+   "name": "LGA4710",
+   "title": "LGA4710 — Xeon 6 6700P: 8 каналов DDR5-6400 (410 ГБ/с), PCIe 5.0, плата µATX",
+   "basaltK": 1.0,
+   "cpus": [
+    {
+     "name": "Intel Xeon 6730P",
+     "cores": 32,
+     "ch": 8,
+     "bw": 410,
+     "tdp": 250,
+     "price": 180000,
+     "src": "оценка: 8 каналов DDR5-6400",
+     "platform": "LGA4710",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%206730P",
+     "avitoN": 0
+    },
+    {
+     "name": "Intel Xeon 6767P",
+     "cores": 64,
+     "ch": 8,
+     "bw": 410,
+     "tdp": 350,
+     "price": 450000,
+     "src": "оценка: 8 каналов DDR5-6400",
+     "platform": "LGA4710",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%206767P",
+     "avitoN": 0
+    }
+   ],
+   "mbs": [
+    {
+     "name": "Supermicro X14SBM-TP4F (LGA4710)",
+     "ram": "DDR5",
+     "ramSlots": 8,
+     "slots": 5,
+     "price": 85000,
+     "src": "оценка, µATX, 2×PCIe 5.0 x16",
+     "platform": "LGA4710",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20X14SBM-TP4F%20%28LGA4710%29",
+     "avitoN": 0
+    }
+   ],
+   "rams": [
+    {
+     "name": "8×32 ГБ DDR5-6400 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 8,
+     "gb": 32,
+     "price": 300000,
+     "src": "оценка: модуль × 8",
+     "platform": "LGA4710",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x32GB%20DDR5-6400%20ECC%20RDIMM",
+     "avitoN": 0
+    },
+    {
+     "name": "8×64 ГБ DDR5-6400 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 8,
+     "gb": 64,
+     "price": 600000,
+     "src": "оценка: модуль × 8",
+     "platform": "LGA4710",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x64GB%20DDR5-6400%20ECC%20RDIMM",
+     "avitoN": 0
+    },
+    {
+     "name": "8×32 ГБ DDR5-5600 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 8,
+     "gb": 32,
+     "price": 260000,
+     "src": "оценка: модуль × 8",
+     "platform": "LGA4710",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x32GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoN": 0
+    }
+   ]
+  },
+  {
+   "name": "SP6",
+   "title": "SP6 — EPYC 8004 Siena: 6 каналов DDR5-4800 (230 ГБ/с), PCIe 5.0, до 64 ядер, 225 Вт",
+   "basaltK": 1.0,
+   "cpus": [
+    {
+     "name": "AMD EPYC 8124P",
+     "cores": 16,
+     "ch": 6,
+     "bw": 230,
+     "tdp": 125,
+     "price": 85000,
+     "src": "оценка: 6 каналов DDR5-4800",
+     "platform": "SP6",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%208124P",
+     "avitoN": 0
+    },
+    {
+     "name": "AMD EPYC 8224P",
+     "cores": 24,
+     "ch": 6,
+     "bw": 230,
+     "tdp": 160,
+     "price": 120000,
+     "src": "оценка: 6 каналов DDR5-4800",
+     "platform": "SP6",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%208224P",
+     "avitoN": 0
+    },
+    {
+     "name": "AMD EPYC 8324P",
+     "cores": 32,
+     "ch": 6,
+     "bw": 230,
+     "tdp": 180,
+     "price": 170000,
+     "src": "оценка: 6 каналов DDR5-4800",
+     "platform": "SP6",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20EPYC%208324P",
+     "avitoN": 0
+    }
+   ],
+   "mbs": [
+    {
+     "name": "Supermicro H13SVW-N (SP6, WIO)",
+     "ram": "DDR5",
+     "ramSlots": 6,
+     "slots": 4,
+     "price": 75000,
+     "src": "оценка, WIO — нужен корпус Supermicro",
+     "platform": "SP6",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20H13SVW-N%20%28SP6%2C%20WIO%29",
+     "avitoN": 0
+    }
+   ],
+   "rams": [
+    {
+     "name": "6×32 ГБ DDR5-4800 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 6,
+     "gb": 32,
+     "price": 180000,
+     "src": "оценка: модуль × 6",
+     "platform": "SP6",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=6x32GB%20DDR5-4800%20ECC%20RDIMM",
+     "avitoN": 0
+    },
+    {
+     "name": "6×64 ГБ DDR5-4800 ECC RDIMM",
+     "type": "DDR5",
+     "mods": 6,
+     "gb": 64,
+     "price": 360000,
+     "src": "оценка: модуль × 6",
+     "platform": "SP6",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=6x64GB%20DDR5-4800%20ECC%20RDIMM",
      "avitoN": 0
     }
    ]
@@ -1360,7 +1519,7 @@ const DB = {
      "price": 109000,
      "src": "Авито (ориентир)",
      "platform": "LGA4189",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Gold%206338",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Gold%206338",
      "avitoN": 29
     },
     {
@@ -1372,7 +1531,7 @@ const DB = {
      "price": 69000,
      "src": "Авито (ориентир)",
      "platform": "LGA4189",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Silver%204314",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Silver%204314",
      "avitoN": 20
     }
    ],
@@ -1385,7 +1544,7 @@ const DB = {
      "price": 80000,
      "src": "Авито (ориентир)",
      "platform": "LGA4189",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20X12SPI-TF",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20X12SPI-TF",
      "avitoN": 0
     },
     {
@@ -1396,7 +1555,7 @@ const DB = {
      "price": 60000,
      "src": "Авито (ориентир)",
      "platform": "LGA4189",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20X12SPL-F",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20X12SPL-F",
      "avitoN": 0
     }
    ],
@@ -1409,7 +1568,7 @@ const DB = {
      "price": 184616,
      "src": "srv-trade",
      "platform": "LGA4189",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x32GB%20DDR4-3200%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x32GB%20DDR4-3200%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1420,7 +1579,7 @@ const DB = {
      "price": 95000,
      "src": "Авито (ориентир)",
      "platform": "LGA4189",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=8x16GB%20DDR4-3200%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=8x16GB%20DDR4-3200%20ECC%20RDIMM",
      "avitoN": 0
     }
    ]
@@ -1439,7 +1598,7 @@ const DB = {
      "price": 20700,
      "src": "sale-server",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Gold%206252",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Gold%206252",
      "avitoN": 10
     },
     {
@@ -1451,7 +1610,7 @@ const DB = {
      "price": 20000,
      "src": "Авито (ориентир)",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Platinum%208163",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Platinum%208163",
      "avitoN": 0
     },
     {
@@ -1463,7 +1622,7 @@ const DB = {
      "price": 9000,
      "src": "sale-server",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Intel%20Xeon%20Gold%206230",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Intel%20Xeon%20Gold%206230",
      "avitoN": 18
     }
    ],
@@ -1476,7 +1635,7 @@ const DB = {
      "price": 80720,
      "src": "Авито (ориентир), 1 сокет",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20X11SPI-TF",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20X11SPI-TF",
      "avitoN": 5
     },
     {
@@ -1487,7 +1646,7 @@ const DB = {
      "price": 55000,
      "src": "Авито (ориентир), 2 сокета",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Supermicro%20X11DPi-NT",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Supermicro%20X11DPi-NT",
      "avitoN": 0
     }
    ],
@@ -1500,7 +1659,7 @@ const DB = {
      "price": 150000,
      "src": "Авито (ориентир)",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=6x32GB%20DDR4-2666%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=6x32GB%20DDR4-2666%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1511,7 +1670,7 @@ const DB = {
      "price": 78000,
      "src": "Авито (ориентир)",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=6x16GB%20DDR4-2666%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=6x16GB%20DDR4-2666%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1522,7 +1681,7 @@ const DB = {
      "price": 300000,
      "src": "Авито (ориентир), 2 сокета",
      "platform": "LGA3647",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=12x32GB%20DDR4-2666%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=12x32GB%20DDR4-2666%20ECC%20RDIMM",
      "avitoN": 0
     }
    ]
@@ -1541,7 +1700,7 @@ const DB = {
      "price": 153000,
      "src": "Авито (ориентир)",
      "platform": "TR5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Threadripper%207960X",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Threadripper%207960X",
      "avitoN": 38
     },
     {
@@ -1553,7 +1712,7 @@ const DB = {
      "price": 204000,
      "src": "Авито (ориентир)",
      "platform": "TR5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Threadripper%207970X",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Threadripper%207970X",
      "avitoN": 41
     }
    ],
@@ -1566,7 +1725,7 @@ const DB = {
      "price": 88000,
      "src": "Авито (ориентир)",
      "platform": "TR5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=ASUS%20Pro%20WS%20TRX50-SAGE",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=ASUS%20Pro%20WS%20TRX50-SAGE",
      "avitoN": 39
     },
     {
@@ -1577,7 +1736,7 @@ const DB = {
      "price": 95000,
      "src": "Авито (ориентир)",
      "platform": "TR5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Gigabyte%20TRX50%20AERO%20D",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Gigabyte%20TRX50%20AERO%20D",
      "avitoN": 0
     }
    ],
@@ -1590,7 +1749,7 @@ const DB = {
      "price": 180000,
      "src": "Авито (ориентир)",
      "platform": "TR5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=4x32GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=4x32GB%20DDR5-5600%20ECC%20RDIMM",
      "avitoN": 0
     },
     {
@@ -1601,7 +1760,7 @@ const DB = {
      "price": 360000,
      "src": "Авито (ориентир)",
      "platform": "TR5",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=4x64GB%20DDR5-5600%20ECC%20RDIMM",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=4x64GB%20DDR5-5600%20ECC%20RDIMM",
      "avitoN": 0
     }
    ]
@@ -1620,7 +1779,7 @@ const DB = {
      "price": 30000,
      "src": "Авито (ориентир)",
      "platform": "AM4",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Ryzen%209%205950X",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Ryzen%209%205950X",
      "avitoN": 19
     },
     {
@@ -1632,7 +1791,7 @@ const DB = {
      "price": 21500,
      "src": "Авито (ориентир)",
      "platform": "AM4",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=AMD%20Ryzen%209%205900X",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=AMD%20Ryzen%209%205900X",
      "avitoN": 36
     }
    ],
@@ -1645,7 +1804,7 @@ const DB = {
      "price": 13250,
      "src": "Авито (ориентир)",
      "platform": "AM4",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Gigabyte%20B550%20Aorus%20Pro",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Gigabyte%20B550%20Aorus%20Pro",
      "avitoN": 18
     },
     {
@@ -1656,7 +1815,7 @@ const DB = {
      "price": 12500,
      "src": "Авито (ориентир)",
      "platform": "AM4",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Gigabyte%20X570%20Aorus%20Elite",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=Gigabyte%20X570%20Aorus%20Elite",
      "avitoN": 7
     }
    ],
@@ -1669,7 +1828,7 @@ const DB = {
      "price": 70000,
      "src": "Авито (ориентир)",
      "platform": "AM4",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x32GB%20DDR4-3200",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=2x32GB%20DDR4-3200",
      "avitoN": 0
     },
     {
@@ -1680,7 +1839,7 @@ const DB = {
      "price": 35000,
      "src": "Авито (ориентир)",
      "platform": "AM4",
-     "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=2x16GB%20DDR4-3200",
+     "avitoUrl": "https://www.avito.ru/rossiya?q=2x16GB%20DDR4-3200",
      "avitoN": 0
     }
    ]
@@ -1692,7 +1851,7 @@ const DB = {
    "w": 1600,
    "price": 48295,
    "src": "chipdip",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Seasonic%20PRIME%20TX-1600%20%28ATX%203.1%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Seasonic%20PRIME%20TX-1600%20%28ATX%203.1%29",
    "avitoN": 12
   },
   {
@@ -1700,7 +1859,7 @@ const DB = {
    "w": 2000,
    "price": 52407,
    "src": "NIX, корпус 4U с БП 2000 Вт",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%91%D0%9F%202000%20%D0%92%D1%82%20%28%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%2C%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%B5%20YCC%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%91%D0%9F%202000%20%D0%92%D1%82%20%28%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%2C%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%B5%20YCC%29",
    "avitoN": 0
   },
   {
@@ -1708,7 +1867,7 @@ const DB = {
    "w": 1200,
    "price": 25000,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%91%D0%9F%201200%20%D0%92%D1%82%20%28SuperFlower%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%91%D0%9F%201200%20%D0%92%D1%82%20%28SuperFlower%29",
    "avitoN": 0
   },
   {
@@ -1716,7 +1875,7 @@ const DB = {
    "w": 1000,
    "price": 8150,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%91%D0%9F%201000%20%D0%92%D1%82%20%28Corsair%20RM1000x%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%91%D0%9F%201000%20%D0%92%D1%82%20%28Corsair%20RM1000x%29",
    "avitoN": 30
   },
   {
@@ -1724,8 +1883,72 @@ const DB = {
    "w": 850,
    "price": 8000,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%91%D0%9F%20850%20%D0%92%D1%82%20%28be%20quiet%21%20Straight%20Power%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%91%D0%9F%20850%20%D0%92%D1%82%20%28be%20quiet%21%20Straight%20Power%29",
    "avitoN": 9
+  },
+  {
+   "name": "Corsair HX1500i (1500 Вт, ATX 3.0)",
+   "w": 1500,
+   "price": 62000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Corsair%20HX1500i%20%281500%20%D0%92%D1%82%2C%20ATX%203.0%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Seasonic PRIME PX-1300 (1300 Вт)",
+   "w": 1300,
+   "price": 42000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Seasonic%20PRIME%20PX-1300%20%281300%20%D0%92%D1%82%29",
+   "avitoN": 0
+  },
+  {
+   "name": "DeepCool PX1200G (1200 Вт, ATX 3.0)",
+   "w": 1200,
+   "price": 26000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=DeepCool%20PX1200G%20%281200%20%D0%92%D1%82%2C%20ATX%203.0%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Chieftec Polaris 1250W (1250 Вт)",
+   "w": 1250,
+   "price": 21000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Chieftec%20Polaris%201250W%20%281250%20%D0%92%D1%82%29",
+   "avitoN": 0
+  },
+  {
+   "name": "MSI MPG A1000G (1000 Вт)",
+   "w": 1000,
+   "price": 16000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=MSI%20MPG%20A1000G%20%281000%20%D0%92%D1%82%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Cougar GEX X2 1000 (1000 Вт)",
+   "w": 1000,
+   "price": 14000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Cougar%20GEX%20X2%201000%20%281000%20%D0%92%D1%82%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Серверный БП 1600 Вт + плата-развязка",
+   "w": 1600,
+   "price": 14000,
+   "src": "Авито, серверный HP/Dell",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D0%91%D0%9F%201600%20%D0%92%D1%82%20%2B%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D1%80%D0%B0%D0%B7%D0%B2%D1%8F%D0%B7%D0%BA%D0%B0",
+   "avitoN": 0
+  },
+  {
+   "name": "Aerocool VX-800 (800 Вт, бюджет)",
+   "w": 800,
+   "price": 4500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Aerocool%20VX-800%20%28800%20%D0%92%D1%82%2C%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%29",
+   "avitoN": 0
   }
  ],
  "ssds": [
@@ -1735,7 +1958,7 @@ const DB = {
    "gbs": 13.6,
    "price": 85370,
    "src": "chipdip",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%204%20%D0%A2%D0%91%20Gen5%20Crucial%20T705",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=NVMe%204%20%D0%A2%D0%91%20Gen5%20Crucial%20T705",
    "avitoN": 0
   },
   {
@@ -1744,7 +1967,7 @@ const DB = {
    "gbs": 7.3,
    "price": 88360,
    "src": "chipdip",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%204%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=NVMe%204%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
    "avitoN": 0
   },
   {
@@ -1753,7 +1976,7 @@ const DB = {
    "gbs": 7.0,
    "price": 89520,
    "src": "chipdip",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%204%20%D0%A2%D0%91%20Gen4%20Kingston%20KC3000",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=NVMe%204%20%D0%A2%D0%91%20Gen4%20Kingston%20KC3000",
    "avitoN": 0
   },
   {
@@ -1762,7 +1985,7 @@ const DB = {
    "gbs": 7.3,
    "price": 43500,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%202%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=NVMe%202%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
    "avitoN": 0
   },
   {
@@ -1771,11 +1994,245 @@ const DB = {
    "gbs": 7.3,
    "price": 168000,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NVMe%208%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=NVMe%208%20%D0%A2%D0%91%20Gen4%20WD%20Black%20SN850X",
    "avitoN": 0
   }
  ],
  "ssdDefault": "NVMe 4 ТБ Gen4 WD Black SN850X",
+ "coolers": [
+  {
+   "name": "Noctua NH-U14S TR4-SP3",
+   "kind": "cpu",
+   "sockets": [
+    "SP3"
+   ],
+   "tdp": 280,
+   "height": 165,
+   "price": 14500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Noctua%20NH-U14S%20TR4-SP3",
+   "avitoN": 0
+  },
+  {
+   "name": "Arctic Freezer 4U-SP5",
+   "kind": "cpu",
+   "sockets": [
+    "SP5"
+   ],
+   "tdp": 400,
+   "height": 148,
+   "price": 12500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Arctic%20Freezer%204U-SP5",
+   "avitoN": 0
+  },
+  {
+   "name": "Dynatron J12 (SP5, 4U)",
+   "kind": "cpu",
+   "sockets": [
+    "SP5"
+   ],
+   "tdp": 400,
+   "height": 150,
+   "price": 21000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Dynatron%20J12%20%28SP5%2C%204U%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Noctua NH-U14S TR5-SP6",
+   "kind": "cpu",
+   "sockets": [
+    "SP6",
+    "TR5"
+   ],
+   "tdp": 280,
+   "height": 165,
+   "price": 16500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Noctua%20NH-U14S%20TR5-SP6",
+   "avitoN": 0
+  },
+  {
+   "name": "Noctua NH-D9 TR5-SP6 4U",
+   "kind": "cpu",
+   "sockets": [
+    "SP6",
+    "TR5"
+   ],
+   "tdp": 250,
+   "height": 134,
+   "price": 17500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Noctua%20NH-D9%20TR5-SP6%204U",
+   "avitoN": 0
+  },
+  {
+   "name": "Dynatron A54 (SP6, 4U)",
+   "kind": "cpu",
+   "sockets": [
+    "SP6"
+   ],
+   "tdp": 225,
+   "height": 120,
+   "price": 12000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Dynatron%20A54%20%28SP6%2C%204U%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Noctua NH-U14S DX-4677",
+   "kind": "cpu",
+   "sockets": [
+    "LGA4677"
+   ],
+   "tdp": 300,
+   "height": 165,
+   "price": 17000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Noctua%20NH-U14S%20DX-4677",
+   "avitoN": 0
+  },
+  {
+   "name": "Noctua NH-D9 DX-4677 4U",
+   "kind": "cpu",
+   "sockets": [
+    "LGA4677"
+   ],
+   "tdp": 300,
+   "height": 134,
+   "price": 18500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Noctua%20NH-D9%20DX-4677%204U",
+   "avitoN": 0
+  },
+  {
+   "name": "Arctic Freezer 4U-M (LGA4677)",
+   "kind": "cpu",
+   "sockets": [
+    "LGA4677"
+   ],
+   "tdp": 350,
+   "height": 145,
+   "price": 11500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Arctic%20Freezer%204U-M%20%28LGA4677%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Noctua NH-U14S DX-4710",
+   "kind": "cpu",
+   "sockets": [
+    "LGA4710"
+   ],
+   "tdp": 350,
+   "height": 165,
+   "price": 18000,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Noctua%20NH-U14S%20DX-4710",
+   "avitoN": 0
+  },
+  {
+   "name": "Thermalright Peerless Assassin 120 SE",
+   "kind": "cpu",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1851"
+   ],
+   "tdp": 245,
+   "height": 155,
+   "price": 4500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Thermalright%20Peerless%20Assassin%20120%20SE",
+   "avitoN": 0
+  },
+  {
+   "name": "DeepCool AK620",
+   "kind": "cpu",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1851"
+   ],
+   "tdp": 260,
+   "height": 160,
+   "price": 7500,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=DeepCool%20AK620",
+   "avitoN": 0
+  },
+  {
+   "name": "Arctic P14 PWM PST (140 мм)",
+   "kind": "case",
+   "sockets": [],
+   "tdp": 0,
+   "height": 27,
+   "price": 1200,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Arctic%20P14%20PWM%20PST%20%28140%20%D0%BC%D0%BC%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Arctic P12 PWM PST (120 мм)",
+   "kind": "case",
+   "sockets": [],
+   "tdp": 0,
+   "height": 25,
+   "price": 900,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Arctic%20P12%20PWM%20PST%20%28120%20%D0%BC%D0%BC%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Noctua NF-A12x25 PWM (120 мм)",
+   "kind": "case",
+   "sockets": [],
+   "tdp": 0,
+   "height": 25,
+   "price": 3900,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Noctua%20NF-A12x25%20PWM%20%28120%20%D0%BC%D0%BC%29",
+   "avitoN": 0
+  },
+  {
+   "name": "be quiet! Silent Wings 4 140 мм",
+   "kind": "case",
+   "sockets": [],
+   "tdp": 0,
+   "height": 25,
+   "price": 3100,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=be%20quiet%21%20Silent%20Wings%204%20140%20%D0%BC%D0%BC",
+   "avitoN": 0
+  },
+  {
+   "name": "Thermalright TL-C12C (120 мм)",
+   "kind": "case",
+   "sockets": [],
+   "tdp": 0,
+   "height": 25,
+   "price": 700,
+   "src": "ориентир, магазин",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Thermalright%20TL-C12C%20%28120%20%D0%BC%D0%BC%29",
+   "avitoN": 0
+  },
+  {
+   "name": "Без кулера (боксовый/свой)",
+   "kind": "cpu",
+   "sockets": [],
+   "tdp": 0,
+   "height": 0,
+   "price": 0,
+   "src": "—",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%91%D0%B5%D0%B7%20%D0%BA%D1%83%D0%BB%D0%B5%D1%80%D0%B0%20%28%D0%B1%D0%BE%D0%BA%D1%81%D0%BE%D0%B2%D1%8B%D0%B9/%D1%81%D0%B2%D0%BE%D0%B9%29",
+   "avitoN": 0
+  }
+ ],
+ "coolerDefault": "Noctua NH-U14S TR4-SP3",
+ "fanDefault": "Arctic P14 PWM PST (140 мм)",
  "cases": [
   {
    "name": "NegoRack NR-M48 (4U, 650 мм)",
@@ -1783,7 +2240,7 @@ const DB = {
    "slots": 8,
    "price": 29623,
    "src": "srv-trade",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=NegoRack%20NR-M48%20%284U%2C%20650%20%D0%BC%D0%BC%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=NegoRack%20NR-M48%20%284U%2C%20650%20%D0%BC%D0%BC%29",
    "avitoN": 0,
    "dims": [
     430,
@@ -1798,7 +2255,7 @@ const DB = {
    "slots": 4,
    "price": 22238,
    "src": "srv-trade",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%204U%20PROCASE%20%28430%20%D0%BC%D0%BC%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%204U%20PROCASE%20%28430%20%D0%BC%D0%BC%29",
    "avitoN": 0,
    "dims": [
     430,
@@ -1813,7 +2270,7 @@ const DB = {
    "slots": 6,
    "price": 2500,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9%20%D1%81%D1%82%D0%B5%D0%BD%D0%B4",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9%20%D1%81%D1%82%D0%B5%D0%BD%D0%B4",
    "avitoN": 21,
    "dims": [
     400,
@@ -1828,7 +2285,7 @@ const DB = {
    "slots": 3,
    "price": 33000,
    "src": "снят с продажи, ориентир",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Fractal%20Define%207%20XL",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Fractal%20Define%207%20XL",
    "avitoN": 0,
    "dims": [
     240,
@@ -1843,7 +2300,7 @@ const DB = {
    "slots": 2,
    "price": 6833,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=Lian%20Li%20PC-O11%20Dynamic",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=Lian%20Li%20PC-O11%20Dynamic",
    "avitoN": 30,
    "dims": [
     285,
@@ -1858,7 +2315,7 @@ const DB = {
    "slots": 3,
    "price": 2000,
    "src": "Авито (ориентир)",
-   "avitoUrl": "https://www.avito.ru/sankt-peterburg?q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%20ATX%20%D1%81%203%20%D1%81%D0%BB%D0%BE%D1%82%D0%B0%D0%BC%D0%B8%20%28%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%29",
+   "avitoUrl": "https://www.avito.ru/rossiya?q=%D0%9A%D0%BE%D1%80%D0%BF%D1%83%D1%81%20ATX%20%D1%81%203%20%D1%81%D0%BB%D0%BE%D1%82%D0%B0%D0%BC%D0%B8%20%28%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%29",
    "avitoN": 34,
    "dims": [
     210,
