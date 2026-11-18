@@ -23,6 +23,12 @@ for x in db.PSUS:
     items.append({"kind": "psu", "name": x[0], "query": db.avito_query(x[0]), "estimate": x[2]})
 for x in db.CASES:
     items.append({"kind": "case", "name": x[0], "query": db.avito_query(x[0]), "estimate": x[3]})
+for x in db.COOLERS:
+    if not x[5]:
+        continue
+    items.append({"kind": "cooler", "name": x[0], "query": db.avito_query(x[0]), "estimate": x[5]})
+for x in db.SSDS:
+    items.append({"kind": "ssd", "name": x[0], "query": db.avito_query(x[0]), "estimate": x[3]})
 
 with io.open(os.path.join(HERE, "avito_queries.json"), "w", encoding="utf-8") as f:
     json.dump(items, f, ensure_ascii=False, indent=1)
