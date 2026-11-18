@@ -35,8 +35,9 @@
     var vram = gpu.vram * n, bwVram = gpu.bw * n, compute = gpu.comp * n;
     var bwRam = cpu.bw;
     var price = gpu.price * n + cpu.price + mb.price + ram.price + sel.psu.price + sel.case.price +
-      ((sel.ssd && sel.ssd.price) || 0);
-    var power = gpu.tdp * n * 1.1 + cpu.tdp * 1.3 + 100;
+      ((sel.ssd && sel.ssd.price) || 0) + ((sel.cooler && sel.cooler.price) || 0) +
+      ((sel.fan && sel.fan.price) || 0);
+    var power = gpu.tdp * n * 1.1 + cpu.tdp * 1.3 + 100 + (sel.fan ? 5 : 0);
     var psuNeed = Math.ceil(power / 0.75 / 50) * 50;
 
     var models = sel.models.map(function (m) {
@@ -70,6 +71,13 @@
       { name: "Мощности БП хватает", ok: sel.psu.w >= psuNeed, msg: "БП слабый" },
       { name: "Слотов GPU у корпуса хватает", ok: n <= sel.case.slots, msg: "мало слотов" },
     ];
+    if (sel.cooler) {
+      var cs = sel.cooler.sockets || [];
+      var ch = sel.case.dims ? sel.case.dims[1] : 0;
+      checks.push({ name: "Кулер подходит под сокет", ok: !cs.length || cs.indexOf(sel.platform.name) >= 0, msg: "сокет " + sel.platform.name + " не поддерживается" });
+      checks.push({ name: "Кулер по TDP", ok: !sel.cooler.tdp || sel.cooler.tdp >= cpu.tdp, msg: "нужен мощнее " + cpu.tdp + " Вт" });
+      if (ch) checks.push({ name: "Кулер влезает в корпус", ok: !sel.cooler.height || sel.cooler.height <= ch - 15, msg: sel.cooler.height + " мм при корпусе " + ch + " мм" });
+    }
 
     return {
       vram: vram, bwVram: bwVram, compute: compute, bwRam: bwRam,
