@@ -393,6 +393,27 @@ for name, gb, gbs, price, src in SSDS:
 ssd_end = r - 1
 widths(sd, [42, 12, 14, 14, 34, 10])
 
+# ================================================================ Охлаждение
+cl = WB.create_sheet("Охлаждение")
+head(cl, 1, ["Модель", "Тип", "Сокеты", "TDP, Вт", "Высота, мм", "Цена, ₽", "Источник", "Авито"])
+r = 2
+cool_start = r
+for name, kind, sockets, tdp, height, price, src in COOLERS:
+    cl.cell(row=r, column=1, value=name)
+    cl.cell(row=r, column=2, value=("Кулер CPU" if kind == "cpu" else "Вентилятор")).alignment = CENTER
+    cl.cell(row=r, column=3, value=sockets or "—").alignment = WRAP
+    cl.cell(row=r, column=4, value=tdp or None)
+    cl.cell(row=r, column=5, value=height or None)
+    cl.cell(row=r, column=6, value=avito_price(name, price)).number_format = MONEY
+    cl.cell(row=r, column=7, value=(src + (" · " + avito_note(name) if avito_note(name) else ""))).alignment = WRAP
+    lc = cl.cell(row=r, column=8, value="Авито")
+    lc.hyperlink = avito_url(name)
+    lc.font = LINK
+    lc.alignment = CENTER
+    r += 1
+cool_end = r - 1
+widths(cl, [44, 13, 24, 10, 13, 14, 34, 10])
+
 # ================================================================ Модели
 md = WB.create_sheet("Модели")
 head(md, 1, ["Модель", "Движок", "Размер, ГБ", "Активных, млрд", "Байт/токен, ГБ", "Dense, ГБ",
@@ -456,7 +477,7 @@ k.cell(row=3, column=4, value="KV-кэш (ГБ):").font = Font(bold=True)
 k.cell(row=3, column=5, value='=Модели!P2*$E$2/1000').number_format = NUM1
 k.cell(row=4, column=4, value="Множитель Basalt (CPU):").font = Font(bold=True)
 k.cell(row=4, column=5, value='=IF($B$2="SP3",0.5,IF($B$2="AM4",0.62,IF($B$2="LGA3647",0.38,1)))').number_format = NUM2
-note(k, 5, "Basalt считает экспертов на CPU: без AVX-512/VBMI2 и AVX-VNNI (SP3, AM4, LGA3647) движок падает на AVX2 и упирается в процессор. Множитель в E4 — из замера Xeon 6252 + RTX 5070 Ti (73 tok/s прозы).", 5)
+note(k, 65, "Basalt считает экспертов на CPU: без AVX-512/VBMI2 и AVX-VNNI (SP3, AM4, LGA3647) движок падает на AVX2 и упирается в процессор. Множитель в E4 — из замера Xeon 6252 + RTX 5070 Ti (73 tok/s прозы).", 5)
 
 for row, label, formula, fmt in [
     (10, "Вендор GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$L,12,0),"?")', None),
@@ -483,7 +504,7 @@ res = [
     ("Цена GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,10,0)*B7,0)', MONEY),
     ("Цена CPU + плата + память", '=IFERROR(VLOOKUP(B3,CPU!$A:$H,7,0),0)+IFERROR(VLOOKUP(B4,Платы!$A:$G,6,0),0)+IFERROR(VLOOKUP(B5,Память!$A:$G,6,0),0)', MONEY),
     ("Цена БП + корпус", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,6,0),0)+IFERROR(VLOOKUP(B9,БП_Корпус!$A:$G,6,0),0)', MONEY),
-    ("ИТОГО цена сборки, ₽", "=SUM(B21:B23)+IFERROR(VLOOKUP(B57,SSD!$A:$D,4,0),0)", MONEY),
+    ("ИТОГО цена сборки, ₽", "=SUM(B21:B23)+IFERROR(VLOOKUP(B57,SSD!$A:$D,4,0),0)+IFERROR(VLOOKUP(B59,'Охлаждение'!$A:$F,6,0),0)+IFERROR(VLOOKUP(B60,'Охлаждение'!$A:$F,6,0),0)", MONEY),
     ("Требуемая мощность, Вт", '=IFERROR(VLOOKUP(B6,GPU!$A:$K,4,0)*B7*1.1 + VLOOKUP(B3,CPU!$A:$H,6,0)*1.3 + 100,0)', NUM1),
     ("Рекомендуемый БП, Вт", "=ROUNDUP(B25/0.75/50,0)*50", NUM1),
     ("Мощность выбранного БП, Вт", '=IFERROR(VLOOKUP(B8,БП_Корпус!$A:$G,3,0),0)', NUM1),
@@ -571,11 +592,30 @@ ssd_cell.alignment = CENTER
 k.cell(row=57, column=3, value='=IFERROR(VLOOKUP(B57,SSD!$A:$D,4,0),0)').number_format = MONEY
 lc = k.cell(row=57, column=4, value='=HYPERLINK(IFERROR(VLOOKUP(B57,SSD!$A:$F,6,0),""),"Авито")')
 lc.alignment = CENTER
-k.cell(row=58, column=1, value="ИТОГО по позициям").font = Font(bold=True)
-c = k.cell(row=58, column=3, value="=SUM(C51:C57)")
+# кулер и вентилятор
+k.cell(row=59, column=1, value="Кулер CPU").font = Font(bold=True)
+col_cell = k.cell(row=59, column=2, value=COOLER_DEFAULT)
+col_cell.fill = IN_FILL
+col_cell.alignment = CENTER
+k.cell(row=59, column=3, value="=IFERROR(VLOOKUP(B59,'Охлаждение'!$A:$F,6,0),0)").number_format = MONEY
+lc = k.cell(row=59, column=4, value='=HYPERLINK(IFERROR(VLOOKUP(B59,\'Охлаждение\'!$A:$H,8,0),""),"Авито")')
+lc.alignment = CENTER
+k.cell(row=60, column=1, value="Вентилятор корпуса").font = Font(bold=True)
+fan_cell = k.cell(row=60, column=2, value=FAN_DEFAULT)
+fan_cell.fill = IN_FILL
+fan_cell.alignment = CENTER
+k.cell(row=60, column=3, value="=IFERROR(VLOOKUP(B60,'Охлаждение'!$A:$F,6,0),0)").number_format = MONEY
+lc = k.cell(row=60, column=4, value='=HYPERLINK(IFERROR(VLOOKUP(B60,\'Охлаждение\'!$A:$H,8,0),""),"Авито")')
+lc.alignment = CENTER
+k.cell(row=61, column=1, value="ИТОГО по позициям").font = Font(bold=True)
+c = k.cell(row=61, column=3, value="=SUM(C51:C60)")
 c.number_format = MONEY
 c.font = Font(bold=True)
-k.cell(row=58, column=4, value='=IF(ROUND(C58-B24,0)=0,"сходится с итогом","расхождение с B24")')
+k.cell(row=61, column=4, value='=IF(ROUND(C61-B24,0)=0,"сходится с итогом","расхождение с B24")')
+k.cell(row=63, column=1, value="Проверка кулера").font = Font(bold=True)
+k.cell(row=63, column=2, value='=IFERROR(VLOOKUP(B3,CPU!$A:$H,6,0),"")&" Вт у CPU, кулер до "&IFERROR(VLOOKUP(B59,\'Охлаждение\'!$A:$F,4,0),0)&" Вт; высота "&IFERROR(VLOOKUP(B59,\'Охлаждение\'!$A:$F,5,0),0)&" мм"&IF(ISNUMBER(SEARCH($B$2,VLOOKUP(B59,\'Охлаждение\'!$A:$F,3,0)))," · сокет ок"," · НЕ ТОТ СОКЕТ")')
+k.cell(row=63, column=2).alignment = WRAP
+k.merge_cells(start_row=63, start_column=2, end_row=63, end_column=5)
 
 def dv(formula, cell):
     v = DataValidation(type="list", formula1=formula, allow_blank=False)
@@ -591,6 +631,8 @@ dv('"1,2,3,4"', "B7")
 dv("PSU_ALL", "B8")
 dv("CASE_ALL", "B9")
 dv("SSD_ALL", "B57")
+dv("CPU_COOLERS", "B59")
+dv("CASE_FANS", "B60")
 dv('"8192,32768,65536,131072,262144"', "E2")
 
 # ================================================================ Максимум
@@ -693,6 +735,16 @@ WB.defined_names["GPU_ALL"] = DefinedName("GPU_ALL", attr_text=f"'GPU'!$A$2:$A${
 WB.defined_names["PSU_ALL"] = DefinedName("PSU_ALL", attr_text=f"'БП_Корпус'!$A${psu_start}:$A${psu_end}")
 WB.defined_names["CASE_ALL"] = DefinedName("CASE_ALL", attr_text=f"'БП_Корпус'!$A${case_start}:$A${case_end}")
 WB.defined_names["SSD_ALL"] = DefinedName("SSD_ALL", attr_text=f"'SSD'!$A$2:$A${ssd_end}")
+
+# отдельные списки кулеров и вентиляторов (по типу)
+_cpu_rows = [2 + i for i, c in enumerate(COOLERS) if c[1] == "cpu" and c[5]]
+_fan_rows = [2 + i for i, c in enumerate(COOLERS) if c[1] == "case" and c[5]]
+if _cpu_rows:
+    WB.defined_names["CPU_COOLERS"] = DefinedName(
+        "CPU_COOLERS", attr_text="'Охлаждение'!$A$%d:$A$%d" % (min(_cpu_rows), max(_cpu_rows)))
+if _fan_rows:
+    WB.defined_names["CASE_FANS"] = DefinedName(
+        "CASE_FANS", attr_text="'Охлаждение'!$A$%d:$A$%d" % (min(_fan_rows), max(_fan_rows)))
 
 # рамки
 for nm in ("GPU", "CPU", "Платы", "Память", "БП_Корпус", "Модели", "Замеры", "Максимум"):
