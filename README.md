@@ -24,12 +24,13 @@
 | Кулеров и вентиляторов | 18 |
 | Видеокарт | 33 (NVIDIA RTX 20/30/40/50 вкл. 5060 Ti, Ada/Quadro, Tesla; AMD RX 7000/9000 и R9700; Intel Arc) |
 | Видеокарт | 33 (NVIDIA RTX 20/30/40/50 вкл. 5060 Ti, Ada/Quadro, Tesla; AMD RX 7000/9000 и R9700; Intel Arc) |
-| Моделей | 7: GLM-5.3-Flash Maya-L и Maya-M, Qwen3.8-Flash UD-Q4_K_XL и UD-IQ4_XS (Strata), Qwen3.8-Flash Basalt NVFP4-DQ6_K и IQ3_S, DeepSeek-V4.1-Flash Maya-S |
+| Моделей | 7: GLM-5.3-Flash Maya-L и Maya-M, Qwen3.8-Flash UD-Q4_K_XL и UD-IQ4_XS (Strata), Qwen3.8-Flash Basalt NVFP4-DQ6_K и UD-IQ3_XXS, DeepSeek-V4.1-Flash Maya-S |
 
 **Движки:** Project Maya (GLM, DeepSeek) · Strata (Qwen, GGUF) · **Basalt** — форк Strata под Qwen3.8-Flash-Next,
-работает **только на NVIDIA Blackwell (sm_120)**: RTX 50-серия и RTX PRO 6000. Паки `.basalt`:
-NVFP4-DQ6_K 131,7 ГБ, UD-Q4_K_XL 115,3, GSQ-RCO-IQ3_S 87,6, Q2_0 70,4 ГБ. Расчёт Basalt — от замера
-3× Blackwell (406 ток/с декод, 7957 ток/с префилл), экстраполяция линейна по эффективной полосе.
+работает **только на NVIDIA Blackwell (sm_120)**: RTX 50-серия и RTX PRO 6000. Паки `.basalt` (версия 0.3.0):
+NVFP4-DQ6_K 131,7 ГБ · UD-Q4_K_XL 115,3 · UD-IQ4_XS 97,6 · UD-IQ3_XXS 87,6 · UD-IQ2_XS 79,9 · UD-IQ1_S 70,4.
+Опopная точка — карточка модели: RTX 5090 + 5060 Ti, **307 tok/s** прозы (NVFP4) и 342 (UD-IQ3_XXS),
+601/658 структурой. Пересчёт на другие конфигурации — степень 0,26 по эффективной полосе.
 
 ## Как считается
 
@@ -82,6 +83,12 @@ Basalt считает экспертов на CPU. Быстрый путь — A
 Zen4+). На SP3 (Zen2/Zen3), AM4 и LGA3647 движок падает на AVX2 и упирается в процессор: замер на Xeon Gold 6252
 (2,1 ГГц, AVX2, PCIe 3.0) + RTX 5070 Ti дал 73 tok/s прозы и 148 структурой. Поэтому в расчёте стоит множитель
 для Basalt: SP3 0,5 · AM4 0,62 · LGA3647 0,38 (декод), для префилла — корень из него.
+
+## Охлаждение
+
+В базе 13 процессорных кулеров с привязкой к сокету, TDP и высоте, и 5 корпусных вентиляторов.
+Калькулятор проверяет три вещи: сокет платформы, запас по TDP и высоту кулера относительно корпуса
+(например, Noctua NH-U14S 165 мм не влезает в 4U-корпус высотой 176 мм).
 
 ## Обновить данные
 
