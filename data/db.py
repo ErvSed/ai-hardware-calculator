@@ -12,19 +12,30 @@ AVITO_BLOCK = {
     "2×48 ГБ DDR5-6000": "неоднозначный запрос: в заголовках разная ёмкость комплектов",
     "2×32 ГБ DDR5-6000": "неоднозначный запрос: в заголовках разная ёмкость комплектов",
     "Gigabyte MZ31-AR0": "поиск находит не плату, а другие товары",
+    "Интегрированная плата mini-PC": "в составе устройства: поиск отдаёт аксессуары и корпуса",
+    "Встроенный БП мини-ПК (400 Вт)": "в составе устройства — цена входит в мини-ПК",
+    "Корпус мини-ПК (в составе)": "в составе устройства — цена входит в мини-ПК",
+    "Без накопителя (свой)": "это не товар, а вариант «без SSD»",
 }
 
 # реальные цены, собранные avito_harvest.js (Opera + CDP)
-_AVITO = {}
-_prices_path = os.path.join(HERE, "avito_prices.json")
-if os.path.exists(_prices_path):
-    try:
-        with open(_prices_path, encoding="utf-8") as f:
-            for _k, _v in json.load(f).items():
-                if isinstance(_v, dict) and _v.get("median"):
-                    _AVITO[_k] = _v
-    except Exception:
-        _AVITO = {}
+def _load_prices(name):
+    path = os.path.join(HERE, name)
+    out = {}
+    if os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as f:
+                for k, v in json.load(f).items():
+                    if isinstance(v, dict) and v.get("median"):
+                        out[k] = v
+        except Exception:
+            pass
+    return out
+
+
+_AVITO = _load_prices("avito_prices.json")
+# прошлый срез: если в новом проходе мало объявлений — берём цену оттуда
+_AVITO_PREV = _load_prices("avito_prices_prev.json")
 
 
 # Basalt считает экспертов на CPU. Быстрый путь — AVX-512 c VBMI2 или AVX-VNNI
@@ -59,29 +70,45 @@ def avito_band(kind):
     return AVITO_BANDS.get(kind, AVITO_BAND_DEFAULT)
 
 
-def avito_stats(name):
-    """Данные Авито, если им можно доверять (иначе None).
-
-    Отсекаем: меньше 5 живых объявлений и медиану, которая расходится
-    с прежней оценкой сильнее допустимого (Авито часто ищет «похожее»
-    и подмешивает целые серверы и другие модели). Комплекты памяти
-    (в названии «×») не берём: поиск отдаёт отдельные модули.
-    """
-    if name in AVITO_BLOCK or "×" in name and "ГБ" in name:
-        return None
-    v = _AVITO.get(name)
+def _plausible(name, v):
+    """Проходит ли срез по количеству объявлений и коридору цены."""
     if not v or not v.get("median"):
-        return None
-    n = v.get("ads_clean") or 0
-    if n < 5:
-        return None
+        return False
+    if (v.get("ads_clean") or 0) < 5:
+        return False
     est = v.get("estimate") or 0
     if est:
         lo, hi = avito_band(v.get("kind"))
         r = float(v["median"]) / est
         if r < lo or r > hi:
-            return None
-    return v
+            return False
+    return True
+
+
+def avito_stats(name):
+    """Данные Авито, если им можно доверять (иначе None).
+
+    Порядок: свежий срез → прошлый срез (если свежий пуст/подозрителен) → None.
+    Отсекаем: меньше 5 живых объявлений и медиану, которая расходится
+    с прежней оценкой сильнее допустимого. Комплекты памяти («×» в названии)
+    не берём: поиск отдаёт отдельные модули вместо наборов.
+    """
+    if name in AVITO_BLOCK or "×" in name and "ГБ" in name:
+        return None
+    v = _AVITO.get(name)
+    if _plausible(name, v):
+        return v
+    p = _AVITO_PREV.get(name)
+    if _plausible(name, p):
+        p = dict(p)
+        p["_prev"] = True
+        return p
+    return None
+
+
+def avito_prev_note(name):
+    st = avito_stats(name) or {}
+    return " (прошлый срез)" if st.get("_prev") else ""
 
 
 def avito_reject_reason(name):
@@ -144,6 +171,8 @@ GPU_ARCH = {
     "RTX A6000 48 ГБ": "Ampere", "RTX 6000 Ada 48 ГБ": "Ada", "RTX 5880 Ada 45 ГБ": "Ada",
     "RTX PRO 6000 Blackwell 96 ГБ": "Blackwell", "Radeon AI PRO R9700 32 ГБ": "RDNA4",
     "Radeon RX 7900 XTX 24 ГБ": "RDNA3", "Radeon RX 7900 XT 20 ГБ": "RDNA3",
+    "Radeon Instinct MI50 32 ГБ": "Vega", "Radeon Instinct MI50 16 ГБ": "Vega",
+    "Radeon 8060S (Strix Halo, 96 ГБ)": "RDNA3.5", "Radeon 8065S (Gorgon Halo, 160 ГБ)": "RDNA3.5",
     "Radeon RX 9070 XT 16 ГБ": "RDNA4", "Arc A770 16 ГБ": "Alchemist", "Arc B580 12 ГБ": "Battlemage",
     "Tesla V100 32 ГБ": "Volta", "Tesla P100 16 ГБ": "Pascal", "Tesla P40 24 ГБ": "Pascal",
     "Tesla T4 16 ГБ": "Turing",
@@ -159,7 +188,7 @@ def gpu_arch(name):
 # R9700 → 5090 даёт 109,7 ток/с (PR #1617), 2×2080 Ti ≈ 55 (PR #2665).
 STRATA_FACTOR = {
     "Turing": 0.58, "Ampere": 0.88, "Ada": 1.0, "Blackwell": 1.15,
-    "RDNA4": 1.0, "RDNA3": 0.95, "Pascal": 0.35, "Volta": 0.6,
+    "RDNA4": 1.0, "RDNA3.5": 0.9, "RDNA3": 0.95, "Vega": 0.45, "Pascal": 0.35, "Volta": 0.6,
     "Alchemist": 0.5, "Battlemage": 0.6,
 }
 
@@ -195,6 +224,10 @@ GPU_ROWS = [
     ("RTX PRO 6000 Blackwell 96 ГБ", 96, 1792, 600, 304, 2, 3.00, 2575000, 0, "gpumall от 2 575 000 ₽", "NVIDIA"),
     ("Radeon AI PRO R9700 32 ГБ", 32, 640, 300, 267, 2, 1.25, 313480, 0, "PriceTool от 313 480 ₽; в СПб polus.ru", "AMD"),
     ("Radeon RX 7900 XTX 24 ГБ", 24, 960, 355, 320, 3, 1.35, 0, 90000, "Авито 85–95 тыс (ориентир)", "AMD"),
+    ("Radeon Instinct MI50 32 ГБ", 32, 1024, 300, 267, 2, 0.38, 0, 37000, "Vega 20, 32 ГБ HBM2, ROCm; б/у, без майнинга", "AMD"),
+    ("Radeon Instinct MI50 16 ГБ", 16, 1024, 300, 267, 2, 0.38, 0, 22000, "Vega 20, 16 ГБ HBM2, ROCm; б/у", "AMD"),
+    ("Radeon 8060S (Strix Halo, 96 ГБ)", 96, 256, 120, 0, 1, 0.50, 0, 330000, "APU Ryzen AI Max+ 395, LPDDR5X-8000; цена — мини-ПК целиком", "AMD"),
+    ("Radeon 8065S (Gorgon Halo, 160 ГБ)", 160, 273, 140, 0, 1, 0.55, 0, 620000, "APU Ryzen AI Max+ Pro 495, LPDDR5X-8533; цена — мини-ПК целиком", "AMD"),
     ("Radeon RX 7900 XT 20 ГБ", 20, 800, 315, 300, 3, 1.15, 0, 70000, "Авито 65–75 тыс (ориентир)", "AMD"),
     ("Radeon RX 9070 XT 16 ГБ", 16, 645, 304, 305, 3, 1.30, 0, 85000, "Авито 80–90 тыс (ориентир)", "AMD"),
     ("Arc A770 16 ГБ", 16, 560, 225, 280, 2, 0.50, 0, 30000, "Авито 28–35 тыс (ориентир)", "Intel"),
@@ -211,6 +244,7 @@ PLATFORMS = [
         "title": "SP3 — EPYC 7002/7003: 8 каналов DDR4, 128 линий PCIe 4.0, до 7 GPU",
         "cpus": [
             ("AMD EPYC 7402", 24, 8, 139, 180, 30000, "sale-server, б/у"),
+            ("AMD EPYC 7452", 32, 8, 139, 155, 19000, "Авито (ориентир), опора Maya #165"),
             ("AMD EPYC 7443", 24, 8, 139, 200, 98937, "srv-trade"),
             ("AMD EPYC 7502P", 32, 8, 139, 180, 46238, "srv-trade"),
             ("AMD EPYC 7543", 32, 8, 139, 225, 86853, "srv-trade"),
@@ -353,6 +387,21 @@ PLATFORMS = [
         ],
     },
     {
+        "name": "HALO",
+        "title": "HALO — Ryzen AI Max+ (Strix/Gorgon): унифицированная LPDDR5X 128–192 ГБ, PCIe 5.0, mini-PC",
+        "cpus": [
+            ("Ryzen AI Max+ 395 (Strix Halo)", 16, 1, 256, 0, 0, "в составе мини-ПК, LPDDR5X-8000"),
+            ("Ryzen AI Max+ Pro 495 (Gorgon Halo)", 16, 1, 273, 0, 0, "в составе мини-ПК, LPDDR5X-8533"),
+        ],
+        "mbs": [
+            ("Интегрированная плата mini-PC", "LPDDR5X", 1, 1, 0, "распаяна, 1 слот PCIe"),
+        ],
+        "rams": [
+            ("LPDDR5X-8000 128 ГБ (в составе)", "LPDDR5X", 1, 128, 0, "распаяна в мини-ПК"),
+            ("LPDDR5X-8533 192 ГБ (в составе)", "LPDDR5X", 1, 192, 0, "распаяна в мини-ПК"),
+        ],
+    },
+    {
         "name": "LGA4189",
         "title": "LGA4189 — Xeon Ice Lake: 8 каналов DDR4, до 150 ГБ/с",
         "cpus": [
@@ -434,6 +483,7 @@ PSUS = [
     ("Cougar GEX X2 1000 (1000 Вт)", 1000, 14000, "ориентир, магазин"),
     ("Серверный БП 1600 Вт + плата-развязка", 1600, 14000, "Авито, серверный HP/Dell"),
     ("Aerocool VX-800 (800 Вт, бюджет)", 800, 4500, "ориентир, магазин"),
+    ("Встроенный БП мини-ПК (400 Вт)", 400, 0, "в составе устройства"),
 ]
 
 # охлаждение: имя, тип (cpu|case), сокеты, TDP Вт, высота мм, цена, источник
@@ -491,6 +541,7 @@ CASES = [
     ("Fractal Define 7 XL", 460, 3, 33000, "снят с продажи, ориентир"),
     ("Lian Li PC-O11 Dynamic", 420, 2, 18000, "Авито (ориентир)"),
     ("Корпус ATX с 3 слотами (ориентир)", 340, 3, 6000, "Авито (ориентир)"),
+    ("Корпус мини-ПК (в составе)", 0, 1, 0, "в составе устройства"),
 ]
 
 # контекст: метка и токены. KV-кэш считается по модели (int8 K/V).
@@ -536,6 +587,7 @@ CASE_DIMS = {
     "Fractal Define 7 XL": (240, 604, 566, 16.0),
     "Lian Li PC-O11 Dynamic": (285, 465, 459, 13.0),
     "Корпус ATX с 3 слотами (ориентир)": (210, 470, 420, 8.0),
+    "Корпус мини-ПК (в составе)": (150, 80, 150, 1.2),
 }
 
 # имя, движок, размер, активных, байт/токен, dense, anchor VRAM, anchor BW VRAM, anchor BW RAM,
