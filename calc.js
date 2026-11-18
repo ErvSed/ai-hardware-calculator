@@ -33,8 +33,12 @@
     var gpu = sel.gpu, n = sel.count, cpu = sel.cpu, mb = sel.mb, ram = sel.ram;
     var ctx = sel.ctx || 32768;
     var vram = gpu.vram * n, bwVram = gpu.bw * n, compute = gpu.comp * n;
-    var bwRam = cpu.bw;
-    var price = gpu.price * n + cpu.price + mb.price + ram.price + sel.psu.price + sel.case.price +
+    // планки RAM: цена и полоса от выбранного количества
+    var sticks = Math.max(1, Math.min(sel.sticks || ram.mods, mb.ramSlots));
+    var ramPrice = Math.round(ram.price / ram.mods * sticks);
+    var ramGB = sticks * ram.gb;
+    var bwRam = cpu.ch ? cpu.bw * Math.min(1, sticks / cpu.ch) : cpu.bw;
+    var price = gpu.price * n + cpu.price + mb.price + ramPrice + sel.psu.price + sel.case.price +
       ((sel.ssd && sel.ssd.price) || 0) + ((sel.cooler && sel.cooler.price) || 0) +
       ((sel.fan && sel.fan.price) || 0);
     var power = gpu.tdp * n * 1.1 + cpu.tdp * 1.3 + 100 + (sel.fan ? 5 : 0);
@@ -70,6 +74,7 @@
       { name: "Длина карты ≤ корпуса", ok: gpu.len <= sel.case.len, msg: "не влезет" },
       { name: "Мощности БП хватает", ok: sel.psu.w >= psuNeed, msg: "БП слабый" },
       { name: "Слотов GPU у корпуса хватает", ok: n <= sel.case.slots, msg: "мало слотов" },
+      { name: "Планок RAM ≤ слотов платы", ok: sticks <= mb.ramSlots, msg: "планок " + sticks + " при " + mb.ramSlots + " слотах" },
     ];
     if (sel.cooler) {
       var cs = sel.cooler.sockets || [];
@@ -83,6 +88,7 @@
       vram: vram, bwVram: bwVram, compute: compute, bwRam: bwRam,
       price: price, power: power, psuNeed: psuNeed,
       models: models, checks: checks, count: n, ctx: ctx,
+      sticks: sticks, ramGb: ramGB, ramPrice: ramPrice,
       vendorOk: gpu.vendor === "NVIDIA" ? "NVIDIA — все модели" : gpu.vendor + " — только Strata (Qwen)",
     };
   }
