@@ -151,6 +151,30 @@
  },
  {
   "kind": "gpu",
+  "name": "Radeon Instinct MI50 32 ГБ",
+  "query": "Radeon Instinct MI50 32GB",
+  "estimate": 37000
+ },
+ {
+  "kind": "gpu",
+  "name": "Radeon Instinct MI50 16 ГБ",
+  "query": "Radeon Instinct MI50 16GB",
+  "estimate": 22000
+ },
+ {
+  "kind": "gpu",
+  "name": "Radeon 8060S (Strix Halo, 96 ГБ)",
+  "query": "Radeon 8060S (Strix Halo, 96GB)",
+  "estimate": 330000
+ },
+ {
+  "kind": "gpu",
+  "name": "Radeon 8065S (Gorgon Halo, 160 ГБ)",
+  "query": "Radeon 8065S (Gorgon Halo, 160GB)",
+  "estimate": 620000
+ },
+ {
+  "kind": "gpu",
   "name": "Radeon RX 7900 XT 20 ГБ",
   "query": "Radeon RX 7900 XT 20GB",
   "estimate": 70000
@@ -202,6 +226,12 @@
   "name": "AMD EPYC 7402",
   "query": "AMD EPYC 7402",
   "estimate": 30000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 7452",
+  "query": "AMD EPYC 7452",
+  "estimate": 19000
  },
  {
   "kind": "cpu",
@@ -595,6 +625,36 @@
  },
  {
   "kind": "cpu",
+  "name": "Ryzen AI Max+ 395 (Strix Halo)",
+  "query": "Ryzen AI Max+ 395 (Strix Halo)",
+  "estimate": 0
+ },
+ {
+  "kind": "cpu",
+  "name": "Ryzen AI Max+ Pro 495 (Gorgon Halo)",
+  "query": "Ryzen AI Max+ Pro 495 (Gorgon Halo)",
+  "estimate": 0
+ },
+ {
+  "kind": "mb",
+  "name": "Интегрированная плата mini-PC",
+  "query": "Интегрированная плата mini-PC",
+  "estimate": 0
+ },
+ {
+  "kind": "ram",
+  "name": "LPDDR5X-8000 128 ГБ (в составе)",
+  "query": "LPDDR5X-8000 128GB (в составе)",
+  "estimate": 0
+ },
+ {
+  "kind": "ram",
+  "name": "LPDDR5X-8533 192 ГБ (в составе)",
+  "query": "LPDDR5X-8533 192GB (в составе)",
+  "estimate": 0
+ },
+ {
+  "kind": "cpu",
   "name": "Intel Xeon Gold 6338",
   "query": "Intel Xeon Gold 6338",
   "estimate": 70000
@@ -828,6 +888,12 @@
   "estimate": 4500
  },
  {
+  "kind": "psu",
+  "name": "Встроенный БП мини-ПК (400 Вт)",
+  "query": "Встроенный БП мини-ПК (400 Вт)",
+  "estimate": 0
+ },
+ {
   "kind": "case",
   "name": "NegoRack NR-M48 (4U, 650 мм)",
   "query": "NegoRack NR-M48 (4U, 650 мм)",
@@ -862,6 +928,12 @@
   "name": "Корпус ATX с 3 слотами (ориентир)",
   "query": "Корпус ATX с 3 слотами (ориентир)",
   "estimate": 6000
+ },
+ {
+  "kind": "case",
+  "name": "Корпус мини-ПК (в составе)",
+  "query": "Корпус мини-ПК (в составе)",
+  "estimate": 0
  },
  {
   "kind": "cooler",
@@ -967,6 +1039,18 @@
  },
  {
   "kind": "ssd",
+  "name": "Без накопителя (свой)",
+  "query": "Без накопителя (свой)",
+  "estimate": 0
+ },
+ {
+  "kind": "ssd",
+  "name": "NVMe 2 ТБ Gen4 WD Black SN850X",
+  "query": "NVMe 2 ТБ Gen4 WD Black SN850X",
+  "estimate": 43500
+ },
+ {
+  "kind": "ssd",
   "name": "NVMe 4 ТБ Gen5 Crucial T705",
   "query": "NVMe 4 ТБ Gen5 Crucial T705",
   "estimate": 85370
@@ -982,12 +1066,6 @@
   "name": "NVMe 4 ТБ Gen4 Kingston KC3000",
   "query": "NVMe 4 ТБ Gen4 Kingston KC3000",
   "estimate": 89520
- },
- {
-  "kind": "ssd",
-  "name": "NVMe 2 ТБ Gen4 WD Black SN850X",
-  "query": "NVMe 2 ТБ Gen4 WD Black SN850X",
-  "estimate": 43500
  },
  {
   "kind": "ssd",
