@@ -16,12 +16,18 @@
 <main>
   <div id="err" class="hint" style="display:none;border-color:#f87171;color:#f87171"></div>
   <section class="panel">
+    <h2>Готовые сборки под бюджет</h2>
+    <div class="toolbar" id="presets"></div>
+    <p class="muted" id="presetsHint">Выберите бюджет — калькулятор подставит лучшую сборку, которая в него влезает (по скорости на GLM-5.3-Flash Maya-L, а если она не помещается — по Qwen3.8).</p>
+  </section>
+  <section class="panel">
     <h2>1. Железо</h2>
     <div class="grid">
       <label>Платформа<select id="platform"></select></label>
       <label>Процессор<select id="cpu"></select></label>
       <label>Материнская плата<select id="mb"></select></label>
       <label>Память<select id="ram"></select></label>
+      <label>Планок RAM<select id="sticks"></select></label>
       <label>Видеокарта<select id="gpu"></select></label>
       <label>Количество GPU<select id="count"></select></label>
       <label>Блок питания<select id="psu"></select></label>
@@ -103,7 +109,7 @@
      Файл Excel с той же базой — в репозитории.</p>
 </footer>
 
-<script src="data.js?v=29d95c7b"></script>
+<script src="data.js?v=d2e5dabd"></script>
 <script src="calc.js"></script>
 <script>
 (function(){
@@ -114,7 +120,7 @@
     var el = $("err");
     if (!el) return;
     el.style.display = "block";
-    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=29d95c7b.";
+    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=d2e5dabd.";
   });
 
   var SSDS = (DB.ssds && DB.ssds.length) ? DB.ssds : [];
@@ -128,9 +134,87 @@
     ssd: SSDS.filter(function(s){ return s.name === DB.ssdDefault; })[0] || SSDS[0] || null,
     cooler: CPU_COOLERS.filter(function(c){ return c.name === DB.coolerDefault; })[0] || CPU_COOLERS[0] || null,
     fan: CASE_FANS.filter(function(c){ return c.name === DB.fanDefault; })[0] || CASE_FANS[0] || null,
+    sticks: null,
     ctx: DB.ctxDefault || 32768,
     models: DB.models
   };
+  var PRESETS = (DB.presets && DB.presets.length) ? DB.presets : [];
+
+  function fillSticks(max){
+    var el = $("sticks");
+    if (!el) return;
+    max = max || 4;
+    if (!sel.sticks || sel.sticks > max) sel.sticks = max;
+    el.innerHTML = "";
+    for (var i = 1; i <= max; i++) {
+      var o = document.createElement("option");
+      o.value = i;
+      o.textContent = i + " шт";
+      if (i === sel.sticks) o.selected = true;
+      el.appendChild(o);
+    }
+  }
+
+  function syncSelects(){
+    function set(id, arr, obj){
+      var el = $(id);
+      if (!el || !arr) return;
+      var i = arr.indexOf(obj);
+      if (i >= 0) el.value = String(i);
+    }
+    set("platform", DB.platforms, sel.platform);
+    set("cpu", sel.platform.cpus, sel.cpu);
+    set("mb", sel.platform.mbs, sel.mb);
+    set("ram", sel.platform.rams, sel.ram);
+    set("gpu", DB.gpus, sel.gpu);
+    set("psu", DB.psus, sel.psu);
+    set("case", DB.cases, sel["case"]);
+    set("ssd", SSDS, sel.ssd);
+    set("fan", CASE_FANS, sel.fan);
+    var cool = CPU_COOLERS.filter(function(c){ return !c.sockets.length || c.sockets.indexOf(sel.platform.name) >= 0; });
+    set("cooler", cool, sel.cooler);
+    if ($("count")) $("count").value = String((sel.count || 1) - 1);
+    fillSticks(sel.mb.ramSlots || 4);
+  }
+
+  function applyPreset(p){
+    var plat = DB.platforms.filter(function(x){ return x.name === p.platform; })[0];
+    if (!plat) return;
+    sel.platform = plat;
+    refreshPlatform();
+    sel.cpu = plat.cpus.filter(function(c){ return c.name === p.cpu; })[0] || plat.cpus[0];
+    sel.mb = plat.mbs.filter(function(m){ return m.name === p.mb; })[0] || plat.mbs[0];
+    sel.ram = plat.rams.filter(function(r){ return r.name === p.ram; })[0] || plat.rams[0];
+    sel.sticks = p.sticks || Math.min(sel.ram.mods, sel.mb.ramSlots);
+    sel.gpu = DB.gpus.filter(function(g){ return g.name === p.gpu; })[0] || sel.gpu;
+    sel.count = p.count || 1;
+    sel.psu = DB.psus.filter(function(x){ return x.name === p.psu; })[0] || sel.psu;
+    sel["case"] = DB.cases.filter(function(x){ return x.name === p.case; })[0] || sel["case"];
+    sel.ssd = SSDS.filter(function(x){ return x.name === p.ssd; })[0] || sel.ssd;
+    sel.cooler = CPU_COOLERS.filter(function(x){ return x.name === p.cooler; })[0] || null;
+    sel.fan = CASE_FANS.filter(function(x){ return x.name === p.fan; })[0] || null;
+    syncSelects();
+    render();
+  }
+
+  function renderPresets(){
+    var el = $("presets");
+    if (!el || !PRESETS.length) return;
+    el.innerHTML = PRESETS.map(function(p, i){
+      var label = (p.budget / 1000) + " т.р." + (p.over ? " (мин.)" : "");
+      return '<button data-p="' + i + '">' + label + "</button>";
+    }).join("");
+    el.querySelectorAll("button").forEach(function(b){
+      b.addEventListener("click", function(){
+        var p = PRESETS[+b.dataset.p];
+        if (!p) return;
+        applyPreset(p);
+        $("presetsHint").textContent = "Бюджет " + (p.budget / 1000) + " т.р.: " + p.target +
+          " ≈ " + p.decode + " ток/с, " + p.gpu + " ×" + p.count + ", сборка " +
+          p.price.toLocaleString("ru-RU") + " ₽";
+      });
+    });
+  }
 
   function fill(selEl, items, getLabel, current){
     selEl.innerHTML = "";
@@ -159,6 +243,7 @@
       fill($("cooler"), opts, function(c){ return c.name + (c.tdp ? " · до " + c.tdp + " Вт" : "") + " · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel.cooler);
     }
     if ($("ctx")) fill($("ctx"), DB.ctxOptions, function(o){ return o.label + " (" + o.tokens.toLocaleString("ru-RU") + " ток.)"; }, DB.ctxOptions.filter(function(o){ return o.tokens === sel.ctx; })[0]);
+    fillSticks(sel.mb.ramSlots || 4);
     $("hint").textContent = sel.platform.title;
     render();
   }
@@ -171,7 +256,7 @@
 
     $("vram").textContent = r.vram + " ГБ";
     $("bwv").textContent = r.bwVram.toLocaleString("ru-RU") + " ГБ/с";
-    $("bwr").textContent = r.bwRam + " ГБ/с";
+    $("bwr").textContent = (Math.round(r.bwRam * 10) / 10) + " ГБ/с";
     $("comp").textContent = r.compute.toFixed(2);
     $("power").textContent = Math.round(r.power) + " Вт (БП ≥ " + r.psuNeed + ")";
     if ($("kv")) {
@@ -364,12 +449,13 @@
     sel.platform = DB.platforms[+e.target.value];
     refreshPlatform();
   });
-  ["cpu", "mb", "ram", "gpu", "count", "psu", "case", "ssd", "cooler", "fan", "ctx"].forEach(function(key){
+  ["cpu", "mb", "ram", "sticks", "gpu", "count", "psu", "case", "ssd", "cooler", "fan", "ctx"].forEach(function(key){
     $(key).addEventListener("change", function(e){
       var v = +e.target.value;
       if (key === "cpu") sel.cpu = sel.platform.cpus[v];
-      else if (key === "mb") sel.mb = sel.platform.mbs[v];
-      else if (key === "ram") sel.ram = sel.platform.rams[v];
+      else if (key === "mb") { sel.mb = sel.platform.mbs[v]; sel.sticks = Math.min(sel.sticks || sel.ram.mods, sel.mb.ramSlots); fillSticks(sel.mb.ramSlots); }
+      else if (key === "ram") { sel.ram = sel.platform.rams[v]; sel.sticks = Math.min(sel.ram.mods, sel.mb.ramSlots); fillSticks(sel.mb.ramSlots); }
+      else if (key === "sticks") sel.sticks = v;
       else if (key === "gpu") sel.gpu = DB.gpus[v];
       else if (key === "count") sel.count = v + 1;
       else if (key === "psu") sel.psu = DB.psus[v];
@@ -385,6 +471,7 @@
     b.addEventListener("click", function(){
       if (b.id === "dl") { downloadCard(); return; }
       if (b.id === "xl") { if (window.Xlsx) window.Xlsx.download(sel, Calc.build(sel)); return; }
+      if (!b.dataset.sort) return;
       sortKey = b.dataset.sort;
       document.querySelectorAll(".toolbar button").forEach(function(x){ x.classList.remove("active"); });
       b.classList.add("active");
@@ -403,6 +490,8 @@
   if (CASE_FANS.length && $("fan")) fill($("fan"), CASE_FANS, function(c){ return c.name + " · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel.fan);
   $("count").value = "1";
   refreshPlatform();
+  fillSticks(sel.mb.ramSlots || 4);
+  renderPresets();
 })();
 </script>
 <script src="export.js?v=b152e8be"></script>
