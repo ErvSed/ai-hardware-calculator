@@ -59,7 +59,7 @@ def make_card(b, out_path):
         b["platform"], b["ram"]["mods"] * b["ram"]["gb"], int(b["vram"]), b["ctx"] // 1024, b["power"]),
         font=F["body"], fill=MUTED)
     d.text((W - 60, 56), datetime.date.today().strftime("%d.%m.%Y"), font=F["small"], fill=MUTED, anchor="ra")
-    d.text((W - 60, 78), "цены: Авито СПб", font=F["small"], fill=MUTED, anchor="ra")
+    d.text((W - 60, 78), "цены: Авито, Россия", font=F["small"], fill=MUTED, anchor="ra")
 
     # ---- состав и цены (слева)
     x0, y0 = 60, 196
@@ -72,15 +72,17 @@ def make_card(b, out_path):
         ("Питание", b["psu"]["name"], b["psu"]["price"]),
         ("Корпус", b["case"]["name"], b["case"]["price"]),
         ("Накопитель", b["ssd"]["name"], b["ssd"]["price"]),
+        ("Кулер CPU", b["cooler"]["name"], b["cooler"]["price"]),
+        ("Вентилятор", b["fan"]["name"], b["fan"]["price"]),
     ]
     y = y0 + 38
     for label, name, price in rows:
         d.text((x0, y), label, font=F["small"], fill=MUTED)
         d.text((x0 + 120, y), name[:44], font=F["body"], fill=TEXT)
         d.text((640, y + 1), money(price), font=F["mono"], fill=TEXT, anchor="ra")
-        y += 30
+        y += 26
         d.line([x0, y + 6, 640, y + 6], fill=LINE, width=1)
-        y += 14
+        y += 10
 
     d.text((x0, y + 6), "ИТОГО", font=F["h2"], fill=TEXT)
     d.text((640, y), money(b["price"]), font=F["big"], fill=ACCENT, anchor="ra")
@@ -143,7 +145,7 @@ def make_card(b, out_path):
     # подвал
     d.line([60, H - 78, W - 60, H - 78], fill=LINE, width=1)
     d.text((60, H - 60), "ervsed.github.io/ai-calculator-site", font=F["small"], fill=ACCENT)
-    d.text((W - 60, H - 60), "цены — медианы объявлений Авито (СПб), 04.11.2026", font=F["small"], fill=MUTED, anchor="ra")
+    d.text((W - 60, H - 60), "данные: ноябрь 2026, медианы Авито (Россия)", font=F["small"], fill=MUTED, anchor="ra")
 
     img.save(out_path, "PNG")
     return out_path
