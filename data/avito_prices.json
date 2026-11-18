@@ -3147,16 +3147,28 @@
   "kind": "gpu",
   "query": "RTX 2080 Ti 22GB",
   "status": "ok",
-  "ads_total": 22,
-  "ads_used": 16,
-  "ads_clean": 15,
-  "min": 47000,
-  "p25": 52500,
-  "median": 60200,
-  "p75": 102500,
-  "max": 128600,
+  "ads_total": 48,
+  "ads_used": 30,
+  "ads_clean": 25,
+  "min": 45000,
+  "p25": 53500,
+  "median": 57000,
+  "p75": 60000,
+  "max": 125000,
   "estimate": 55000,
   "samples": [
+   {
+    "price": 55000,
+    "title": "Видеокарта RTX 2080TI 22GB под нейросети В наличии",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_rtx_2080ti_22gb_pod_neyroseti_v_nalichii_8439435087"
+   },
+   {
+    "price": 57000,
+    "title": "Видеокарта RTX 2080TI 22GB под нейросети В наличии",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_rtx_2080ti_22gb_pod_neyroseti_v_nalichii_8411232275"
+   },
    {
     "price": 60000,
     "title": "Видеокарта Nvidia RTX 2080TI 22gb",
@@ -3164,80 +3176,68 @@
     "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_nvidia_rtx_2080ti_22gb_8235180138"
    },
    {
-    "price": 49000,
-    "title": "Видеокарта RTX 2080ti 22gb",
+    "price": 54990,
+    "title": "MSI geforce RTX 2080 TI 22GB кастом",
     "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_2080ti_22gb_8409309621"
+    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/msi_geforce_rtx_2080_ti_22gb_kastom_8422420156"
    },
    {
-    "price": 54999,
-    "title": "Видеокарта nvidia RTX 2080 Ti 22 Гб",
+    "price": 75000,
+    "title": "Rtx 2080 ti 22gb",
     "date": "",
-    "url": "https://www.avito.ru/amurskaya_oblast_blagoveschensk/tovary_dlya_kompyutera/videokarta_nvidia_rtx_2080_ti_22_gb_8241372052"
-   },
-   {
-    "price": 100000,
-    "title": "Комплект RTX 2080Ti Turbo 22G 2 + NVlink мост",
-    "date": "7 дней назад",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/komplekt_rtx_2080ti_turbo_22g_2_nvlink_most_8516935785"
-   },
-   {
-    "price": 60200,
-    "title": "RTX 2080TI 22GB evga",
-    "date": "7 дней назад",
-    "url": "https://www.avito.ru/izhevsk/tovary_dlya_kompyutera/rtx_2080ti_22gb_evga_8463755383"
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_2080_ti_22gb_8512025175"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?q=RTX+2080+Ti+22GB",
-  "ts": "2026-11-04T18:29:11.365Z"
+  "url": "https://www.avito.ru/all/bytovaya_elektronika?q=RTX+2080+Ti+22GB",
+  "ts": "2026-11-18T14:15:48.580Z"
  },
  "RTX 3060 12 ГБ": {
   "kind": "gpu",
   "query": "RTX 3060 12GB",
   "status": "ok",
   "ads_total": 50,
-  "ads_used": 48,
-  "ads_clean": 48,
-  "min": 19000,
-  "p25": 29666,
-  "median": 30000,
-  "p75": 33000,
-  "max": 41750,
+  "ads_used": 46,
+  "ads_clean": 46,
+  "min": 28500,
+  "p25": 30000,
+  "median": 31990,
+  "p75": 34000,
+  "max": 38465,
   "estimate": 24000,
   "samples": [
    {
-    "price": 30000,
-    "title": "Видеокарта MSI GeForce RTX 3060 gaming X 12gb",
-    "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_msi_geforce_rtx_3060_gaming_x_12gb_8328785404"
+    "price": 30500,
+    "title": "Видеокарта gigabyte rtx 3060 12 gb",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_gigabyte_rtx_3060_12_gb_8396367986"
    },
    {
-    "price": 35000,
-    "title": "Видеокарта MSI rtx 3060 12 гб ventus x2",
-    "date": "1 час назад",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_msi_rtx_3060_12_gb_ventus_x2_8414091717"
-   },
-   {
-    "price": 19000,
-    "title": "RTX 3060 12gb",
-    "date": "",
-    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/rtx_3060_12gb_8431501303"
-   },
-   {
-    "price": 33990,
-    "title": "Как Новая - RTX 3060 12GB Msi Ventus(Гарантия)",
+    "price": 35175,
+    "title": "Как Новая Видеокарта Palit RTX 3060 Dual 12GB",
     "date": "7 дней назад",
-    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/kak_novaya_-_rtx_3060_12gb_msi_ventusgarantiya_8514840044"
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/kak_novaya_videokarta_palit_rtx_3060_dual_12gb_8549541033"
    },
    {
-    "price": 25000,
-    "title": "Evga rtx 3060 12 gb",
-    "date": "",
-    "url": "https://www.avito.ru/petrozavodsk/tovary_dlya_kompyutera/evga_rtx_3060_12_gb_7847711974"
+    "price": 30000,
+    "title": "Видеокарта KFA2 (Galax) GeForce RTX 3060 12gb",
+    "date": "1 час назад",
+    "url": "https://www.avito.ru/sankt-peterburg_kronstadt/tovary_dlya_kompyutera/videokarta_kfa2_galax_geforce_rtx_3060_12gb_8563220647"
+   },
+   {
+    "price": 29000,
+    "title": "Видеокарта nvidia GeForce RTX 3060 12gb",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/volgograd/tovary_dlya_kompyutera/videokarta_nvidia_geforce_rtx_3060_12gb_8396397606"
+   },
+   {
+    "price": 30000,
+    "title": "Rtx 3060 12gb MSI ventus 2x",
+    "date": "9 часов назад",
+    "url": "https://www.avito.ru/barnaul/tovary_dlya_kompyutera/rtx_3060_12gb_msi_ventus_2x_8549388945"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3060+12GB",
-  "ts": "2026-11-04T18:29:15.583Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+3060+12GB",
+  "ts": "2026-11-18T14:15:52.803Z"
  },
  "RTX 3070 8 ГБ": {
   "kind": "gpu",
@@ -3245,74 +3245,62 @@
   "status": "ok",
   "ads_total": 50,
   "ads_used": 47,
-  "ads_clean": 47,
-  "min": 18000,
-  "p25": 31000,
-  "median": 33999,
-  "p75": 36250,
+  "ads_clean": 46,
+  "min": 22000,
+  "p25": 32000,
+  "median": 34990,
+  "p75": 37000,
   "max": 45000,
   "estimate": 30000,
   "samples": [
    {
-    "price": 29999,
-    "title": "Gigabyte RTX 3070 8GB eagel",
-    "date": "Вчера",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_rtx_3070_8gb_eagel_8402824164"
-   },
-   {
-    "price": 33990,
-    "title": "Rtx 3070 8gb asus dual",
-    "date": "7 часов назад",
-    "url": "https://www.avito.ru/samara/tovary_dlya_kompyutera/rtx_3070_8gb_asus_dual_8473089052"
-   },
-   {
-    "price": 32000,
-    "title": "Видеокарта RTX 3070ti gamingpro 8gb",
+    "price": 36000,
+    "title": "Видеокарта Palit RTX 3070 Gamingpro",
     "date": "",
-    "url": "https://www.avito.ru/solnechnogorsk/tovary_dlya_kompyutera/videokarta_rtx_3070ti_gamingpro_8gb_4346860365"
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_palit_rtx_3070_gamingpro_8354800971"
    },
    {
-    "price": 33500,
-    "title": "Видеокарта Palit GeForce RTX 3070 JetStream OC",
-    "date": "8 часов назад",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_palit_geforce_rtx_3070_jetstream_oc_8455505975"
+    "price": 42000,
+    "title": "MSI GeForce RTX 3070 Ti suprim X 8GB gddr6X",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/domodedovo/tovary_dlya_kompyutera/msi_geforce_rtx_3070_ti_suprim_x_8gb_gddr6x_8562893535"
    },
    {
-    "price": 30000,
-    "title": "Видеокарта rtx 3070 jetsteam 8gb",
+    "price": 35000,
+    "title": "Видеокарта Msi RTX 3070 Twin",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_msi_rtx_3070_twin_8491115723"
+   },
+   {
+    "price": 37000,
+    "title": "Видеокарта rtx 3070 colorful igame",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_3070_colorful_igame_8348566695"
+   },
+   {
+    "price": 33000,
+    "title": "Gigabyte rtx 3070 8gb gaming oc",
     "date": "Вчера",
-    "url": "https://www.avito.ru/velikie_luki/tovary_dlya_kompyutera/videokarta_rtx_3070_jetsteam_8gb_8530839753"
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/gigabyte_rtx_3070_8gb_gaming_oc_8576637415"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3070+8GB",
-  "ts": "2026-11-04T18:29:19.834Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+3070+8GB",
+  "ts": "2026-11-18T14:15:58.926Z"
  },
  "RTX 3080 10 ГБ": {
   "kind": "gpu",
   "query": "RTX 3080 10GB",
   "status": "ok",
   "ads_total": 50,
-  "ads_used": 47,
-  "ads_clean": 47,
-  "min": 35000,
-  "p25": 42250,
-  "median": 44999,
-  "p75": 46250,
-  "max": 89990,
+  "ads_used": 49,
+  "ads_clean": 48,
+  "min": 34000,
+  "p25": 43000,
+  "median": 44945,
+  "p75": 47990,
+  "max": 79999,
   "estimate": 40000,
   "samples": [
-   {
-    "price": 44990,
-    "title": "TUF Gaming GeForce RTX 3080 OC 10GB",
-    "date": "",
-    "url": "https://www.avito.ru/simferopol/tovary_dlya_kompyutera/tuf_gaming_geforce_rtx_3080_oc_10gb_8365858425"
-   },
-   {
-    "price": 43000,
-    "title": "RTX 3080 10gb Gainward phoenix",
-    "date": "",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_3080_10gb_gainward_phoenix_8511287414"
-   },
    {
     "price": 35000,
     "title": "Colorful iGame GeForce RTX 3080 Vulcan OC 10G",
@@ -3320,238 +3308,256 @@
     "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/colorful_igame_geforce_rtx_3080_vulcan_oc_10g_7941924523"
    },
    {
-    "price": 40000,
-    "title": "Видеокарта rtx 3080 hp omen 10gb",
+    "price": 43990,
+    "title": "RTX 3080 Phoenix 10GB (Palit GP)",
     "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_3080_hp_omen_10gb_8463263925"
+    "url": "https://www.avito.ru/simferopol/tovary_dlya_kompyutera/rtx_3080_phoenix_10gb_palit_gp_8426732702"
    },
    {
-    "price": 43990,
-    "title": "Palit RTX 3080 10GB OC Наличие/Гарантия",
+    "price": 45000,
+    "title": "Видеокарта Palit RTX 3080 Gamingpro",
     "date": "",
-    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/palit_rtx_3080_10gb_oc_nalichiegarantiya_8426660014"
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_palit_rtx_3080_gamingpro_8226143045"
+   },
+   {
+    "price": 42000,
+    "title": "Gainward RTX 3080 phoenix 10GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/gainward_rtx_3080_phoenix_10gb_8607172571"
+   },
+   {
+    "price": 40000,
+    "title": "Видеокарта Palit RTX 3080 GamingPro 10GB",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/sevastopol/tovary_dlya_kompyutera/videokarta_palit_rtx_3080_gamingpro_10gb_8606911272"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3080+10GB",
-  "ts": "2026-11-04T18:29:24.288Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+3080+10GB",
+  "ts": "2026-11-18T14:16:05.078Z"
  },
  "RTX 3080 Ti 12 ГБ": {
   "kind": "gpu",
   "query": "RTX 3080 Ti 12GB",
   "status": "ok",
   "ads_total": 50,
-  "ads_used": 49,
-  "ads_clean": 49,
-  "min": 24000,
-  "p25": 54000,
-  "median": 56000,
-  "p75": 60409,
+  "ads_used": 48,
+  "ads_clean": 47,
+  "min": 47500,
+  "p25": 56495,
+  "median": 59990,
+  "p75": 63570,
   "max": 78000,
   "estimate": 50000,
   "samples": [
    {
-    "price": 53999,
-    "title": "Gigabyte GeForce RTX 3080 Ti gaming OC 12G",
-    "date": "7 часов назад",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/gigabyte_geforce_rtx_3080_ti_gaming_oc_12g_8575161083"
-   },
-   {
-    "price": 59999,
-    "title": "Видеокарта RTX 3080 Ti 12gb Palit GameRock",
-    "date": "3 дня назад",
-    "url": "https://www.avito.ru/severodvinsk/tovary_dlya_kompyutera/videokarta_rtx_3080_ti_12gb_palit_gamerock_8422229091"
-   },
-   {
-    "price": 59990,
+    "price": 64990,
     "title": "Msi RTX 3080Ti 12GB Ventus OC Идеал(Гарантия)",
-    "date": "7 дней назад",
+    "date": "",
     "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/msi_rtx_3080ti_12gb_ventus_oc_idealgarantiya_8420569377"
    },
    {
-    "price": 60450,
-    "title": "MSI RTX 3080TI gaming X trio 12GB",
-    "date": "7 дней назад",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/msi_rtx_3080ti_gaming_x_trio_12gb_8372638727"
+    "price": 58000,
+    "title": "Видеокарта RTX 3080 ti 12gb",
+    "date": "",
+    "url": "https://www.avito.ru/ekaterinburg/tovary_dlya_kompyutera/videokarta_rtx_3080_ti_12gb_8399035988"
    },
    {
-    "price": 53900,
-    "title": "Palit gamingpro RTX 3080 Ti 12GB",
+    "price": 60000,
+    "title": "Видеокарта Gigabyte RTX 3080 Ti",
     "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/palit_gamingpro_rtx_3080_ti_12gb_8543950205"
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_gigabyte_rtx_3080_ti_8381067337"
+   },
+   {
+    "price": 67990,
+    "title": "GameRock RTX 3080Ti 12GB OC Идеал(Гарантия)",
+    "date": "",
+    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/gamerock_rtx_3080ti_12gb_oc_idealgarantiya_8379729330"
+   },
+   {
+    "price": 59990,
+    "title": "Видеокарта RTX 3080 Ti Vulcan OC-V 12GB",
+    "date": "Вчера",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_3080_ti_vulcan_oc-v_12gb_8432970774"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+3080+Ti+12GB",
-  "ts": "2026-11-04T18:29:28.777Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+3080+Ti+12GB",
+  "ts": "2026-11-18T14:16:09.512Z"
  },
  "RTX 3090 24 ГБ": {
   "kind": "gpu",
   "query": "RTX 3090 24GB",
   "status": "ok",
   "ads_total": 50,
-  "ads_used": 49,
-  "ads_clean": 48,
-  "min": 100000,
-  "p25": 119500,
-  "median": 127495,
-  "p75": 144511,
-  "max": 170000,
+  "ads_used": 48,
+  "ads_clean": 47,
+  "min": 55000,
+  "p25": 129495,
+  "median": 134990,
+  "p75": 140000,
+  "max": 159999,
   "estimate": 70000,
   "samples": [
    {
-    "price": 139990,
-    "title": "Как Новая - Msi RTX 3090 24GB Gaming-X(Гарантия)",
+    "price": 145000,
+    "title": "Видеокарта Palit RTX 3090 GameRock 24Gb",
     "date": "7 дней назад",
-    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/kak_novaya_-_msi_rtx_3090_24gb_gaming-xgarantiya_8414095171"
+    "url": "https://www.avito.ru/magnitogorsk/tovary_dlya_kompyutera/videokarta_palit_rtx_3090_gamerock_24gb_8531057131"
    },
    {
-    "price": 136990,
-    "title": "Msi RTX 3090 24GB Gaming X Trio Идеал(Гарантия)",
-    "date": "",
-    "url": "https://www.avito.ru/tyumen/tovary_dlya_kompyutera/msi_rtx_3090_24gb_gaming_x_trio_idealgarantiya_8499273825"
-   },
-   {
-    "price": 112000,
-    "title": "Видеокарта palit 3090rtx 24gb",
+    "price": 55000,
+    "title": "Gigabyte rtx3090 Gaming 24gb (описание)",
     "date": "7 дней назад",
-    "url": "https://www.avito.ru/krasnoyarsk/tovary_dlya_kompyutera/videokarta_palit_3090rtx_24gb_8437747129"
+    "url": "https://www.avito.ru/kazan/tovary_dlya_kompyutera/gigabyte_rtx3090_gaming_24gb_opisanie_8430162533"
    },
    {
-    "price": 120000,
-    "title": "Gigabyte rtx 3090 24gb",
+    "price": 59000,
+    "title": "Видеокарта rtx 3090 24gb Palit gaming Pro",
     "date": "",
-    "url": "https://www.avito.ru/yaroslavl/tovary_dlya_kompyutera/gigabyte_rtx_3090_24gb_8441447339"
+    "url": "https://www.avito.ru/penza/tovary_dlya_kompyutera/videokarta_rtx_3090_24gb_palit_gaming_pro_8360395191"
    },
    {
-    "price": 117848,
-    "title": "Видеокарта gigabyte nvidia rtx 3090 turbo 24gb",
-    "date": "5 часов назад",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/videokarta_gigabyte_nvidia_rtx_3090_turbo_24gb_8364021234"
+    "price": 135000,
+    "title": "Видеокарта Gigabyte RTX3090 24Gb - Гарантия",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/voronezh/tovary_dlya_kompyutera/videokarta_gigabyte_rtx3090_24gb_-_garantiya_8476852247"
+   },
+   {
+    "price": 140000,
+    "title": "Видеокарта gigabyte RTX 3090 turbo 24GB",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_gigabyte_rtx_3090_turbo_24gb_8553114682"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+3090+24GB",
-  "ts": "2026-11-04T18:29:34.480Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+3090+24GB",
+  "ts": "2026-11-18T14:16:14.032Z"
  },
  "RTX 3090 Ti 24 ГБ": {
   "kind": "gpu",
   "query": "RTX 3090 Ti 24GB",
   "status": "ok",
-  "ads_total": 36,
-  "ads_used": 27,
-  "ads_clean": 22,
+  "ads_total": 44,
+  "ads_used": 35,
+  "ads_clean": 23,
   "min": 100000,
-  "p25": 136000,
-  "median": 147500,
-  "p75": 155000,
-  "max": 200000,
+  "p25": 137495,
+  "median": 149500,
+  "p75": 172500,
+  "max": 250000,
   "estimate": 90000,
   "samples": [
    {
-    "price": 125000,
-    "title": "Rtx 3090 msi",
-    "date": "7 дней назад",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/rtx_3090_msi_8521176307"
+    "price": 149500,
+    "title": "MSI GeForce RTX 3090 Ti gaming X trio 24Gb",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/krasnoyarsk/tovary_dlya_kompyutera/msi_geforce_rtx_3090_ti_gaming_x_trio_24gb_8575900107"
    },
    {
-    "price": 100000,
-    "title": "RTX 3090 24GB gddr6X",
-    "date": "7 дней назад",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_3090_24gb_gddr6x_8557031208"
-   },
-   {
-    "price": 154380,
-    "title": "Видеокарта rtx 3090 ti",
-    "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_3090_ti_8515341910"
-   },
-   {
-    "price": 144348,
-    "title": "Gigabyte RTX 3090 TI gaming",
-    "date": "",
-    "url": "https://www.avito.ru/vologda/tovary_dlya_kompyutera/gigabyte_rtx_3090_ti_gaming_8470925577"
+    "price": 149900,
+    "title": "Geforce rtx 3090 ti Gigabyte Gaming 24gb",
+    "date": "7 часов назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/geforce_rtx_3090_ti_gigabyte_gaming_24gb_8392286090"
    },
    {
     "price": 145000,
     "title": "Rtx 3090ti 24gb",
     "date": "",
     "url": "https://www.avito.ru/volgograd/tovary_dlya_kompyutera/rtx_3090ti_24gb_8543008402"
+   },
+   {
+    "price": 148000,
+    "title": "RTX 3090 Ti 24Gb KFA2 X 3FAN Black, Гарантия",
+    "date": "",
+    "url": "https://www.avito.ru/belgorod/tovary_dlya_kompyutera/rtx_3090_ti_24gb_kfa2_x_3fan_black_garantiya_8547327410"
+   },
+   {
+    "price": 19999,
+    "title": "Rtx 3090 ti 24gb",
+    "date": "",
+    "url": "https://www.avito.ru/vladimir/tovary_dlya_kompyutera/rtx_3090_ti_24gb_8557510125"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+3090+Ti+24GB",
-  "ts": "2026-11-04T18:29:38.804Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera?q=RTX+3090+Ti+24GB",
+  "ts": "2026-11-18T14:16:18.274Z"
  },
  "RTX 4060 Ti 16 ГБ": {
   "kind": "gpu",
   "query": "RTX 4060 Ti 16GB",
   "status": "ok",
   "ads_total": 50,
-  "ads_used": 28,
-  "ads_clean": 26,
-  "min": 38900,
-  "p25": 50000,
-  "median": 55450,
-  "p75": 63750,
-  "max": 75000,
+  "ads_used": 37,
+  "ads_clean": 37,
+  "min": 41000,
+  "p25": 56000,
+  "median": 60000,
+  "p75": 65000,
+  "max": 117848,
   "estimate": 45000,
   "samples": [
    {
-    "price": 56900,
-    "title": "Видеокарта Palit RTX 4060ti 16gb JetStream",
-    "date": "3 дня назад",
-    "url": "https://www.avito.ru/ufa/tovary_dlya_kompyutera/videokarta_palit_rtx_4060ti_16gb_jetstream_8490082811"
+    "price": 70000,
+    "title": "Rtx 4060ti 16gb",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/podolsk/tovary_dlya_kompyutera/rtx_4060ti_16gb_8396067906"
    },
    {
-    "price": 53191,
-    "title": "Geforce RTX 4060 ti",
-    "date": "",
-    "url": "https://www.avito.ru/naro-fominsk/tovary_dlya_kompyutera/geforce_rtx_4060_ti_7986836695"
+    "price": 41000,
+    "title": "Palit RTX 4060 Ti 16GB",
+    "date": "1 час назад",
+    "url": "https://www.avito.ru/mozhga/tovary_dlya_kompyutera/palit_rtx_4060_ti_16gb_8469678624"
+   },
+   {
+    "price": 62000,
+    "title": "Видеокарта rtx 4060 ti 16gb Palit Jetstream",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/kazan/tovary_dlya_kompyutera/videokarta_rtx_4060_ti_16gb_palit_jetstream_8484167686"
    },
    {
     "price": 50000,
-    "title": "Видеокарта rtx palit jetstream 4060ti 16gb",
-    "date": "3 дня назад",
-    "url": "https://www.avito.ru/noginsk/tovary_dlya_kompyutera/videokarta_rtx_palit_jetstream_4060ti_16gb_8401331091"
+    "title": "Palit RTX 4060Ti (16Gb vram)",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/naberezhnye_chelny/tovary_dlya_kompyutera/palit_rtx_4060ti_16gb_vram_8452547758"
    },
    {
-    "price": 54000,
-    "title": "Видеокарта rtx 4060 ti 16 gb",
-    "date": "",
-    "url": "https://www.avito.ru/bataysk/tovary_dlya_kompyutera/videokarta_rtx_4060_ti_16_gb_7914138666"
-   },
-   {
-    "price": 57500,
-    "title": "MSI GeForce RTX 4060 Ti gaming X slim 16 GB на гр",
-    "date": "",
-    "url": "https://www.avito.ru/belgorod/tovary_dlya_kompyutera/msi_geforce_rtx_4060_ti_gaming_x_slim_16_gb_na_gr_7914280497"
+    "price": 50000,
+    "title": "Видеокарта rtx 4060ti 16gb",
+    "date": "7 дней назад",
+    "url": "https://www.avito.ru/sochi/tovary_dlya_kompyutera/videokarta_rtx_4060ti_16gb_8429860642"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+4060+Ti+16GB",
-  "ts": "2026-11-04T18:29:43.047Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+4060+Ti+16GB",
+  "ts": "2026-11-18T14:16:22.757Z"
  },
  "RTX 4070 12 ГБ": {
   "kind": "gpu",
   "query": "RTX 4070 12GB",
   "status": "ok",
   "ads_total": 50,
-  "ads_used": 46,
+  "ads_used": 47,
   "ads_clean": 46,
-  "min": 36000,
-  "p25": 63125,
-  "median": 70000,
-  "p75": 79988,
-  "max": 95900,
+  "min": 42000,
+  "p25": 65500,
+  "median": 71000,
+  "p75": 75000,
+  "max": 100000,
   "estimate": 65000,
   "samples": [
    {
-    "price": 63500,
-    "title": "Msi rtx 4070",
+    "price": 67000,
+    "title": "RTX 4070-12GB KFA2",
     "date": "",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/msi_rtx_4070_8298906572"
+    "url": "https://www.avito.ru/tambov/tovary_dlya_kompyutera/rtx_4070-12gb_kfa2_8577529208"
    },
    {
-    "price": 63500,
-    "title": "Gigabyte RTX 4070 12GB",
-    "date": "Вчера",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/gigabyte_rtx_4070_12gb_8423401684"
+    "price": 77990,
+    "title": "Видеокарта RTX 4070 super 12gb Asus Белая",
+    "date": "3 дня назад",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_4070_super_12gb_asus_belaya_8547746535"
+   },
+   {
+    "price": 74990,
+    "title": "Видеокарта RTX 4070 Super 12GB MSI",
+    "date": "",
+    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_rtx_4070_super_12gb_msi_8490221933"
    },
    {
     "price": 95900,
@@ -3560,20 +3566,14 @@
     "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/nvidia_geforce_rtx_4070_ti_8575415022"
    },
    {
-    "price": 65000,
-    "title": "RTX 4070-12GB KFA2",
-    "date": "7 дней назад",
-    "url": "https://www.avito.ru/tambov/tovary_dlya_kompyutera/rtx_4070-12gb_kfa2_8577529208"
-   },
-   {
-    "price": 68000,
-    "title": "Palit GeForce RTX 4070 super Dual OC 12GB",
-    "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/palit_geforce_rtx_4070_super_dual_oc_12gb_8382040251"
+    "price": 60000,
+    "title": "RTX 4070 ventus 12GB OC",
+    "date": "2 часа назад",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/rtx_4070_ventus_12gb_oc_8522239608"
    }
   ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?localPriority=0&q=RTX+4070+12GB",
-  "ts": "2026-11-04T18:29:47.589Z"
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+4070+12GB",
+  "ts": "2026-11-18T14:16:27.023Z"
  },
  "RTX 4070 Ti Super 16 ГБ": {
   "kind": "gpu",
@@ -3814,54 +3814,6 @@
   ],
   "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/komplektuyuschie/videokarty-ASgBAgICAkTGB~pm7gmmZw?q=RTX+5060+Ti+16GB",
   "ts": "2026-11-04T18:30:12.027Z"
- },
- "RTX 5080 16 ГБ": {
-  "kind": "gpu",
-  "query": "RTX 5080 16GB",
-  "status": "ok",
-  "ads_total": 50,
-  "ads_used": 47,
-  "ads_clean": 46,
-  "min": 107900,
-  "p25": 134490,
-  "median": 159389,
-  "p75": 189443,
-  "max": 275000,
-  "estimate": 140000,
-  "samples": [
-   {
-    "price": 149990,
-    "title": "Видеокарта RTX 5080 16Gb Zotac Gaming Solid OC",
-    "date": "",
-    "url": "https://www.avito.ru/krasnodar/tovary_dlya_kompyutera/videokarta_rtx_5080_16gb_zotac_gaming_solid_oc_8274378647"
-   },
-   {
-    "price": 140000,
-    "title": "Видеокарта TUF Gaming RTX 5080 16GB OC",
-    "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_tuf_gaming_rtx_5080_16gb_oc_8354618567"
-   },
-   {
-    "price": 133990,
-    "title": "Palit RTX 5080 GamingPro 16 гб",
-    "date": "",
-    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/palit_rtx_5080_gamingpro_16_gb_8239800138"
-   },
-   {
-    "price": 189999,
-    "title": "Видеокарта PNY GeForce RTX 5080 Triple Fan 16GB",
-    "date": "",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_pny_geforce_rtx_5080_triple_fan_16gb_8264050206"
-   },
-   {
-    "price": 174990,
-    "title": "Видеокарта Zotac RTX 5080 Solid Core OC 16gb",
-    "date": "3 дня назад",
-    "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera/videokarta_zotac_rtx_5080_solid_core_oc_16gb_8370128913"
-   }
-  ],
-  "url": "https://www.avito.ru/sankt-peterburg/tovary_dlya_kompyutera?localPriority=0&q=RTX+5080+16GB",
-  "ts": "2026-11-04T18:30:16.296Z"
  },
  "RTX 5090 32 ГБ": {
   "kind": "gpu",
@@ -5020,5 +4972,53 @@
   ],
   "url": "https://www.avito.ru/sankt-peterburg/bytovaya_elektronika?q=asus+k+14+pa-u+12",
   "ts": "2026-11-06T19:44:24.705Z"
+ },
+ "RTX 5080 16 ГБ": {
+  "kind": "gpu",
+  "query": "RTX 5080 16GB",
+  "status": "ok",
+  "ads_total": 50,
+  "ads_used": 49,
+  "ads_clean": 49,
+  "min": 76500,
+  "p25": 154990,
+  "median": 174990,
+  "p75": 184980,
+  "max": 250000,
+  "estimate": 140000,
+  "samples": [
+   {
+    "price": 133990,
+    "title": "Palit RTX 5080 GamingPro 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/palit_rtx_5080_gamingpro_16_gb_8239800138"
+   },
+   {
+    "price": 143990,
+    "title": "MSI RTX 5080 Gaming Trio OC 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/msi_rtx_5080_gaming_trio_oc_16_gb_8143011338"
+   },
+   {
+    "price": 133990,
+    "title": "Nvidia RTX 5080 16 гб — подбор модели",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/nvidia_rtx_5080_16_gb_podbor_modeli_8544175054"
+   },
+   {
+    "price": 129990,
+    "title": "MSI RTX 5080 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/msi_rtx_5080_16_gb_8143192253"
+   },
+   {
+    "price": 139990,
+    "title": "Colorful iGame RTX 5080 Ultra W OC 16 гб",
+    "date": "",
+    "url": "https://www.avito.ru/moskva/tovary_dlya_kompyutera/colorful_igame_rtx_5080_ultra_w_oc_16_gb_8239821147"
+   }
+  ],
+  "url": "https://www.avito.ru/all/tovary_dlya_kompyutera?q=RTX+5080+16GB",
+  "ts": "2026-11-18T14:15:19.651Z"
  }
 }
