@@ -109,7 +109,7 @@
      Файл Excel с той же базой — в репозитории.</p>
 </footer>
 
-<script src="data.js?v=d2e5dabd"></script>
+<script src="data.js?v=ef10afa6"></script>
 <script src="calc.js"></script>
 <script>
 (function(){
@@ -120,7 +120,7 @@
     var el = $("err");
     if (!el) return;
     el.style.display = "block";
-    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=d2e5dabd.";
+    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=ef10afa6.";
   });
 
   var SSDS = (DB.ssds && DB.ssds.length) ? DB.ssds : [];
@@ -232,15 +232,15 @@
     sel.cpu = sel.platform.cpus[0];
     sel.mb = sel.platform.mbs[0];
     sel.ram = sel.platform.rams[0];
-    fill($("cpu"), sel.platform.cpus, function(c){ return c.name + " · " + c.cores + " ядер · " + c.bw + " ГБ/с · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel.cpu);
-    fill($("mb"), sel.platform.mbs, function(m){ return m.name + " · " + m.ram + " · " + m.slots + "×x16 · " + m.price.toLocaleString("ru-RU") + " ₽"; }, sel.mb);
-    fill($("ram"), sel.platform.rams, function(r){ return r.name + " · " + r.price.toLocaleString("ru-RU") + " ₽"; }, sel.ram);
+    fill($("cpu"), sel.platform.cpus, function(c){ return c.name + " · " + c.cores + " ядер · " + c.bw + " ГБ/с · " + c.price.toLocaleString("ru-RU") + " ₽" + fromMin(c); }, sel.cpu);
+    fill($("mb"), sel.platform.mbs, function(m){ return m.name + " · " + m.ram + " · " + m.slots + "×x16 · " + m.price.toLocaleString("ru-RU") + " ₽" + fromMin(m); }, sel.mb);
+    fill($("ram"), sel.platform.rams, function(r){ return r.name + " · " + r.price.toLocaleString("ru-RU") + " ₽" + fromMin(r); }, sel.ram);
     // кулеры под выбранный сокет
     var opts = CPU_COOLERS.filter(function(c){ return !c.sockets.length || c.sockets.indexOf(sel.platform.name) >= 0; });
     var prev = sel.cooler ? sel.cooler.name : null;
     sel.cooler = opts.filter(function(c){ return c.name === prev; })[0] || opts[0] || null;
     if ($("cooler") && opts.length) {
-      fill($("cooler"), opts, function(c){ return c.name + (c.tdp ? " · до " + c.tdp + " Вт" : "") + " · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel.cooler);
+      fill($("cooler"), opts, function(c){ return c.name + (c.tdp ? " · до " + c.tdp + " Вт" : "") + " · " + c.price.toLocaleString("ru-RU") + " ₽" + fromMin(c); }, sel.cooler);
     }
     if ($("ctx")) fill($("ctx"), DB.ctxOptions, function(o){ return o.label + " (" + o.tokens.toLocaleString("ru-RU") + " ток.)"; }, DB.ctxOptions.filter(function(o){ return o.tokens === sel.ctx; })[0]);
     fillSticks(sel.mb.ramSlots || 4);
@@ -250,6 +250,7 @@
 
   function money(v){ return Math.round(v).toLocaleString("ru-RU") + " ₽"; }
   function num(v, d){ return v == null ? "—" : v.toFixed(d == null ? 1 : d); }
+  function fromMin(o){ return (o && o.min && o.min < o.price) ? " · от " + o.min.toLocaleString("ru-RU") + " ₽" : ""; }
 
   function render(){
     var r = Calc.build(sel);
@@ -482,12 +483,12 @@
   // инициализация
   $("stats").textContent = DB.platforms.length + " платформ, " + DB.gpus.length + " карт, " + DB.models.length + " модели";
   fill($("platform"), DB.platforms, function(p){ return p.name; }, sel.platform);
-  fill($("gpu"), DB.gpus, function(g){ return g.name + " · " + g.vram + " ГБ · " + (g.price ? g.price.toLocaleString("ru-RU") + " ₽" : "цена н/д") + " · " + g.vendor; }, sel.gpu);
+  fill($("gpu"), DB.gpus, function(g){ return g.name + " · " + g.vram + " ГБ · " + (g.price ? g.price.toLocaleString("ru-RU") + " ₽" : "цена н/д") + fromMin(g) + " · " + g.vendor; }, sel.gpu);
   fill($("count"), [1, 2, 3, 4], function(n){ return n + " шт"; }, 2);
-  fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт · " + p.price.toLocaleString("ru-RU") + " ₽"; }, sel.psu);
-  fill($("case"), DB.cases, function(c){ return c.name + " · до " + c.len + " мм · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel["case"]);
-  if (SSDS.length && $("ssd")) fill($("ssd"), SSDS, function(s){ return s.name + " · " + s.gb + " ГБ · " + s.price.toLocaleString("ru-RU") + " ₽"; }, sel.ssd);
-  if (CASE_FANS.length && $("fan")) fill($("fan"), CASE_FANS, function(c){ return c.name + " · " + c.price.toLocaleString("ru-RU") + " ₽"; }, sel.fan);
+  fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт · " + p.price.toLocaleString("ru-RU") + " ₽" + fromMin(p); }, sel.psu);
+  fill($("case"), DB.cases, function(c){ return c.name + " · до " + c.len + " мм · " + c.price.toLocaleString("ru-RU") + " ₽" + fromMin(c); }, sel["case"]);
+  if (SSDS.length && $("ssd")) fill($("ssd"), SSDS, function(s){ return s.name + " · " + s.gb + " ГБ · " + s.price.toLocaleString("ru-RU") + " ₽" + fromMin(s); }, sel.ssd);
+  if (CASE_FANS.length && $("fan")) fill($("fan"), CASE_FANS, function(c){ return c.name + " · " + c.price.toLocaleString("ru-RU") + " ₽" + fromMin(c); }, sel.fan);
   $("count").value = "1";
   refreshPlatform();
   fillSticks(sel.mb.ramSlots || 4);
