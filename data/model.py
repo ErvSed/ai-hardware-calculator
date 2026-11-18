@@ -51,7 +51,7 @@ def s_share(vram, dense, kv, size):
 def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
           ram="8×32 ГБ DDR4-3200 ECC RDIMM", gpu="RTX 3090 24 ГБ", count=2,
           psu="Seasonic PRIME TX-1600 (ATX 3.1)", case="NegoRack NR-M48 (4U, 650 мм)",
-          ssd=None, ctx=None):
+          ssd=None, ctx=None, cooler=None, fan=None):
     ctx = ctx or db.CTX_DEFAULT
     p = platform_by_name(platform)
     c = cpu_of(p, cpu)
@@ -66,11 +66,25 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
     cs_price = db.avito_price(cs[0], cs[3])
     sd_price = db.avito_price(sd[0], sd[3])
 
+    # кулер по умолчанию — первый подходящий под сокет
+    if cooler is None:
+        for x in db.coolers_by_kind("cpu"):
+            if not x[2] or platform in [s.strip() for s in x[2].split(",")]:
+                cooler = x[0]
+                break
+    cool = db.cooler_by_name(cooler) if cooler else None
+    cool_fits, cool_msg = db.cooler_fits(cool, platform, case)
+    fan = fan or db.FAN_DEFAULT
+    fan_row = db.cooler_by_name(fan)
+    cool_price = db.avito_price(cool[0], cool[5]) if cool else 0
+    fan_price = db.avito_price(fan_row[0], fan_row[5]) if fan_row else 0
+
     vram = g["vram"] * count
     bw_vram = g["bw"] * count
     compute = g["comp"] * count
     bw_ram = c["bw"]
-    price = g["price"] * count + c["price"] + m["price"] + r["price"] + ps_price + cs_price + sd_price
+    price = (g["price"] * count + c["price"] + m["price"] + r["price"] + ps_price + cs_price
+             + sd_price + cool_price + fan_price)
     power = g["tdp"] * count * 1.1 + c["tdp"] * 1.3 + 100 + 10
 
     models = []
@@ -107,6 +121,10 @@ def build(platform="SP3", cpu="AMD EPYC 7402", mb="Supermicro H12SSL-I-B",
         "psu": {"name": ps[0], "w": ps[1], "price": ps_price},
         "case": {"name": cs[0], "len": cs[1], "slots": cs[2], "price": cs_price, "dims": dims, "volume": volume},
         "ssd": {"name": sd[0], "gb": sd[1], "gbs": sd[2], "price": sd_price},
+        "cooler": {"name": cool[0] if cool else "—", "tdp": cool[3] if cool else 0,
+                   "height": cool[4] if cool else 0, "price": cool_price,
+                   "fits": cool_fits, "msg": cool_msg},
+        "fan": {"name": fan_row[0] if fan_row else "—", "price": fan_price},
         "vram": vram, "bw_vram": bw_vram, "compute": compute, "bw_ram": bw_ram,
         "price": price, "power": round(power), "psu_need": int(-(-power / 0.75 // 50) * 50),
         "models": models,
