@@ -70,7 +70,7 @@ total_row = r + 1
 ws.cell(row=total_row, column=1, value="Всего позиций с реальными ценами").font = Font(bold=True)
 ws.cell(row=total_row, column=4, value=len(rows)).font = Font(bold=True)
 ws.cell(row=total_row + 1, column=1,
-        value="Медиана по объявлениям Авито (Санкт-Петербург), мусорные лоты (скупка, нерабочие, на запчасти) отфильтрованы. "
+        value="Медиана по объявлениям Авито (Россия), мусорные лоты (скупка, нерабочие, на запчасти) отфильтрованы. "
               "Собрано автоматически через Opera + CDP 04.11.2026.").alignment = WRAP
 ws.merge_cells(start_row=total_row + 1, start_column=1, end_row=total_row + 1, end_column=12)
 
