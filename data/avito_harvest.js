@@ -116,7 +116,8 @@ function quantile(arr, q) {
 
   for (let i = 0; i < list.length; i++) {
     const item = list[i];
-    const url = "https://www.avito.ru/sankt-peterburg?q=" + encodeURIComponent(item.query);
+    const region = process.env.AVITO_REGION || "rossiya";
+    const url = "https://www.avito.ru/" + region + "?q=" + encodeURIComponent(item.query);
     await send("Page.navigate", { url });
     let data = null;
     for (let t = 0; t < 10; t++) {
