@@ -55,6 +55,12 @@ def pstat(name):
     return st.get("ads_clean") or 0
 
 
+def amin(name):
+    """Самое дешёвое живое объявление (или None)."""
+    st = db.avito_stats(name) or {}
+    return st.get("min")
+
+
 data = {
     "gpus": [gpu(g) for g in db.GPU_ROWS],
     "platforms": [
@@ -63,30 +69,30 @@ data = {
             "title": p["title"],
             "basaltK": db.basalt_cpu_factor(p["name"]),
             "cpus": [
-                {"name": c[0], "cores": c[1], "ch": c[2], "bw": c[3], "tdp": c[4], "price": db.avito_price(c[0], c[5]), "src": c[6], "platform": p["name"], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0])}
+                {"name": c[0], "cores": c[1], "ch": c[2], "bw": c[3], "tdp": c[4], "price": db.avito_price(c[0], c[5]), "src": c[6], "platform": p["name"], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "min": amin(c[0])}
                 for c in p["cpus"]
             ],
             "mbs": [
-                {"name": m[0], "ram": m[1], "ramSlots": m[2], "slots": m[3], "price": db.avito_price(m[0], m[4]), "src": m[5], "platform": p["name"], "avitoUrl": db.avito_url(m[0]), "avitoN": pstat(m[0])}
+                {"name": m[0], "ram": m[1], "ramSlots": m[2], "slots": m[3], "price": db.avito_price(m[0], m[4]), "src": m[5], "platform": p["name"], "avitoUrl": db.avito_url(m[0]), "avitoN": pstat(m[0]), "min": amin(m[0])}
                 for m in p["mbs"]
             ],
             "rams": [
-                {"name": r[0], "type": r[1], "mods": r[2], "gb": r[3], "price": db.avito_price(r[0], r[4]), "src": r[5], "platform": p["name"], "avitoUrl": db.avito_url(r[0]), "avitoN": pstat(r[0])}
+                {"name": r[0], "type": r[1], "mods": r[2], "gb": r[3], "price": db.avito_price(r[0], r[4]), "src": r[5], "platform": p["name"], "avitoUrl": db.avito_url(r[0]), "avitoN": pstat(r[0]), "min": amin(r[0])}
                 for r in p["rams"]
             ],
         }
         for p in db.PLATFORMS
     ],
-    "psus": [{"name": p[0], "w": p[1], "price": db.avito_price(p[0], p[2]), "src": p[3], "avitoUrl": db.avito_url(p[0]), "avitoN": pstat(p[0])} for p in db.PSUS],
-    "ssds": [{"name": s[0], "gb": s[1], "gbs": s[2], "price": s[3], "src": s[4], "avitoUrl": db.avito_url(s[0]), "avitoN": pstat(s[0])} for s in db.SSDS],
+    "psus": [{"name": p[0], "w": p[1], "price": db.avito_price(p[0], p[2]), "src": p[3], "avitoUrl": db.avito_url(p[0]), "avitoN": pstat(p[0]), "min": amin(p[0])} for p in db.PSUS],
+    "ssds": [{"name": s[0], "gb": s[1], "gbs": s[2], "price": s[3], "src": s[4], "avitoUrl": db.avito_url(s[0]), "avitoN": pstat(s[0]), "min": amin(s[0])} for s in db.SSDS],
     "ssdDefault": db.SSD_DEFAULT,
     "coolers": [{"name": c[0], "kind": c[1], "sockets": [x.strip() for x in (c[2] or "").split(",") if x.strip()],
                  "tdp": c[3], "height": c[4], "price": db.avito_price(c[0], c[5]), "src": c[6],
-                 "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0])} for c in db.COOLERS],
+                 "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "min": amin(c[0])} for c in db.COOLERS],
     "coolerDefault": db.COOLER_DEFAULT,
     "fanDefault": db.FAN_DEFAULT,
     "presets": _presets(),
-    "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": db.avito_price(c[0], c[3]), "src": c[4], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "dims": list(db.CASE_DIMS.get(c[0]) or [])} for c in db.CASES],
+    "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": db.avito_price(c[0], c[3]), "src": c[4], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "min": amin(c[0]), "dims": list(db.CASE_DIMS.get(c[0]) or [])} for c in db.CASES],
     "ctxOptions": [{"tokens": t, "label": l} for t, l in db.CONTEXTS],
     "ctxDefault": db.CTX_DEFAULT,
     "models": [
