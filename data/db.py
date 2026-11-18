@@ -519,10 +519,11 @@ def kv_gb(name, tokens):
 
 # имя, объём ГБ, чтение ГБ/с, цена, источник
 SSDS = [
+    ("Без накопителя (свой)", 0, 0, 0, "—"),
+    ("NVMe 2 ТБ Gen4 WD Black SN850X", 2000, 7.3, 43500, "Авито (ориентир)"),
     ("NVMe 4 ТБ Gen5 Crucial T705", 4000, 13.6, 85370, "chipdip"),
     ("NVMe 4 ТБ Gen4 WD Black SN850X", 4000, 7.3, 88360, "chipdip"),
     ("NVMe 4 ТБ Gen4 Kingston KC3000", 4000, 7.0, 89520, "chipdip"),
-    ("NVMe 2 ТБ Gen4 WD Black SN850X", 2000, 7.3, 43500, "Авито (ориентир)"),
     ("NVMe 8 ТБ Gen4 WD Black SN850X", 8000, 7.3, 168000, "Авито (ориентир)"),
 ]
 SSD_DEFAULT = "NVMe 4 ТБ Gen4 WD Black SN850X"
