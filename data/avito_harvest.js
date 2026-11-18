@@ -172,7 +172,7 @@ function quantile(arr, q) {
     };
     fs.writeFileSync(OUT, JSON.stringify(results, null, 1), "utf8");
     console.log(`[${i + 1}/${list.length}] ${item.name}: n=${clean.length} медиана ${results[item.name].median} ₽ (${results[item.name].min}–${results[item.name].max})`);
-    await sleep(2500);
+    await sleep(parseInt(process.env.HARVEST_PAUSE || "2500", 10));
   }
   console.log("готово, файл:", OUT);
   ws.close();
