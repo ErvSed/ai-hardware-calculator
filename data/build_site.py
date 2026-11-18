@@ -11,6 +11,31 @@ SITE = os.path.join(HERE, "site")
 os.makedirs(SITE, exist_ok=True)
 
 
+def _presets():
+    """Готовые сборки под бюджет (считаются presets.py)."""
+    path = os.path.join(HERE, "presets.json")
+    if not os.path.exists(path):
+        return []
+    with io.open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    out = []
+    for p in data:
+        b = p.get("build")
+        if not b:
+            continue
+        out.append({
+            "budget": p["budget"],
+            "platform": b["platform"], "cpu": b["cpu"], "mb": b["mb"], "ram": b["ram"],
+            "sticks": b["sticks"], "gpu": b["gpu"], "count": b["count"],
+            "psu": b["psu"], "case": b["case"], "ssd": b["ssd"],
+            "cooler": b["cooler"], "fan": b["fan"],
+            "price": b["price"], "vram": b["vram"], "ramGb": b["ram_gb"],
+            "decode": round(b["target_decode"], 1), "target": b["target"],
+            "over": bool(b.get("over_budget")),
+        })
+    return out
+
+
 def gpu(g):
     av = db.avito_price(g[0], g[8])
     st = db.avito_stats(g[0]) or {}
@@ -60,6 +85,7 @@ data = {
                  "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0])} for c in db.COOLERS],
     "coolerDefault": db.COOLER_DEFAULT,
     "fanDefault": db.FAN_DEFAULT,
+    "presets": _presets(),
     "cases": [{"name": c[0], "len": c[1], "slots": c[2], "price": db.avito_price(c[0], c[3]), "src": c[4], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "dims": list(db.CASE_DIMS.get(c[0]) or [])} for c in db.CASES],
     "ctxOptions": [{"tokens": t, "label": l} for t, l in db.CONTEXTS],
     "ctxDefault": db.CTX_DEFAULT,
