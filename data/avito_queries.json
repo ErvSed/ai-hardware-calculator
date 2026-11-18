@@ -523,6 +523,78 @@
  },
  {
   "kind": "cpu",
+  "name": "Intel Xeon 6730P",
+  "query": "Intel Xeon 6730P",
+  "estimate": 180000
+ },
+ {
+  "kind": "cpu",
+  "name": "Intel Xeon 6767P",
+  "query": "Intel Xeon 6767P",
+  "estimate": 450000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro X14SBM-TP4F (LGA4710)",
+  "query": "Supermicro X14SBM-TP4F (LGA4710)",
+  "estimate": 85000
+ },
+ {
+  "kind": "ram",
+  "name": "8×32 ГБ DDR5-6400 ECC RDIMM",
+  "query": "8x32GB DDR5-6400 ECC RDIMM",
+  "estimate": 300000
+ },
+ {
+  "kind": "ram",
+  "name": "8×64 ГБ DDR5-6400 ECC RDIMM",
+  "query": "8x64GB DDR5-6400 ECC RDIMM",
+  "estimate": 600000
+ },
+ {
+  "kind": "ram",
+  "name": "8×32 ГБ DDR5-5600 ECC RDIMM",
+  "query": "8x32GB DDR5-5600 ECC RDIMM",
+  "estimate": 260000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 8124P",
+  "query": "AMD EPYC 8124P",
+  "estimate": 85000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 8224P",
+  "query": "AMD EPYC 8224P",
+  "estimate": 120000
+ },
+ {
+  "kind": "cpu",
+  "name": "AMD EPYC 8324P",
+  "query": "AMD EPYC 8324P",
+  "estimate": 170000
+ },
+ {
+  "kind": "mb",
+  "name": "Supermicro H13SVW-N (SP6, WIO)",
+  "query": "Supermicro H13SVW-N (SP6, WIO)",
+  "estimate": 75000
+ },
+ {
+  "kind": "ram",
+  "name": "6×32 ГБ DDR5-4800 ECC RDIMM",
+  "query": "6x32GB DDR5-4800 ECC RDIMM",
+  "estimate": 180000
+ },
+ {
+  "kind": "ram",
+  "name": "6×64 ГБ DDR5-4800 ECC RDIMM",
+  "query": "6x64GB DDR5-4800 ECC RDIMM",
+  "estimate": 360000
+ },
+ {
+  "kind": "cpu",
   "name": "Intel Xeon Gold 6338",
   "query": "Intel Xeon Gold 6338",
   "estimate": 70000
@@ -708,6 +780,54 @@
   "estimate": 12000
  },
  {
+  "kind": "psu",
+  "name": "Corsair HX1500i (1500 Вт, ATX 3.0)",
+  "query": "Corsair HX1500i (1500 Вт, ATX 3.0)",
+  "estimate": 62000
+ },
+ {
+  "kind": "psu",
+  "name": "Seasonic PRIME PX-1300 (1300 Вт)",
+  "query": "Seasonic PRIME PX-1300 (1300 Вт)",
+  "estimate": 42000
+ },
+ {
+  "kind": "psu",
+  "name": "DeepCool PX1200G (1200 Вт, ATX 3.0)",
+  "query": "DeepCool PX1200G (1200 Вт, ATX 3.0)",
+  "estimate": 26000
+ },
+ {
+  "kind": "psu",
+  "name": "Chieftec Polaris 1250W (1250 Вт)",
+  "query": "Chieftec Polaris 1250W (1250 Вт)",
+  "estimate": 21000
+ },
+ {
+  "kind": "psu",
+  "name": "MSI MPG A1000G (1000 Вт)",
+  "query": "MSI MPG A1000G (1000 Вт)",
+  "estimate": 16000
+ },
+ {
+  "kind": "psu",
+  "name": "Cougar GEX X2 1000 (1000 Вт)",
+  "query": "Cougar GEX X2 1000 (1000 Вт)",
+  "estimate": 14000
+ },
+ {
+  "kind": "psu",
+  "name": "Серверный БП 1600 Вт + плата-развязка",
+  "query": "Серверный БП 1600 Вт + плата-развязка",
+  "estimate": 14000
+ },
+ {
+  "kind": "psu",
+  "name": "Aerocool VX-800 (800 Вт, бюджет)",
+  "query": "Aerocool VX-800 (800 Вт, бюджет)",
+  "estimate": 4500
+ },
+ {
   "kind": "case",
   "name": "NegoRack NR-M48 (4U, 650 мм)",
   "query": "NegoRack NR-M48 (4U, 650 мм)",
@@ -742,5 +862,137 @@
   "name": "Корпус ATX с 3 слотами (ориентир)",
   "query": "Корпус ATX с 3 слотами (ориентир)",
   "estimate": 6000
+ },
+ {
+  "kind": "cooler",
+  "name": "Noctua NH-U14S TR4-SP3",
+  "query": "Noctua NH-U14S TR4-SP3",
+  "estimate": 14500
+ },
+ {
+  "kind": "cooler",
+  "name": "Arctic Freezer 4U-SP5",
+  "query": "Arctic Freezer 4U-SP5",
+  "estimate": 12500
+ },
+ {
+  "kind": "cooler",
+  "name": "Dynatron J12 (SP5, 4U)",
+  "query": "Dynatron J12 (SP5, 4U)",
+  "estimate": 21000
+ },
+ {
+  "kind": "cooler",
+  "name": "Noctua NH-U14S TR5-SP6",
+  "query": "Noctua NH-U14S TR5-SP6",
+  "estimate": 16500
+ },
+ {
+  "kind": "cooler",
+  "name": "Noctua NH-D9 TR5-SP6 4U",
+  "query": "Noctua NH-D9 TR5-SP6 4U",
+  "estimate": 17500
+ },
+ {
+  "kind": "cooler",
+  "name": "Dynatron A54 (SP6, 4U)",
+  "query": "Dynatron A54 (SP6, 4U)",
+  "estimate": 12000
+ },
+ {
+  "kind": "cooler",
+  "name": "Noctua NH-U14S DX-4677",
+  "query": "Noctua NH-U14S DX-4677",
+  "estimate": 17000
+ },
+ {
+  "kind": "cooler",
+  "name": "Noctua NH-D9 DX-4677 4U",
+  "query": "Noctua NH-D9 DX-4677 4U",
+  "estimate": 18500
+ },
+ {
+  "kind": "cooler",
+  "name": "Arctic Freezer 4U-M (LGA4677)",
+  "query": "Arctic Freezer 4U-M (LGA4677)",
+  "estimate": 11500
+ },
+ {
+  "kind": "cooler",
+  "name": "Noctua NH-U14S DX-4710",
+  "query": "Noctua NH-U14S DX-4710",
+  "estimate": 18000
+ },
+ {
+  "kind": "cooler",
+  "name": "Thermalright Peerless Assassin 120 SE",
+  "query": "Thermalright Peerless Assassin 120 SE",
+  "estimate": 4500
+ },
+ {
+  "kind": "cooler",
+  "name": "DeepCool AK620",
+  "query": "DeepCool AK620",
+  "estimate": 7500
+ },
+ {
+  "kind": "cooler",
+  "name": "Arctic P14 PWM PST (140 мм)",
+  "query": "Arctic P14 PWM PST (140 мм)",
+  "estimate": 1200
+ },
+ {
+  "kind": "cooler",
+  "name": "Arctic P12 PWM PST (120 мм)",
+  "query": "Arctic P12 PWM PST (120 мм)",
+  "estimate": 900
+ },
+ {
+  "kind": "cooler",
+  "name": "Noctua NF-A12x25 PWM (120 мм)",
+  "query": "Noctua NF-A12x25 PWM (120 мм)",
+  "estimate": 3900
+ },
+ {
+  "kind": "cooler",
+  "name": "be quiet! Silent Wings 4 140 мм",
+  "query": "be quiet! Silent Wings 4 140 мм",
+  "estimate": 3100
+ },
+ {
+  "kind": "cooler",
+  "name": "Thermalright TL-C12C (120 мм)",
+  "query": "Thermalright TL-C12C (120 мм)",
+  "estimate": 700
+ },
+ {
+  "kind": "ssd",
+  "name": "NVMe 4 ТБ Gen5 Crucial T705",
+  "query": "NVMe 4 ТБ Gen5 Crucial T705",
+  "estimate": 85370
+ },
+ {
+  "kind": "ssd",
+  "name": "NVMe 4 ТБ Gen4 WD Black SN850X",
+  "query": "NVMe 4 ТБ Gen4 WD Black SN850X",
+  "estimate": 88360
+ },
+ {
+  "kind": "ssd",
+  "name": "NVMe 4 ТБ Gen4 Kingston KC3000",
+  "query": "NVMe 4 ТБ Gen4 Kingston KC3000",
+  "estimate": 89520
+ },
+ {
+  "kind": "ssd",
+  "name": "NVMe 2 ТБ Gen4 WD Black SN850X",
+  "query": "NVMe 2 ТБ Gen4 WD Black SN850X",
+  "estimate": 43500
+ },
+ {
+  "kind": "ssd",
+  "name": "NVMe 8 ТБ Gen4 WD Black SN850X",
+  "query": "NVMe 8 ТБ Gen4 WD Black SN850X",
+  "estimate": 168000
  }
 ]
