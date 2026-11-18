@@ -44,6 +44,21 @@ def basalt_cpu_factor(platform_name):
     return BASALT_CPU_FACTOR.get(platform_name, 1.0)
 
 
+# допустимый коридор «медиана / прежняя оценка» по типам желез��
+AVITO_BANDS = {
+    "gpu": (0.4, 2.5),
+    "psu": (0.4, 2.5),
+    "case": (0.4, 2.5),
+    "cooler": (0.3, 3.0),
+    "ssd": (0.5, 2.0),
+}
+AVITO_BAND_DEFAULT = (0.1, 4.0)
+
+
+def avito_band(kind):
+    return AVITO_BANDS.get(kind, AVITO_BAND_DEFAULT)
+
+
 def avito_stats(name):
     """Данные Авито, если им можно доверять (иначе None).
 
@@ -62,7 +77,7 @@ def avito_stats(name):
         return None
     est = v.get("estimate") or 0
     if est:
-        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.1, 4.0)
+        lo, hi = avito_band(v.get("kind"))
         r = float(v["median"]) / est
         if r < lo or r > hi:
             return None
@@ -84,7 +99,7 @@ def avito_reject_reason(name):
     est = v.get("estimate") or 0
     if est:
         r = float(v["median"]) / est
-        lo, hi = (0.4, 2.5) if v.get("kind") == "gpu" else (0.1, 4.0)
+        lo, hi = avito_band(v.get("kind"))
         if r < lo or r > hi:
             return "выброс (%.2f× от оценки)" % r
     return ""
@@ -490,7 +505,7 @@ KV_RATE = {
     "Qwen3.8-Flash UD-IQ4_XS": 0.098,
     "DeepSeek-V4.1-Flash Maya-S": 0.12,
     "Qwen3.8-Flash Basalt NVFP4-DQ6_K": 0.098,
-    "Qwen3.8-Flash Basalt IQ3_S": 0.098,
+    "Qwen3.8-Flash Basalt UD-IQ3_XXS": 0.098,
 }
 
 
@@ -530,6 +545,6 @@ MODELS = [
     ("Qwen3.8-Flash UD-Q4_K_XL", "Strata", 111.3, 6, 3.77, 4.8, 32, 644, 106, 1.25, 63.5, 1200, 0.50, "1×R9700 + EPYC 7452, QUANTS.md: 63–64 tok/s, pp 1110–1320"),
     ("Qwen3.8-Flash UD-IQ4_XS", "Strata", 93.7, 6, 3.12, 4.8, 32, 644, 106, 1.25, 68.0, 1400, 0.50, "оценка по таблице QUANTS: между IQ3_S (75) и Q4 (63,5)"),
     ("DeepSeek-V4.1-Flash Maya-S", "Maya-ds4", 340.0, 40, 3.0, 20.0, 32, 1792, 90, 2.2, 24.9, 1842, 0.30, "1×RTX 5090 + 128 ГБ, dev.to 10.2026"),
-    ("Qwen3.8-Flash Basalt NVFP4-DQ6_K", "Basalt", 131.7, 6, 4.39, 4.8, 48, 2240, 139, 2.56, 274, 5850, 0.26, "замер HF-карточки: 5090 + 5060 Ti peer, 274 tok/s prose"),
-    ("Qwen3.8-Flash Basalt IQ3_S", "Basalt", 87.6, 6, 2.92, 4.8, 48, 2240, 139, 2.56, 341, 6000, 0.26, "замер HF-карточки: 341 tok/s prose (IQ3_S)"),
+    ("Qwen3.8-Flash Basalt NVFP4-DQ6_K", "Basalt", 131.7, 6, 4.39, 4.8, 48, 2240, 139, 2.56, 307, 5850, 0.26, "HF-карточка 0.3.0: 5090+5060 Ti, 307 tok/s прозы, 601 структурой"),
+    ("Qwen3.8-Flash Basalt UD-IQ3_XXS", "Basalt", 87.6, 6, 2.92, 4.8, 48, 2240, 139, 2.56, 342, 6000, 0.26, "HF-карточка 0.3.0: 342 tok/s прозы, 658 структурой"),
 ]
