@@ -109,7 +109,7 @@
      Файл Excel с той же базой — в репозитории.</p>
 </footer>
 
-<script src="data.js?v=b12fcc56"></script>
+<script src="data.js?v=7fdfe591"></script>
 <script src="calc.js"></script>
 <script>
 (function(){
@@ -120,7 +120,7 @@
     var el = $("err");
     if (!el) return;
     el.style.display = "block";
-    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=b12fcc56.";
+    el.textContent = "Сбой в скрипте: " + (e.message || e.type) + ". Обновите страницу с Ctrl+F5 — скорее всего закэшировался старый data.js?v=7fdfe591.";
   });
 
   var SSDS = (DB.ssds && DB.ssds.length) ? DB.ssds : [];
@@ -251,6 +251,14 @@
   function money(v){ return Math.round(v).toLocaleString("ru-RU") + " ₽"; }
   function num(v, d){ return v == null ? "—" : v.toFixed(d == null ? 1 : d); }
   function fromMin(o){ return (o && o.min && o.min < o.price) ? " · от " + o.min.toLocaleString("ru-RU") + " ₽" : ""; }
+  function lanesText(n){
+    var a = n % 10, b = n % 100;
+    if (b >= 11 && b <= 14) return n + " линий";
+    if (a === 1) return n + " линия";
+    if (a >= 2 && a <= 4) return n + " линии";
+    return n + " линий";
+  }
+  function platformText(p){ return p.name + " · " + p.channels + "× " + p.ddr + " · " + lanesText(p.pcieLanes) + " PCIe " + p.pcieGen; }
 
   function render(){
     var r = Calc.build(sel);
@@ -482,7 +490,7 @@
 
   // инициализация
   $("stats").textContent = DB.platforms.length + " платформ, " + DB.gpus.length + " карт, " + DB.models.length + " модели";
-  fill($("platform"), DB.platforms, function(p){ return p.name; }, sel.platform);
+  fill($("platform"), DB.platforms, platformText, sel.platform);
   fill($("gpu"), DB.gpus, function(g){ return g.name + " · " + g.vram + " ГБ · " + (g.price ? g.price.toLocaleString("ru-RU") + " ₽" : "цена н/д") + fromMin(g) + " · " + g.vendor; }, sel.gpu);
   fill($("count"), [1, 2, 3, 4], function(n){ return n + " шт"; }, 2);
   fill($("psu"), DB.psus, function(p){ return p.name + " · " + p.w + " Вт · " + p.price.toLocaleString("ru-RU") + " ₽" + fromMin(p); }, sel.psu);
