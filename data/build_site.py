@@ -68,6 +68,10 @@ data = {
             "name": p["name"],
             "title": p["title"],
             "basaltK": db.basalt_cpu_factor(p["name"]),
+            "channels": db.platform_meta(p["name"]).get("channels", 0),
+            "ddr": db.platform_meta(p["name"]).get("ddr", "?"),
+            "pcieGen": db.platform_meta(p["name"]).get("pcieGen", "?"),
+            "pcieLanes": db.platform_meta(p["name"]).get("pcieLanes", 0),
             "cpus": [
                 {"name": c[0], "cores": c[1], "ch": c[2], "bw": c[3], "tdp": c[4], "price": db.avito_price(c[0], c[5]), "src": c[6], "platform": p["name"], "avitoUrl": db.avito_url(c[0]), "avitoN": pstat(c[0]), "min": amin(c[0])}
                 for c in p["cpus"]
