@@ -197,6 +197,35 @@ def strata_factor(name):
     return STRATA_FACTOR.get(gpu_arch(name), 1.0)
 
 
+# шина PCIe по платформам: поколение и число линий (ориентир по спецификациям чипсета/CPU)
+PLATFORM_PCIE = {
+    "SP3": ("4.0", 128),
+    "AM5": ("5.0", 24),
+    "LGA1851": ("5.0", 20),
+    "LGA1700": ("5.0", 20),
+    "LGA4677": ("5.0", 80),
+    "SP5": ("5.0", 128),
+    "LGA4710": ("5.0", 80),
+    "SP6": ("5.0", 96),
+    "HALO": ("5.0", 16),
+    "LGA4189": ("4.0", 64),
+    "LGA3647": ("3.0", 48),
+    "TR5": ("5.0", 80),
+    "AM4": ("4.0", 24),
+}
+
+
+def platform_meta(name):
+    """Каналы памяти, тип DDR и PCIe платформы — для подписи в интерфейсе."""
+    p = next((x for x in PLATFORMS if x["name"] == name), None)
+    if not p:
+        return {}
+    channels = max((c[2] for c in p["cpus"]), default=0)
+    ddr = p["mbs"][0][1] if p["mbs"] else "?"
+    gen, lanes = PLATFORM_PCIE.get(name, ("?", 0))
+    return {"channels": channels, "ddr": ddr, "pcieGen": gen, "pcieLanes": lanes}
+
+
 # имя, VRAM, полоса ГБ/с, TDP, длина мм, слотов, compute, цена магазин, цена Авито, статус, вендор
 GPU_ROWS = [
     ("RTX 2080 Ti 22 ГБ (мод)", 22, 616, 260, 267, 2, 0.72, 0, 55000, "Авито 45–65 тыс (ориентир); карта модифицированная", "NVIDIA"),
