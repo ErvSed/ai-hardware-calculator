@@ -414,6 +414,22 @@ for name, kind, sockets, tdp, height, price, src in COOLERS:
 cool_end = r - 1
 widths(cl, [44, 13, 24, 10, 13, 14, 34, 10])
 
+# ================================================================ Платформы (каналы, DDR, PCIe)
+pf = WB.create_sheet("Платформы")
+head(pf, 1, ["Платформа", "Каналов RAM", "Тип памяти", "Линий PCIe", "Версия PCIe", "CPU", "Платы"])
+r = 2
+for _p in PLATFORMS:
+    _m = platform_meta(_p["name"])
+    pf.cell(row=r, column=1, value=_p["name"])
+    pf.cell(row=r, column=2, value=_m.get("channels", 0)).alignment = CENTER
+    pf.cell(row=r, column=3, value=_m.get("ddr", "?")).alignment = CENTER
+    pf.cell(row=r, column=4, value=_m.get("pcieLanes", 0)).alignment = CENTER
+    pf.cell(row=r, column=5, value=_m.get("pcieGen", "?")).alignment = CENTER
+    pf.cell(row=r, column=6, value=len(_p["cpus"])).alignment = CENTER
+    pf.cell(row=r, column=7, value=len(_p["mbs"])).alignment = CENTER
+    r += 1
+widths(pf, [14, 13, 13, 13, 13, 8, 8])
+
 # ================================================================ Пресеты под бюджет
 ps = WB.create_sheet("Пресеты")
 head(ps, 1, ["Бюджет, ₽", "Платформа", "CPU", "Плата", "Память", "Планок", "GPU", "шт", "SSD",
@@ -518,6 +534,9 @@ _stk.alignment = CENTER
 k.cell(row=6, column=5).number_format = '0'
 k.cell(row=7, column=4, value="Объём RAM, ГБ:").font = Font(bold=True)
 k.cell(row=7, column=5, value='=IFERROR($E$6*VLOOKUP(B5,Память!$A:$G,4,0),0)').number_format = '0'
+k.cell(row=8, column=4, value="Платформа:").font = Font(bold=True)
+k.cell(row=8, column=5, value='=IFERROR(VLOOKUP($B$2,Платформы!$A:$E,2,0)&" каналов "&VLOOKUP($B$2,Платформы!$A:$E,3,0)&" · "&VLOOKUP($B$2,Платформы!$A:$E,4,0)&" линий PCIe "&VLOOKUP($B$2,Платформы!$A:$E,5,0),"")')
+k.cell(row=8, column=5).alignment = WRAP
 
 for row, label, formula, fmt in [
     (10, "Вендор GPU", '=IFERROR(VLOOKUP(B6,GPU!$A:$L,12,0),"?")', None),
